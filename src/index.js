@@ -15,11 +15,11 @@ var style = {
 };
 
 ReactDOM.render((
-  <div style={style}>
+  <div className="Index" style={style}>
     <Router history={hashHistory}>
       <Route path="/">
         <IndexRoute component={HashtagModal} />
-        <Route path="about" component={App} />
+        <Route path="show/:id" component={App} />
       </Route>
     </Router>
   </div>

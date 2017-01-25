@@ -1,0 +1,28 @@
+.HashtagModal {
+}
+.HashtagModal__overlay {
+  position: absolute;
+  width: 100vw;  
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: rgba(255, 255, 255, .2);
+}
+.HashtagModal__content {
+  width: 400px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.5em;
+  transform: translate(-50%, -50%)
+}
+
+.HashtagModal__content input {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+.HashtagModal__content input[type="submit"] {
+  display: none;
+}
