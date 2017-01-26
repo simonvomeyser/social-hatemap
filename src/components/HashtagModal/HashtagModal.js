@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './HashtagModal.css';
-import { browserHistory } from 'react-router';
 
+/**
+ * Overlay and input field for a hashtag
+ */
 class HashtagModal extends Component {
 
   constructor(props) {
@@ -9,12 +11,16 @@ class HashtagModal extends Component {
     this.inputField = null;
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    console.log (props); //Debug
   }
 
   handleSubmit(e) {
-    console.log (this.inputField); //Debug
     e.preventDefault();
-    // browserHistory.push('/show/');
+    const hashtag = this.inputField.value;
+
+    if (hashtag) {
+      this.props.router.push('/show/'+hashtag); //Debug      
+    }
   }
   render() {
     return (
