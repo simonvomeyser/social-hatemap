@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App/App';
 import HashtagModal from './components/HashtagModal/HashtagModal';
-import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import './index.css';
 import svgMap from './svgMap.svg';
 
