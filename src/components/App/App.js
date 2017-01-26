@@ -1,14 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Loading from '../Loading/Loading';
 import './App.css';
 
-class App extends Component {
+class App extends React.Component {
 
+  componentWillMount() {
+    
+  }
   render() {
     return (
       <div className="App">
         <h1>App</h1>
-        <span>Getting Data from Twitter with Hashtag {this.props.params.id}</span>
-
+        <div>Getting Data from Twitter</div>
+        <div className="App__hashtag">#{this.props.params.id}</div>
+        <div className="App__content">
+          <Loading />
+        </div>
       </div>
     );
   }
