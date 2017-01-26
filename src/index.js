@@ -6,6 +6,7 @@ import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
 import './index.css';
 import svgMap from './svgMap.svg';
 
+// @todo Move styles to css
 var style = {
   backgroundImage: 'url('+svgMap+')',
   backgroundColor: '#222',
