@@ -1,10 +1,9 @@
 import React from 'react';
 import config from './config.json';
 
-class Twitter {
+export default Twitter = {
   sayHello() {
     console.log(config.test);
   }
-}
+};
 
-export default Twitter;
