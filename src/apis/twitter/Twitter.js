@@ -1,9 +1,9 @@
 import React from 'react';
 import config from './config.json';
 
-export default Twitter = {
-  sayHello() {
-    console.log(config.test);
+export default {
+  getTweets($hashtag) {
+    return fetch("http://api.socialhatemap.com/index.php?hashtag=". $hashtag);
   }
 };
 
