@@ -4,7 +4,8 @@
   "private": true,
   "devDependencies": {
     "react-scripts": "0.8.5",
-    "sanitize-html": "^1.14.1"
+    "sanitize-html": "^1.14.1",
+    "svg.js": "^2.4.0"
   },
   "dependencies": {
     "react": "^15.4.2",
