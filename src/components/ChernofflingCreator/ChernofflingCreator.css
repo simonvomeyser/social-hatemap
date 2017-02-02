@@ -1,0 +1,22 @@
+.ChernofflingCreator {
+  padding-top: 20px;
+}
+.ChernofflingCreator h1 {
+  text-align: center;
+}
+.ChernofflingCreator {
+  margin: 0 auto;
+  width: 50%;
+}
+.ChernofflingCreator__content {
+  display: flex;
+  background-color: rgba(0, 0, 0, .4)
+}
+.ChernofflingCreator__content > *{
+  flex: 1;
+  padding: 20px;
+}
+
+.ChernofflingCreator__settings {
+  border-right: 2px dashed gray;
+}
