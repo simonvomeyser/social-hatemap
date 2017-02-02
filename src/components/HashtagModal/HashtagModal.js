@@ -3,16 +3,15 @@ import './HashtagModal.css';
 import sanitizeHtml from 'sanitize-html';
 
 /**
- * Overlay and input field for a hashtag
+ * Overlay and input field for a hashtag, "landing page" of app
  */
 class HashtagModal extends Component {
 
   constructor(props) {
     super(props);
-    this.inputField = null;
 
+    this.inputField   = null;
     this.handleSubmit = this.handleSubmit.bind(this);
-    console.log (props); //Debug
   }
 
   handleSubmit(e) {
