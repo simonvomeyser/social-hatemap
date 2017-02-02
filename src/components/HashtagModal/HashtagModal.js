@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './HashtagModal.css';
+import sanitizeHtml from 'sanitize-html';
 
 /**
  * Overlay and input field for a hashtag
@@ -16,9 +17,10 @@ class HashtagModal extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const hashtag = this.inputField.value;
+    let hashtag = this.inputField.value;
 
     if (hashtag) {
+      hashtag = sanitizeHtml(hashtag).replace('#', '');
       this.props.router.push('/show/'+hashtag); //Debug      
     }
   }

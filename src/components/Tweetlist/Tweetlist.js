@@ -18,7 +18,6 @@ export default class Tweetlist extends React.Component {
   renderTweets() {
 
     return this.props.tweets.map(function(elem, index) {
-      console.log (elem); //Debug
       return (
         <div className="Tweetlist__tweet" key={index}>
           <img src={elem.user.profile_image_url} alt=""/>
