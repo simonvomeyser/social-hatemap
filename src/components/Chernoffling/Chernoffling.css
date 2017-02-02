@@ -1,0 +1,10 @@
+.Chernoffling {
+  position: relative;
+  width: 100%;
+}
+/* Hack to make Chernofflings Canvas 1:1; */
+.Chernoffling:before {
+  content: "";
+  display: block;
+  padding-top: 100%;  
+}

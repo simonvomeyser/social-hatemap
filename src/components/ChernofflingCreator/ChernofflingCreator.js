@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Chernoffling from '../Chernoffling/Chernoffling';
 import './ChernofflingCreator.css';
 
 /**
@@ -61,7 +61,7 @@ export default class ChernofflingCreator extends React.Component {
             </div>
           </div>
           <div className="ChernofflingCreator__chernoffling">
-
+            <Chernoffling {...this.state}/>
           </div>
         </div>
       </div>

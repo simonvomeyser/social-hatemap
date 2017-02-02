@@ -20,3 +20,11 @@
 .ChernofflingCreator__settings {
   border-right: 2px dashed gray;
 }
+.ChernofflingCreator__chernoffling {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+}
+.ChernofflingCreator__chernoffling >* {
+  border: 1px white solid;
+}
