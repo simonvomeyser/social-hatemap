@@ -2,12 +2,17 @@ import React from 'react';
 
 import './Tweetlist.css';
 
+/**
+ * Shows List of Tweets for demo purposes
+ */
 export default class Tweetlist extends React.Component {
+
   componentWillMount() {
     this.setState({
       tweets : this.props.tweets ? this.props.tweets : [] 
     });
   }
+
   render() {
     return (
       <div className="Tweetlist">
@@ -15,8 +20,8 @@ export default class Tweetlist extends React.Component {
       </div>
     );
   }
-  renderTweets() {
 
+  renderTweets() {
     return this.props.tweets.map(function(elem, index) {
       return (
         <div className="Tweetlist__tweet" key={index}>

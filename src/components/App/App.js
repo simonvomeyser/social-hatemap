@@ -7,6 +7,9 @@ import Twitter from '../../apis/twitter/Twitter.js';
 
 import './App.css';
 
+/**
+ * Main Application wrapper, shows map and renders everything
+ */
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -16,15 +19,13 @@ class App extends React.Component {
     };
   }
   componentWillMount() {
-    fetch('http://api.socialhatemap.com/index.php?hashtag=' + this.props.params.id)
-    .then((response) => { return response.json(); })
-    .then((json) => {
+    Twitter.getPosts(this.props.params.id).then((json) => {
       this.setState({
         component: <Tweetlist tweets={json.statuses} />,
         text: "Found "+json.statuses.length + " Tweets"
       });
     });
-
+    
   }
   render() {
     return (
