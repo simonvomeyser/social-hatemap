@@ -19,7 +19,7 @@ export default class ChernofflingCreator extends React.Component {
       'unknown' : 50,
       'twitter' : 50,
       'instagram' : 50,
-      'posts' : 10,
+      'posts' : 50,
       'percentage' : 10,
     });
     this.handleInputChange = this.handleInputChange.bind(this);
