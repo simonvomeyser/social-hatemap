@@ -15,7 +15,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       component: (<Loading/>),
-      text: "Getting Data from Twitter...",
+      text: "Getting Data from Twitter..."
     };
   }
   componentWillMount() {
