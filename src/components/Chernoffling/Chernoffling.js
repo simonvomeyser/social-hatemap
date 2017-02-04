@@ -1,8 +1,10 @@
 import React from 'react';
 
 import './Chernoffling.css';
+import monster from './monster.svg';
 import SVG from 'svg.js';
 
+import SVGInline from "react-svg-inline";
 /**
  * Main Component responsible for drawing the chernoffling
  */
@@ -35,7 +37,9 @@ export default class Chernoffling extends React.Component {
   render() {
     return (
       <div className="Chernoffling">
-        <div className="Chernoffling__svg" id="Chernoffling__svg1"></div>
+        <div className="Chernoffling__svg" id="Chernoffling__svg1">
+          <SVGInline svg={monster} />
+        </div>
       </div>
     );
   }
@@ -46,6 +50,7 @@ export default class Chernoffling extends React.Component {
    */
   draw(params) {
 
+    return "";
     let size;
 
     if (params.posts < 20) {
