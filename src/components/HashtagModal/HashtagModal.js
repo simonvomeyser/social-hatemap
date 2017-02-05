@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './HashtagModal.css';
 import sanitizeHtml from 'sanitize-html';
 
+import Map from '../Map/Map';
+
 /**
  * Overlay and input field for a hashtag, "landing page" of app
  */
@@ -26,6 +28,7 @@ class HashtagModal extends Component {
   render() {
     return (
       <div className="HashtagModal">
+        <Map/>
         <div className="HashtagModal__overlay"></div>
         <div className="HashtagModal__content">
           <form onSubmit={this.handleSubmit}>

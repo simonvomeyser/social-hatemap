@@ -1,6 +1,8 @@
 import React from 'react';
 import Loading from '../Loading/Loading';
 import Tweetlist from '../Tweetlist/Tweetlist';
+import Map from '../Map/Map';
+
 import { Link } from 'react-router';
 
 import Twitter from '../../apis/twitter/Twitter.js';
@@ -30,6 +32,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Map/>
         <h1>App</h1>
         <div>{this.state.text}</div>
         <Link to="/">

@@ -1,6 +1,6 @@
 .App {
-  padding-top: 2em;
   text-align: center;
+  position: relative;
 }
 .App__hashtag {
   padding-top: 1em;

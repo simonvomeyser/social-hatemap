@@ -8,19 +8,9 @@ import ChernofflingCreator from './components/ChernofflingCreator/ChernofflingCr
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import './index.css';
-import svgMap from './svgMap.svg';
-
-// @todo Move styles to css
-var style = {
-  backgroundImage: 'url('+svgMap+')',
-  backgroundColor: '#222',
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'center, center',
-  height: '100vh'
-};
 
 ReactDOM.render((
-  <div className="Index" style={style}>
+  <div className="Index">
     <Router history={hashHistory}>
       <Route path="/">
         <IndexRoute component={HashtagModal} />
