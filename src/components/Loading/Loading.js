@@ -13,8 +13,7 @@ export default class Loading extends React.Component {
       <div>
         <div className="Loading__spinner">
         </div>
-        Loading..
-        
+        {this.props.text ? this.props.text : 'Loading...'}
       </div>
     );
   }

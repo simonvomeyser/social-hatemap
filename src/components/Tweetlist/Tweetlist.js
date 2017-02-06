@@ -3,6 +3,8 @@ import React from 'react';
 import './Tweetlist.css';
 
 /**
+ * Temp Component
+ * 
  * Shows List of Tweets for demo purposes
  */
 export default class Tweetlist extends React.Component {
@@ -16,6 +18,8 @@ export default class Tweetlist extends React.Component {
   render() {
     return (
       <div className="Tweetlist">
+        <h1>Tweetlist</h1>
+        <div>Found {this.props.tweets.length} Tweets</div>
         { this.renderTweets() }
       </div>
     );

@@ -16,15 +16,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      component: (<Loading/>),
-      text: "Getting Data from Twitter..."
+      component: (<Loading text="Getting tweets from twitter"/>),
     };
   }
   componentWillMount() {
     Twitter.getPosts(this.props.params.id).then((json) => {
       this.setState({
         component: <Tweetlist tweets={json.statuses} />,
-        text: "Found "+json.statuses.length + " Tweets"
       });
     });
     
@@ -33,11 +31,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <Map/>
-        <h1>App</h1>
-        <div>{this.state.text}</div>
-        <Link to="/">
-          <div className="App__hashtag">#{this.props.params.id}</div>
-        </Link>
         <div className="App__content">
           {this.state.component}
         </div>
