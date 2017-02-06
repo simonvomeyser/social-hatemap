@@ -16,13 +16,14 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      component: (<Loading text="Getting tweets from twitter"/>),
+      component: (<Loading text="Getting tweets from twitter"/>)
     };
   }
   componentWillMount() {
-    Twitter.getPosts(this.props.params.id).then((json) => {
+    // @todo Change to getPosts() function to really work
+    Twitter.getStaticSamplePosts(this.props.params.id).then((json) => {
       this.setState({
-        component: <Tweetlist tweets={json.statuses} />,
+        component: <Tweetlist tweets={json.statuses} />
       });
     });
     

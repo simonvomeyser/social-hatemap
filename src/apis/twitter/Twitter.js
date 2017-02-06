@@ -1,5 +1,5 @@
 import React from 'react';
-import config from './config.json';
+import sampleData from './sampleData.json';
 
 const apiUrl = 'http://api.socialhatemap.com/index.php';
 
@@ -17,8 +17,23 @@ const Twitter = {
    * @return Promise 
    */
   getPosts($hashtag) {
+
+
     return fetch(apiUrl + '?hashtag=' + $hashtag)
     .then((response) => { return response.json(); });
+  },
+
+  /**
+   * Returns only static data to not query API during development
+   * 
+   * @return Promise 
+   */
+  getStaticSamplePosts($hashtag) {
+    return new Promise((resolve, reject) => {
+      setTimeout(function() {
+        resolve({statuses: sampleData});
+      }, 1000);
+    });    
   }
 };
 
