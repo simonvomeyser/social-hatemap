@@ -7,6 +7,9 @@ import Map from '../Map/Map';
 import Twitter from '../../apis/twitter/Twitter.js';
 
 import './App.css';
+/**
+* Kommentar
+*/
 
 /**
  * Main Application wrapper, shows map and renders everything
@@ -27,7 +30,7 @@ class App extends React.Component {
         twitter: json.statuses
       });
     });
-    
+
   }
 
   render() {
@@ -44,4 +47,3 @@ class App extends React.Component {
 }
 
 export default App;
-
