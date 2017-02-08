@@ -1,4 +1,3 @@
-import React from 'react';
 import sampleData from './sampleData.json';
 
 const apiUrl = 'http://api.socialhatemap.com/index.php';
