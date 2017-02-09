@@ -4,7 +4,9 @@ import Tweetlist from '../Tweetlist/Tweetlist';
 import Nav from '../Nav/Nav';
 import Map from '../Map/Map';
 
+// Apis
 import Twitter from '../../apis/twitter/Twitter.js';
+import Geocoder from '../../apis/geocoding/Geocoder.js';
 
 import './App.css';
 /**
@@ -30,10 +32,23 @@ class App extends React.Component {
       });
     });
 
+    // ===========================================
+    // DEV MODE 
+    // To not have to click something
+    // ===========================================
+    setTimeout(() => {
+      this.processPosts();
+    }, 2000);
   }
 
   processPosts() {
+    const posts = this.state.posts;
+    const locations = posts.map((post) => post.user.location);
+    this.setState({component: (<Loading text='Geocoding Tweets'/>)});
 
+    Geocoder
+      .batchGeocodeStatic(locations)
+      .then((geoCodedLocations) => console.log(geoCodedLocations));
   }
 
   setLoading(text) {

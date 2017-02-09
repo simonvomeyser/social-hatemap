@@ -17,8 +17,19 @@ const Geocoder = {
    * @return {Prommise}               [description]
    */
   batchGeocodeStatic(locationNames =[]) {
-    return locationNames.map((locationName) => {
+
+    // create static location array of objects having random lat/long
+    const staticLocations = locationNames.map((locationName) => {
       return { locationName, ...this.getRandomGeoLoacation() };
+    });
+
+    // return Promise to make complete function switchable with this.batchGeocode()
+    return new Promise((resolve)=> {
+
+      setTimeout(function() {
+        resolve(staticLocations);
+      }, 500);
+
     });
   },
 
