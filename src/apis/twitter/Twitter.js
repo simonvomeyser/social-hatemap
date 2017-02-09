@@ -15,7 +15,7 @@ const Twitter = {
    * @param  String $hashtag [description]
    * @return Promise 
    */
-  get($hashtag) {
+  getPosts($hashtag) {
 
 
     return fetch(apiUrl + '?hashtag=' + $hashtag)
@@ -27,7 +27,7 @@ const Twitter = {
    * 
    * @return Promise 
    */
-  getStatic($hashtag) {
+  getStaticPosts($hashtag) {
     return new Promise((resolve, reject) => {
       setTimeout(function() {
         resolve({statuses: sampleData});

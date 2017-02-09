@@ -19,25 +19,31 @@ class App extends React.Component {
     super(props);
     this.state = {
       component: (<Loading text="Getting tweets from twitter"/>),
-      twitter: null
+      posts: null
     };
+
+    this.processPosts = this.processPosts.bind(this);
   }
   componentWillMount() {
-    // @todo Change to get() function to really work
-    Twitter.getStatic(this.props.params.id).then((json) => {
+    // @todo Change to getPosts() function to really work
+    Twitter.getStaticPosts(this.props.params.id).then((json) => {
       this.setState({
         component: <Tweetlist tweets={json.statuses} />,
-        twitter: json.statuses
+        posts: json.statuses
       });
     });
 
+  }
+
+  processPosts() {
+    console.log ('procesing');  
   }
 
   render() {
     return (
       <div className="App">
         <Map />
-        <Nav twitter={this.state.twitter} />
+        <Nav posts={this.state.posts} processPosts={this.processPosts} />
         <div className="App__content">
           {this.state.component}
         </div>
