@@ -17,14 +17,11 @@ import './App.css';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      component: (<Loading text="Getting tweets from twitter"/>),
-      posts: null
-    };
 
     this.processPosts = this.processPosts.bind(this);
   }
   componentWillMount() {
+    this.setLoading('Getting Data from Twitter...');
     // @todo Change to getPosts() function to really work
     Twitter.getStaticPosts(this.props.params.id).then((json) => {
       this.setState({
@@ -36,7 +33,11 @@ class App extends React.Component {
   }
 
   processPosts() {
-    console.log ('procesing');  
+
+  }
+
+  setLoading(text) {
+    this.setState({component: (<Loading text={text}/>)});
   }
 
   render() {
