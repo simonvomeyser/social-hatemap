@@ -31,7 +31,7 @@ const Twitter = {
     return new Promise((resolve, reject) => {
       setTimeout(function() {
         resolve({statuses: sampleData});
-      }, 1000);
+      }, 500);
     });    
   }
 };

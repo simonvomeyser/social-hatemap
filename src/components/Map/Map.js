@@ -4,6 +4,7 @@ import map from '../../img/svgMap.svg';
 
 import SVGInline from "react-svg-inline";
 
+
 import './Map.css';
 
 /**
@@ -19,6 +20,13 @@ class Map extends React.Component {
       </div>
     );
 
+  }
+  componentDidUpdate() {
+    const map = document.querySelector('#map');
+    if (this.props.drawPosts) {
+      // Start Drawing circles for posts here
+      console.log ('Drawing ' + this.props.drawPosts.length + ' posts on map');
+    }
   }
 }
 

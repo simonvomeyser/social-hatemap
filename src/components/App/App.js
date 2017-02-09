@@ -38,7 +38,7 @@ class App extends React.Component {
     // ===========================================
     setTimeout(() => {
       this.processPosts();
-    }, 2000);
+    }, 750);
   }
 
   processPosts() {
@@ -48,9 +48,16 @@ class App extends React.Component {
 
     Geocoder
       .batchGeocodeStatic(locations)
-      .then((geoCodedLocations) => console.log(geoCodedLocations));
+      .then((geoCodedLocations) => {
+        // Add locations to all posts again
+        const geoCodedPosts = posts.map((e, i) => { 
+          return {...e, location:geoCodedLocations[i]}; 
+        });
+        // Draw posts on map
+        this.setState({geoCodedPosts});
+      });
   }
-
+  
   setLoading(text) {
     this.setState({component: (<Loading text={text}/>)});
   }
@@ -58,7 +65,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Map />
+        <Map drawPosts={this.state.geoCodedPosts} />
         <Nav posts={this.state.posts} processPosts={this.processPosts} />
         <div className="App__content">
           {this.state.component}
