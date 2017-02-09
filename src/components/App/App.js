@@ -23,8 +23,8 @@ class App extends React.Component {
     };
   }
   componentWillMount() {
-    // @todo Change to getPosts() function to really work
-    Twitter.getStaticSamplePosts(this.props.params.id).then((json) => {
+    // @todo Change to get() function to really work
+    Twitter.getStatic(this.props.params.id).then((json) => {
       this.setState({
         component: <Tweetlist tweets={json.statuses} />,
         twitter: json.statuses

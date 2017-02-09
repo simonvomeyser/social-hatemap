@@ -1,6 +1,6 @@
 import sampleData from './sampleData.json';
 
-const apiUrl = 'http://api.socialhatemap.com/index.php';
+const apiUrl = 'http://api.socialhatemap.com/twitter.php';
 
 /**
  * Object to manage communication with twitter api
@@ -15,7 +15,7 @@ const Twitter = {
    * @param  String $hashtag [description]
    * @return Promise 
    */
-  getPosts($hashtag) {
+  get($hashtag) {
 
 
     return fetch(apiUrl + '?hashtag=' + $hashtag)
@@ -27,7 +27,7 @@ const Twitter = {
    * 
    * @return Promise 
    */
-  getStaticSamplePosts($hashtag) {
+  getStatic($hashtag) {
     return new Promise((resolve, reject) => {
       setTimeout(function() {
         resolve({statuses: sampleData});
