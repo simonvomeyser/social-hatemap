@@ -1,13 +1,38 @@
 .Map {
   z-index: -1;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 .Map svg {
-  width: 100vw;
+  transform: translateY(-15%);
+  width: 100%;
   height: auto;
 }
+.Map svg .ocean {
+  fill: black !important;
+}
+.Map svg .lake {
+  fill: black !important;
+}
+.Map svg .land {
+
+   fill: #2C2C2C !important;
+   fill-opacity: 1;
+   stroke: #3C3C3C !important;
+}
+.circle
+{
+   opacity:0;
+   fill:#b9b9b9;
+   fill-opacity:1;
+   stroke:black;
+   stroke-width:0.99986893;
+   stroke-miterlimit:3.97446823;
+   stroke-dasharray:none;
+   stroke-opacity:1;
+}
+
