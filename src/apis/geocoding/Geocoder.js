@@ -5,9 +5,15 @@ const Geocoder = {
    * Batch Transforms given Names of Locations in objects containing lat/long
    * 
    * @param {array} Strings of Location Names
+   * @param {bool} If true, the api call is only "simulated"
+   * 
    * @return {Promise} On resloving JSON with objects
    */
-  batchGeocode(locationNames =[]) {
+  batchGeocode(locationNames =[], IS_DEV_MODE) {
+    if (IS_DEV_MODE) {
+      return this.batchGeocodeStatic(locationNames);
+    }
+    
     throw new Error("Not yet implemented");
   },
 

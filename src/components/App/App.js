@@ -9,9 +9,9 @@ import Twitter from '../../apis/twitter/Twitter.js';
 import Geocoder from '../../apis/geocoding/Geocoder.js';
 
 import './App.css';
-/**
-* Kommentar
-*/
+
+// true means there is no real data fetched from the apis
+const IS_DEV_MODE = true;
 
 /**
  * Main Application wrapper, shows map and renders everything
@@ -24,8 +24,7 @@ class App extends React.Component {
   }
   componentWillMount() {
     this.setLoading('Getting Data from Twitter...');
-    // @todo Change to getPosts() function to really work
-    Twitter.getStaticPosts(this.props.params.id).then((json) => {
+    Twitter.getPosts(this.props.params.id, IS_DEV_MODE).then((json) => {
       this.setState({
         component: <Tweetlist tweets={json.statuses} />,
         posts: json.statuses
@@ -47,7 +46,7 @@ class App extends React.Component {
     this.setState({component: (<Loading text='Geocoding Tweets'/>)});
 
     Geocoder
-      .batchGeocodeStatic(locations)
+      .batchGeocode(locations, IS_DEV_MODE)
       .then((geoCodedLocations) => {
         // Add locations to all posts again
         const geoCodedPosts = posts.map((e, i) => { 

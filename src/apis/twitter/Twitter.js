@@ -13,10 +13,13 @@ const Twitter = {
    *
    * @todo Should return object with information usable by map, by now only retunrs list of tweets when resolved
    * @param  String $hashtag [description]
+   * @param {bool} If true, the api call is only "simulated"
    * @return Promise 
    */
-  getPosts($hashtag) {
-
+  getPosts($hashtag, IS_DEV_MODE) {
+    if (IS_DEV_MODE) {
+      return this.getStaticPosts($hashtag);
+    }
 
     return fetch(apiUrl + '?hashtag=' + $hashtag)
     .then((response) => { return response.json(); });
