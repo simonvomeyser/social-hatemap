@@ -21,6 +21,7 @@ class App extends React.Component {
     super(props);
 
     this.processPosts = this.processPosts.bind(this);
+    this.setLoading = this.setLoading.bind(this);
   }
   componentWillMount() {
     this.setLoading('Getting Data from Twitter...');
@@ -43,17 +44,18 @@ class App extends React.Component {
   processPosts() {
     const posts = this.state.posts;
     const locations = posts.map((post) => post.user.location);
-    this.setState({component: (<Loading text='Geocoding Tweets'/>)});
+    this.setState({component: null});
 
     Geocoder
       .batchGeocode(locations, IS_DEV_MODE)
       .then((geoCodedLocations) => {
-        // Add locations to all posts again
+        // Add locations to all posts
         const geoCodedPosts = posts.map((e, i) => { 
           return {...e, location:geoCodedLocations[i]}; 
         });
         // Draw posts on map
         this.setState({geoCodedPosts});
+
       });
   }
   
@@ -64,7 +66,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Map drawPosts={this.state.geoCodedPosts} />
+        <Map geoCodedPosts={this.state.geoCodedPosts} />
         <Nav posts={this.state.posts} processPosts={this.processPosts} />
         <div className="App__content">
           {this.state.component}

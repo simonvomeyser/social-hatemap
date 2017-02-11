@@ -25,10 +25,11 @@ class Map extends React.Component {
 
   }
   componentDidUpdate() {
-    if (this.props.drawPosts) {
+    if (this.props.geoCodedPosts) {
+
       // Start Drawing circles for posts here
 
-      const posts = this.props.drawPosts;
+      const posts = this.props.geoCodedPosts;
       const d3Map = d3.select('#map'); 
 
       const width = d3Map.attr('width');
@@ -39,7 +40,7 @@ class Map extends React.Component {
 
         let {x, y} = this.convertGeoToPixel( lat, long, width, height);
         // statements
-        setTimeout(function() {
+        setTimeout(() => {
           let t = d3.transition()
               .duration(2750)
               .ease(d3.easeLinear);
@@ -50,7 +51,7 @@ class Map extends React.Component {
             .attr("r", 20)
             .transition(t)
             .attr("r", 2)
-            .attr('fill', 'yellow');
+            .attr('fill', 'yellow'); 
         }, 25 * index);
       });
     }
