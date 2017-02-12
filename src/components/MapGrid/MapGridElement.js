@@ -13,9 +13,9 @@ class MapGridElement extends React.Component {
     // Calculate style of current element (pos depends on row/col)
     const style = {
       'width': tileWidth+'%',
+      'left' : tileWidth * col+'%',
       'marginTop': row*tileWidth+'%', // simulates top/width ratio 1:1
-      'paddingTop': tileWidth+'%', // simulates height/width ratio 1:1
-      'left' : tileWidth * col+'%'
+      'paddingTop': tileWidth+'%'     // simulates height/width ratio 1:1
     };
     return (
       <div className="MapGridElement" style={style}>
