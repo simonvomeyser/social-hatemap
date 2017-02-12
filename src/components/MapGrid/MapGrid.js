@@ -16,24 +16,21 @@ class MapGrid extends React.Component {
     );
   }
   renderTiles() {
-    const tilesObjects = [];
+    const gridElements = [];
 
     const tileWidth = 100 / this.props.tilesInRow;
-    const rowCount = Math.ceil(window.innerHeight / tileWidth);
+    const rowCount = Math.ceil(window.innerHeight / (window.innerWidth / this.props.tilesInRow));
+    
+    console.log (rowCount);
 
     for (var row = 0; row < rowCount; row++) {
       for (var col = 0 ; col < this.props.tilesInRow ; col++) {
-        const style = {
-          'width': tileWidth+'%',
-          'marginTop': row*tileWidth+'%', // simulates top/width ratio 1:1
-          'paddingTop': tileWidth+'%', // simulates height/width ratio 1:1
-          'left' : tileWidth * col+'%'
-        };
-        tilesObjects.push({style});
+        gridElements.push({row, col});
       }
     }
-    return tilesObjects.map((data) => {
-      return (<MapGridElement data={data} />);
+
+    return gridElements.map((rowCol) => {
+      return (<MapGridElement {...rowCol} tileWidth={tileWidth} />);
     });
   }
 }
