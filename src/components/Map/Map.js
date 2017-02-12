@@ -5,6 +5,7 @@ import * as d3 from 'd3';
 
 import SVGInline from "react-svg-inline";
 
+import MapGrid from '../MapGrid/MapGrid';
 
 import './Map.css';
 
@@ -12,23 +13,29 @@ import './Map.css';
  * The Map on which the tweets are shown
  */
 class Map extends React.Component {
+  constructor(props) {
+    super(props);
+  
+    this.state = {renderGrid:false};
+    this.renderGrid = this.renderGrid.bind(this);
+  }
   render() {
     return (
       <div className="Map">
-        
+                
         <div className="Map__svg-wrapper" ref={(mapSvgWrapper) => this.mapSvgWrapper = mapSvgWrapper }>
           <SVGInline svg={map} className="Map__svg" />
         </div>
-
+        {this.renderGrid()}
       </div>
     );
 
   }
   componentDidUpdate() {
-    if (this.props.geoCodedPosts) {
+
+    if (this.props.geoCodedPosts && !this.state.renderGrid) {
 
       // Start Drawing circles for posts here
-
       const posts = this.props.geoCodedPosts;
       const d3Map = d3.select('#map'); 
 
@@ -42,7 +49,7 @@ class Map extends React.Component {
         // statements
         setTimeout(() => {
           let t = d3.transition()
-              .duration(2750)
+              .duration(750)
               .ease(d3.easeLinear);
           d3Map
             .append('circle')
@@ -52,11 +59,23 @@ class Map extends React.Component {
             .transition(t)
             .attr("r", 2)
             .attr('fill', 'yellow'); 
+            if  (index === posts.length - 1) {
+              this.setState({
+                renderGrid: true,
+              });
+            }
         }, 25 * index);
       });
     }
-
   }
+
+  renderGrid() {
+    if (this.state.renderGrid) {
+      return <MapGrid tilesInRow='8' {...this.state}/>; 
+    }
+    return null;
+  }
+
 
   /**
    * Transforms the given lat and long to x and y 
