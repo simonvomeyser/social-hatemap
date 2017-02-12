@@ -15,23 +15,32 @@ class MapGrid extends React.Component {
       </div>
     );
   }
+  /**
+   * @return {jsx} 
+   */
   renderTiles() {
-    const gridElements = [];
-
     const tileWidth = 100 / this.props.tilesInRow;
+    const gridElements = this.createGridElementArray();
+
+    return gridElements.map((e) => {
+      return (<MapGridElement key={"MapGridElement"+e.row+e.col} {...e} tileWidth={tileWidth} />);
+    });
+  }
+
+  /**
+   * Creates an Array of Objects representing all elemnts in grid 
+   * @return {Array} Of Objects with row/col number
+   */
+  createGridElementArray() {
     const rowCount = Math.ceil(window.innerHeight / (window.innerWidth / this.props.tilesInRow));
-    
-    console.log (rowCount);
+    const gridElements = [];
 
     for (var row = 0; row < rowCount; row++) {
       for (var col = 0 ; col < this.props.tilesInRow ; col++) {
         gridElements.push({row, col});
       }
     }
-
-    return gridElements.map((rowCol) => {
-      return (<MapGridElement {...rowCol} tileWidth={tileWidth} />);
-    });
+    return gridElements;
   }
 }
 
