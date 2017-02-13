@@ -71,7 +71,7 @@ class Map extends React.Component {
 
   renderGrid() {
     if (this.state.renderGrid) {
-      return <MapGrid tilesInRow='8' {...this.state}/>; 
+      return <MapGrid config={this.props.gridConfig} {...this.state}/>; 
     }
     return null;
   }

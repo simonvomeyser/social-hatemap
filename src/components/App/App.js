@@ -20,8 +20,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.processPosts = this.processPosts.bind(this);
-    this.setLoading = this.setLoading.bind(this);
+    this.state = {
+      gridConfig: {opacity: 0.75, size: 7}
+    };
+
+    this.processPosts     = this.processPosts.bind(this);
+    this.setLoading       = this.setLoading.bind(this);
+    this.changeGridConfig = this.changeGridConfig.bind(this);
   }
   componentWillMount() {
     this.setLoading('Getting Data from Twitter...');
@@ -63,16 +68,24 @@ class App extends React.Component {
     this.setState({component: (<Loading text={text}/>)});
   }
 
+
   render() {
     return (
       <div className="App">
-        <Map geoCodedPosts={this.state.geoCodedPosts} />
-        <Nav posts={this.state.posts} processPosts={this.processPosts} />
+        <Map geoCodedPosts={this.state.geoCodedPosts} gridConfig={this.state.gridConfig}/>
+        <Nav
+          posts={this.state.posts}
+          processPosts={this.processPosts}
+          changeGridConfig={this.changeGridConfig}
+          gridConfig={this.state.gridConfig}/>
         <div className="App__content">
           {this.state.component}
         </div>
       </div>
     );
+  }
+  changeGridConfig(config) {
+    this.setState({gridConfig: config});
   }
 }
 
