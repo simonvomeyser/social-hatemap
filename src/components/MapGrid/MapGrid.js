@@ -15,48 +15,32 @@ class MapGrid extends React.Component {
       areAllElementsRendered: false
     };
   }
-  componentDidMount() {
-    this.renderTiles(this.props.config);
-  }
-  componentWillReceiveProps(nextProps) {
-    this.setState({gridElements: []});
-    this.renderTiles(nextProps.config);
-  }
   render() {
     return (
       <div className="MapGrid">
-        {this.state.gridElements.map((e) => e)}   
+        {this.renderGridElements(this.props.config)}
       </div>
     );
   }
   /**
-   * Complicated way to render tiles "one after another"
    * @return {jsx} 
    */
-  renderTiles(config) {
+  renderGridElements(config) {
     const tileWidth = 100 / config.size;
     const gridElements = this.createGridElementArray(config);
 
-    gridElements.forEach((e, i) => {
-      // Increases each cycle
+    return gridElements.map((e,i) => {
+      // Increases each cycle @todo
       const delay = (50/ config.size)*i; 
-
-      // Add GirdElements to state piece by piece with delay
-      setTimeout(() => {
-        const newGridElements = [...this.state.gridElements];
-
-        newGridElements.push(
-          <MapGridElement 
-            key={"MapGridElement"+e.row+e.col} 
-            row={e.row}
-            col={e.col}
-            tileWidth={tileWidth}
-            opacity={config.opacity} />
-        );
-
-        this.setState({gridElements: newGridElements});
-      }, delay);
+      return (
+        <MapGridElement 
+          key={"MapGridElement"+e.row+e.col} 
+          row={e.row}
+          col={e.col}
+          tileWidth={tileWidth}
+          opacity={config.opacity} />);          
     });
+
   }
 
   /**
