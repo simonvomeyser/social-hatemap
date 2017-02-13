@@ -1,0 +1,9 @@
+.MapGridElement {
+  position : absolute;
+  border : 1px dotted rgba(128, 128, 128, 1);
+  transition: opacity 1s ease-in-out;
+}
+.MapGridElement:hover {
+  background-color: rgba(255, 255, 255, .3);
+  cursor: pointer;
+}
