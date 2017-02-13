@@ -8,13 +8,7 @@ import './MapGrid.css';
  * The Map on which the tweets are shown
  */
 class MapGrid extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      gridElements : [],
-      areAllElementsRendered: false
-    };
-  }
+  
   render() {
     return (
       <div className="MapGrid">
