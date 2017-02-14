@@ -29,11 +29,11 @@ class Map extends React.Component {
     return (
       <div className="Map">
 
-        <div className="Map__svg-wrapper" ref={(mapSvgWrapper) => this.mapSvgWrapper = mapSvgWrapper }>
+        <div className="Map__svg-wrapper" >
           <SVGInline svg={map} className="Map__svg" />
         </div>
         <div className="Map__shmentitiycanvas-wrapper">
-          {this.renderSHMEntities()}
+          {this.renderSHMEntityCanvas()}
         </div>                
         <div className="Map__grid-wrapper">
           {this.renderGrid()}
@@ -53,7 +53,7 @@ class Map extends React.Component {
     }
     return null;
   }
-  renderSHMEntities() {
+  renderSHMEntityCanvas() {
     if (this.props.entitiesToDraw) {
       return <SHMEntityCanvas entities={this.props.entitiesToDraw} />
     }
