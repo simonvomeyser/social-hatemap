@@ -12,7 +12,7 @@ const LocationHelper = {
     return SHMEntity;
   },
   /**
-   * Transforms the given lat and long to x and y 
+   * Transforms the given lat and long to x and y
    * @param  {object} latLong [description]
    * @return {[type]}         [description]
    */
@@ -32,12 +32,16 @@ const LocationHelper = {
     y     = (mapHeight/2)-(mapWidth*mercN/(2*Math.PI));
 
     // Hotfixes since postioning was not exact
-    // @todo fix 
+    // @todo fix
     y = y + 0.098 * mapHeight;
     x = x - 0.005 * mapWidth;
+
+    // change from px to %
+    x = (x*100)/mapWidth + "%";
+    y = (y*100)/mapHeight + "%";
+
     return {x,y};
-  }  
+  }
 };
 
 export default LocationHelper;
-    
