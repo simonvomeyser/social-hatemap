@@ -4,6 +4,7 @@ import compendium from 'compendium';
 const Sentiment = {
 
 	getSentiment(text) {
+		// text = "This is shit :D . Test it.. Do it"
 		if(!text) return false;
 		let profile = {
 			'label'      : 'neutral',   // Sentiment: `negative`, `neutral`, `positive`, `mixed`
@@ -16,17 +17,17 @@ const Sentiment = {
 		};
 
 		let analyse = compendium.analyse(text);
-
+		console.log(analyse);
 		let labels = [];
 		for (let i in analyse)
 		{
-			labels.push(analyse[i].label);
-			profile.types.concat(analyse[i].types);
-			profile.sentiment  += analyse[i].sentiment;
-			profile.amplitude  += analyse[i].amplitude;
-			profile.politeness += analyse[i].politeness;
-			profile.dirtiness  += analyse[i].dirtiness;
-			profile.negated    += analyse[i].negated? 1:-1;
+			labels.push(analyse[i].profile.label);
+			profile.types.concat(analyse[i].profile.types);
+			profile.sentiment  += analyse[i].profile.sentiment;
+			profile.amplitude  += analyse[i].profile.amplitude;
+			profile.politeness += analyse[i].profile.politeness;
+			profile.dirtiness  += analyse[i].profile.dirtiness;
+			profile.negated    += analyse[i].profile.negated? 1:-1;
 		}
 
 		profile.label      = this.compareLabels(labels);
@@ -35,7 +36,7 @@ const Sentiment = {
 		profile.politeness = profile.politeness / analyse.length;
 		profile.dirtiness  = profile.dirtiness / analyse.length;
 		profile.negated    = profile.negated / analyse.length;
-
+		console.log(profile);
 		return profile;
 	},
 
@@ -54,13 +55,13 @@ const Sentiment = {
 					break;
 			}
 		}
-		if( value <= 0)
-		{
-			return 'positive';
-		}
-		else if( value >= 1 )
+		if( value < 0)
 		{
 			return 'negative';
+		}
+		else if( value > 1 )
+		{
+			return 'positive';
 		}
 		else
 		{
