@@ -1,5 +1,5 @@
 //import compendium from './compendium.minimal.js';
-import compendium from 'compendium';
+// import compendium from 'compendium';
 
 const Sentiment = {
 
@@ -48,7 +48,7 @@ const Sentiment = {
 			switch(labels[i])
 			{
 				case 'negative':
-					value--
+					value--;
 					break;
 				case 'positive':
 					value++;
@@ -70,6 +70,6 @@ const Sentiment = {
 
 	}
 
-}
+};
 
 export default Sentiment;

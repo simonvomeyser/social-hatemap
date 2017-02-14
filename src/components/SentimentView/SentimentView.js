@@ -2,7 +2,7 @@ import React from 'react';
 
 import './SentimentView.css';
 
-import Sentiment from '../../lib/Sentiment/Sentiment'
+import Sentiment from '../../helpers/Sentiment';
 
 import $ from 'jquery';
 
@@ -16,7 +16,8 @@ export default class SentimentView extends React.Component {
     });
   }
   renderSentimentText(){
-    return Sentiment.getSentiment("Hallo fucking Welt")
+    console.log (Sentiment.getSentiment("Hallo fucking Welt"));
+    return Sentiment.getSentiment("Hallo fucking Welt");
     // return sentiment
   }
   render() {
