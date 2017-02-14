@@ -33,13 +33,13 @@ export default class SentimentView extends React.Component {
       sentimentData = Sentiment.getSentiment("Hello Fucking WORLD");
     else
       sentimentData = Sentiment.getSentiment(sentence);
-    this.setState({sentimatedSentence: sentence })
-    this.setState({amplitude: sentimentData.amplitude })
-    this.setState({dirtiness: sentimentData.dirtiness })
-    this.setState({label: sentimentData.label })
-    this.setState({negated: sentimentData.negated })
-    this.setState({politness: sentimentData.politness })
-    this.setState({sentiment: sentimentData.sentiment })
+    this.setState({sentimatedSentence: sentence });
+    this.setState({amplitude: sentimentData.amplitude });
+    this.setState({dirtiness: sentimentData.dirtiness });
+    this.setState({label: sentimentData.label });
+    this.setState({negated: sentimentData.negated });
+    this.setState({politness: sentimentData.politness });
+    this.setState({sentiment: sentimentData.sentiment });
   }
 
 
