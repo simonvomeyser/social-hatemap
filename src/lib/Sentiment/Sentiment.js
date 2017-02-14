@@ -1,15 +1,17 @@
-import './compendium/dist/compendium.minimal.js';
+//import compendium from './compendium.minimal.js';
+import compendium from 'compendium';
 
-export default class Sentiment{
+const Sentiment = {
 
-	get_sentiment(text) {
+	getSentiment(text) {
+		if(!text) return false;
 		let profile = {
 			'label'      : 'neutral',   // Sentiment: `negative`, `neutral`, `positive`, `mixed`
 			'sentiment'  : 0,           // Sentiment score
 			'amplitude'  : 0,           // Sentiment amplitude
 			'types'      : [],          // Types ('tags') of sentence
 			'politeness' : 0,           // Politeness score
-			'dirtiness'  : 0            // Dirtiness score
+			'dirtiness'  : 0,            // Dirtiness score
 			'negated'    : 0 			// Is sentence mainly negated
 		};
 
@@ -27,7 +29,7 @@ export default class Sentiment{
 			profile.negated    += analyse[i].negated? 1:-1;
 		}
 
-		profile.label      = compare_labels(labels);
+		profile.label      = this.compareLabels(labels);
 		profile.sentiment  = profile.sentiment / analyse.length;
 		profile.amplitude  = profile.amplitude / analyse.length;
 		profile.politeness = profile.politeness / analyse.length;
@@ -35,9 +37,9 @@ export default class Sentiment{
 		profile.negated    = profile.negated / analyse.length;
 
 		return profile;
-	}
+	},
 
-	compare_labels(labels)
+	compareLabels(labels)
 	{
 		let value = 0;
 		for (let i = 0; i < labels.length; i++)
@@ -68,3 +70,5 @@ export default class Sentiment{
 	}
 
 }
+
+export default Sentiment;

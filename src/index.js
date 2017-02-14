@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App/App';
 import HashtagModal from './components/HashtagModal/HashtagModal';
 import ChernofflingCreator from './components/ChernofflingCreator/ChernofflingCreator';
-import Sentiment from './components/SentimentView/SentimentView';
+import SentimentView from './components/SentimentView/SentimentView';
 
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 

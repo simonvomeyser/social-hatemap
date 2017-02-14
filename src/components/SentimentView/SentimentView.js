@@ -2,7 +2,7 @@ import React from 'react';
 
 import './SentimentView.css';
 
-// import './../../lib/Sentiment/sentiment'
+import Sentiment from '../../lib/Sentiment/Sentiment'
 
 import $ from 'jquery';
 
@@ -11,28 +11,24 @@ import $ from 'jquery';
  */
 export default class SentimentView extends React.Component {
   componentDidMount() {
-
-		this.setState({
-      sentiment : this.props.tweets
+    this.setState({
+      sentiment : this.props.sentiment_data
     });
-    this.draw(this.props);
   }
-  componentWillReceiveProps(nextProps) {
-
-    this.draw(this.props);
+  renderSentimentText(){
+    return Sentiment.getSentiment("Hallo fucking Welt")
+    // return sentiment
   }
   render() {
     return (
       <div className="Sentiment">
         <h1>Sentiment</h1>
         <input className="Sentiment__input" type="textarea"/>
+        <button className="Sentiment__button" onClick={this.renderSentimentText}>Sentiment Me</button>
       </div>
     );
   }
 
-	renderSentimentText(){
-		return this.props.sentiment
-	}
 
 
 }
