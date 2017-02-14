@@ -40,7 +40,7 @@ export default class SentimentView extends React.Component {
   }
 
   changeStates(sentence, sentimentData){
-    this.setState({sentimatedSentence: sentence })
+    this.setState({sentimatedSentence: sentence });
     this.setState({amplitude: sentimentData.amplitude });
     this.setState({dirtiness: sentimentData.dirtiness });
     this.setState({label: sentimentData.label });
