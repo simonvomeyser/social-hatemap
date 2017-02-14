@@ -49,18 +49,17 @@ class Map extends React.Component {
 
   drawPosts() {
 
-    if (this.props.postToDraw && !this.state.renderGrid) {
+    if (this.props.entitiesToDraw && !this.state.renderGrid) {
       // Start Drawing circles for posts here
-      const posts = this.props.postToDraw;
+      const posts = this.props.entitiesToDraw;
       const d3Map = d3.select('#map'); 
 
       const width = d3Map.attr('width');
       const height = d3Map.attr('height');
       posts.forEach( (elem, index) =>  {
-        let lat  = elem.location.lat;
-        let long = elem.location.long;
+        let x  = elem.location.x;
+        let y = elem.location.y;
 
-        let {x, y} = LocationHelper.convertGeoToPixel( lat, long, width, height);
         // statements
         setTimeout(() => {
           let t = d3.transition()

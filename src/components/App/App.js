@@ -8,6 +8,10 @@ import Map from '../Map/Map';
 import Twitter from '../../apis/twitter/Twitter.js';
 import Geocoder from '../../apis/geocoding/Geocoder.js';
 
+// Helpers
+import LocationHelper from '../../helpers/LocationHelper';
+
+
 import './App.css';
 
 // true means there is no real data fetched from the apis
@@ -30,36 +34,33 @@ class App extends React.Component {
   }
   componentWillMount() {
     this.setLoading('Getting Data from Twitter...');
-    Twitter.getPosts(this.props.params.id, IS_DEV_MODE).then((json) => {
+    Twitter.getPosts(this.props.params.id, IS_DEV_MODE).then((SHMEntities) => {
       this.setState({
-        component: <Tweetlist tweets={json.statuses} />,
-        posts: json.statuses
+        component   : null,
+        SHMEntities : SHMEntities
       });
-    });
-
-    // ===========================================
-    // DEV MODE 
-    // To not have to click something
-    // ===========================================
-    setTimeout(() => {
       this.processPosts();
-    }, 750);
+    });
   }
 
   processPosts() {
-    const posts = this.state.posts;
-    const locations = posts.map((post) => post.user.location);
-    this.setState({component: null});
+    const SHMEntities = this.state.SHMEntities;
+    const locations = SHMEntities.map((post) => post.user.location);
 
     Geocoder
       .batchGeocode(locations, IS_DEV_MODE)
       .then((geoCodedLocations) => {
+
         // Add locations to all posts
-        const geoCodedPosts = posts.map((e, i) => { 
+        const geoCodedEntities = SHMEntities.map((e, i) => {
           return {...e, location:geoCodedLocations[i]}; 
-        });
+        }).map(LocationHelper.addXYLocationsToSHMEntity);
+
+        // Calclulate Position on Map
+        
         // Draw posts on map
-        this.setState({geoCodedPosts});
+        console.log (geoCodedEntities);
+        this.setState({geoCodedEntities: geoCodedEntities});
 
       });
   }
@@ -72,7 +73,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Map postToDraw={this.state.geoCodedPosts} gridConfig={this.state.gridConfig}/>
+        <Map entitiesToDraw={this.state.geoCodedEntities} gridConfig={this.state.gridConfig}/>
         <Nav
           posts={this.state.posts}
           processPosts={this.processPosts}
