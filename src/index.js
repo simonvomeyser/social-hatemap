@@ -8,7 +8,7 @@ import ChernofflingCreator from './components/ChernofflingCreator/ChernofflingCr
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import './index.css';
-
+/* test */
 ReactDOM.render((
   <div className="Index">
     <Router history={hashHistory}>
