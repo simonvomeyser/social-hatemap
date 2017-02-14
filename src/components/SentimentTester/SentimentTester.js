@@ -21,7 +21,7 @@ export default class SentimentView extends React.Component {
       dirtiness : 0,
       label: "",
       negated: 0,
-      politness: 0,
+      politeness: 0,
       sentiment: 0
     };
 
@@ -44,7 +44,7 @@ export default class SentimentView extends React.Component {
     this.setState({dirtiness: sentimentData.dirtiness });
     this.setState({label: sentimentData.label });
     this.setState({negated: sentimentData.negated });
-    this.setState({politness: sentimentData.politness });
+    this.setState({politeness: sentimentData.politeness });
     this.setState({sentiment: sentimentData.sentiment });
   }
 
@@ -85,8 +85,8 @@ export default class SentimentView extends React.Component {
               <td>{this.state.negated}</td>
             </tr>
             <tr>
-              <td>politness</td>
-              <td>{this.state.politness}</td>
+              <td>politeness</td>
+              <td>{this.state.politeness}</td>
             </tr>
             <tr>
               <td>sentiment</td>
