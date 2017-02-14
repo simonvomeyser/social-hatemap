@@ -31,7 +31,8 @@ h1 {
 
 .Sentiment__sentence {
   padding: 15px;
-  color: white;
+  color: lightgrey;
+  text-align: center;
 }
 
 .Sentiment__table {
