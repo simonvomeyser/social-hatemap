@@ -73,7 +73,7 @@ class App extends React.Component {
     console.log(compendium);
     return (
       <div className="App">
-        <Map geoCodedPosts={this.state.geoCodedPosts} gridConfig={this.state.gridConfig}/>
+        <Map postToDraw={this.state.geoCodedPosts} gridConfig={this.state.gridConfig}/>
         <Nav
           posts={this.state.posts}
           processPosts={this.processPosts}

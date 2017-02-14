@@ -33,10 +33,10 @@ class Map extends React.Component {
   }
   componentDidUpdate() {
 
-    if (this.props.geoCodedPosts && !this.state.renderGrid) {
+    if (this.props.postToDraw && !this.state.renderGrid) {
 
       // Start Drawing circles for posts here
-      const posts = this.props.geoCodedPosts;
+      const posts = this.props.postToDraw;
       const d3Map = d3.select('#map'); 
 
       const width = d3Map.attr('width');
