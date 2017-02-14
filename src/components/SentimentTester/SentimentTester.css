@@ -1,0 +1,45 @@
+.Sentiment {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.Sentiment__input {
+  display: block;
+  width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-size:16px;
+  margin-bottom: 10px;
+}
+
+.Sentiment__button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.Sentiment__sentence {
+  padding: 15px;
+  color: white;
+}
+
+.Sentiment__table {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.Sentiment__table tr {
+  text-align: center;
+  height: 60px;
+}

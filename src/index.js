@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App/App';
 import HashtagModal from './components/HashtagModal/HashtagModal';
 import ChernofflingCreator from './components/ChernofflingCreator/ChernofflingCreator';
-import SentimentView from './components/SentimentView/SentimentView';
+import SentimentTester from './components/SentimentTester/SentimentTester';
 
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
@@ -17,7 +17,7 @@ ReactDOM.render((
         <IndexRoute component={HashtagModal} />
         <Route path="show/:id" component={App} />
         <Route path="creator" component={ChernofflingCreator} />
-        <Route path="sentiment" component={SentimentView} />
+        <Route path="sentiment" component={SentimentTester} />
       </Route>
     </Router>
   </div>

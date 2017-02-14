@@ -17,7 +17,6 @@ const Sentiment = {
 		};
 
 		let analyse = compendium.analyse(text);
-		console.log(analyse);
 		let labels = [];
 		for (let i in analyse)
 		{
@@ -36,7 +35,6 @@ const Sentiment = {
 		profile.politeness = profile.politeness / analyse.length;
 		profile.dirtiness  = profile.dirtiness / analyse.length;
 		profile.negated    = profile.negated / analyse.length;
-		console.log(profile);
 		return profile;
 	},
 
