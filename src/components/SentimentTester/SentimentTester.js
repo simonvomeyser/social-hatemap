@@ -26,6 +26,7 @@ export default class SentimentView extends React.Component {
     };
 
     this.renderSentimentText     = this.renderSentimentText.bind(this);
+    this.getTweet                = this.getTweet.bind(this);
   }
 
   componentWillMount() {
@@ -65,6 +66,7 @@ export default class SentimentView extends React.Component {
         <h1>Sentiment</h1>
         <input id="sentence" className="Sentiment__input" type="textarea" placeholder="Add your sentence"/>
         <button className="Sentiment__button" onClick={this.renderSentimentText}>Sentiment Me</button>
+        <button className="Sentiment__button" onClick={this.getTweet}>Get new Tweet</button>
         <div className="Sentiment__sentence">{this.state.sentimatedSentence}</div>
         <table className="Sentiment__table">
           <tbody>
