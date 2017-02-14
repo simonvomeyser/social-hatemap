@@ -38,6 +38,13 @@ const sampleData = [
 class MapTester extends React.Component {
   render() {
     const postsToDraw = sampleData.map(LocationHelper.addXYLocationsToSHMEntity);
+    const style = {
+      textAlign: "center",
+      position: "relative",
+      width: "100vw",
+      height: "100vh",
+      overflow: "hidden"
+    }
     return (
       <div className="MapTester">
         <Map entitiesToDraw={postsToDraw}/>
