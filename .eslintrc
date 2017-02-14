@@ -22,8 +22,8 @@
     },
     "rules" : {
         "no-console" : "warn",
-        "semi" : [1, "always"],
-        "comma-dangle" : "warn"
+        "semi" : [0, "always"],
+        "comma-dangle" : 0
     },
 
     "plugins": [
