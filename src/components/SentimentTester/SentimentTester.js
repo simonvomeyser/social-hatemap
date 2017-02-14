@@ -4,6 +4,8 @@ import './SentimentTester.css';
 
 import Sentiment from '../../helpers/Sentiment';
 
+import sampleData from '../../apis/twitter/sampleData.json';
+
 import $ from 'jquery';
 
 /**
@@ -19,30 +21,44 @@ export default class SentimentView extends React.Component {
       dirtiness : 0,
       label: "",
       negated: 0,
-      politness: 0,
+      politeness: 0,
       sentiment: 0
     };
 
     this.renderSentimentText     = this.renderSentimentText.bind(this);
+    this.getTweet                = this.getTweet.bind(this);
   }
-  renderSentimentText(e){
-    e.preventDefault();
-    var sentence = $('#sentence').val();
-    var sentimentData;
-    if(sentence == "")
-      sentimentData = Sentiment.getSentiment("Hello Fucking WORLD");
-    else
-      sentimentData = Sentiment.getSentiment(sentence);
-    this.setState({sentimatedSentence: sentence });
+
+  componentWillMount() {
+    this.getTweet();
+  }
+
+  getTweet() {
+    var sentence = sampleData[[Math.floor(Math.random()*sampleData.length)]].text;
+    var sentimentData = Sentiment.getSentiment(sentence);
+    this.changeStates(sentence, sentimentData);
+  }
+
+  changeStates(sentence, sentimentData){
+    this.setState({sentimatedSentence: sentence })
     this.setState({amplitude: sentimentData.amplitude });
     this.setState({dirtiness: sentimentData.dirtiness });
     this.setState({label: sentimentData.label });
     this.setState({negated: sentimentData.negated });
-    this.setState({politness: sentimentData.politness });
+    this.setState({politeness: sentimentData.politeness });
     this.setState({sentiment: sentimentData.sentiment });
   }
 
-
+  renderSentimentText(e){
+    e.preventDefault();
+    var sentimentData;
+    var sentence = $('#sentence').val();
+    if(sentence == "")
+      sentimentData = Sentiment.getSentiment("Hello Fucking WORLD");
+    else
+      sentimentData = Sentiment.getSentiment(sentence);
+    this.changeStates(sentence, sentimentData);
+  }
 
   render() {
     return (
@@ -50,6 +66,7 @@ export default class SentimentView extends React.Component {
         <h1>Sentiment</h1>
         <input id="sentence" className="Sentiment__input" type="textarea" placeholder="Add your sentence"/>
         <button className="Sentiment__button" onClick={this.renderSentimentText}>Sentiment Me</button>
+        <button className="Sentiment__button" onClick={this.getTweet}>Get new Tweet</button>
         <div className="Sentiment__sentence">{this.state.sentimatedSentence}</div>
         <table className="Sentiment__table">
           <tbody>
@@ -70,8 +87,8 @@ export default class SentimentView extends React.Component {
               <td>{this.state.negated}</td>
             </tr>
             <tr>
-              <td>politness</td>
-              <td>{this.state.politness}</td>
+              <td>politeness</td>
+              <td>{this.state.politeness}</td>
             </tr>
             <tr>
               <td>sentiment</td>

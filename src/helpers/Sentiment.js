@@ -6,6 +6,7 @@ const Sentiment = {
 	getSentiment(text) {
 		// text = "This is shit :D . Test it.. Do it"
 		if(!text) return false;
+		text = text.toLowerCase();
 		let profile = {
 			'label'      : 'neutral',   // Sentiment: `negative`, `neutral`, `positive`, `mixed`
 			'sentiment'  : 0,           // Sentiment score
@@ -28,13 +29,13 @@ const Sentiment = {
 			profile.dirtiness  += analyse[i].profile.dirtiness;
 			profile.negated    += analyse[i].profile.negated? 1:-1;
 		}
-
 		profile.label      = this.compareLabels(labels);
 		profile.sentiment  = profile.sentiment / analyse.length;
 		profile.amplitude  = profile.amplitude / analyse.length;
 		profile.politeness = profile.politeness / analyse.length;
 		profile.dirtiness  = profile.dirtiness / analyse.length;
 		profile.negated    = profile.negated / analyse.length;
+
 		return profile;
 	},
 
@@ -57,7 +58,7 @@ const Sentiment = {
 		{
 			return 'negative';
 		}
-		else if( value > 1 )
+		else if( value > 0 )
 		{
 			return 'positive';
 		}
