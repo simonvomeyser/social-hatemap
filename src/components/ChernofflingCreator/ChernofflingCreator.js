@@ -11,16 +11,15 @@ export default class ChernofflingCreator extends React.Component {
 
   }
   componentWillMount() {
-
     this.setState({
-      'anger' : 50,
-      'men': 20,
-      'women' : 30,
-      'unknown' : 50,
-      'twitter' : 50,
-      'instagram' : 50,
-      'posts' : 50,
-      'percentage' : 10,
+      // Tweet properties
+      'sentiment' : -1, // -1 = negative, 0 = neutral, +1 = positive
+      'amplitude' : 0, // intensity: 0 = low, 1 = high
+      'favourites' : 0, // 0 = low, ∞ = high
+      // User properties
+      'gender': .0,  // 0 = male, 1 = female
+      'age' : 0,
+      'followers' : 0,
     });
     this.handleInputChange = this.handleInputChange.bind(this);
   }
@@ -33,31 +32,23 @@ export default class ChernofflingCreator extends React.Component {
           <div className="ChernofflingCreator__settings">
             <h2>Settings</h2>
             <div>
-              <input type="number"  onChange={this.handleInputChange} defaultValue={this.state.posts} id="posts"/> <span className="instagram">{this.state.posts}</span> Posts
+              <input type="range" min="-1" max="1" step=".1" onChange={this.handleInputChange} defaultValue={this.state.sentiment} id="sentiment"/> <span className="sentiment">{this.state.sentiment}</span> sentiment 
             </div>
             <div>
-              <input type="range"  onChange={this.handleInputChange} defaultValue={this.state.percentage} id="percentage"/> <span className="percentage">{this.state.percentage}</span>% of all Posts 
-            </div>
-            <br/>
-            <div>
-              <input type="range"  onChange={this.handleInputChange} onChange={this.handleInputChange} defaultValue={this.state.anger} id="anger"/> <span className="anger">{this.state.anger}</span>% Anger 
-            </div>
-            <br/>
-            <div>
-              <input type="range"  onChange={this.handleInputChange} defaultValue={this.state.men} id="men"/> <span className="men">{this.state.men}</span>% Men 
+              <input type="range" min="0" max="1" step=".1" onChange={this.handleInputChange} defaultValue={this.state.amplitude} id="amplitude"/> <span className="amplitude">{this.state.amplitude}</span> amplitude 
             </div>
             <div>
-              <input type="range"  onChange={this.handleInputChange} defaultValue={this.state.women} id="women"/> <span className="women">{this.state.women}</span>% Women 
-            </div>
-            <div>
-              <input type="range"  onChange={this.handleInputChange} defaultValue={this.state.unknown} id="unknown"/> <span className="unknown">{this.state.unknown}</span>% Unknown 
+              <input type="number" min="0" onChange={this.handleInputChange} defaultValue={this.state.favourites} id="favourites"/> <span className="favourites">{this.state.favourites}</span> favourites 
             </div>
             <br/>
             <div>
-              <input type="range"  onChange={this.handleInputChange} defaultValue={this.state.twitter} id="twitter"/> <span className="twitter">{this.state.twitter}</span>% Twitter 
+              <input type="range" min="0" max="1" step=".1" onChange={this.handleInputChange} defaultValue={this.state.gender} id="gender"/> <span className="gender">{this.state.gender}</span> gender  
             </div>
             <div>
-              <input type="range"  onChange={this.handleInputChange} defaultValue={this.state.instagram} id="instagram"/> <span className="instagram">{this.state.instagram}</span>% Instagram 
+              <input type="range" min="0" max="10" step="1" onChange={this.handleInputChange} defaultValue={this.state.age} id="age"/> <span className="age">{this.state.age}</span> account age  
+            </div>
+            <div>
+              <input type="range" min="0" max="100" onChange={this.handleInputChange} defaultValue={this.state.followers} id="followers"/> <span className="followers">{this.state.followers}</span>% followers 
             </div>
           </div>
           <div className="ChernofflingCreator__chernoffling">
