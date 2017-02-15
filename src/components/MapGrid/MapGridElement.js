@@ -17,6 +17,9 @@ class MapGridElement extends React.Component {
     } 
     this.handleClick = this.handleClick.bind(this);
   }
+  /**
+   * Add Elements only after mounting because own size must be clalculated
+   */
   componentDidMount() {
     this.setState({
       containedSHMEntities : this.getContainedSHMEntities()
@@ -33,10 +36,13 @@ class MapGridElement extends React.Component {
     );
   }
   handleClick() {
+    // @todo debug, remove
     console.log (this.state);
     console.log (this.getActualWindowPosition());
   }
+
   /**
+   * Get the style to position the grid element
    * @return {object} Style object for the dynamic css styles
    */
   getStyleObject() {
@@ -48,6 +54,7 @@ class MapGridElement extends React.Component {
       'opacity'    : this.props.opacity
     };
   }
+
   /**
    * [getContainedSHMEntities description]
    * @return {Array} All SHMEntities inside of this MapGridElement
@@ -58,7 +65,6 @@ class MapGridElement extends React.Component {
       const entityTop = element.location.y.replace('%', '');
 
       const {actualTop, actualLeft, actualWidth, actualHeight} = {...this.getActualWindowPosition()};
-
       
       if ((entityLeft >= actualLeft && entityLeft < actualLeft+actualWidth) &&
           (entityTop >= actualTop && entityTop < actualTop+actualHeight)) {
@@ -71,12 +77,11 @@ class MapGridElement extends React.Component {
   }
 
   /**
-   * Returns the actual window position of the GridElement in percent
+   * Returns the position and size of the GridElement in percent
    * Needed because the GridElements are positioned using their own width as height via padding
-   * @return {object} {top, left, bottom, right}
+   * @return {object} {actualTop, actualLeft, actualHeight, actualWidth}
    */
   getActualWindowPosition() {
-
     return {
       actualLeft   : this.props.tileWidth * this.props.col,
       actualWidth  : this.props.tileWidth,

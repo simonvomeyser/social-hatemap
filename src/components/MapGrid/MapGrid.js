@@ -40,8 +40,6 @@ class MapGrid extends React.Component {
     const gridElementsObjects = this.createGridElementArray(config);
 
     const gridElementsJSX = gridElementsObjects.map((e,i) => {
-      // Increases each cycle @todo
-      const delay = 50*i; 
       return (
         <MapGridElement 
           key={"MapGridElement"+e.row+e.col} 
@@ -62,7 +60,7 @@ class MapGrid extends React.Component {
    * @return {Array} Of Objects with row/col number
    */
   createGridElementArray(config) {
-    const rowCount = Math.ceil(window.innerHeight / (window.innerWidth / config.size));
+    const rowCount = Math.ceil(this.htmlElement.offsetHeight / (window.innerWidth / config.size));
     const gridElements = [];
 
     for (var col = 0 ; col < config.size ; col++) {

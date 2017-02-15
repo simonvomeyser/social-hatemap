@@ -13,12 +13,16 @@ class SHMEntity extends React.Component {
       left: x,
       top: y,
       animationDuration: this.props.animationDuration/1000 + "s"
-          }
+    }
+    // @todo remove debug text, 
     return (
       <div style={style} className="SHMEntity">
-        <small style={{fontSize:"7px"}}>{this.props.entity.location.name}</small>
-        <span>({Math.round(x.replace('%', ''))} left, {Math.round(y.replace('%', ''))} top)</span>
+        <div className="">
+          {this.props.entity.location.name}
+          <span>({Math.round(x.replace('%', ''))} left, {Math.round(y.replace('%', ''))} top)</span>
+        </div>
       </div>
+
     );
   }
 }
