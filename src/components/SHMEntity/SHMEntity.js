@@ -4,7 +4,7 @@ import './SHMEntity.css';
 /**
  * Canvas on which the posts are shown as dots (DOM Elements)
  */
-class SHMEntityCanvas extends React.Component {
+class SHMEntity extends React.Component {
   render() {
     const x = this.props.entity.location.x;
     const y = this.props.entity.location.y;
@@ -16,11 +16,12 @@ class SHMEntityCanvas extends React.Component {
           }
     return (
       <div style={style} className="SHMEntity">
-
+        <small style={{fontSize:"7px"}}>{this.props.entity.location.name}</small>
+        <span>({Math.round(x.replace('%', ''))} left, {Math.round(y.replace('%', ''))} top)</span>
       </div>
     );
   }
 }
 
-export default SHMEntityCanvas;
+export default SHMEntity;
 

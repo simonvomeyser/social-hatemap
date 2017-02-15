@@ -2,7 +2,7 @@ import React from 'react';
 import './SHMEntityCanvas.css';
 import SHMEntity from '../SHMEntity/SHMEntity';
     
-const delayBetweenRenderings = 20; // Delay between each Enitity beeing rendered on map
+const delayBetweenRenderings = 10; // Delay between each Enitity beeing rendered on map
 const animationDuration = 2000;    // The css duration of each Entity animatied in
 
 /**

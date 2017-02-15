@@ -5,35 +5,55 @@ import MapGridElement from '../MapGrid/MapGridElement';
 import './MapGrid.css';
 
 /**
- * The Map on which the tweets are shown
+ * The Grid "over" the Map, contains Elements in which the chernofflings are shown
  */
 class MapGrid extends React.Component {
+  constructor(props) {
+    super(props);
   
+    this.state = {
+      gridElements: []
+    }
+  }
   render() {
     return (
-      <div className="MapGrid">
-        {this.renderGridElements(this.props.config)}
+      <div className="MapGrid" ref={(htmlElement) => { this.htmlElement = htmlElement; }}>
+        {this.state.gridElements.map((e) => e)}
       </div>
     );
   }
   /**
-   * @return {jsx} 
+   * Adds the gridElements to state after Mounting so we can calculate the height
+   * (Need for later calculation of SHMEntities position in Grid Elements)
+   * @return {[type]} [description]
    */
-  renderGridElements(config) {
+  componentDidMount() {
+    const mapGridHeight = this.htmlElement.offsetHeight;
+    this.fillGridElements(mapGridHeight);
+  }
+  /**
+   * Adds Grid elements to state so they can be rendered
+   */
+  fillGridElements(mapGridHeight) {
+    const config = this.props.config;
     const tileWidth = 100 / config.size;
-    const gridElements = this.createGridElementArray(config);
+    const gridElementsObjects = this.createGridElementArray(config);
 
-    return gridElements.map((e,i) => {
+    const gridElementsJSX = gridElementsObjects.map((e,i) => {
       // Increases each cycle @todo
-      const delay = (50/ config.size)*i; 
+      const delay = 50*i; 
       return (
         <MapGridElement 
           key={"MapGridElement"+e.row+e.col} 
           row={e.row}
           col={e.col}
           tileWidth={tileWidth}
+          SHMEntities={this.props.SHMEntities}
+          mapGridHeight={mapGridHeight}
           opacity={config.opacity} />);          
     });
+
+    this.setState({gridElements : gridElementsJSX});
 
   }
 
