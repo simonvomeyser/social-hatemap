@@ -1,8 +1,9 @@
 import React from 'react';
 import './SHMEntityCanvas.css';
-
+import SHMEntity from '../SHMEntity/SHMEntity';
+    
 /**
- * Canvas on which the posts are shown as dots
+ * Canvas on which the posts are shown as dots (DOM Elements)
  */
 class SHMEntityCanvas extends React.Component {
   render() {
@@ -14,19 +15,7 @@ class SHMEntityCanvas extends React.Component {
   }
   renderEntities() {
     return this.props.entities.map((e, i) => {
-      const x = e.location.x;
-      const y = e.location.y;
-
-      const style = {
-        position: "absolute",
-        left: x,
-        top: y,
-        width: "2px",
-        height: "2px",
-        display: "block",
-        "background": "red"
-      }
-      return <span key={i+"-"+  x + "-" + y} style={style}></span>
+      return <SHMEntity key={`SHMEntity-${i}`} entity={e}/>
     });
   }
 }

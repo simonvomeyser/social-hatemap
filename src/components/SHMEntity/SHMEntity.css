@@ -1,0 +1,7 @@
+.SHMEntity {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  display: block;
+  background: red;
+}
