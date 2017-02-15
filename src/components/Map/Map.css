@@ -7,7 +7,7 @@
 }
 .Map svg {
   z-index: -1;
-  transform: translateY(-10%);
+  /* transform: translateY(-10%); */
   width: 100%;
   height: auto;
 }

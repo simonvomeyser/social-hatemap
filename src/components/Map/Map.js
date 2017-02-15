@@ -77,39 +77,6 @@ class Map extends React.Component {
     }
     return null;
   }
-  /**
-   * @todo remove, 
-   */  
-  drawPosts() {
-    return;
-    if (this.props.entitiesToDraw && !this.state.renderGrid) {
-      // Start Drawing circles for posts here
-      const posts = this.props.entitiesToDraw;
-      const d3Map = d3.select('#map'); 
-
-      const width = d3Map.attr('width');
-      const height = d3Map.attr('height');
-      posts.forEach( (elem, index) =>  {
-        let x  = elem.location.x;
-        let y = elem.location.y;
-
-        // statements
-        setTimeout(() => {
-          let t = d3.transition()
-              .duration(750)
-              .ease(d3.easeLinear);
-          d3Map
-            .append('circle')
-            .attr("cx", x)
-            .attr("cy", y)
-            .attr("r", 20)
-            .transition(t)
-            .attr("r", 2)
-            .attr('fill', 'yellow'); 
-        }, 25 * index);
-      });
-    }    
-  }
 
 }
 

@@ -3,30 +3,38 @@ import Map from '../Map/Map';
 import LocationHelper from '../../helpers/LocationHelper';
 
 const sampleData = [
+
   {
-    name: "New York",
     location : {
+      name: "iceland",
+      lat: 64.8639007,
+      long:-23.4949857
+    }
+  },
+  {
+    location : {
+      name: "New York",
       lat: 40.7128,
       long: -74.0059
     }
   },
   {
-    name: "Berlin",
     location : {
+      name: "Berlin",
       lat: 52.52,
       long: 13.40
     }
   },
   {
-    name: "CapeTown",
     location : {
+      name: "CapeTown",
       lat: -33.9249,
       long: 18.4241
     }
   },
   {
-    name: "Sydney",
     location : {
+      name: "Sydney",
       lat: -33.8688,
       long: 151.2093
     }
@@ -43,10 +51,10 @@ class MapTester extends React.Component {
       position: "relative",
       width: "100vw",
       height: "100vh",
-      overflow: "hidden"
+      overflowX: "hidden"
     }
     return (
-      <div className="MapTester">
+      <div style={style} className="MapTester">
         <Map entitiesToDraw={postsToDraw}/>
       </div>
     );
