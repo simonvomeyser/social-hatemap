@@ -57,17 +57,23 @@ class Map extends React.Component {
     // @todo Pass to APP    
   }
   doneRenderingGrid() {
+    this.setState({doneRenderingGrid: true});
     // @todo implement
   }
   renderGrid() {
     if (this.state.doneRenderingEntities && this.props.gridConfig) {
-      return <MapGrid config={this.props.gridConfig} SHMEntities={this.props.entitiesToDraw}/>; 
+      return <MapGrid
+                doneRenderingGrid={this.doneRenderingGrid}
+                config={this.props.gridConfig}
+                SHMEntities={this.props.entitiesToDraw}/>; 
     }
     return null;
   }
   renderSHMEntityCanvas() {
     if (this.props.entitiesToDraw) {
-      return <SHMEntityCanvas doneRenderingEntities={this.doneRenderingEntities} SHMEntities={this.props.entitiesToDraw} />
+      return <SHMEntityCanvas
+                doneRenderingEntities={this.doneRenderingEntities}
+                SHMEntities={this.props.entitiesToDraw} />
     }
     return null;
   }
@@ -75,7 +81,7 @@ class Map extends React.Component {
    * @todo remove, 
    */  
   drawPosts() {
-
+    return;
     if (this.props.entitiesToDraw && !this.state.renderGrid) {
       // Start Drawing circles for posts here
       const posts = this.props.entitiesToDraw;

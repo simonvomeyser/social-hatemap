@@ -11,8 +11,9 @@ class SHMEntityCanvas extends React.Component {
 
     const style = {
       left: x,
-      top: y
-    }
+      top: y,
+      animationDuration: this.props.animationDuration/1000 + "s"
+          }
     return (
       <div style={style} className="SHMEntity">
 

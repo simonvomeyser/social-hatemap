@@ -3,7 +3,7 @@
   width: 5px;
   height: 5px;
   display: block;
-  animation:  fadeIn 2s cubic-bezier(0.16, 0.63, 0.9, 1.00);
+  animation:  fadeIn cubic-bezier(0.16, 0.63, 0.9, 1.00);
   border-radius: 50px;
   background: red;
   transform: translate(-50%,-50%);
