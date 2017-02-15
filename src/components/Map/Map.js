@@ -1,7 +1,6 @@
 import React from 'react';
 
 import map from '../../img/svgMapFull.svg';
-import * as d3 from 'd3'; 
 
 import LocationHelper from '../../helpers/LocationHelper';
 
@@ -25,9 +24,6 @@ class Map extends React.Component {
     };
     this.doneRenderingEntities = this.doneRenderingEntities.bind(this);
   }
-  componentDidMount() {
-    this.drawPosts();
-  }
   render() {
     return (
       <div className="Map">
@@ -45,9 +41,6 @@ class Map extends React.Component {
       </div>
     );
 
-  }
-  componentDidUpdate() {
-    this.drawPosts();
   }
   /**
    * Called by MapGrid when all SHMEntities are finished rendering
