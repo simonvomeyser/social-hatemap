@@ -8,6 +8,7 @@ import LocationHelper from '../../helpers/LocationHelper';
 import SVGInline from "react-svg-inline";
 
 import MapGrid from '../MapGrid/MapGrid';
+import SHMEntityCanvas from '../SHMEntityCanvas/SHMEntityCanvas';
 
 import './Map.css';
 
@@ -27,11 +28,17 @@ class Map extends React.Component {
   render() {
     return (
       <div className="Map">
-                
-        <div className="Map__svg-wrapper" ref={(mapSvgWrapper) => this.mapSvgWrapper = mapSvgWrapper }>
+
+        <div className="Map__svg-wrapper" >
           <SVGInline svg={map} className="Map__svg" />
         </div>
-        {this.renderGrid()}
+        <div className="Map__shmentitiycanvas-wrapper">
+          {this.renderSHMEntityCanvas()}
+        </div>                
+        <div className="Map__grid-wrapper">
+          {this.renderGrid()}
+        </div>
+
       </div>
     );
 
@@ -42,11 +49,19 @@ class Map extends React.Component {
 
   renderGrid() {
     if (this.state.renderGrid && this.props.gridConfig) {
-      return <MapGrid config={this.props.gridConfig} {...this.state}/>; 
+      return <MapGrid config={this.props.gridConfig} SHMEntities={this.props.entitiesToDraw}/>; 
     }
     return null;
   }
-
+  renderSHMEntityCanvas() {
+    if (this.props.entitiesToDraw) {
+      return <SHMEntityCanvas entities={this.props.entitiesToDraw} />
+    }
+    return null;
+  }
+  /**
+   * @todo remove, 
+   */  
   drawPosts() {
 
     if (this.props.entitiesToDraw && !this.state.renderGrid) {

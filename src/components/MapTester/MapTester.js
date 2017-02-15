@@ -1,5 +1,6 @@
 import React from 'react';
 import Map from '../Map/Map';
+import LocationHelper from '../../helpers/LocationHelper';
 
 const sampleData = [
   {
@@ -15,6 +16,20 @@ const sampleData = [
       lat: 52.52,
       long: 13.40
     }
+  },
+  {
+    name: "CapeTown",
+    location : {
+      lat: -33.9249,
+      long: 18.4241
+    }
+  },
+  {
+    name: "Sydney",
+    location : {
+      lat: -33.8688,
+      long: 151.2093
+    }
   }
 ];
 /**
@@ -22,14 +37,10 @@ const sampleData = [
  */
 class MapTester extends React.Component {
   render() {
+    const postsToDraw = sampleData.map(LocationHelper.addXYLocationsToSHMEntity);
     return (
       <div className="MapTester">
-        <Map postToDraw={sampleData}/>
-        <div className="MapTester__addLocation">
-        Lat <input type="text"/>
-        Long <input type="text"/>
-        <button>Add</button>
-        </div>
+        <Map entitiesToDraw={postsToDraw}/>
       </div>
     );
   }
