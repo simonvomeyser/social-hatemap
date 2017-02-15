@@ -29,5 +29,5 @@
   max-height: 20%; 
 }
 .Chernoffling__svg svg path {
-  transition: 2s;
+  transition: .3s;
 }
