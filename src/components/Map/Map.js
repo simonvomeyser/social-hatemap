@@ -19,8 +19,11 @@ class Map extends React.Component {
   constructor(props) {
     super(props);
   
-    this.state = {renderGrid:false};
-    this.renderGrid = this.renderGrid.bind(this);
+    this.state = {
+      doneRenderingEntities:false,
+      doneRenderingGrid:false
+    };
+    this.doneRenderingEntities = this.doneRenderingEntities.bind(this);
   }
   componentDidMount() {
     this.drawPosts();
@@ -46,16 +49,25 @@ class Map extends React.Component {
   componentDidUpdate() {
     this.drawPosts();
   }
-
+  /**
+   * Called by MapGrid when all SHMEntities are finished rendering
+   */
+  doneRenderingEntities() {
+    this.setState({doneRenderingEntities: true});
+    // @todo Pass to APP    
+  }
+  doneRenderingGrid() {
+    // @todo implement
+  }
   renderGrid() {
-    if (this.state.renderGrid && this.props.gridConfig) {
+    if (this.state.doneRenderingEntities && this.props.gridConfig) {
       return <MapGrid config={this.props.gridConfig} SHMEntities={this.props.entitiesToDraw}/>; 
     }
     return null;
   }
   renderSHMEntityCanvas() {
     if (this.props.entitiesToDraw) {
-      return <SHMEntityCanvas entities={this.props.entitiesToDraw} />
+      return <SHMEntityCanvas doneRenderingEntities={this.doneRenderingEntities} SHMEntities={this.props.entitiesToDraw} />
     }
     return null;
   }
@@ -88,11 +100,6 @@ class Map extends React.Component {
             .transition(t)
             .attr("r", 2)
             .attr('fill', 'yellow'); 
-            if  (index === posts.length - 1) {
-              this.setState({
-                renderGrid: true,
-              });
-            }
         }, 25 * index);
       });
     }    
