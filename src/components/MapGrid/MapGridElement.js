@@ -6,21 +6,30 @@ import './MapGridElement.css';
  * A single "Tile" of a grid, contains chernoffling
  */
 class MapGridElement extends React.Component {
-  
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      tileWidth : props.tileWidth,
+      left      : props.tileWidth * props.col,
+      top       : props.tileWidth * props.row,
+    } 
+  }
+
   render() {
-    const {tileWidth, col, row} = {...this.props};
-    // Calculate style of current element (pos depends on row/col)
-    const style = {
-      'width': tileWidth+'%',
-      'left' : tileWidth * col+'%',
-      'marginTop': row*tileWidth+'%', // simulates top/width ratio 1:1
-      'paddingTop': tileWidth+'%',    // simulates height/width ratio 1:1
-      'opacity' : this.props.opacity
-    };
     return (
-      <div className="MapGridElement" style={style}>
+      <div className="MapGridElement" style={this.createStyleObject()}>
       </div>
     );
+  }
+  createStyleObject() {
+    return {
+      'width'      : this.state.tileWidth+'%',
+      'left'       : this.state.left+'%',
+      'marginTop'  : this.state.top+'%',       // simulates top/width ratio 1             : 1
+      'paddingTop' : this.state.tileWidth+'%', // simulates height/width ratio 1 : 1
+      'opacity'    : this.props.opacity
+    };
   }
 
 }
