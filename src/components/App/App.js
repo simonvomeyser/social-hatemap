@@ -25,7 +25,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      gridConfig: {opacity: 0.75, size: 7},
+      gridConfig: {opacity: 0.30, size: 7, display: true},
       doneRenderingMap: false
     };
 
