@@ -1,12 +1,9 @@
 .Nav {
   position: fixed;
-  left: 1em;
-  bottom: 1em;
-}
-.Nav {
-  margin: 0;
-  padding: 0;
+  left: 0em;
+  bottom: 0em;
+  background-color: #1c1c22;
+  margin: 0;  
   text-align: left;
-}
-.Nav a {
+  padding: 1em;
 }
