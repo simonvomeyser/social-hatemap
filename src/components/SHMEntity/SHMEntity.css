@@ -1,0 +1,44 @@
+.SHMEntity {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  display: block;
+  animation:  fadeIn cubic-bezier(0.16, 0.63, 0.9, 1.00);
+  border-radius: 50px;
+  background: red;
+  transform: translate(-50%,-50%);
+}
+.SHMEntity > div{
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  font-size: 12px;
+  text-align: left
+}
+.SHMEntity span{
+  display: none;
+}
+.SHMEntity:hover{
+  width: 50px;
+  height: 50px;
+}
+.SHMEntity:hover span{
+  display: inline-block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    border: 2px solid red;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+  }
+  to {
+    opacity: 1;
+    background: red;
+    border: 0px solid transparent;
+    width: 5px;
+    height: 5px;
+  }
+}

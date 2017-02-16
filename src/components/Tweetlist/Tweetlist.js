@@ -4,14 +4,13 @@ import './Tweetlist.css';
 
 /**
  * Temp Component
- * 
  * Shows List of Tweets for demo purposes
  */
 export default class Tweetlist extends React.Component {
 
   componentWillMount() {
     this.setState({
-      tweets : this.props.tweets ? this.props.tweets : [] 
+      tweets : this.props.tweets ? this.props.tweets : []
     });
   }
 

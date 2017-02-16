@@ -5,42 +5,71 @@ import MapGridElement from '../MapGrid/MapGridElement';
 import './MapGrid.css';
 
 /**
- * The Map on which the tweets are shown
+ * The Grid "over" the Map, contains Elements in which the chernofflings are shown
  */
 class MapGrid extends React.Component {
   constructor(props) {
     super(props);
+  
     this.state = {
-      gridElements : [],
-      areAllElementsRendered: false
-    };
+      gridElements: [],
+      config: props.config
+    }
   }
   render() {
     return (
-      <div className="MapGrid">
-        {this.renderGridElements(this.props.config)}
+      <div className="MapGrid" ref={(htmlElement) => { this.htmlElement = htmlElement; }}>
+        {this.state.gridElements.map((e) => e)}
       </div>
     );
   }
   /**
-   * @return {jsx} 
+   * Adds the gridElements to state after Mounting so we can calculate the height
+   * (Need for later calculation of SHMEntities position in Grid Elements)
+   * @return {[type]} [description]
    */
-  renderGridElements(config) {
-    const tileWidth = 100 / config.size;
-    const gridElements = this.createGridElementArray(config);
+  componentDidMount() {
+    this.fillGridElements(this.state.config);
+  }
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextProps.doneRenderingGrid === this.props.doneRenderingGrid) {
+      return true;
+    }
+    return false;
+  }  
 
-    return gridElements.map((e,i) => {
-      // Increases each cycle @todo
-      const delay = (50/ config.size)*i; 
+  componentWillReceiveProps(nextProps) {
+
+    this.setState({
+      gridElements: [],
+      config: nextProps.config
+    })
+    setTimeout(()=>{
+      this.fillGridElements(nextProps.config);
+    }, 100);
+  }
+  /**
+   * Adds Grid elements to state so they can be rendered
+   */
+  fillGridElements(config) {
+    const mapGridHeight = this.htmlElement.offsetHeight;
+    const tileWidth = 100 / config.size;
+    const gridElementsObjects = this.createGridElementArray(config);
+
+    const gridElementsJSX = gridElementsObjects.map((e,i) => {
       return (
         <MapGridElement 
-          key={"MapGridElement"+e.row+e.col} 
+          key={`MapGridElement-${e.row}-${e.col}`} 
           row={e.row}
           col={e.col}
           tileWidth={tileWidth}
-          opacity={config.opacity} />);          
+          SHMEntities={this.props.SHMEntities}
+          mapGridHeight={mapGridHeight}
+          opacity={config.opacity} />);   
     });
 
+    this.setState({gridElements : gridElementsJSX});
+    // this.props.doneRenderingGrid();
   }
 
   /**
@@ -48,7 +77,7 @@ class MapGrid extends React.Component {
    * @return {Array} Of Objects with row/col number
    */
   createGridElementArray(config) {
-    const rowCount = Math.ceil(window.innerHeight / (window.innerWidth / config.size));
+    const rowCount = Math.ceil(this.htmlElement.offsetHeight / (window.innerWidth / config.size));
     const gridElements = [];
 
     for (var col = 0 ; col < config.size ; col++) {

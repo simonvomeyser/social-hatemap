@@ -17,7 +17,7 @@ export default class Chernoffling extends React.Component {
   }
   componentWillReceiveProps(nextProps) {
 
-    this.draw(this.props);
+    this.draw(nextProps);
   }
   render() {
     return (
@@ -33,7 +33,7 @@ export default class Chernoffling extends React.Component {
    * Main function used to draw the creature
    */
   draw(params) {
-
+    console.log(params);
 
     // Size controlles by number of posts
     let size;
@@ -49,22 +49,75 @@ export default class Chernoffling extends React.Component {
       heigth: size+"%" 
     });
 
+    var favouritesValue = parseInt(params.favourites);
     // star size controlled by percentage of all posts
-    const $star = $('#star').css({
-          width: params.percentage+"px",
-          heigth: params.percentage+"px" 
-        });
-
-    // Color controlled by anger
-    if (params.anger > 50) {
-      $('.cls-3').css({fill: "#fd6137"});
-    }
-    else if (params.anger < 50) {
-      $('.cls-3').css({fill: "#18beff"});
-
+    let width=0, height=0;
+    if (favouritesValue > 1000) {
+      width = "100px";
+      height = "100px";
+    } else if (favouritesValue > 100) {
+      width = "50px";
+      height = "50px";
     } else {
-      $('.cls-3').css({fill: ""});
+      width = 0;
+      height = 0;
+    }  
+    const $star = $('#star').css({
+      width: width,
+      heigth: height
+    });
+    // Color controlled by sentiment
+    var sentimentValue = (parseFloat(params.sentiment)+1)*50;
+    $('.cls-3').css({
+      fill: this.numberToColorHsl(sentimentValue)
+    });
+    // console.log(params.sentiment, sentimentValue, typeof sentimentValue);
+  }
+
+  numberToColorHsl(i) {
+    // as the function expects a value between 0 and 1, and red = 0° and blue = 240°
+    // we convert the input to the appropriate hue value
+    var hue = i * 2.4 / 360;
+    // we convert hsl to rgb (saturation 100%, lightness 50%)
+    var rgb = this.hslToRgb(hue, 1, .5);
+    // we format to css value and return
+    return 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ')'; 
+  }
+  /**
+   * Converts an HSL color value to RGB. Conversion formula
+   * adapted from http://en.wikipedia.org/wiki/HSL_color_space.
+   * Assumes h, s, and l are contained in the set [0, 1] and
+   * returns r, g, and b in the set [0, 255].
+   *
+   * @param   {number}  h       The hue
+   * @param   {number}  s       The saturation
+   * @param   {number}  l       The lightness
+   * @return  {Array}           The RGB representation
+   */
+  hslToRgb(h, s, l){
+    var r, g, b;
+
+    if(s == 0){
+        r = g = b = l; // achromatic
+    }else{
+        var hue2rgb = function hue2rgb(p, q, t){
+            if(t < 0) t += 1;
+            if(t > 1) t -= 1;
+            if(t < 1/6) return p + (q - p) * 6 * t;
+            if(t < 1/2) return q;
+            if(t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+            return p;
+        }
+
+        var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+        var p = 2 * l - q;
+        r = hue2rgb(p, q, h + 1/3);
+        g = hue2rgb(p, q, h);
+        b = hue2rgb(p, q, h - 1/3);
     }
 
+    return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
   }
 }
+
+
