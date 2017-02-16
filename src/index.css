@@ -20,3 +20,13 @@ body {
 a {
   color: white;
 }
+
+.__react_component_tooltip {
+  padding: 0!important;
+  padding-top: 0!important;
+  font-size: inherit!important;
+}
+
+.__react_component_tooltip.type-dark.place-top:after { 
+  border-top-color: black!important;
+}

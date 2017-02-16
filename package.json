@@ -39,6 +39,7 @@
     "promise": "7.1.1",
     "raw-loader": "^0.5.1",
     "react-dev-utils": "^0.4.2",
+    "react-tooltip": "^3.2.6",
     "recursive-readdir": "2.1.0",
     "sanitize-html": "^1.14.1",
     "strip-ansi": "3.0.1",

@@ -8,11 +8,14 @@ import './Tweet.css';
 class Tweet extends React.Component {
   render() {
     return (
-      <div className="Tweetlist__tweet">
+      <div className="Tweet">
         <img src={this.props.entity.user.image} alt=""/>
-        <p>
-          {this.props.entity.post.text}
-        </p>
+        <div className="Tweet__content">
+          <a onClick={()=> alert()} href="http://twitter.de">{this.props.entity.user.name}</a>
+          <p>
+            {this.props.entity.post.text}
+          </p>
+        </div>
       </div>
     );
   }
