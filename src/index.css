@@ -25,6 +25,7 @@ a {
   padding: 0!important;
   padding-top: 0!important;
   font-size: inherit!important;
+  position: absolute!important;
 }
 
 .__react_component_tooltip.type-dark.place-top:after { 
