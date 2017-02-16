@@ -1,6 +1,9 @@
 import React from 'react';
+import Chernoffling from '../Chernoffling/Chernoffling';
 
 import './MapGridElement.css';
+
+
 
 /**
  * A single "Tile" of a grid, contains chernoffling
@@ -34,11 +37,20 @@ class MapGridElement extends React.Component {
   }
 
   render() {
+    const chernofflingData = {
+      // Tweet properties
+      'sentiment' : Math.random() * 2 - 1 , // -1 = negative, 0 = neutral, +1 = positive
+      'amplitude' : 0, // intensity: 0 = low, 1 = high
+      'favourites' : 0, // 0 = low, ∞ = high
+      // User properties
+      'gender': .0,  // 0 = male, 1 = female
+      'age' : 0,
+      'followers' : 0,
+    }
+    console.log (chernofflingData);
     return (
       <div onClick={this.handleClick} className="MapGridElement" ref={(htmlElement) => { this.htmlElement = htmlElement; }} style={this.getStyleObject()}>
-        <div className="MapGridElement__number">
-          {this.state.containedSHMEntities.length} <br/>
-        </div>
+        {this.state.containedSHMEntities.length > 0 ? <Chernoffling {...chernofflingData}/>: null}        
       </div>
     );
   }
