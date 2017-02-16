@@ -54,7 +54,7 @@ class Map extends React.Component {
     // @todo implement
   }
   renderGrid() {
-    if (this.state.doneRenderingEntities && this.props.gridConfig) {
+    if (this.state.doneRenderingEntities && this.props.gridConfig && this.props.gridConfig.display) {
       return <MapGrid
                 doneRenderingGrid={this.doneRenderingGrid}
                 config={this.props.gridConfig}

@@ -14,5 +14,6 @@
   text-decoration: none;
 }
 .Nav__showGrid  a.active {
+  cursor: default;
   background-color: rgba(255, 255, 255, .2)
 }

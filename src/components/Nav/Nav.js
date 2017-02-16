@@ -40,12 +40,15 @@ class Nav extends React.Component {
   handleGridYesNoChange(e) {
     e.preventDefault();
     const newGridConfig = {...this.state.gridConfig};
-    const value = e.target.dataset.value;
+    const value = e.target.dataset.value === "true" ? true : false;
 
-    newGridConfig['display'] = value === "true" ? true : false;
-    this.setState({
-      gridConfig : newGridConfig
-    });
+    if (this.state.gridConfig.display !== value) {
+      newGridConfig['display'] = value 
+      this.setState({
+        gridConfig : newGridConfig
+      });
+      this.props.changeGridConfig(newGridConfig);
+    }
   }
 
   render() {
