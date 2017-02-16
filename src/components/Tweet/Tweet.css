@@ -4,6 +4,9 @@
   position: relative;
   padding: 0;
 }
+.Tweet + .Tweet  {
+  margin-top: 1em;
+}
 .Tweet > img {
   position: absolute;
   left: 0;           

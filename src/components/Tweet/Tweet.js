@@ -11,7 +11,7 @@ class Tweet extends React.Component {
       <div className="Tweet">
         <img src={this.props.entity.user.image} alt=""/>
         <div className="Tweet__content">
-          <a onClick={()=> alert()} href="http://twitter.de">{this.props.entity.user.name}</a>
+          <a href="http://twitter.de">{this.props.entity.user.name}</a>
           <p>
             {this.props.entity.post.text}
           </p>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Tweet from '../Tweet/Tweet'
 
 import './Tweetlist.css';
 
@@ -19,21 +20,8 @@ export default class Tweetlist extends React.Component {
       <div className="Tweetlist">
         <h1>Tweetlist</h1>
         <div>Found {this.props.tweets.length} Tweets</div>
-        { this.renderTweets() }
+        {this.props.tweets.map((e, i) => <Tweet key={'tweet'+i} entity={e}/> )}
       </div>
     );
-  }
-
-  renderTweets() {
-    return this.props.tweets.map(function(elem, index) {
-      return (
-        <div className="Tweetlist__tweet" key={index}>
-          <img src={elem.user.profile_image_url} alt=""/>
-          <p>
-            {elem.text}
-          </p>
-        </div>
-      );
-    });
   }
 }

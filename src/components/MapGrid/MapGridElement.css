@@ -15,6 +15,18 @@
   width: 100%;
   transform: translate(-50%,-50%);
 }
+.MapGridElement__overlayChernoffling {
+  position: absolute;
+  left: 1em;
+  width:  50%;
+
+}
+.MapGridElement__overlayTweetList {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+}
+
 @keyframes MapGridElement-fadeIn {
     from {
       opacity: 0;

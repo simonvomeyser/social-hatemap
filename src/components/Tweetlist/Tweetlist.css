@@ -1,7 +1,7 @@
 .Tweetlist {
-  padding: 10px;
   margin: 0 auto;
-  width: 768px;
+  height: 600px;
+  overflow-y: scroll;
   background: rgba(0, 0, 0, .5);
-  min-height: 200px;
+
 }

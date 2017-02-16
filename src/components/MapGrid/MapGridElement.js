@@ -1,5 +1,7 @@
 import React from 'react';
 import Chernoffling from '../Chernoffling/Chernoffling';
+import Overlay from '../Overlay/Overlay';
+import Tweetlist from '../Tweetlist/Tweetlist';
 
 import './MapGridElement.css';
 
@@ -17,47 +19,59 @@ class MapGridElement extends React.Component {
       left                 : props.tileWidth * props.col,
       top                  : props.tileWidth * props.row,
       opacity              : props.opacity,
-      containedSHMEntities : []
+      containedSHMEntities : [],
+      chernofflingData     : {},
+      showOverlay          : false
     } 
-    this.handleClick = this.handleClick.bind(this);
+    this.toggleOverlay = this.toggleOverlay.bind(this);
+    this.renderOverlay = this.renderOverlay.bind(this);
   }
   /**
    * Add Elements only after mounting because own size must be clalculated
    */
   componentDidMount() {
     this.setState({
-      containedSHMEntities : this.getContainedSHMEntities()
+      containedSHMEntities : this.getContainedSHMEntities(),
+      // @todo remove sample data
+      chernofflingData : {'sentiment' : Math.random() * 2 - 1 , 'amplitude' : 0, 'favourites' : 0, 'gender': .0, 'age' : 0, 'followers' : 0,
+    }
     });
   }
-  componentWillReceiveProps(nextProps) {
-    console.log (nextProps.opacity);
-    this.setState({opacity: nextProps.opacity})
-  }
-  componentWillUpdate(nextProps, nextState) {
-    // console.log (`MapGridElement will update`);
-  }
-
   render() {
-    const chernofflingData = {
-      // Tweet properties
-      'sentiment' : Math.random() * 2 - 1 , // -1 = negative, 0 = neutral, +1 = positive
-      'amplitude' : 0, // intensity: 0 = low, 1 = high
-      'favourites' : 0, // 0 = low, ∞ = high
-      // User properties
-      'gender': .0,  // 0 = male, 1 = female
-      'age' : 0,
-      'followers' : 0,
-    }
     return (
-      <div onClick={this.handleClick} className="MapGridElement" ref={(htmlElement) => { this.htmlElement = htmlElement; }} style={this.getStyleObject()}>
-        {this.state.containedSHMEntities.length > 0 ? <Chernoffling id={"chernoffling-"+this.props.id} parentAnimationDuration={animationDuration} {...chernofflingData}/>: null}        
+      <div>
+        {this.renderOverlay()}
+        <div onClick={this.toggleOverlay} className="MapGridElement" ref={(htmlElement) => { this.htmlElement = htmlElement; }} style={this.getStyleObject()}>
+          {this.state.containedSHMEntities.length > 0 ? 
+            <Chernoffling
+              id={"chernoffling-"+this.props.id}
+              parentAnimationDuration={animationDuration}
+              {...this.state.chernofflingData}/>
+          : null}        
+        </div>
       </div>
     );
   }
-  handleClick() {
-    // @todo debug, remove
-    console.log (this.state);
-    console.log (this.getActualWindowPosition());
+  toggleOverlay() {
+    this.setState({showOverlay:!this.state.showOverlay});
+  }
+  renderOverlay() {
+    if (this.state.showOverlay) {
+      return (
+        <Overlay close={this.toggleOverlay}>
+          <div className="MapGridElement__overlayChernoffling">
+            <Chernoffling 
+              id={"overlaychernoffling-"+this.props.id}
+              {...this.state.chernofflingData}/>
+          </div>
+          <div className="MapGridElement__overlayTweetList">
+            <Tweetlist tweets={this.state.containedSHMEntities}/>
+          </div>
+        </Overlay>
+      );
+    }
+
+    return null;
   }
 
   /**
