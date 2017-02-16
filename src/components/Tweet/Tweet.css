@@ -1,0 +1,16 @@
+.Tweet {
+  background-color: black;
+  color: white;
+  position: relative;
+}
+.Tweet > img {
+  position: absolute;
+  left: 0;
+  width: 80px;
+  height: 80px;
+}
+.Tweet > p {
+  text-align: left;
+  padding-left: 100px;
+  min-height: 80px
+}
