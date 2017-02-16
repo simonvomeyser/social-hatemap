@@ -47,10 +47,9 @@ class MapGridElement extends React.Component {
       'age' : 0,
       'followers' : 0,
     }
-    console.log (chernofflingData);
     return (
       <div onClick={this.handleClick} className="MapGridElement" ref={(htmlElement) => { this.htmlElement = htmlElement; }} style={this.getStyleObject()}>
-        {this.state.containedSHMEntities.length > 0 ? <Chernoffling {...chernofflingData}/>: null}        
+        {this.state.containedSHMEntities.length > 0 ? <Chernoffling id={"chernoffling-"+this.props.id} {...chernofflingData}/>: null}        
       </div>
     );
   }
@@ -79,6 +78,7 @@ class MapGridElement extends React.Component {
    * @return {Array} All SHMEntities inside of this MapGridElement
    */
   getContainedSHMEntities() {
+
     return this.props.SHMEntities.filter((element) => {
       const entityLeft = element.location.x.replace('%', '');
       const entityTop = element.location.y.replace('%', '');

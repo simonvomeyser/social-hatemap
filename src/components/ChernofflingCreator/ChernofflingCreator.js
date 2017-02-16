@@ -52,7 +52,7 @@ export default class ChernofflingCreator extends React.Component {
             </div>
           </div>
           <div className="ChernofflingCreator__chernoffling">
-            <Chernoffling {...this.state}/>
+            <Chernoffling key="asdsad" id="asdsad"{...this.state}/>
           </div>
         </div>
       </div>

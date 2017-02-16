@@ -11,17 +11,21 @@ import SVGInline from "react-svg-inline";
  * Main Component responsible for drawing the chernoffling
  */
 export default class Chernoffling extends React.Component {
+  /**
+   * Do actual drawing and displaying after mounting and recieving props
+   */
   componentDidMount() {
-
     this.draw(this.props);
   }
+  /**
+   * Do actual drawing and displaying after mounting and recieving props
+   */
   componentWillReceiveProps(nextProps) {
-
     this.draw(nextProps);
   }
   render() {
     return (
-      <div className="Chernoffling">
+      <div id={this.props.id} className="Chernoffling">
         <div className="Chernoffling__svg">
           <SVGInline svg={monster} />
           <SVGInline svg={star} />
@@ -33,7 +37,10 @@ export default class Chernoffling extends React.Component {
    * Main function used to draw the creature
    */
   draw(params) {
-    console.log(params);
+    // Get svgs inside of this chernoffling only
+    const id =  this.props.id;
+    const $monster =  $('#'+id).find("svg#monster");
+    const $star =  $('#'+id).find("svg#star");
 
     // Size controlles by number of posts
     let size;
@@ -44,7 +51,7 @@ export default class Chernoffling extends React.Component {
     } else {
       size = 100;
     }
-    $('#monster').css({
+    $monster.css({
       width: size+"%",
       heigth: size+"%" 
     });
@@ -62,13 +69,13 @@ export default class Chernoffling extends React.Component {
       width = 0;
       height = 0;
     }  
-    const $star = $('#star').css({
+    $star.css({
       width: width,
       heigth: height
     });
     // Color controlled by sentiment
     var sentimentValue = (parseFloat(params.sentiment)+1)*50;
-    $('.cls-3').css({
+    $monster.find(".cls-3" ).css({
       fill: this.numberToColorHsl(sentimentValue)
     });
     // console.log(params.sentiment, sentimentValue, typeof sentimentValue);
