@@ -24,15 +24,33 @@ export default class Chernoffling extends React.Component {
     this.draw(nextProps);
   }
   render() {
-    const style = {animationDuration: (+(Math.random().toFixed(2))+this.props.parentAnimationDuration)  + "s" }
     return (
-      <div id={this.props.id} style={style} className="Chernoffling">
+      <div id={this.props.id} style={this.getAnimationStyle()} className="Chernoffling">
         <div className="Chernoffling__svg">
           <SVGInline svg={monster} />
           <SVGInline svg={star} />
         </div>
       </div>
     );
+  }
+
+  /**
+   * Returns style object for chernofflings animation
+   * @return {object} [description]
+   */
+  getAnimationStyle(){
+    const animationStyle = {};
+
+    // Calculate duration, starts depending when the parent is "finshed"
+    animationStyle.animationDuration = (+(Math.random().toFixed(2))+this.props.parentAnimationDuration)  + "s";
+
+    // Unset complete anmiation when no duration given
+    if (!this.props.parentAnimationDuration) { 
+      animationStyle.animation = "";      
+    }
+
+    return animationStyle;
+
   }
   /**
    * Main function used to draw the creature
