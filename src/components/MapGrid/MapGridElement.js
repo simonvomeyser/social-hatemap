@@ -3,7 +3,8 @@ import Chernoffling from '../Chernoffling/Chernoffling';
 
 import './MapGridElement.css';
 
-
+// Time it takes to fade grid element in (seconds)
+const animationDuration = 1.5
 
 /**
  * A single "Tile" of a grid, contains chernoffling
@@ -49,7 +50,7 @@ class MapGridElement extends React.Component {
     }
     return (
       <div onClick={this.handleClick} className="MapGridElement" ref={(htmlElement) => { this.htmlElement = htmlElement; }} style={this.getStyleObject()}>
-        {this.state.containedSHMEntities.length > 0 ? <Chernoffling id={"chernoffling-"+this.props.id} {...chernofflingData}/>: null}        
+        {this.state.containedSHMEntities.length > 0 ? <Chernoffling id={"chernoffling-"+this.props.id} parentAnimationDuration={animationDuration} {...chernofflingData}/>: null}        
       </div>
     );
   }
@@ -69,7 +70,8 @@ class MapGridElement extends React.Component {
       'left'            : this.state.left+'%',
       'marginTop'       : this.state.top+'%',       // simulates top/width ratio 1    : 1
       'paddingTop'      : this.state.tileWidth+'%', // simulates height/width ratio 1 : 1
-      'borderColor' : `rgba(255,255,255,${this.state.opacity}`
+      'borderColor' : `rgba(255,255,255,${this.state.opacity}`,
+      'animationDuration' : animationDuration+"s"
     };
   }
 

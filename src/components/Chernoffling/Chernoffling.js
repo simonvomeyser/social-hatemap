@@ -24,7 +24,7 @@ export default class Chernoffling extends React.Component {
     this.draw(nextProps);
   }
   render() {
-    const style = {animationDuration: (Math.random()+2)  + "s" }
+    const style = {animationDuration: (+(Math.random().toFixed(2))+this.props.parentAnimationDuration)  + "s" }
     return (
       <div id={this.props.id} style={style} className="Chernoffling">
         <div className="Chernoffling__svg">
