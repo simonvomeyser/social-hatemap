@@ -1,6 +1,7 @@
 .Chernoffling {
   position: relative;
   width: 100%;
+  animation: Chernoffling-fadeIn cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 /* Hack to make Chernofflings Canvas 1:1; */
 .Chernoffling:before {
@@ -30,4 +31,18 @@
 }
 .Chernoffling__svg svg path {
   transition: .3s;
+}
+@keyframes Chernoffling-fadeIn {
+    0% {
+      opacity: 0;
+      transform: translate(-50%,-50%) scale(.1, .1);
+    }
+    75% {
+      opacity: 0;
+      transform: translate(-50%,-50%) scale(.1, .1);
+    }
+    100%   { 
+      opacity: 1; 
+      transform: translate(-50%,-50%) scale(1, 1);
+    }
 }

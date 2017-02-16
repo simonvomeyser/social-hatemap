@@ -24,8 +24,9 @@ export default class Chernoffling extends React.Component {
     this.draw(nextProps);
   }
   render() {
+    const style = {animationDuration: (Math.random()+2)  + "s" }
     return (
-      <div id={this.props.id} className="Chernoffling">
+      <div id={this.props.id} style={style} className="Chernoffling">
         <div className="Chernoffling__svg">
           <SVGInline svg={monster} />
           <SVGInline svg={star} />
