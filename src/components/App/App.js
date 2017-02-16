@@ -25,12 +25,14 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      gridConfig: {opacity: 0.75, size: 7}
+      gridConfig: {opacity: 0.75, size: 7},
+      doneRenderingMap: false
     };
 
     this.processPosts     = this.processPosts.bind(this);
     this.setLoading       = this.setLoading.bind(this);
     this.changeGridConfig = this.changeGridConfig.bind(this);
+    this.doneRenderingMap = this.doneRenderingMap.bind(this);
   }
   componentWillMount() {
     this.setLoading('Getting Data from Twitter...');
@@ -73,7 +75,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Map entitiesToDraw={this.state.geoCodedEntities} gridConfig={this.state.gridConfig}/>
+        <Map
+          doneRenderingMap={this.doneRenderingMap}
+          entitiesToDraw={this.state.geoCodedEntities}
+          gridConfig={this.state.gridConfig}/>
         <Nav
           posts={this.state.posts}
           processPosts={this.processPosts}
@@ -87,6 +92,10 @@ class App extends React.Component {
   }
   changeGridConfig(config) {
     this.setState({gridConfig: config});
+  }
+  doneRenderingMap() {
+    console.log (`App knows about finished map`);
+    this.setState({doneRenderingMap:true});
   }
 }
 

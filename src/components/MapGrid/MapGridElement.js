@@ -8,11 +8,11 @@ import './MapGridElement.css';
 class MapGridElement extends React.Component {
   constructor(props) {
     super(props);
-    
     this.state = {
       tileWidth            : props.tileWidth,
       left                 : props.tileWidth * props.col,
       top                  : props.tileWidth * props.row,
+      opacity              : props.opacity,
       containedSHMEntities : []
     } 
     this.handleClick = this.handleClick.bind(this);
@@ -23,7 +23,14 @@ class MapGridElement extends React.Component {
   componentDidMount() {
     this.setState({
       containedSHMEntities : this.getContainedSHMEntities()
-    })
+    });
+  }
+  componentWillReceiveProps(nextProps) {
+    console.log (nextProps.opacity);
+    this.setState({opacity: nextProps.opacity})
+  }
+  componentWillUpdate(nextProps, nextState) {
+    // console.log (`MapGridElement will update`);
   }
 
   render() {
@@ -47,11 +54,11 @@ class MapGridElement extends React.Component {
    */
   getStyleObject() {
     return {
-      'width'      : this.state.tileWidth+'%',
-      'left'       : this.state.left+'%',
-      'marginTop'  : this.state.top+'%',       // simulates top/width ratio 1 : 1
-      'paddingTop' : this.state.tileWidth+'%', // simulates height/width ratio 1 : 1
-      'opacity'    : this.props.opacity
+      'width'           : this.state.tileWidth+'%',
+      'left'            : this.state.left+'%',
+      'marginTop'       : this.state.top+'%',       // simulates top/width ratio 1    : 1
+      'paddingTop'      : this.state.tileWidth+'%', // simulates height/width ratio 1 : 1
+      'borderColor' : `rgba(255,255,255,${this.state.opacity}`
     };
   }
 

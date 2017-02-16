@@ -12,7 +12,8 @@ class MapGrid extends React.Component {
     super(props);
   
     this.state = {
-      gridElements: []
+      gridElements: [],
+      config: props.config
     }
   }
   render() {
@@ -28,31 +29,47 @@ class MapGrid extends React.Component {
    * @return {[type]} [description]
    */
   componentDidMount() {
-    const mapGridHeight = this.htmlElement.offsetHeight;
-    this.fillGridElements(mapGridHeight);
+    this.fillGridElements(this.state.config);
+  }
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextProps.doneRenderingGrid === this.props.doneRenderingGrid) {
+      return true;
+    }
+    return false;
+  }  
+
+  componentWillReceiveProps(nextProps) {
+
+    this.setState({
+      gridElements: [],
+      config: nextProps.config
+    })
+    setTimeout(()=>{
+      this.fillGridElements(nextProps.config);
+    }, 100);
   }
   /**
    * Adds Grid elements to state so they can be rendered
    */
-  fillGridElements(mapGridHeight) {
-    const config = this.props.config;
+  fillGridElements(config) {
+    const mapGridHeight = this.htmlElement.offsetHeight;
     const tileWidth = 100 / config.size;
     const gridElementsObjects = this.createGridElementArray(config);
 
     const gridElementsJSX = gridElementsObjects.map((e,i) => {
       return (
         <MapGridElement 
-          key={"MapGridElement"+e.row+e.col} 
+          key={`MapGridElement-${e.row}-${e.col}`} 
           row={e.row}
           col={e.col}
           tileWidth={tileWidth}
           SHMEntities={this.props.SHMEntities}
           mapGridHeight={mapGridHeight}
-          opacity={config.opacity} />);          
+          opacity={config.opacity} />);   
     });
 
     this.setState({gridElements : gridElementsJSX});
-
+    // this.props.doneRenderingGrid();
   }
 
   /**

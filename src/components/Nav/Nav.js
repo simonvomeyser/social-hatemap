@@ -40,20 +40,13 @@ class Nav extends React.Component {
         <li>
           <Link to="/">Enter new hashtag</Link>
         </li>
-        {this.props.posts ? (
-          <li>
-            <a href="#" onClick={this.handleShowOnMapClick}>Show Posts on Map</a>
-          </li>
-        ): null}
-        {this.props.posts ? (
-          <li> Grid
-            <ul>
-              <li>Size <input name="size" onMouseUp={this.saveGridChange} onKeyUp={this.saveGridChange} onChange={this.handleGridChange} value={this.state.gridConfig.size} type="range" min="3" max="20" step="1"/> </li>
-              <li>Opacitiy <input name="opacity" onMouseUp={this.saveGridChange} onChange={this.handleGridChange} value={this.state.gridConfig.opacity} type="range" min="0" max="1" step="0.01"/> </li>
-            </ul>
-            
-          </li>
-        ): null}
+        <li> Grid
+          <ul>
+            <li>Size <input name="size" onMouseUp={this.saveGridChange} onKeyUp={this.saveGridChange} onChange={this.handleGridChange} value={this.state.gridConfig.size} type="range" min="3" max="20" step="1"/> </li>
+            <li>Opacitiy <input name="opacity" onMouseUp={this.saveGridChange} onChange={this.handleGridChange} value={this.state.gridConfig.opacity} type="range" min="0" max="1" step="0.01"/> </li>
+          </ul>
+          
+        </li>
       </ul>
     );
   }

@@ -3,7 +3,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .App__hashtag {
   padding-top: 1em;
