@@ -15,11 +15,11 @@ export default class ChernofflingCreator extends React.Component {
       // Tweet properties
       'sentiment' : -1, // -1 = negative, 0 = neutral, +1 = positive
       'amplitude' : 0, // intensity: 0 = low, 1 = high
-      'favourites' : 0, // 0 = low, ∞ = high
+      'favourites' : 0, // percentage
       // User properties
       'gender': 0,  // 0 = male, 1 = female
-      'age' : 0,
-      'followers' : 0,
+      'age' : 0, // int, 1-10
+      'followers' : 100, // float, percentage (1-100)
     });
     this.handleInputChange = this.handleInputChange.bind(this);
   }
@@ -38,7 +38,7 @@ export default class ChernofflingCreator extends React.Component {
               <input type="range" min="0" max="1" step=".1" onChange={this.handleInputChange} defaultValue={this.state.amplitude} id="amplitude"/> <span className="amplitude">{this.state.amplitude}</span> amplitude 
             </div>
             <div>
-              <input type="number" min="0" onChange={this.handleInputChange} defaultValue={this.state.favourites} id="favourites"/> <span className="favourites">{this.state.favourites}</span> favourites 
+              <input type="range" min="0" max="100" onChange={this.handleInputChange} defaultValue={this.state.favourites} id="favourites"/> <span className="favourites">{this.state.favourites}</span> favourites 
             </div>
             <br/>
             <div>

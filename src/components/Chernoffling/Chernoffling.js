@@ -85,10 +85,8 @@ export default class Chernoffling extends React.Component {
       $monster.find('.horns#horns_average').show();
     } else if(params.age < 8) { // alt
       $monster.find('.horns#horns_big').show();
-    } else if(params.age < 11) { // sehr alt
+    } else { // sehr alt
       $monster.find('.horns#horns_enormous').show();
-    } else {
-
     }
 
     // mouth controlled by sentiment & amplitude variables
@@ -97,7 +95,7 @@ export default class Chernoffling extends React.Component {
     var sentiment = params.sentiment,
         amplitude = params.amplitude;
 
-    console.log(sentiment, amplitude);
+    // console.log(sentiment, amplitude);
 
     if(amplitude < .5) { // niedrige Intensität
       if(sentiment < -(.6)) { // negativ
@@ -114,7 +112,7 @@ export default class Chernoffling extends React.Component {
     } else  { // hohe Intensität
       if(sentiment < -.6) { // negativ
         $monster.find('.mouth#mouth_negative_high').show();
-      } else if(sentiment < .2) { // medium negativ
+      } else if(sentiment < -(.2)) { // medium negativ
         $monster.find('.mouth#mouth_negative_low').show();
       } else if(sentiment < .2) { // neutral
         $monster.find('.mouth#mouth_neutral').show();
@@ -124,8 +122,6 @@ export default class Chernoffling extends React.Component {
         $monster.find('.mouth#mouth_positive_high').show();
       }
     } 
-
-
 
     // eyes controlled by sentiment variable
     $monster.find('.eyes').hide();
@@ -142,18 +138,35 @@ export default class Chernoffling extends React.Component {
       $monster.find('.eyes#eyes_neutral').show();
     }
 
-    // Size controlled by percentage of followers
-    let size;
-    if (params.posts < 20) {
-      size = 20;
-    } else if(params.posts < 100) {
-      size = params.posts;
-    } else {
-      size = 100;
+
+    // eyes controlled by sentiment variable
+    var badge = $monster.find('.badge'),
+        favourites = params.favourites,
+        favSize = 0;
+
+    // console.log(favourites, favSize);
+
+    if (params.age < 3) { // sehr jung
+      badge.css('transform','scale('+ favourites + '%');
+    } else if(params.age < 5) { // jung
+      $monster.find('.horns#horns_small').show();
+    } else if(params.age < 6) { // mittelalt
+      $monster.find('.horns#horns_average').show();
+    } else if(params.age < 8) { // alt
+      $monster.find('.horns#horns_big').show();
+    } else { // sehr alt
+      $monster.find('.horns#horns_enormous').show();
     }
+
+
+    // Size controlled by percentage of followers
+    var followers_factor = params.followers/100,
+        scale_factor = 0.3 + 0.5*followers_factor;
+
+    console.log(followers_factor, scale_factor);
+
     $monster.css({
-      width: size+"%",
-      heigth: size+"%" 
+      'transform': 'translate(-50%,-50%) scale(' + scale_factor + ')'
     });
 
     var favouritesValue = parseInt(params.favourites);

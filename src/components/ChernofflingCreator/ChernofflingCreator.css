@@ -1,8 +1,18 @@
+#root {
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #404040;
+  font-weight: 400;
+}
 .ChernofflingCreator {
   padding-top: 20px;
 }
-.ChernofflingCreator h1 {
-  text-align: center;
+.ChernofflingCreator h1, .ChernofflingCreator h2  {
+  font-weight: 400;
 }
 .ChernofflingCreator {
   margin: 0 auto;
@@ -10,7 +20,6 @@
 }
 .ChernofflingCreator__content {
   display: flex;
-  background-color: rgba(0, 0, 0, .4)
 }
 .ChernofflingCreator__content > *{
   flex: 1;
@@ -24,6 +33,6 @@
   vertical-align: center;
   align-items: center;
 }
-.ChernofflingCreator__chernoffling >* {
-  border: 1px white solid;
+.ChernofflingCreator__chernoffling > * {
+  
 }
