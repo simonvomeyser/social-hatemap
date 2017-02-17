@@ -23,7 +23,6 @@ class ChernofflingProps {
     this.favourites = this.calculateFavourites(); // abs zahl
     this.followers  = this.calculateFollowers(); // Prozent von gesamt
 
-    console.log (this);
   }
 
   calculateSentimentAverage(attribute) {
@@ -54,7 +53,7 @@ class ChernofflingProps {
   calculateFollowers() {
     const numerOfFollowers = this.SHMEntities.reduce((prev, cur) => prev + cur.user.follower, 0);
     const numerOfAllFollowers = this.allSHMEntities.reduce((prev, cur) => prev + cur.user.follower, 0);
-    
+
     return (numerOfFollowers / numerOfAllFollowers) * 100;
   }
 

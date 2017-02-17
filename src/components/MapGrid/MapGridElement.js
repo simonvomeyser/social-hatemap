@@ -60,7 +60,7 @@ class MapGridElement extends React.Component {
           <div className="MapGridElement__overlayChernoffling">
             <Chernoffling 
               id={"overlaychernoffling-"+this.props.id}
-              {...this.state.chernofflingProps}/>
+              {...new ChernofflingProps(this.state.containedSHMEntities, this.props.SHMEntities)}/>
           </div>
           <div className="MapGridElement__overlayTweetList">
             <Tweetlist tweets={this.state.containedSHMEntities}/>

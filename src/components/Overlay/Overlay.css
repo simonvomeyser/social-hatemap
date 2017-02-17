@@ -1,7 +1,8 @@
 .Overlay {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  overflow-y: scroll;
   background-color: rgba(255, 255, 255, .85);
   left: 0;
   top: 0;
@@ -14,4 +15,5 @@
   color: black;
   font-size: 40px;
   cursor: pointer;
+  z-index: 3
 }
