@@ -2,6 +2,7 @@ import React from 'react';
 import Chernoffling from '../Chernoffling/Chernoffling';
 import Overlay from '../Overlay/Overlay';
 import Tweetlist from '../Tweetlist/Tweetlist';
+import ChernofflingProps from '../../classes/ChernofflingProps';
 
 import './MapGridElement.css';
 
@@ -9,7 +10,7 @@ import './MapGridElement.css';
 const animationDuration = 1.5
 
 /**
- * A single "Tile" of a grid, contains chernoffling
+ * A single "Tile" of a grid, contains chernoffling, renders overlay
  */
 class MapGridElement extends React.Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class MapGridElement extends React.Component {
       top                  : props.tileWidth * props.row,
       opacity              : props.opacity,
       containedSHMEntities : [],
-      chernofflingData     : {},
+      chernofflingProps    : {},
       showOverlay          : false
     } 
     this.toggleOverlay = this.toggleOverlay.bind(this);
@@ -30,12 +31,10 @@ class MapGridElement extends React.Component {
    * Add Elements only after mounting because own size must be clalculated
    */
   componentDidMount() {
-    this.setState({
-      containedSHMEntities : this.getContainedSHMEntities(),
-      // @todo remove sample data
-      chernofflingData : {'sentiment' : Math.random() * 2 - 1 , 'amplitude' : 0, 'favourites' : 0, 'gender': .0, 'age' : 0, 'followers' : 0,
-    }
-    });
+    const containedSHMEntities = this.getContainedSHMEntities();
+    const chernofflingProps = new ChernofflingProps(containedSHMEntities, this.props.SHMEntities);
+
+    this.setState({containedSHMEntities, chernofflingProps});
   }
   render() {
     return (
@@ -46,7 +45,7 @@ class MapGridElement extends React.Component {
             <Chernoffling
               id={"chernoffling-"+this.props.id}
               parentAnimationDuration={animationDuration}
-              {...this.state.chernofflingData}/>
+              {...this.state.chernofflingProps}/>
           : null}        
         </div>
       </div>
@@ -62,7 +61,7 @@ class MapGridElement extends React.Component {
           <div className="MapGridElement__overlayChernoffling">
             <Chernoffling 
               id={"overlaychernoffling-"+this.props.id}
-              {...this.state.chernofflingData}/>
+              {...this.state.chernofflingProps}/>
           </div>
           <div className="MapGridElement__overlayTweetList">
             <Tweetlist tweets={this.state.containedSHMEntities}/>

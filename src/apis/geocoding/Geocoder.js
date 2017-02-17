@@ -3,6 +3,26 @@ const apiUrl = 'http://api.socialhatemap.com/index.php';
 import sampleData from './sampleData.json';
 
 const Geocoder = {
+
+  addGeoLocation(geocodableSHMEntities, IS_DEV_MODE) {
+
+    const locations = geocodableSHMEntities.map((post) => post.user.location);
+
+    return new Promise((resolve) => {
+
+      this.batchGeocode(locations, IS_DEV_MODE)
+      .then((geoCodedLocations) => {
+
+        const geoCodedSHMEntities = geocodableSHMEntities.map((e, i) => {
+          return {...e, location:geoCodedLocations[i]}; 
+        })
+        
+        resolve(geoCodedSHMEntities);
+      })
+    })
+
+  },
+
   /**
    * Batch Transforms given Names of Locations in objects containing lat/long
    * 

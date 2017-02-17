@@ -10,6 +10,7 @@ import Geocoder from '../../apis/geocoding/Geocoder.js';
 
 // Helpers
 import LocationHelper from '../../helpers/LocationHelper';
+import SentimentHelper from '../../helpers/SentimentHelper';
 
 
 import './App.css';
@@ -47,24 +48,30 @@ class App extends React.Component {
 
   processPosts() {
     const SHMEntities = this.state.SHMEntities;
-    const locations = SHMEntities.map((post) => post.user.location);
 
-    Geocoder
-      .batchGeocode(locations, IS_DEV_MODE)
-      .then((geoCodedLocations) => {
+    // Filter out not geocodeable Entities
+    const geocodableSHMEntities = LocationHelper.filterSHMEntities(SHMEntities);
 
-        // Add locations to all posts
-        const geoCodedEntities = SHMEntities.map((e, i) => {
-          return {...e, location:geoCodedLocations[i]}; 
-        }).map(LocationHelper.addXYLocationsToSHMEntity);
+    // Start Ceocoding
+    Geocoder.addGeoLocation(geocodableSHMEntities, IS_DEV_MODE)
+    .then((geoCodedEntities) => {
 
-        // Calclulate Position on Map
-        
-        // Draw posts on map
-        console.log (geoCodedEntities);
-        this.setState({geoCodedEntities: geoCodedEntities});
+      // Calculate X and Y Position
+      const xySHMEnties = LocationHelper.addXYLocation(geoCodedEntities);
 
-      });
+      // Add Sentiment to Enities
+      const sentimentSHMEntites = SentimentHelper.addSentiment(xySHMEnties);
+
+      // Genderize Entites @todo 
+      const processedSHMEntites = sentimentSHMEntites;
+
+      // Save all of them in state, "processPosts" triggers map rendering
+      this.setState({
+        geocodableSHMEntities,
+        xySHMEnties,
+        sentimentSHMEntites,        
+        processedSHMEntites });
+    });
   }
   
   setLoading(text) {
@@ -77,7 +84,7 @@ class App extends React.Component {
       <div className="App">
         <Map
           doneRenderingMap={this.doneRenderingMap}
-          entitiesToDraw={this.state.geoCodedEntities}
+          entitiesToDraw={this.state.processedSHMEntites}
           gridConfig={this.state.gridConfig}/>
         <Nav
           posts={this.state.posts}

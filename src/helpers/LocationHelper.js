@@ -3,6 +3,28 @@
  */
 const LocationHelper = {
 
+  /**
+   * Adds the x/y location to given Entites 
+   * @param  {Array} SHMEntities (must have lat/long)
+   * @return {Array}             
+   */
+  addXYLocation(SHMEntities) {
+    return SHMEntities.map(this.addXYLocationsToSHMEntity);
+  },
+
+  /**
+   * Returns only Entites that have a location (can be geocoded)
+   * @param  {Array} SHMEntities 
+   * @return {Array}             
+   */
+  filterSHMEntities(SHMEntities) {
+    return SHMEntities.filter(function(element) {
+      if (element.location.name) {
+        return true;
+      }
+      return false;
+    });
+  },
 
   addXYLocationsToSHMEntity(SHMEntity) {
     const {x,y} = LocationHelper.convertGeoToPixel(SHMEntity.location.lat, SHMEntity.location.long);
