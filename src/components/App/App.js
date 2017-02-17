@@ -59,7 +59,7 @@ class App extends React.Component {
       // Calculate X and Y Position
       const xySHMEnties = LocationHelper.addXYLocation(geoCodedEntities);
 
-      // Add Sentiment to Enities @todo
+      // Add Sentiment to Enities
       const sentimentSHMEntites = SentimentHelper.addSentiment(xySHMEnties);
 
       // Genderize Entites @todo 
