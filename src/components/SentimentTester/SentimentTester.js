@@ -2,7 +2,7 @@ import React from 'react';
 
 import './SentimentTester.css';
 
-import Sentiment from '../../helpers/Sentiment';
+import SentimentHelper from '../../helpers/SentimentHelper';
 
 import sampleData from '../../apis/twitter/sampleData.json';
 
@@ -35,7 +35,7 @@ export default class SentimentView extends React.Component {
 
   getTweet() {
     var sentence = sampleData[[Math.floor(Math.random()*sampleData.length)]].text;
-    var sentimentData = Sentiment.getSentiment(sentence);
+    var sentimentData = SentimentHelper.getSentiment(sentence);
     this.changeStates(sentence, sentimentData);
   }
 
@@ -54,9 +54,9 @@ export default class SentimentView extends React.Component {
     var sentimentData;
     var sentence = $('#sentence').val();
     if(sentence == "")
-      sentimentData = Sentiment.getSentiment("Hello Fucking WORLD");
+      sentimentData = SentimentHelper.getSentiment("Hello Fucking WORLD");
     else
-      sentimentData = Sentiment.getSentiment(sentence);
+      sentimentData = SentimentHelper.getSentiment(sentence);
     this.changeStates(sentence, sentimentData);
   }
 
