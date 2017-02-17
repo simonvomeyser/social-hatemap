@@ -1,5 +1,5 @@
 import React from 'react';
-import Loading from '../Loading/Loading';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import Tweetlist from '../Tweetlist/Tweetlist';
 import Nav from '../Nav/Nav';
 import Map from '../Map/Map';
@@ -80,7 +80,7 @@ class App extends React.Component {
   }
   
   setLoading(text) {
-    this.setState({loading: (<Loading text={text}/>)});
+    this.setState({loading: (<LoadingSpinner/>)});
   }
 
 

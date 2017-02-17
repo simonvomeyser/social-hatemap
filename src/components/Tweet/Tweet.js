@@ -15,6 +15,7 @@ class Tweet extends React.Component {
           <p>
             {this.props.entity.post.text}
           </p>
+          <p>{this.props.entity.location.name}</p>
         </div>
       </div>
     );
