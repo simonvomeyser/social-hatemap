@@ -89,8 +89,9 @@ export default class Chernoffling extends React.Component {
       $monster.find('.horns#horns_enormous').show();
     }
 
-    // mouth controlled by sentiment & amplitude variables
+    // mouth and eyes controlled by sentiment & amplitude variables
     $monster.find('.mouth').hide();
+    $monster.find('.eyes').hide();
 
     var sentiment = params.sentiment,
         amplitude = params.amplitude;
@@ -100,31 +101,40 @@ export default class Chernoffling extends React.Component {
     if(amplitude < .5) { // niedrige Intensität
       if(sentiment < -(.6)) { // negativ
         $monster.find('.mouth#mouth_negative_medium').show();
+        $monster.find('.eyes#eyes_negative').show();
       } else if(sentiment < -(.2)) { // medium negativ
         $monster.find('.mouth#mouth_negative_low').show();
+        $monster.find('.eyes#eyes_negative').show();
       } else if(sentiment < .2) { // neutral
         $monster.find('.mouth#mouth_neutral').show();
+        $monster.find('.eyes#eyes_mixed_low').show();
       } else if(sentiment < .6) { // medium positiv
         $monster.find('.mouth#mouth_positive_low').show();
+        $monster.find('.eyes#eyes_positive').show();
       } else { // positive
         $monster.find('.mouth#mouth_positive_medium').show();
+        $monster.find('.eyes#eyes_positive').show();
       }
     } else  { // hohe Intensität
       if(sentiment < -.6) { // negativ
         $monster.find('.mouth#mouth_negative_high').show();
+        $monster.find('.eyes#eyes_negative').show();
       } else if(sentiment < -(.2)) { // medium negativ
         $monster.find('.mouth#mouth_negative_low').show();
+        $monster.find('.eyes#eyes_negative').show();
       } else if(sentiment < .2) { // neutral
         $monster.find('.mouth#mouth_neutral').show();
+        $monster.find('.eyes#eyes_mixed_high').show();
       } else if(sentiment < .2) { // medium positiv
         $monster.find('.mouth#mouth_positive_low').show();
+        $monster.find('.eyes#eyes_positive').show();
       } else { // positive
         $monster.find('.mouth#mouth_positive_high').show();
+        $monster.find('.eyes#eyes_positive').show();
       }
     } 
 
     // eyes controlled by sentiment variable
-    $monster.find('.eyes').hide();
 
     if(sentiment === 0) { // neutral
       $monster.find('.eyes#eyes_neutral').show();
@@ -163,7 +173,7 @@ export default class Chernoffling extends React.Component {
     var followers_factor = params.followers/100,
         scale_factor = 0.3 + 0.5*followers_factor;
 
-    console.log(followers_factor, scale_factor);
+    //console.log(followers_factor, scale_factor);
 
     $monster.css({
       'transform': 'translate(-50%,-50%) scale(' + scale_factor + ')'
