@@ -4,7 +4,7 @@ import sampleData from './sampleData.json';
 
 const Geocoder = {
 
-  geocode(geocodableSHMEntities, IS_DEV_MODE) {
+  addGeoLocation(geocodableSHMEntities, IS_DEV_MODE) {
 
     const locations = geocodableSHMEntities.map((post) => post.user.location);
 
@@ -12,7 +12,7 @@ const Geocoder = {
 
       this.batchGeocode(locations, IS_DEV_MODE)
       .then((geoCodedLocations) => {
-        
+
         const geoCodedSHMEntities = geocodableSHMEntities.map((e, i) => {
           return {...e, location:geoCodedLocations[i]}; 
         })

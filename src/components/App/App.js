@@ -10,6 +10,7 @@ import Geocoder from '../../apis/geocoding/Geocoder.js';
 
 // Helpers
 import LocationHelper from '../../helpers/LocationHelper';
+import SentimentHelper from '../../helpers/SentimentHelper';
 
 
 import './App.css';
@@ -52,15 +53,15 @@ class App extends React.Component {
     const geocodableSHMEntities = LocationHelper.filterSHMEntities(SHMEntities);
 
     // Start Ceocoding
-    Geocoder.geocode(geocodableSHMEntities, IS_DEV_MODE)
+    Geocoder.addGeoLocation(geocodableSHMEntities, IS_DEV_MODE)
     .then((geoCodedEntities) => {
 
       // Calculate X and Y Position
       const xySHMEnties = geoCodedEntities.map(LocationHelper.addXYLocationsToSHMEntity);
 
       // Add Sentiment to Enities @todo
-      const sentimentSHMEntites = xySHMEnties;
-
+      const sentimentSHMEntites = SentimentHelper.addSentiment(xySHMEnties);
+      
       // Genderize Entites @todo 
       const processedSHMEntites = sentimentSHMEntites;
 
