@@ -1,8 +1,7 @@
 import React from 'react';
 
 import './Chernoffling.css';
-import monster from './monster.svg';
-import star from './star.svg';
+import monster from './chernoff.svg'; //original: monster.svg
 
 import $ from 'jquery';
 
@@ -28,7 +27,6 @@ export default class Chernoffling extends React.Component {
       <div id={this.props.id} style={this.getAnimationStyle()} className="Chernoffling">
         <div className="Chernoffling__svg">
           <SVGInline svg={monster} />
-          <SVGInline svg={star} />
         </div>
       </div>
     );
@@ -59,9 +57,92 @@ export default class Chernoffling extends React.Component {
     // Get svgs inside of this chernoffling only
     const id =  this.props.id;
     const $monster =  $('#'+id).find("svg#monster");
-    const $star =  $('#'+id).find("svg#star");
 
-    // Size controlles by number of posts
+    // body controlled by gender variable
+    $monster.find('.body').css('display','none');
+    if (params.gender < .3) {
+      $monster.find('.body#body_male').show();
+    } else if(params.gender < .5) {
+      $monster.find('.body#body_malish').show();
+    } else if(params.gender < .6) {
+      $monster.find('.body#body_neutral').show();
+    } else if(params.gender < .8) {
+      $monster.find('.body#body_femalish').show();
+    } else if(params.gender < 1.1) {
+      $monster.find('.body#body_female').show();
+    } else {
+      $monster.find('.body#body_neutral').show();
+    }
+
+    // horns controlled by age variable
+
+    $monster.find('.horns').hide();
+    if (params.age < 3) { // sehr jung
+      
+    } else if(params.age < 5) { // jung
+      $monster.find('.horns#horns_small').show();
+    } else if(params.age < 6) { // mittelalt
+      $monster.find('.horns#horns_average').show();
+    } else if(params.age < 8) { // alt
+      $monster.find('.horns#horns_big').show();
+    } else if(params.age < 11) { // sehr alt
+      $monster.find('.horns#horns_enormous').show();
+    } else {
+
+    }
+
+    // mouth controlled by sentiment & amplitude variables
+    $monster.find('.mouth').hide();
+
+    var sentiment = params.sentiment,
+        amplitude = params.amplitude;
+
+    console.log(sentiment, amplitude);
+
+    if(amplitude < .5) { // niedrige Intensität
+      if(sentiment < -(.6)) { // negativ
+        $monster.find('.mouth#mouth_negative_medium').show();
+      } else if(sentiment < -(.2)) { // medium negativ
+        $monster.find('.mouth#mouth_negative_low').show();
+      } else if(sentiment < .2) { // neutral
+        $monster.find('.mouth#mouth_neutral').show();
+      } else if(sentiment < .6) { // medium positiv
+        $monster.find('.mouth#mouth_positive_low').show();
+      } else { // positive
+        $monster.find('.mouth#mouth_positive_medium').show();
+      }
+    } else  { // hohe Intensität
+      if(sentiment < -.6) { // negativ
+        $monster.find('.mouth#mouth_negative_high').show();
+      } else if(sentiment < .2) { // medium negativ
+        $monster.find('.mouth#mouth_negative_low').show();
+      } else if(sentiment < .2) { // neutral
+        $monster.find('.mouth#mouth_neutral').show();
+      } else if(sentiment < .2) { // medium positiv
+        $monster.find('.mouth#mouth_positive_low').show();
+      } else { // positive
+        $monster.find('.mouth#mouth_positive_high').show();
+      }
+    } 
+
+
+
+    // eyes controlled by sentiment variable
+    $monster.find('.eyes').hide();
+
+    if(sentiment === 0) { // neutral
+      $monster.find('.eyes#eyes_neutral').show();
+    } else if(sentiment < -.3) { // böse
+      $monster.find('.eyes#eyes_negative').show();
+    } else if(sentiment < .3) { // mixed
+      $monster.find('.eyes#eyes_mixed').show();
+    } else if(sentiment < 1.1) { // gut
+      $monster.find('.eyes#eyes_positive').show();
+    } else { // neutral
+      $monster.find('.eyes#eyes_neutral').show();
+    }
+
+    // Size controlled by percentage of followers
     let size;
     if (params.posts < 20) {
       size = 20;
@@ -88,13 +169,16 @@ export default class Chernoffling extends React.Component {
       width = 0;
       height = 0;
     }  
+    /*
     $star.css({
       width: width,
       heigth: height
     });
+    */
+
     // Color controlled by sentiment
     var sentimentValue = (parseFloat(params.sentiment)+1)*50;
-    $monster.find(".cls-3" ).css({
+    $monster.find(".body_shape").css({
       fill: this.numberToColorHsl(sentimentValue)
     });
     // console.log(params.sentiment, sentimentValue, typeof sentimentValue);

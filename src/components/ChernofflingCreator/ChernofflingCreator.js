@@ -17,7 +17,7 @@ export default class ChernofflingCreator extends React.Component {
       'amplitude' : 0, // intensity: 0 = low, 1 = high
       'favourites' : 0, // 0 = low, ∞ = high
       // User properties
-      'gender': .0,  // 0 = male, 1 = female
+      'gender': 0,  // 0 = male, 1 = female
       'age' : 0,
       'followers' : 0,
     });
