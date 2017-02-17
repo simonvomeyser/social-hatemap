@@ -106,7 +106,7 @@ export default class Chernoffling extends React.Component {
         $monster.find('.mouth#mouth_negative_low').show();
         $monster.find('.eyes#eyes_negative').show();
       } else if(sentiment < .2) { // neutral
-        $monster.find('.mouth#mouth_neutral').show();
+        $monster.find('.mouth#mouth_neutral_low').show();
         $monster.find('.eyes#eyes_mixed_low').show();
       } else if(sentiment < .6) { // medium positiv
         $monster.find('.mouth#mouth_positive_low').show();
@@ -123,7 +123,7 @@ export default class Chernoffling extends React.Component {
         $monster.find('.mouth#mouth_negative_low').show();
         $monster.find('.eyes#eyes_negative').show();
       } else if(sentiment < .2) { // neutral
-        $monster.find('.mouth#mouth_neutral').show();
+        $monster.find('.mouth#mouth_neutral_high').show();
         $monster.find('.eyes#eyes_mixed_high').show();
       } else if(sentiment < .2) { // medium positiv
         $monster.find('.mouth#mouth_positive_low').show();
@@ -149,12 +149,18 @@ export default class Chernoffling extends React.Component {
     }
 
 
-    // eyes controlled by sentiment variable
+    // badge controlled by favourites variable
+    $monster.find('.badge').hide();
     var badge = $monster.find('.badge'),
         favourites = params.favourites,
-        favSize = 0;
+        fav_scale_factor = 0.5 + 0.5*favourites/100;
 
-    // console.log(favourites, favSize);
+    if (favourites > .4) {
+      badge.show();
+    }
+
+
+    console.log(favourites, fav_scale_factor);
 
     if (params.age < 3) { // sehr jung
       badge.css('transform','scale('+ favourites + '%');
