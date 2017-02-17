@@ -50,13 +50,12 @@ const Twitter = {
       name       : twitterPost.user.name,
       screenName : twitterPost.user.screenName,
       follower   : twitterPost.user.followers_count,
-      accountAge : twitterPost.user.created_at, // @todo to age
+      accountAge : new Date().getFullYear() - new Date(twitterPost.user.created_at).getFullYear(), // @todo to age
       image      : twitterPost.user.profile_image_url_https
     };
     const post = {
       text       : twitterPost.text,
-      createdAt  : twitterPost.created_at,
-      fav        : twitterPost.favourites_count
+      favourites : twitterPost.favorite_count
     };
     const location = {
       // Set the name to something that can be parsed later (can be empty)
