@@ -160,7 +160,7 @@ export default class Chernoffling extends React.Component {
     }
 
 
-    console.log(favourites, fav_scale_factor);
+    // console.log(favourites, fav_scale_factor);
 
     if (params.age < 3) { // sehr jung
       badge.css('transform','scale('+ favourites + '%');
@@ -206,11 +206,25 @@ export default class Chernoffling extends React.Component {
     */
 
     // Color controlled by sentiment
-    var sentimentValue = (parseFloat(params.sentiment)+1)*50;
-    $monster.find(".body_shape").css({
-      fill: this.numberToColorHsl(sentimentValue)
-    });
-    // console.log(params.sentiment, sentimentValue, typeof sentimentValue);
+    var orig_sentimentValue = ((parseFloat(params.sentiment)+0.5))*100,
+        sentimentValue = orig_sentimentValue;
+
+
+    if(sentiment < -(0.5)) { // negative
+      $monster.find(".body_shape").css({
+        fill: this.numberToColorHsl(0)
+      });
+    } else if(sentiment < 0.5 ) { // neutral
+      $monster.find(".body_shape").css({
+        fill: this.numberToColorHsl(sentimentValue)
+      });
+    } else { // positive
+      $monster.find(".body_shape").css({
+        fill: this.numberToColorHsl(100)
+      });
+    }
+
+    console.log(params.sentiment, orig_sentimentValue);
   }
 
   numberToColorHsl(i) {

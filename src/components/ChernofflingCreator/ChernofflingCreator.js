@@ -32,7 +32,7 @@ export default class ChernofflingCreator extends React.Component {
           <div className="ChernofflingCreator__settings">
             <h2>Settings</h2>
             <div>
-              <input type="range" min="-1" max="1" step=".1" onChange={this.handleInputChange} defaultValue={this.state.sentiment} id="sentiment"/> <span className="sentiment">{this.state.sentiment}</span> sentiment 
+              <input type="range" min="-1" max="1" step=".01" onChange={this.handleInputChange} defaultValue={this.state.sentiment} id="sentiment"/> <span className="sentiment">{this.state.sentiment}</span> sentiment 
             </div>
             <div>
               <input type="range" min="0" max="1" step=".1" onChange={this.handleInputChange} defaultValue={this.state.amplitude} id="amplitude"/> <span className="amplitude">{this.state.amplitude}</span> amplitude 
