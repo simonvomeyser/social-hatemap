@@ -49,28 +49,28 @@ class App extends React.Component {
     const SHMEntities = this.state.SHMEntities;
 
     // Filter out not geocodeable Entities
-    const GeocodableSHMEntities = LocationHelper.filterSHMEntities(SHMEntities);
+    const geocodableSHMEntities = LocationHelper.filterSHMEntities(SHMEntities);
 
-    console.log (GeocodableSHMEntities);
     // Start Ceocoding
+    Geocoder.geocode(geocodableSHMEntities, IS_DEV_MODE)
+    .then((geoCodedEntities) => {
 
-    const locations = GeocodableSHMEntities.map((post) => post.user.location);
-    Geocoder
-      .batchGeocode(locations, IS_DEV_MODE)
-      .then((geoCodedLocations) => {
+      // Calculate X and Y Position
+      const xySHMEnties = geoCodedEntities.map(LocationHelper.addXYLocationsToSHMEntity);
 
-        // Add locations to all posts
-        const geoCodedEntities = GeocodableSHMEntities.map((e, i) => {
-          return {...e, location:geoCodedLocations[i]}; 
-        }).map(LocationHelper.addXYLocationsToSHMEntity);
+      // Add Sentiment to Enities @todo
+      const sentimentSHMEntites = xySHMEnties;
 
-        // Calclulate Position on Map
-        
-        // Draw posts on map
-        console.log (geoCodedEntities);
-        this.setState({geoCodedEntities: geoCodedEntities});
+      // Genderize Entites @todo 
+      const processedSHMEntites = sentimentSHMEntites;
 
-      });
+      // Save all of them in state 
+      this.setState({
+        geocodableSHMEntities,
+        xySHMEnties,
+        sentimentSHMEntites,        
+        processedSHMEntites });
+    });
   }
   
   setLoading(text) {
@@ -83,7 +83,7 @@ class App extends React.Component {
       <div className="App">
         <Map
           doneRenderingMap={this.doneRenderingMap}
-          entitiesToDraw={this.state.geoCodedEntities}
+          entitiesToDraw={this.state.processedSHMEntites}
           gridConfig={this.state.gridConfig}/>
         <Nav
           posts={this.state.posts}
