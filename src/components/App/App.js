@@ -7,6 +7,7 @@ import Map from '../Map/Map';
 // Apis
 import Twitter from '../../apis/twitter/Twitter.js';
 import Geocoder from '../../apis/geocoding/Geocoder.js';
+import Genderizer from '../../apis/genderizing/Genderizer.js';
 
 // Helpers
 import LocationHelper from '../../helpers/LocationHelper';
@@ -33,13 +34,11 @@ class App extends React.Component {
     this.processPosts     = this.processPosts.bind(this);
     this.setLoading       = this.setLoading.bind(this);
     this.changeGridConfig = this.changeGridConfig.bind(this);
-    this.doneRenderingMap = this.doneRenderingMap.bind(this);
   }
   componentWillMount() {
     this.setLoading('Getting Data from Twitter...');
     Twitter.getPosts(this.props.params.id, IS_DEV_MODE).then((SHMEntities) => {
       this.setState({
-        component   : null,
         SHMEntities : SHMEntities
       });
       this.processPosts();
@@ -63,19 +62,25 @@ class App extends React.Component {
       const sentimentSHMEntites = SentimentHelper.addSentiment(xySHMEnties);
 
       // Genderize Entites @todo 
-      const processedSHMEntites = sentimentSHMEntites;
+      Genderizer.addGender(sentimentSHMEntites, IS_DEV_MODE)
+      .then((processedSHMEntites) => {
+        
+        console.log (processedSHMEntites);
+        // Save all of them in state, "processPosts" triggers map rendering
+        this.setState({
+          loading   : null,
+          geocodableSHMEntities,
+          xySHMEnties,
+          sentimentSHMEntites,        
+          processedSHMEntites });
+      });
+        
+      })
 
-      // Save all of them in state, "processPosts" triggers map rendering
-      this.setState({
-        geocodableSHMEntities,
-        xySHMEnties,
-        sentimentSHMEntites,        
-        processedSHMEntites });
-    });
   }
   
   setLoading(text) {
-    this.setState({component: (<Loading text={text}/>)});
+    this.setState({loading: (<Loading text={text}/>)});
   }
 
 
@@ -92,17 +97,13 @@ class App extends React.Component {
           changeGridConfig={this.changeGridConfig}
           gridConfig={this.state.gridConfig}/>
         <div className="App__content">
-          {this.state.component}
+          {this.state.loading}
         </div>
       </div>
     );
   }
   changeGridConfig(config) {
     this.setState({gridConfig: config});
-  }
-  doneRenderingMap() {
-    console.log (`App knows about finished map`);
-    this.setState({doneRenderingMap:true});
   }
 }
 
