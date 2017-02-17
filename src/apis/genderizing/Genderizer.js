@@ -15,7 +15,7 @@ const Genderizer = {
     return new Promise((resolve) => {
 
       const SHMEntitiesWithGender = SHMEntities.map(function(SHMEntity) {
-        SHMEntity.user.gender = Math.random() * 2 -1;
+        SHMEntity.user.gender = Math.round(Math.random() * 2 -1);
         return SHMEntity;
       })
           

@@ -10,7 +10,7 @@ class Tweet extends React.Component {
     return (
       <div className="Tweet">
         <img src={this.props.entity.user.image} alt=""/>
-        <div className="Tweet__contentx^">
+        <div className="Tweet__content">
           <a href="http://twitter.de">{this.props.entity.user.name}</a>
           <p>
             {this.props.entity.post.text}
