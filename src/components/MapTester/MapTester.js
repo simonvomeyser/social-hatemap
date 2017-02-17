@@ -34,6 +34,41 @@ const sampleData = [
   },
   {
     location : {
+      name: "Santiago de Chile",
+      lat: -33.462972,
+      long: -70.664171
+    }
+  },
+  {
+    location : {
+      name: "Caracas",
+      lat: 10.474776,
+      long: -66.903421
+    }
+  },
+  {
+    location : {
+      name: "Rom",
+      lat: 41.896699,
+      long: 12.497539
+    }
+  },
+  {
+    location : {
+      name: "Iceland 2",
+      lat: 64.241338,
+      long: -18.791522
+    }
+  },
+  {
+    location : {
+      name: "Namibia",
+      lat: -21.623546,
+      long: 15.134259
+    }
+  },
+  {
+    location : {
       name: "Sydney",
       lat: -33.8688,
       long: 151.2093
@@ -62,4 +97,3 @@ class MapTester extends React.Component {
 }
 
 export default MapTester;
-

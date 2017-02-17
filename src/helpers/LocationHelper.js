@@ -1,3 +1,5 @@
+import Mercator from 'mercator-projection'
+
 /**
  * [LocationHelper description]
  */
@@ -39,28 +41,30 @@ const LocationHelper = {
    * @return {[type]}         [description]
    */
   convertGeoToPixel(latitude, longitude) {
-    const mapWidth  = "1652.4702";
-    const mapHeight = "1220.6384";
+    // map width and height
+    const mapWidth  = 256;
+    const mapHeight = 256;
 
+    // do some mercator transformation shit - get world coordinates from LatLng
+    var worldCoords = Mercator.fromLatLngToPoint({lat: latitude, lng: longitude});
+
+    // save world coordinates
+    var worldCoordsX = worldCoords.x;
+    var worldCoordsY = worldCoords.y;
+
+    // zoom level -> level 0 = 256x256
+    var zoomLevel = 0;
+
+    // wold coordinates to pixelcoordinates
+    var pixelCoordsX = worldCoordsX * (Math.pow(2, zoomLevel));
+    var pixelCoordsY = worldCoordsY * Math.pow(2, zoomLevel);
+
+    // calculate width and height in percentage
     let {x, y} = 0;
-    // get x value
-    x = (longitude+180)*(mapWidth/360);
-
-    // convert from degrees to radians
-    const latRad = latitude*Math.PI/180;
-
-    // get y value
-    const mercN = Math.log(Math.tan((Math.PI/4)+(latRad/2)));
-    y     = (mapHeight/2)-(mapWidth*mercN/(2*Math.PI));
-
-    // Hotfixes since postioning was not exact
-    // @todo fix
-    y = y + 0.098 * mapHeight;
-    x = x - 0.005 * mapWidth;
-
-    // change from px to %
-    x = (x*100)/mapWidth + "%";
-    y = (y*100)/mapHeight + "%";
+    pixelCoordsX = ((pixelCoordsX*100)/mapWidth) + "%";
+    pixelCoordsY = ((pixelCoordsY*100)/mapHeight) + "%";
+    x = pixelCoordsX
+    y = pixelCoordsY
 
     return {x,y};
   }
