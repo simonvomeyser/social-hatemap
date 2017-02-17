@@ -57,15 +57,15 @@ class App extends React.Component {
     .then((geoCodedEntities) => {
 
       // Calculate X and Y Position
-      const xySHMEnties = geoCodedEntities.map(LocationHelper.addXYLocationsToSHMEntity);
+      const xySHMEnties = LocationHelper.addXYLocation(geoCodedEntities);
 
       // Add Sentiment to Enities @todo
       const sentimentSHMEntites = SentimentHelper.addSentiment(xySHMEnties);
-      
+
       // Genderize Entites @todo 
       const processedSHMEntites = sentimentSHMEntites;
 
-      // Save all of them in state 
+      // Save all of them in state, "processPosts" triggers map rendering
       this.setState({
         geocodableSHMEntities,
         xySHMEnties,

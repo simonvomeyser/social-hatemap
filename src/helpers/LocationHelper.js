@@ -4,6 +4,15 @@
 const LocationHelper = {
 
   /**
+   * Adds the x/y location to given Entites 
+   * @param  {Array} SHMEntities (must have lat/long)
+   * @return {Array}             
+   */
+  addXYLocation(SHMEntities) {
+    return SHMEntities.map(this.addXYLocationsToSHMEntity);
+  },
+
+  /**
    * Returns only Entites that have a location (can be geocoded)
    * @param  {Array} SHMEntities 
    * @return {Array}             
