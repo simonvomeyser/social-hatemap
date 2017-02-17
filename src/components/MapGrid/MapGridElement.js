@@ -32,9 +32,8 @@ class MapGridElement extends React.Component {
    */
   componentDidMount() {
     const containedSHMEntities = this.getContainedSHMEntities();
-    const chernofflingProps = new ChernofflingProps(containedSHMEntities, this.props.SHMEntities);
 
-    this.setState({containedSHMEntities, chernofflingProps});
+    this.setState({containedSHMEntities});
   }
   render() {
     return (
@@ -45,7 +44,7 @@ class MapGridElement extends React.Component {
             <Chernoffling
               id={"chernoffling-"+this.props.id}
               parentAnimationDuration={animationDuration}
-              {...this.state.chernofflingProps}/>
+              {...new ChernofflingProps(this.state.containedSHMEntities, this.props.SHMEntities)}/>
           : null}        
         </div>
       </div>
