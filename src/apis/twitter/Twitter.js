@@ -39,6 +39,11 @@ const Twitter = {
     });    
   },
 
+  /**
+   * Converts the answer of the api to a SHMEntity usable by the App
+   * @param  {[type]} twitterPost [description]
+   * @return {[type]}             [description]
+   */
   apiAnswerToSHMEntity(twitterPost) {
 
     const user = {
@@ -54,7 +59,10 @@ const Twitter = {
       fav        : twitterPost.favourites_count
     };
     const location = {
-      name       : twitterPost.user.location
+      // Set the name to something that can be parsed later (can be empty)
+      name       : twitterPost.place ? 
+        twitterPost.place.full_name + " " + twitterPost.place.country :
+        twitterPost.user.location
     };
     return new SHMEntity(user, post, location);
   }

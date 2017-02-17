@@ -47,14 +47,20 @@ class App extends React.Component {
 
   processPosts() {
     const SHMEntities = this.state.SHMEntities;
-    const locations = SHMEntities.map((post) => post.user.location);
 
+    // Filter out not geocodeable Entities
+    const GeocodableSHMEntities = LocationHelper.filterSHMEntities(SHMEntities);
+
+    console.log (GeocodableSHMEntities);
+    // Start Ceocoding
+
+    const locations = GeocodableSHMEntities.map((post) => post.user.location);
     Geocoder
       .batchGeocode(locations, IS_DEV_MODE)
       .then((geoCodedLocations) => {
 
         // Add locations to all posts
-        const geoCodedEntities = SHMEntities.map((e, i) => {
+        const geoCodedEntities = GeocodableSHMEntities.map((e, i) => {
           return {...e, location:geoCodedLocations[i]}; 
         }).map(LocationHelper.addXYLocationsToSHMEntity);
 
