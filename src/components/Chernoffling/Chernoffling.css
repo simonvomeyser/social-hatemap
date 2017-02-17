@@ -9,6 +9,9 @@
   display: block;
   padding-top: 100%;  
 }
+#monster {
+  background: #e0e0e0;
+}
 .Chernoffling__svg {
   left: 0;
   top: 0;
