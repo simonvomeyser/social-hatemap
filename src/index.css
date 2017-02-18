@@ -22,6 +22,7 @@ a {
 }
 
 .__react_component_tooltip {
+  pointer-events: initial!important;
   padding: 0!important;
   padding-top: 0!important;
   font-size: inherit!important;
