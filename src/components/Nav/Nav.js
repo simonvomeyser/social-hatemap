@@ -54,9 +54,12 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="Nav">
-        <Link to="/" className="btn">Enter new hashtag</Link>
-        <div className="gridControls"> Grid
+        <div className="gridControls"> 
+          <div className="gridControls__newHash">
+            <Link to="/" className="btn gridControls__newHashBtn">Enter new hashtag</Link>
+          </div>
           <div className="gridControls__gridSize">
+            <label>Grid&nbsp;Size</label>
             <input
               name="size"
               onMouseUp={this.saveGridChange}
@@ -68,9 +71,10 @@ class Nav extends React.Component {
               max="20"
               step="1"
             />
-            /* Size: {this.state.gridConfig.size} Grid Elements per row */
+            
           </div>
           <div className="gridControlles__opacity">
+            <label>Grid&nbsp;Opacity</label>
             <input
               name="opacity"
               onMouseUp={this.saveGridChange}
@@ -81,18 +85,20 @@ class Nav extends React.Component {
               max="1"
               step="0.01"
             />
-            /*  Opacitiy: {this.state.gridConfig.opacity}%*/
           </div>
             
           <div className="gridControlles__showGrid">
-            Show Grid: 
-            <a href="#" onClick={this.handleGridYesNoChange} className={'btn', this.state.gridConfig.display ? "active" : ""} data-value="true">Yes</a>
-            <a href="#" onClick={this.handleGridYesNoChange} className={'btn', this.state.gridConfig.display ? "" : "active"} data-value="false">No</a>
+            <label>Show&nbsp;Grid</label>
+            <a href="#" onClick={this.handleGridYesNoChange} className={this.state.gridConfig.display ? "active" : ""} data-value="true">Yes</a>
+            <a href="#" onClick={this.handleGridYesNoChange} className={this.state.gridConfig.display ? "" : "active"} data-value="false">No</a>
           </div>
         </div>
       </div>
     );
+
+    /* Size: {this.state.gridConfig.size} Grid Elements per row */
   }
+            /*  Opacitiy: {this.state.gridConfig.opacity}%*/
 
 }
 export default Nav;
