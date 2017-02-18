@@ -14,7 +14,8 @@ class TwittterSHMEntity extends SHMEntity {
       screenName : twitterPost.user.screenName,
       follower   : twitterPost.user.followers_count,
       accountAge : new Date().getFullYear() - new Date(twitterPost.user.created_at).getFullYear(), // @todo to age
-      image      : twitterPost.user.profile_image_url_https
+      image      : twitterPost.user.profile_image_url_https,
+      gender     : undefined
     };
     this.post = {
       text       : twitterPost.text,
