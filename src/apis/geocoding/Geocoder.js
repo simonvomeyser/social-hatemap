@@ -13,11 +13,13 @@ const Geocoder = {
       this.batchGeocode(locations, IS_DEV_MODE)
       .then((geoCodedLocations) => {
 
-        const geoCodedSHMEntities = geocodableSHMEntities.map((e, i) => {
-          return {...e, location:geoCodedLocations[i]};
-        })
-
-        console.log(geoCodedSHMEntities);
+        const geoCodedSHMEntities = geocodableSHMEntities
+          .filter((e, i) => {
+            return (geoCodedLocations[i] && geoCodedLocations[i].status === 'success');
+          })
+          .map((e, i) => {
+            return {...e, location:geoCodedLocations[i]};
+          });
         resolve(geoCodedSHMEntities);
       })
     })
@@ -37,14 +39,65 @@ const Geocoder = {
       return this.batchGeocodeStatic(locationNames);
     }
 
-    throw new Error("Not yet implemented");
+    var locationPromises = locationNames.map((locationName) => {
+      return this.fetchJSONFromAPI(locationName);
+    });
+
+    return Promise.all(locationPromises);
   },
 
-  batchGeocodeStatic(locationNames = []) {
+  /**
+   * Get the geodata from google maps using a location string
+   * @param  {string} locationName Name of location for geocoding
+   * @return {Promise}
+   */
+  fetchJSONFromAPI(locationName) {
+    return new Promise((resolve, reject) => {
+      fetch('http://maps.google.com/maps/api/geocode/json?address=' + locationName)
+      .then((response) => {
+        return response.json();
+      })
+      .then((geocodeJSON) => {
+        return resolve(this.formatJSON(geocodeJSON));
+      });
+    });
+  },
 
+  /**
+   * Formats the geocode result from google Maps for using
+   * @param  {object} geocodeJSON geodata from google maps
+   * @return {object} returnJSON
+   */
+  formatJSON(geocodeJSON) {
+    if(!geocodeJSON || geocodeJSON['status'] !== 'OK') {
+      return { 'status': 'error' };
+    }
+    else {
+      var returnJSON = {
+        'lat':geocodeJSON['results'][0]['geometry']['location']['lat'],
+        'long':geocodeJSON['results'][0]['geometry']['location']['lng'],
+        'status':'success'
+      };
+      for (var i = 0; i < geocodeJSON['results'][0]['address_components'].length; i++) {
+        if(geocodeJSON['results'][0]['address_components'][i]['types'].includes('political')) {
+          returnJSON.name = geocodeJSON['results'][0]['address_components'][i]['short_name'];
+          break;
+        }
+      }
+      return returnJSON
+
+    }
+  },
+
+  /**
+   * Development function not call api during development
+   * @param  {Array}  locationNames Array of Strings representing locations
+   * @return {[Prommise]}               [description]
+   */
+  batchGeocodeStatic(locationNames = []) {
     // create location array of objects having static lat/long of a random city
-    const locationObjects = locationNames.map((locationName) => {
-      return { locationName, ...this.getRandomStaticLocation() };
+    const locationObjects = locationNames.map((locationName, i) => {
+      return this.formatJSON(sampleData[i]);
     });
 
     return this.fakeDelayedApiResponse(locationObjects);
