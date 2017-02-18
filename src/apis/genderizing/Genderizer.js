@@ -122,13 +122,14 @@ const Genderizer = {
   },
 
   /**
-   * 
-   * @return {[type]} [description]
+   * Retruns a fake response giving all entites a Random gender
+   * @return {Promise} Resolved after 1.5 sec
    */
   fakeRandomResponse(SHMEntities) {
     return new Promise((resolve) => {
       const SHMEntitiesWithGender = SHMEntities.map(function(SHMEntity) {
-        SHMEntity.user.gender = Math.round(Math.random() * 2 -1);
+
+        SHMEntity.user.gender = Math.round(Math.random()*10)/10;
         return SHMEntity;
       })
           
