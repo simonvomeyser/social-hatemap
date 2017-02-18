@@ -31,28 +31,25 @@ class App extends React.Component {
       doneRenderingMap: false
     };
 
-    this.processPosts     = this.processPosts.bind(this);
     this.setLoading       = this.setLoading.bind(this);
     this.changeGridConfig = this.changeGridConfig.bind(this);
   }
   componentWillMount() {
+
+    // Start the App "lifecycle"
+    const hashtag = this.props.params.id;
+
     this.setLoading('Getting Data from Twitter...');
-    Twitter.getPosts(this.props.params.id, IS_DEV_MODE).then((SHMEntities) => {
-      this.setState({
-        SHMEntities : SHMEntities
-      });
-      this.processPosts();
-    });
-  }
 
-  processPosts() {
-    const SHMEntities = this.state.SHMEntities;
+    Twitter.getPosts(hashtag, IS_DEV_MODE)
+    .then((twitterSHMEntities) => {
 
-    // Filter out not geocodeable Entities
-    const geocodableSHMEntities = LocationHelper.filterSHMEntities(SHMEntities);
+      // Remove loca
+      const geocodableSHMEntities = LocationHelper.filterSHMEntities(twitterSHMEntities);
 
-    // Start Ceocoding
-    Geocoder.addGeoLocation(geocodableSHMEntities, IS_DEV_MODE)
+      // Get geolocated Entities (promise)
+      return Geocoder.addGeoLocation(geocodableSHMEntities, IS_DEV_MODE)
+    })
     .then((geoCodedEntities) => {
 
       // Calculate X and Y Position
@@ -61,24 +58,19 @@ class App extends React.Component {
       // Add Sentiment to Enities
       const sentimentSHMEntites = SentimentHelper.addSentiment(xySHMEnties);
 
-      // Genderize Entites @todo 
-      Genderizer.addGender(sentimentSHMEntites, IS_DEV_MODE)
-      .then((processedSHMEntites) => {
-        
-        console.log (processedSHMEntites);
-        // Save all of them in state, "processPosts" triggers map rendering
-        this.setState({
-          loading   : null,
-          geocodableSHMEntities,
-          xySHMEnties,
-          sentimentSHMEntites,        
-          processedSHMEntites });
-      });
-        
-      })
-
+      // Get genderized Entities (promise)
+      return Genderizer.addGender(sentimentSHMEntites, IS_DEV_MODE)
+    })
+    .then((processedSHMEntites) => {
+      
+      // Save all of them in state, "processedSHMEntites" triggers map rendering
+      this.setState({
+        loading   : null,
+        processedSHMEntites });
+    });
+      
   }
-  
+
   setLoading(text) {
     this.setState({loading: (<LoadingSpinner/>)});
   }
