@@ -83,7 +83,7 @@ const Geocoder = {
   /**
    * @return {Object} With random long and lat prop
    */
-  getRandomLoacation() {
+  getRandomGeoLoacation() {
     const long = Math.random() * 180 * this.randomNegative();
     const lat = Math.random() * 90 * this.randomNegative();
     return {long, lat};
