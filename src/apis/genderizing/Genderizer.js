@@ -19,8 +19,9 @@ const Genderizer = {
 
     // Get only the once that can be genderized
     this.genderizableSHMEntities = SHMEntities.filter(this.isGenderizable);
-    
+
     if (IS_DEV_MODE) {
+      return this.fakeRandomResponse(this.genderizableSHMEntities);
       this.genderResults = sampleData;
       return new Promise((resolve) => {this.fetchingResultsComplete(resolve)});
     }
