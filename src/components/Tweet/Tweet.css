@@ -21,3 +21,11 @@
   min-height: 80px;
   max-width: 400px;
 }
+.Tweet__Chernoffling {
+  border: 1px red dotted;
+  position: absolute;
+  left: 0;           
+  top: 80px;           
+  width: 80px;
+  height: 80px; 
+}

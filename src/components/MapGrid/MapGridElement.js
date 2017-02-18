@@ -1,7 +1,7 @@
 import React from 'react';
-import Chernoffling from '../Chernoffling/Chernoffling';
 import Overlay from '../Overlay/Overlay';
 import Tweetlist from '../Tweetlist/Tweetlist';
+import Chernoffling from '../Chernoffling/Chernoffling';
 import ChernofflingProps from '../../classes/ChernofflingProps';
 
 import './MapGridElement.css';
