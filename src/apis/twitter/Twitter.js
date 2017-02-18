@@ -1,5 +1,5 @@
 import sampleData from './sampleData.json';
-import SHMEntity from '../../classes/SHMEntity';
+import TwitterSHMEntity from '../../classes/TwitterSHMEntity';
 
 const apiUrl = 'http://api.socialhatemap.com/twitter.php';
 
@@ -8,7 +8,7 @@ const apiUrl = 'http://api.socialhatemap.com/twitter.php';
  * @type {Object}
  */
 const Twitter = {
-
+  
   /**
    * Only real "public" method returning a promise that contains Object 
    *
@@ -23,7 +23,9 @@ const Twitter = {
     }
 
     return fetch(apiUrl + '?hashtag=' + $hashtag)
-    .then((response) => { return response.json().statuses.map(this.apiAnswerToSHMEntity); });
+    .then((response) => { 
+      return response.json().statuses.map((e) => new TwitterSHMEntity(e)); 
+    });
   },
 
   /**
@@ -34,37 +36,10 @@ const Twitter = {
   getStaticPosts($hashtag) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve(sampleData.map(this.apiAnswerToSHMEntity));
+        resolve(sampleData.map((e) => new TwitterSHMEntity(e)));
       }, 500);
     });    
   },
-
-  /**
-   * Converts the answer of the api to a SHMEntity usable by the App
-   * @param  {[type]} twitterPost [description]
-   * @return {[type]}             [description]
-   */
-  apiAnswerToSHMEntity(twitterPost) {
-
-    const user = {
-      name       : twitterPost.user.name,
-      screenName : twitterPost.user.screenName,
-      follower   : twitterPost.user.followers_count,
-      accountAge : new Date().getFullYear() - new Date(twitterPost.user.created_at).getFullYear(), // @todo to age
-      image      : twitterPost.user.profile_image_url_https
-    };
-    const post = {
-      text       : twitterPost.text,
-      favourites : twitterPost.favorite_count
-    };
-    const location = {
-      // Set the name to something that can be parsed later (can be empty)
-      name       : twitterPost.place ? 
-        twitterPost.place.full_name + " " + twitterPost.place.country :
-        twitterPost.user.location
-    };
-    return new SHMEntity(user, post, location);
-  }
 };
 
 export default Twitter;
