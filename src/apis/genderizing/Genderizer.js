@@ -21,9 +21,8 @@ const Genderizer = {
     this.genderizableSHMEntities = SHMEntities.filter(this.isGenderizable);
 
     if (IS_DEV_MODE) {
-      return this.fakeRandomResponse(this.genderizableSHMEntities);
       this.genderResults = sampleData;
-      return new Promise((resolve) => {this.fetchingResultsComplete(resolve)});
+      return new Promise((resolve) => {this.onFetchingComplete(resolve)});
     }
   
     const queryStringArray = this.createQueryStringArray(this.genderizableSHMEntities);
@@ -44,12 +43,8 @@ const Genderizer = {
               this.genderResults.push(json)
             }
             if (i === queryStringArray.length-1) {
-              this.fetchingResultsComplete(resolve);
+              this.onFetchingComplete(resolve);
             }
-          })
-          .catch((e) => {
-            this.error = e;
-            this.fetchingResultsComplete(resolve);
           })
 
         }, 200*i);
@@ -61,14 +56,19 @@ const Genderizer = {
 
   },
 
-  fetchingResultsComplete(resolve) {
-    if (this.failed) {
-      console.warn('Genderizer failed and returned random results. See error below:')
-      console.warn(e)
-      return this.fakeRandomResponse(this.genderizableSHMEntities);
-    }
+  /**
+   * Called when fetching results is done
+   * @param  {[type]} resolve [description]
+   * @return {[type]}         [description]
+   */
+  onFetchingComplete(resolve) {
     const mergedArray = [].concat.apply([],this.genderResults);
-
+    
+    if (mergedArray.length < this.genderizableSHMEntities.length) {
+      console.warn('Genderizer failed and returned random results.')
+      resolve( this.fakeRandomResponse(this.genderizableSHMEntities));
+      return;
+    }
     resolve (
       this.genderizableSHMEntities.map(function(elem, i) {
         switch (mergedArray[i].gender) {
@@ -85,9 +85,6 @@ const Genderizer = {
         return elem;
       })
     );
-
-
-    console.log (mergedArray);
 
   },
   /**
@@ -122,13 +119,14 @@ const Genderizer = {
   },
 
   /**
-   * 
-   * @return {[type]} [description]
+   * Retruns a fake response giving all entites a Random gender
+   * @return {Promise} Resolved after 1.5 sec
    */
   fakeRandomResponse(SHMEntities) {
     return new Promise((resolve) => {
       const SHMEntitiesWithGender = SHMEntities.map(function(SHMEntity) {
-        SHMEntity.user.gender = Math.round(Math.random() * 2 -1);
+
+        SHMEntity.user.gender = Math.round(Math.random()*10)/10;
         return SHMEntity;
       })
           

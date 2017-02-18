@@ -96,7 +96,6 @@ export default class Chernoffling extends React.Component {
     var sentiment = params.sentiment,
         amplitude = params.amplitude;
 
-    // console.log(sentiment, amplitude);
 
     if(amplitude < .5) { // niedrige Intensität
       if(sentiment < -(.6)) { // negativ
@@ -160,7 +159,6 @@ export default class Chernoffling extends React.Component {
     }
 
 
-    // console.log(favourites, fav_scale_factor);
 
     if (params.age < 3) { // sehr jung
       badge.css('transform','scale('+ favourites + '%');
@@ -179,7 +177,6 @@ export default class Chernoffling extends React.Component {
     var followers_factor = params.followers/100,
         scale_factor = 0.3 + 0.5*followers_factor;
 
-    //console.log(followers_factor, scale_factor);
 
     $monster.css({
       'transform': 'translate(-50%,-50%) scale(' + scale_factor + ')'
@@ -224,7 +221,6 @@ export default class Chernoffling extends React.Component {
       });
     }
 
-    console.log(params.sentiment, orig_sentimentValue);
   }
 
   numberToColorHsl(i) {

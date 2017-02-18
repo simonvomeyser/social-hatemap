@@ -4,33 +4,33 @@
   top: 0;
   width: 100vw;
   height: auto;
+  /* Marc's formidable CSS */
+  margin-top: -30vh;
+  margin-bottom: -60vh;
+  overflow: hidden;
 }
 .Map svg {
   z-index: -1;
-  /* transform: translateY(-10%); */
   width: 100%;
   height: auto;
 }
-.Map svg .ocean {
-  fill: black !important;
-}
-.Map svg .lake {
-  fill: black !important;
-}
-.Map svg .land {
 
-   fill: #2C2C2C !important;
-   fill-opacity: 1;
-   stroke: #3C3C3C !important;
+/* Marc's formidable CSS */
+body {
+  font-family: 'Roboto', sans-serif !important;
+  color: #404040 !important;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: #eee !important;
 }
-.circle
-{
-   opacity:0;
-   fill:#b9b9b9;
-   fill-opacity:1;
-   stroke:black;
-   stroke-width:0.99986893;
-   stroke-miterlimit:3.97446823;
-   stroke-dasharray:none;
-   stroke-opacity:1;
+h1 {
+  position: absolute;
+  z-index: 200;
+  font-size: 24px !important;
+  line-height: 28px !important;
+  top: 30px;
+  left: 40px;
+  margin: 0;
+  font-weight: 300;
+  color: ;
 }

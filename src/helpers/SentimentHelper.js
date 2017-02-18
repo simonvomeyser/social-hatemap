@@ -9,7 +9,7 @@ const Sentiment = {
 		return SHMEntities.map((SHMEntity) => {
 			SHMEntity.post.sentiment = this.getSentiment(SHMEntity.post.text);
 			return SHMEntity;
-		})
+		});
 	},
 
 	/**
