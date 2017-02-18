@@ -19,7 +19,11 @@
   position: absolute;
   left: 1em;
   width:  50%;
-
+  color: #000;
+  text-align: left;
+}
+.MapGridElement__overlayChernoffling .Chernoffling{
+  margin-bottom: -25%
 }
 .MapGridElement__overlayTweetList {
   position: absolute;
