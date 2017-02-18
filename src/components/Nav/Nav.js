@@ -53,48 +53,44 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <ul className="Nav">
-        <li>
-          <Link to="/">Enter new hashtag</Link>
-        </li>
-        <li> Grid
-          <ul>
-            <li>
-              <input
-                name="size"
-                onMouseUp={this.saveGridChange}
-                onKeyUp={this.saveGridChange}
-                onChange={this.handleGridInputChange}
-                value={this.state.gridConfig.size}
-                type="range"
-                min="3"
-                max="20"
-                step="1"
-                />
-                  Size: {this.state.gridConfig.size} Grid Elements per row
-                </li>
-            <li>
-              <input
-                name="opacity"
-                onMouseUp={this.saveGridChange}
-                onChange={this.handleGridInputChange}
-                value={this.state.gridConfig.opacity}
-                type="range"
-                min="0"
-                max="1"
-                step="0.01"
-                />
-                Opacitiy: {this.state.gridConfig.opacity}%
-            </li>
-            <li className="Nav__showGrid">
-              Show Grid: 
-              <a href="#" onClick={this.handleGridYesNoChange} className={this.state.gridConfig.display ? "active" : ""} data-value="true">Yes</a>
-              <a href="#" onClick={this.handleGridYesNoChange} className={this.state.gridConfig.display ? "" : "active"} data-value="false">No</a>
-            </li>
-          </ul>
-          
-        </li>
-      </ul>
+      <div className="Nav">
+        <Link to="/" className="btn">Enter new hashtag</Link>
+        <div className="gridControls"> Grid
+          <div className="gridControls__gridSize">
+            <input
+              name="size"
+              onMouseUp={this.saveGridChange}
+              onKeyUp={this.saveGridChange}
+              onChange={this.handleGridInputChange}
+              value={this.state.gridConfig.size}
+              type="range"
+              min="3"
+              max="20"
+              step="1"
+            />
+            /* Size: {this.state.gridConfig.size} Grid Elements per row */
+          </div>
+          <div className="gridControlles__opacity">
+            <input
+              name="opacity"
+              onMouseUp={this.saveGridChange}
+              onChange={this.handleGridInputChange}
+              value={this.state.gridConfig.opacity}
+              type="range"
+              min="0"
+              max="1"
+              step="0.01"
+            />
+            /*  Opacitiy: {this.state.gridConfig.opacity}%*/
+          </div>
+            
+          <div className="gridControlles__showGrid">
+            Show Grid: 
+            <a href="#" onClick={this.handleGridYesNoChange} className={'btn', this.state.gridConfig.display ? "active" : ""} data-value="true">Yes</a>
+            <a href="#" onClick={this.handleGridYesNoChange} className={'btn', this.state.gridConfig.display ? "" : "active"} data-value="false">No</a>
+          </div>
+        </div>
+      </div>
     );
   }
 
