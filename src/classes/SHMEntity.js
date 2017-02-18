@@ -6,7 +6,6 @@ class SHMEntity {
   constructor()  {
     this.status   = "EMPTY";
   }
-
   setNotReady() {
     this.status   = "NOT_READY";
   }
