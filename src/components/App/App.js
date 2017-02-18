@@ -2,6 +2,7 @@ import React from 'react';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import Tweetlist from '../Tweetlist/Tweetlist';
 import Nav from '../Nav/Nav';
+import MainNav from '../MainNav/MainNav';
 import Map from '../Map/Map';
 
 // Apis
@@ -63,13 +64,13 @@ class App extends React.Component {
       return Genderizer.addGender(sentimentSHMEntites, IS_DEV_MODE)
     })
     .then((processedSHMEntites) => {
-      
+
       // Save all of them in state, "processedSHMEntites" triggers map rendering
       this.setState({
         loading   : null,
         processedSHMEntites });
     });
-      
+
   }
 
   setLoading(text) {
@@ -89,6 +90,7 @@ class App extends React.Component {
           processPosts={this.processPosts}
           changeGridConfig={this.changeGridConfig}
           gridConfig={this.state.gridConfig}/>
+        <MainNav/>
         <div className="App__content">
           {this.state.loading}
         </div>

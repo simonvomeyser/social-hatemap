@@ -6,6 +6,7 @@ import HashtagModal from './components/HashtagModal/HashtagModal';
 import ChernofflingCreator from './components/ChernofflingCreator/ChernofflingCreator';
 import MapTester from './components/MapTester/MapTester';
 import SentimentTester from './components/SentimentTester/SentimentTester';
+import About from './components/About/About';
 
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
@@ -20,6 +21,7 @@ ReactDOM.render((
         <Route path="creator" component={ChernofflingCreator} />
         <Route path="maptester" component={MapTester} />
         <Route path="sentiment" component={SentimentTester} />
+        <Route path="about" component={About} />
       </Route>
     </Router>
   </div>
