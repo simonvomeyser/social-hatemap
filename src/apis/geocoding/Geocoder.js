@@ -6,7 +6,7 @@ const Geocoder = {
 
   addGeoLocation(geocodableSHMEntities, IS_DEV_MODE) {
 
-    const locations = geocodableSHMEntities.map((post) => post.user.location);
+    const locations = geocodableSHMEntities.map((post) => post.location.name);
 
     return new Promise((resolve) => {
 
@@ -14,9 +14,9 @@ const Geocoder = {
       .then((geoCodedLocations) => {
 
         const geoCodedSHMEntities = geocodableSHMEntities.map((e, i) => {
-          return {...e, location:geoCodedLocations[i]}; 
+          return {...e, location:geoCodedLocations[i]};
         })
-        
+
         resolve(geoCodedSHMEntities);
       })
     })
@@ -25,17 +25,17 @@ const Geocoder = {
 
   /**
    * Batch Transforms given Names of Locations in objects containing lat/long
-   * 
+   *
    * @param {array} Strings of Location Names
    * @param {bool} If true, the api call is only "simulated"
-   * 
+   *
    * @return {Promise} On resloving JSON with objects
    */
   batchGeocode(locationNames =[], IS_DEV_MODE) {
     if (IS_DEV_MODE) {
       return this.batchGeocodeStatic(locationNames);
     }
-    
+
     throw new Error("Not yet implemented");
   },
 
@@ -66,7 +66,7 @@ const Geocoder = {
 
   /**
    * Simulate api behavoiur
-   * 
+   *
    * @param  {array} locations What to return after a short moment
    * @return {Promise} Will be resolved with a short delay
    */
