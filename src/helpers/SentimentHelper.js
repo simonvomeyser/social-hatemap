@@ -9,7 +9,7 @@ const Sentiment = {
 		return SHMEntities.map((SHMEntity) => {
 			SHMEntity.post.sentiment = this.getSentiment(SHMEntity.post.text);
 			return SHMEntity;
-		})
+		}).filter((SHMEntity) => SHMEntity.post.sentiment.sentiment != 0 );
 	},
 
 	/**
