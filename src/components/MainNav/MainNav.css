@@ -4,18 +4,10 @@
   top: 0;
   margin: 0;
   text-align: left;
+  z-index:10;
+}
+.MainNav  a {
+  color: #000;
   font-size: 16px;
   line-height: 18px;
-}
-.MainNav__showGrid  a {
-}
-.MainNav__showGrid  a.active {
-  cursor: default;
-  background-color: rgba(255, 255, 255, .2)
-}
-.MainNav .btn {
-  background: transparent;
-  border: 1px solid #4c4c4c;
-  padding: 4px 10px;
-  border-radius: 0;
 }

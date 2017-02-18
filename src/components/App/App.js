@@ -2,7 +2,6 @@ import React from 'react';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import Tweetlist from '../Tweetlist/Tweetlist';
 import Nav from '../Nav/Nav';
-import MainNav from '../MainNav/MainNav';
 import Map from '../Map/Map';
 
 // Apis
@@ -90,7 +89,6 @@ class App extends React.Component {
           processPosts={this.processPosts}
           changeGridConfig={this.changeGridConfig}
           gridConfig={this.state.gridConfig}/>
-        <MainNav/>
         <div className="App__content">
           {this.state.loading}
         </div>

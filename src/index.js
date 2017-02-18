@@ -6,7 +6,7 @@ import HashtagModal from './components/HashtagModal/HashtagModal';
 import ChernofflingCreator from './components/ChernofflingCreator/ChernofflingCreator';
 import MapTester from './components/MapTester/MapTester';
 import SentimentTester from './components/SentimentTester/SentimentTester';
-import About from './components/About/About';
+import MainNav from './components/MainNav/MainNav';
 
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
@@ -14,6 +14,7 @@ import './index.css';
 
 ReactDOM.render((
   <div className="Index">
+    <MainNav/>
     <Router history={hashHistory}>
       <Route path="/">
         <IndexRoute component={HashtagModal} />
@@ -21,7 +22,6 @@ ReactDOM.render((
         <Route path="creator" component={ChernofflingCreator} />
         <Route path="maptester" component={MapTester} />
         <Route path="sentiment" component={SentimentTester} />
-        <Route path="about" component={About} />
       </Route>
     </Router>
   </div>
