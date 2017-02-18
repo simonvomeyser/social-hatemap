@@ -32,7 +32,7 @@ class HashtagModal extends Component {
         <div className="HashtagModal__overlay"></div>
         <div className="HashtagModal__content">
           <form onSubmit={this.handleSubmit}>
-            <div>Please enter your Hashtag</div>
+            <h2>Please enter your Hashtag</h2>
             <input type="text" ref={(input) => {this.inputField = input; }}/>
             <input type="submit"/>
           </form>   

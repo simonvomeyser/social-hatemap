@@ -88,7 +88,7 @@ class Nav extends React.Component {
           </div>
             
           <div className="gridControlles__showGrid">
-            <label>Show&nbsp;Grid</label>
+            <label>Show&nbsp;Grid&nbsp;&amp;&nbsp;Monsters</label>
             <a href="#" onClick={this.handleGridYesNoChange} className={this.state.gridConfig.display ? "active" : ""} data-value="true">Yes</a>
             <a href="#" onClick={this.handleGridYesNoChange} className={this.state.gridConfig.display ? "" : "active"} data-value="false">No</a>
           </div>
