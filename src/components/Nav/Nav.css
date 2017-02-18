@@ -28,6 +28,12 @@
 .Nav .btn:hover, .Nav .gridControls a:hover {
   background-color: #4c4c4c;
   color: #e0e0e0;
+  text-decoration: none;
+}
+.Nav .gridControls a.active {
+  background-color: #4c4c4c;
+  color: #e0e0e0;
+  text-decoration: none;
 }
 .gridControls > * {
   float: left; 

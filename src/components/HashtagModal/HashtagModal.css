@@ -18,10 +18,20 @@
   font-size: 1.5em;
   transform: translate(-50%, -50%)
 }
+.HashtagModal__content h2 {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 36px;
+  margin: 0px 0px 10px;
+  color: #4c4c4c;
+}
+
 
 .HashtagModal__content input {
-  margin-top: 1em;
-  font-size: 1.2em;
+  font-size: 20px;
+  line-height: 22px;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif !important;
 }
 .HashtagModal__content input[type="submit"] {
   display: none;
