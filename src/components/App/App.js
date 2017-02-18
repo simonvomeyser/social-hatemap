@@ -15,6 +15,7 @@ import SentimentHelper from '../../helpers/SentimentHelper';
 
 
 import './App.css';
+import './bootstrap.css';
 
 // true means there is no real data fetched from the apis
 const IS_DEV_MODE = true;

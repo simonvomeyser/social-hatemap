@@ -1,17 +1,12 @@
 .Nav {
   position: fixed;
-  left: 0em;
-  bottom: 0em;
+  left: 40px;
+  bottom: 30px;
   background-color: #1c1c22;
   margin: 0;  
   text-align: left;
-  padding: 1em;
 }
 .Nav__showGrid  a {
-  border: 1px solid grey;
-  padding: .2em;
-  margin-left: .5em;
-  text-decoration: none;
 }
 .Nav__showGrid  a.active {
   cursor: default;
