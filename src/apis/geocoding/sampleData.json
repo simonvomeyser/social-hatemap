@@ -1,1 +1,4542 @@
-[{"results":[{"address_components":[{"long_name":"Seattle","short_name":"Seattle","types":["locality","political"]},{"long_name":"King County","short_name":"King County","types":["administrative_area_level_2","political"]},{"long_name":"Washington","short_name":"WA","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Seattle, WA, USA","geometry":{"bounds":{"northeast":{"lat":47.734145,"lng":-122.2244331},"southwest":{"lat":47.4919119,"lng":-122.4596959}},"location":{"lat":47.6062095,"lng":-122.3320708},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":47.734145,"lng":-122.2359033},"southwest":{"lat":47.4955511,"lng":-122.4359086}}},"place_id":"ChIJVTPokywQkFQRmtVEaUZlJRA","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Michigan","short_name":"MI","types":["administrative_area_level_1","establishment","point_of_interest","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Michigan, USA","geometry":{"bounds":{"northeast":{"lat":48.3060628,"lng":-82.1229709},"southwest":{"lat":41.696118,"lng":-90.4181358}},"location":{"lat":44.3148443,"lng":-85.6023643},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":48.1909186,"lng":-82.413474},"southwest":{"lat":41.696118,"lng":-90.4181358}}},"place_id":"ChIJEQTKxz2qTE0Rs8liellI3Zc","types":["administrative_area_level_1","establishment","point_of_interest","political"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"Edmonton","short_name":"Edmonton","types":["locality","political"]},{"long_name":"Division No. 11","short_name":"Division No. 11","types":["administrative_area_level_2","political"]},{"long_name":"Alberta","short_name":"AB","types":["administrative_area_level_1","political"]},{"long_name":"Canada","short_name":"CA","types":["country","political"]}],"formatted_address":"Edmonton, AB, Canada","geometry":{"bounds":{"northeast":{"lat":53.7160999,"lng":-113.2731591},"southwest":{"lat":53.395655,"lng":-113.7147381}},"location":{"lat":53.544389,"lng":-113.4909267},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":53.7160999,"lng":-113.2731591},"southwest":{"lat":53.395655,"lng":-113.7147381}}},"place_id":"ChIJI__egEUioFMRXRX2SgygH0E","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"2505","short_name":"2505","types":["street_number"]},{"long_name":"Mill Center Parkway","short_name":"Mill Center Pkwy","types":["route"]},{"long_name":"Buford","short_name":"Buford","types":["locality","political"]},{"long_name":"Gwinnett County","short_name":"Gwinnett County","types":["administrative_area_level_2","political"]},{"long_name":"Georgia","short_name":"GA","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]},{"long_name":"30518","short_name":"30518","types":["postal_code"]},{"long_name":"3700","short_name":"3700","types":["postal_code_suffix"]}],"formatted_address":"2505 Mill Center Pkwy, Buford, GA 30518, USA","geometry":{"location":{"lat":34.1140497,"lng":-83.9811014},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":34.115398680291,"lng":-83.979752419708},"southwest":{"lat":34.112700719708,"lng":-83.982450380292}}},"place_id":"ChIJjx9n1ZmT9YgR33oVYZHH5vI","types":["establishment","point_of_interest","store"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Bronx","short_name":"Bronx","types":["political","sublocality","sublocality_level_1"]},{"long_name":"North Hempstead","short_name":"North Hempstead","types":["administrative_area_level_3","political"]},{"long_name":"Bronx County","short_name":"Bronx County","types":["administrative_area_level_2","political"]},{"long_name":"New York","short_name":"NY","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Bronx, NY, USA","geometry":{"bounds":{"northeast":{"lat":40.9175771,"lng":-73.74806},"southwest":{"lat":40.7857429,"lng":-73.933808}},"location":{"lat":40.8447819,"lng":-73.8648268},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":40.9175771,"lng":-73.74806},"southwest":{"lat":40.7857429,"lng":-73.933808}}},"place_id":"ChIJsXxpOlWLwokRd1zxj6dDblU","types":["political","sublocality","sublocality_level_1"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"Washington","short_name":"Washington","types":["locality","political"]},{"long_name":"District of Columbia","short_name":"District of Columbia","types":["administrative_area_level_2","political"]},{"long_name":"District of Columbia","short_name":"DC","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Washington, DC, USA","geometry":{"bounds":{"northeast":{"lat":38.995548,"lng":-76.909393},"southwest":{"lat":38.7916449,"lng":-77.119759}},"location":{"lat":38.9071923,"lng":-77.0368707},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":38.995548,"lng":-76.909393},"southwest":{"lat":38.8031493,"lng":-77.1197401}}},"place_id":"ChIJW-T2Wt7Gt4kRKl2I1CJFUsI","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Oklahoma","short_name":"OK","types":["administrative_area_level_1","establishment","point_of_interest","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Oklahoma, USA","geometry":{"bounds":{"northeast":{"lat":37.0023119,"lng":-94.430662},"southwest":{"lat":33.615787,"lng":-103.002455}},"location":{"lat":35.0077519,"lng":-97.092877},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":37.0023119,"lng":-94.430662},"southwest":{"lat":33.618014,"lng":-103.002455}}},"place_id":"ChIJnU-ssRE5rIcRSOoKQDPPHF0","types":["administrative_area_level_1","establishment","point_of_interest","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Issaquah","short_name":"Issaquah","types":["locality","political"]},{"long_name":"King County","short_name":"King County","types":["administrative_area_level_2","political"]},{"long_name":"Washington","short_name":"WA","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Issaquah, WA, USA","geometry":{"bounds":{"northeast":{"lat":47.5773659,"lng":-121.9857307},"southwest":{"lat":47.5091522,"lng":-122.1004698}},"location":{"lat":47.5301011,"lng":-122.0326191},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":47.5773659,"lng":-121.9857307},"southwest":{"lat":47.5091522,"lng":-122.1004698}}},"place_id":"ChIJo4KHyX9lkFQRPCPwhHKGZOc","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Houston","short_name":"Houston","types":["locality","political"]},{"long_name":"Harris County","short_name":"Harris County","types":["administrative_area_level_2","political"]},{"long_name":"Texas","short_name":"TX","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Houston, TX, USA","geometry":{"bounds":{"northeast":{"lat":30.1107319,"lng":-95.014496},"southwest":{"lat":29.523624,"lng":-95.7880869}},"location":{"lat":29.7604267,"lng":-95.3698028},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":30.1107319,"lng":-95.014496},"southwest":{"lat":29.523624,"lng":-95.7880869}}},"place_id":"ChIJAYWNSLS4QIYROwVl894CDco","types":["locality","political"]}],"status":"OK"},{"results":[],"status":"ZERO_RESULTS"},null,{"results":[{"address_components":[{"long_name":"Minneapolis Avenue","short_name":"Minneapolis Ave","types":["route"]},{"long_name":"Woodland","short_name":"Woodland","types":["neighborhood","political"]},{"long_name":"Duluth","short_name":"Duluth","types":["locality","political"]},{"long_name":"St. Louis County","short_name":"St Louis County","types":["administrative_area_level_2","political"]},{"long_name":"Minnesota","short_name":"MN","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]},{"long_name":"55803","short_name":"55803","types":["postal_code"]}],"formatted_address":"Minneapolis Ave, Duluth, MN 55803, USA","geometry":{"bounds":{"northeast":{"lat":46.8536807,"lng":-92.07537},"southwest":{"lat":46.8385951,"lng":-92.077784}},"location":{"lat":46.8463569,"lng":-92.0769015},"location_type":"GEOMETRIC_CENTER","viewport":{"northeast":{"lat":46.8536807,"lng":-92.075228019708},"southwest":{"lat":46.8385951,"lng":-92.077925980292}}},"place_id":"ChIJZUj3k1Wsr1IRlpobNeYa3Xk","types":["route"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"West Virginia","short_name":"WV","types":["administrative_area_level_1","establishment","point_of_interest","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"West Virginia, USA","geometry":{"bounds":{"northeast":{"lat":40.638801,"lng":-77.7189679},"southwest":{"lat":37.2015399,"lng":-82.644413}},"location":{"lat":38.5976262,"lng":-80.4549026},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":40.638801,"lng":-77.7189679},"southwest":{"lat":37.2015399,"lng":-82.644413}}},"place_id":"ChIJRQnL1KVUSogRQzrN3mjHALs","types":["administrative_area_level_1","establishment","point_of_interest","political"]}],"status":"OK"},null,null,{"results":[{"address_components":[{"long_name":"Cambridgeshire","short_name":"Cambridgeshire","types":["administrative_area_level_2","political"]},{"long_name":"England","short_name":"England","types":["administrative_area_level_1","political"]},{"long_name":"United Kingdom","short_name":"GB","types":["country","political"]}],"formatted_address":"Cambridgeshire, UK","geometry":{"bounds":{"northeast":{"lat":52.7399809,"lng":0.5144548},"southwest":{"lat":52.005779,"lng":-0.4999075}},"location":{"lat":52.2052973,"lng":0.1218195},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":52.7399809,"lng":0.5144548},"southwest":{"lat":52.005779,"lng":-0.4999075}}},"place_id":"ChIJofUImRD210cR-iJr8SWphk4","types":["administrative_area_level_2","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"2500","short_name":"2500","types":["street_number"]},{"long_name":"North River Road","short_name":"N River Rd","types":["route"]},{"long_name":"South Hooksett","short_name":"South Hooksett","types":["neighborhood","political"]},{"long_name":"Hooksett","short_name":"Hooksett","types":["locality","political"]},{"long_name":"Hooksett","short_name":"Hooksett","types":["administrative_area_level_3","political"]},{"long_name":"Merrimack County","short_name":"Merrimack County","types":["administrative_area_level_2","political"]},{"long_name":"New Hampshire","short_name":"NH","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]},{"long_name":"03106","short_name":"03106","types":["postal_code"]}],"formatted_address":"2500 N River Rd, Hooksett, NH 03106, USA","geometry":{"location":{"lat":43.0407729,"lng":-71.4531836},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":43.042121880292,"lng":-71.451834619708},"southwest":{"lat":43.039423919708,"lng":-71.454532580291}}},"partial_match":true,"place_id":"ChIJLWcsGJVF4okRnlf9v_TJ-Ro","types":["establishment","point_of_interest","university"]}],"status":"OK"},null,null,{"results":[{"address_components":[{"long_name":"Washington","short_name":"WA","types":["administrative_area_level_1","establishment","point_of_interest","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Washington, USA","geometry":{"bounds":{"northeast":{"lat":49.0024305,"lng":-116.91558},"southwest":{"lat":45.543541,"lng":-124.848974}},"location":{"lat":47.7510741,"lng":-120.7401386},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":49.0024564,"lng":-116.915989},"southwest":{"lat":45.5485987,"lng":-124.785618}}},"place_id":"ChIJ-bDD5__lhVQRuvNfbGh4QpQ","types":["administrative_area_level_1","establishment","point_of_interest","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"San Francisco","short_name":"San Francisco","types":["route"]},{"long_name":"General Trias","short_name":"General Trias","types":["locality","political"]},{"long_name":"Cavite","short_name":"Cavite","types":["administrative_area_level_2","political"]},{"long_name":"Calabarzon","short_name":"Calabarzon","types":["administrative_area_level_1","political"]},{"long_name":"Philippines","short_name":"PH","types":["country","political"]}],"formatted_address":"San Francisco, General Trias, Cavite, Philippines","geometry":{"location":{"lat":14.2799992,"lng":120.9020699},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":14.281348180292,"lng":120.90341888029},"southwest":{"lat":14.278650219708,"lng":120.90072091971}}},"place_id":"EjFTYW4gRnJhbmNpc2NvLCBHZW5lcmFsIFRyaWFzLCBDYXZpdGUsIFBoaWxpcHBpbmVz","types":["intersection"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Odessa","short_name":"Odessa","types":["locality","political"]},{"long_name":"Ector County","short_name":"Ector County","types":["administrative_area_level_2","political"]},{"long_name":"Texas","short_name":"TX","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Odessa, TX, USA","geometry":{"bounds":{"northeast":{"lat":31.954475,"lng":-102.2456889},"southwest":{"lat":31.798745,"lng":-102.4414181}},"location":{"lat":31.8456816,"lng":-102.3676431},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":31.954475,"lng":-102.2456889},"southwest":{"lat":31.798745,"lng":-102.4414181}}},"place_id":"ChIJ-XwTOWrJ-4YRRl9hVDSrJRY","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Canada","short_name":"CA","types":["country","political"]}],"formatted_address":"Canada","geometry":{"bounds":{"northeast":{"lat":83.6381,"lng":-50.9766},"southwest":{"lat":41.6765559,"lng":-141.00187}},"location":{"lat":56.130366,"lng":-106.346771},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":70,"lng":-50},"southwest":{"lat":42,"lng":-142}}},"place_id":"ChIJ2WrMN9MDDUsRpY9Doiq3aJk","types":["country","political"]}],"status":"OK"},{"results":[],"status":"ZERO_RESULTS"},{"results":[{"address_components":[{"long_name":"Oklahoma","short_name":"OK","types":["administrative_area_level_1","establishment","point_of_interest","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Oklahoma, USA","geometry":{"bounds":{"northeast":{"lat":37.0023119,"lng":-94.430662},"southwest":{"lat":33.615787,"lng":-103.002455}},"location":{"lat":35.0077519,"lng":-97.092877},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":37.0023119,"lng":-94.430662},"southwest":{"lat":33.618014,"lng":-103.002455}}},"place_id":"ChIJnU-ssRE5rIcRSOoKQDPPHF0","types":["administrative_area_level_1","establishment","point_of_interest","political"]}],"status":"OK"},{"error_message":"You have exceeded your rate-limit for this API.","results":[],"status":"OVER_QUERY_LIMIT"},{"error_message":"You have exceeded your rate-limit for this API.","results":[],"status":"OVER_QUERY_LIMIT"},{"error_message":"You have exceeded your rate-limit for this API.","results":[],"status":"OVER_QUERY_LIMIT"},null,{"error_message":"You have exceeded your rate-limit for this API.","results":[],"status":"OVER_QUERY_LIMIT"},null,null,null,{"error_message":"You have exceeded your rate-limit for this API.","results":[],"status":"OVER_QUERY_LIMIT"},{"error_message":"You have exceeded your rate-limit for this API.","results":[],"status":"OVER_QUERY_LIMIT"},{"error_message":"You have exceeded your rate-limit for this API.","results":[],"status":"OVER_QUERY_LIMIT"},{"error_message":"You have exceeded your rate-limit for this API.","results":[],"status":"OVER_QUERY_LIMIT"},{"results":[],"status":"ZERO_RESULTS"},{"results":[{"address_components":[{"long_name":"Cambridge","short_name":"Cambridge","types":["locality","political"]},{"long_name":"Middlesex County","short_name":"Middlesex County","types":["administrative_area_level_2","political"]},{"long_name":"Massachusetts","short_name":"MA","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Cambridge, MA, USA","geometry":{"bounds":{"northeast":{"lat":42.4043839,"lng":-71.0654872},"southwest":{"lat":42.3523968,"lng":-71.1603321}},"location":{"lat":42.3736158,"lng":-71.1097335},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":42.4043839,"lng":-71.0654872},"southwest":{"lat":42.3523968,"lng":-71.1603321}}},"place_id":"ChIJX8wwy6Vw44kRh2xoiWSOOsU","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Canary Islands","short_name":"CN","types":["administrative_area_level_1","political"]},{"long_name":"Spain","short_name":"ES","types":["country","political"]}],"formatted_address":"Canary Islands, Spain","geometry":{"bounds":{"northeast":{"lat":29.4165069,"lng":-13.3336473},"southwest":{"lat":27.6377894,"lng":-18.1612216}},"location":{"lat":28.2915637,"lng":-16.6291304},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":29.463514,"lng":-13.31543},"southwest":{"lat":27.425414,"lng":-18.391113}}},"place_id":"ChIJY1N174aqQQwRwMhLvvNAAwE","types":["administrative_area_level_1","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Monterrey","short_name":"Monterrey","types":["locality","political"]},{"long_name":"Nuevo Leon","short_name":"N.L.","types":["administrative_area_level_1","political"]},{"long_name":"Mexico","short_name":"MX","types":["country","political"]}],"formatted_address":"Monterrey, Nuevo Leon, Mexico","geometry":{"bounds":{"northeast":{"lat":25.7974005,"lng":-100.1841891},"southwest":{"lat":25.5001894,"lng":-100.4220032}},"location":{"lat":25.6866142,"lng":-100.3161126},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":25.7974005,"lng":-100.1841891},"southwest":{"lat":25.5001894,"lng":-100.4220032}}},"place_id":"ChIJ9fg3tDGVYoYRlJjIasrT06M","types":["locality","political"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"Tampa Bay","short_name":"Tampa Bay","types":["establishment","natural_feature"]},{"long_name":"Florida","short_name":"FL","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Tampa Bay, Florida, USA","geometry":{"bounds":{"northeast":{"lat":28.0375564,"lng":-82.3834095},"southwest":{"lat":27.4964445,"lng":-82.7605841}},"location":{"lat":27.763383,"lng":-82.5436722},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":28.0375524,"lng":-82.3834248},"southwest":{"lat":27.4964445,"lng":-82.7605841}}},"place_id":"ChIJnalYKh0fw4gRbXf5teHhXTA","types":["establishment","natural_feature"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"New York","short_name":"NY","types":["administrative_area_level_1","establishment","point_of_interest","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"New York, USA","geometry":{"bounds":{"northeast":{"lat":45.015865,"lng":-71.777491},"southwest":{"lat":40.4773991,"lng":-79.7625901}},"location":{"lat":43.2994285,"lng":-74.2179326},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":45.0125923,"lng":-71.8562029},"southwest":{"lat":40.4961036,"lng":-79.761996}}},"place_id":"ChIJqaUj8fBLzEwRZ5UY3sHGz90","types":["administrative_area_level_1","establishment","point_of_interest","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Dallas","short_name":"Dallas","types":["locality","political"]},{"long_name":"Dallas County","short_name":"Dallas County","types":["administrative_area_level_2","political"]},{"long_name":"Texas","short_name":"TX","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Dallas, TX, USA","geometry":{"bounds":{"northeast":{"lat":33.0237921,"lng":-96.4637379},"southwest":{"lat":32.617537,"lng":-96.999347}},"location":{"lat":32.7766642,"lng":-96.7969879},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":33.0237921,"lng":-96.4637379},"southwest":{"lat":32.617537,"lng":-96.9989413}}},"place_id":"ChIJS5dFe_cZTIYRj2dH9qSb7Lk","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"New York","short_name":"New York","types":["locality","political"]},{"long_name":"New York","short_name":"NY","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"New York, NY, USA","geometry":{"bounds":{"northeast":{"lat":40.9175771,"lng":-73.7002721},"southwest":{"lat":40.4773991,"lng":-74.2590899}},"location":{"lat":40.7127837,"lng":-74.0059413},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":40.9152555,"lng":-73.7002721},"southwest":{"lat":40.4960439,"lng":-74.2557349}}},"place_id":"ChIJOwg_06VPwokRYv534QaPC8g","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Lagos","short_name":"Lagos","types":["locality","political"]},{"long_name":"Lagos","short_name":"Lagos","types":["administrative_area_level_1","political"]},{"long_name":"Nigeria","short_name":"NG","types":["country","political"]}],"formatted_address":"Lagos, Nigeria","geometry":{"bounds":{"northeast":{"lat":6.7027984,"lng":3.6967278},"southwest":{"lat":6.3933511,"lng":3.0982732}},"location":{"lat":6.5243793,"lng":3.3792057},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":6.7027984,"lng":3.6967278},"southwest":{"lat":6.3938677,"lng":3.0982732}}},"place_id":"ChIJwYCC5iqLOxARy9nDZ6OHntw","types":["locality","political"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"Springboro","short_name":"Springboro","types":["locality","political"]},{"long_name":"Clear Creek Township","short_name":"Clear Creek Township","types":["administrative_area_level_3","political"]},{"long_name":"Warren County","short_name":"Warren County","types":["administrative_area_level_2","political"]},{"long_name":"Ohio","short_name":"OH","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Springboro, OH, USA","geometry":{"bounds":{"northeast":{"lat":39.596857,"lng":-84.1910291},"southwest":{"lat":39.520634,"lng":-84.277092}},"location":{"lat":39.5522815,"lng":-84.2332718},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":39.596857,"lng":-84.1910291},"southwest":{"lat":39.520634,"lng":-84.277092}}},"place_id":"ChIJHTQQ4CeJQIgRKiJzNdF2-04","types":["locality","political"]}],"status":"OK"},{"results":[],"status":"ZERO_RESULTS"},null,{"results":[{"address_components":[{"long_name":"California","short_name":"CA","types":["administrative_area_level_1","establishment","point_of_interest","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"California, USA","geometry":{"bounds":{"northeast":{"lat":42.0095169,"lng":-114.131211},"southwest":{"lat":32.528832,"lng":-124.482003}},"location":{"lat":36.778261,"lng":-119.4179324},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":42.009378,"lng":-114.131211},"southwest":{"lat":32.5342852,"lng":-124.4151821}}},"place_id":"ChIJPV4oX_65j4ARVW8IJ6IJUYs","types":["administrative_area_level_1","establishment","point_of_interest","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"San Francisco Bay Area","short_name":"San Francisco Bay Area","types":["colloquial_area","political"]},{"long_name":"California","short_name":"CA","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"San Francisco Bay Area, CA, USA","geometry":{"bounds":{"northeast":{"lat":38.8642448,"lng":-121.208178},"southwest":{"lat":36.8941549,"lng":-123.632497}},"location":{"lat":37.8271784,"lng":-122.2913078},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":38.8642448,"lng":-121.208178},"southwest":{"lat":36.8941549,"lng":-123.632497}}},"place_id":"ChIJtdeIpqODhYARqR9GV4QbiYw","types":["colloquial_area","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"657","short_name":"657","types":["street_number"]},{"long_name":"Woodward Avenue","short_name":"Woodward Ave","types":["route"]},{"long_name":"Ridgewood","short_name":"Ridgewood","types":["neighborhood","political"]},{"long_name":"Queens","short_name":"Queens","types":["political","sublocality","sublocality_level_1"]},{"long_name":"Queens County","short_name":"Queens County","types":["administrative_area_level_2","political"]},{"long_name":"New York","short_name":"NY","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]},{"long_name":"11385","short_name":"11385","types":["postal_code"]}],"formatted_address":"657 Woodward Ave, Ridgewood, NY 11385, USA","geometry":{"location":{"lat":40.7055897,"lng":-73.9068473},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":40.706938680292,"lng":-73.905498319708},"southwest":{"lat":40.704240719709,"lng":-73.908196280292}}},"place_id":"ChIJYcabNydcwokRwjT8ujiD_9s","types":["clothing_store","establishment","point_of_interest","store"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"Texas","short_name":"TX","types":["administrative_area_level_1","establishment","point_of_interest","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Texas, USA","geometry":{"bounds":{"northeast":{"lat":36.5007041,"lng":-93.5080389},"southwest":{"lat":25.8371638,"lng":-106.6456461}},"location":{"lat":31.9685988,"lng":-99.9018131},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":36.5018864,"lng":-93.5080389},"southwest":{"lat":25.83819,"lng":-106.6452951}}},"place_id":"ChIJSTKCCzZwQIYRPN4IGI8c6xY","types":["administrative_area_level_1","establishment","point_of_interest","political"]}],"status":"OK"},null,null,{"results":[{"address_components":[{"long_name":"Los Angeles","short_name":"Los Angeles","types":["locality","political"]},{"long_name":"Los Angeles County","short_name":"Los Angeles County","types":["administrative_area_level_2","political"]},{"long_name":"California","short_name":"CA","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Los Angeles, CA, USA","geometry":{"bounds":{"northeast":{"lat":34.3373061,"lng":-118.1552891},"southwest":{"lat":33.7036519,"lng":-118.6681759}},"location":{"lat":34.0522342,"lng":-118.2436849},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":34.3373061,"lng":-118.1552891},"southwest":{"lat":33.7036917,"lng":-118.6681759}}},"place_id":"ChIJE9on3F3HwoAR9AhGJW_fL-I","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"130","short_name":"130","types":["subpremise"]},{"long_name":"154","short_name":"154","types":["street_number"]},{"long_name":"Krog Street Northeast","short_name":"Krog St NE","types":["route"]},{"long_name":"Inman Park","short_name":"Inman Park","types":["neighborhood","political"]},{"long_name":"Atlanta","short_name":"Atlanta","types":["locality","political"]},{"long_name":"Fulton County","short_name":"Fulton County","types":["administrative_area_level_2","political"]},{"long_name":"Georgia","short_name":"GA","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]},{"long_name":"30307","short_name":"30307","types":["postal_code"]}],"formatted_address":"154 Krog St NE #130, Atlanta, GA 30307, USA","geometry":{"location":{"lat":33.7589188,"lng":-84.3640829},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":33.760267780291,"lng":-84.362733919708},"southwest":{"lat":33.757569819709,"lng":-84.365431880291}}},"partial_match":true,"place_id":"ChIJc-At3QcE9YgRKj833s7uxWQ","types":["establishment","point_of_interest","store"]},{"address_components":[{"long_name":"142","short_name":"142","types":["subpremise"]},{"long_name":"830","short_name":"830","types":["street_number"]},{"long_name":"South Ronald Reagan Boulevard","short_name":"S Ronald Reagan Blvd","types":["route"]},{"long_name":"Longwood","short_name":"Longwood","types":["locality","political"]},{"long_name":"Seminole County","short_name":"Seminole County","types":["administrative_area_level_2","political"]},{"long_name":"Florida","short_name":"FL","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]},{"long_name":"32750","short_name":"32750","types":["postal_code"]}],"formatted_address":"830 S Ronald Reagan Blvd #142, Longwood, FL 32750, USA","geometry":{"location":{"lat":28.687536,"lng":-81.3465982},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":28.688884980292,"lng":-81.345249219709},"southwest":{"lat":28.686187019708,"lng":-81.347947180292}}},"partial_match":true,"place_id":"ChIJcUJEWlBj54gRRGlYL4fcXw4","types":["establishment","point_of_interest"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"Surakarta","short_name":"Surakarta","types":["locality","political"]},{"long_name":"Surakarta City","short_name":"Surakarta City","types":["administrative_area_level_2","political"]},{"long_name":"Central Java","short_name":"Central Java","types":["administrative_area_level_1","political"]},{"long_name":"Indonesia","short_name":"ID","types":["country","political"]}],"formatted_address":"Surakarta, Surakarta City, Central Java, Indonesia","geometry":{"bounds":{"northeast":{"lat":-7.523208,"lng":110.8685012},"southwest":{"lat":-7.59521,"lng":110.769123}},"location":{"lat":-7.5754887,"lng":110.8243272},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":-7.523208,"lng":110.8685012},"southwest":{"lat":-7.59521,"lng":110.769123}}},"place_id":"ChIJsRrRemIWei4RlTC8VARO_uc","types":["locality","political"]}],"status":"OK"},{"results":[],"status":"ZERO_RESULTS"},{"results":[{"address_components":[{"long_name":"Daytona Beach","short_name":"Daytona Beach","types":["locality","political"]},{"long_name":"Volusia County","short_name":"Volusia County","types":["administrative_area_level_2","political"]},{"long_name":"Florida","short_name":"FL","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Daytona Beach, FL, USA","geometry":{"bounds":{"northeast":{"lat":29.2930571,"lng":-80.9829099},"southwest":{"lat":29.127476,"lng":-81.21031}},"location":{"lat":29.2108147,"lng":-81.0228331},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":29.2898916,"lng":-80.9829099},"southwest":{"lat":29.127476,"lng":-81.21031}}},"place_id":"ChIJg1YCJZTb5ogR6yrLHbc7ajY","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"1","short_name":"1","types":["street_number"]},{"long_name":"Yonge Street","short_name":"Yonge St","types":["route"]},{"long_name":"Old Toronto","short_name":"Old Toronto","types":["political","sublocality","sublocality_level_1"]},{"long_name":"Toronto","short_name":"Toronto","types":["locality","political"]},{"long_name":"Toronto Division","short_name":"Toronto Division","types":["administrative_area_level_2","political"]},{"long_name":"Ontario","short_name":"ON","types":["administrative_area_level_1","political"]},{"long_name":"Canada","short_name":"CA","types":["country","political"]},{"long_name":"M5E 2A3","short_name":"M5E 2A3","types":["postal_code"]}],"formatted_address":"1 Yonge St, Toronto, ON M5E 2A3, Canada","geometry":{"bounds":{"northeast":{"lat":43.6433747,"lng":-79.3732913},"southwest":{"lat":43.6421116,"lng":-79.3749178}},"location":{"lat":43.6427431,"lng":-79.3741046},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":43.644092130291,"lng":-79.372755569708},"southwest":{"lat":43.641394169708,"lng":-79.375453530291}}},"place_id":"ChIJ8wwdXCnL1IkR8xX8cgeb8gE","types":["premise"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"Philadelphia","short_name":"Philadelphia","types":["locality","political"]},{"long_name":"Philadelphia County","short_name":"Philadelphia County","types":["administrative_area_level_2","political"]},{"long_name":"Pennsylvania","short_name":"PA","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Philadelphia, PA, USA","geometry":{"bounds":{"northeast":{"lat":40.1379919,"lng":-74.9557629},"southwest":{"lat":39.8670041,"lng":-75.280303}},"location":{"lat":39.9525839,"lng":-75.1652215},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":40.1379919,"lng":-74.9557629},"southwest":{"lat":39.8715136,"lng":-75.280303}}},"place_id":"ChIJ60u11Ni3xokRwVg-jNgU9Yk","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Arnhem","short_name":"Arnhem","types":["locality","political"]},{"long_name":"Arnhem","short_name":"Arnhem","types":["administrative_area_level_2","political"]},{"long_name":"Gelderland","short_name":"GE","types":["administrative_area_level_1","political"]},{"long_name":"Netherlands","short_name":"NL","types":["country","political"]}],"formatted_address":"Arnhem, Netherlands","geometry":{"bounds":{"northeast":{"lat":52.0778176,"lng":5.9901518},"southwest":{"lat":51.9334141,"lng":5.8030456}},"location":{"lat":51.9851034,"lng":5.8987296},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":52.0778176,"lng":5.9897207},"southwest":{"lat":51.9334141,"lng":5.8030456}}},"place_id":"ChIJcyKbzpG6x0cR18pz-eBaHBY","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Washington","short_name":"Washington","types":["locality","political"]},{"long_name":"District of Columbia","short_name":"District of Columbia","types":["administrative_area_level_2","political"]},{"long_name":"District of Columbia","short_name":"DC","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Washington, DC, USA","geometry":{"bounds":{"northeast":{"lat":38.995548,"lng":-76.909393},"southwest":{"lat":38.7916449,"lng":-77.119759}},"location":{"lat":38.9071923,"lng":-77.0368707},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":38.995548,"lng":-76.909393},"southwest":{"lat":38.8031493,"lng":-77.1197401}}},"place_id":"ChIJW-T2Wt7Gt4kRKl2I1CJFUsI","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Amherst","short_name":"Amherst","types":["locality","political"]},{"long_name":"Belchertown","short_name":"Belchertown","types":["administrative_area_level_3","political"]},{"long_name":"Hampshire County","short_name":"Hampshire County","types":["administrative_area_level_2","political"]},{"long_name":"Massachusetts","short_name":"MA","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Amherst, MA, USA","geometry":{"bounds":{"northeast":{"lat":42.433715,"lng":-72.4641859},"southwest":{"lat":42.301514,"lng":-72.546796}},"location":{"lat":42.3732216,"lng":-72.5198537},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":42.433715,"lng":-72.4641859},"southwest":{"lat":42.301514,"lng":-72.546796}}},"place_id":"ChIJDyRxCgLO5okR3C9MlxUdddU","types":["locality","political"]}],"status":"OK"},null,null,{"results":[{"address_components":[{"long_name":"Fort Worth","short_name":"Fort Worth","types":["locality","political"]},{"long_name":"Tarrant County","short_name":"Tarrant County","types":["administrative_area_level_2","political"]},{"long_name":"Texas","short_name":"TX","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Fort Worth, TX, USA","geometry":{"bounds":{"northeast":{"lat":33.0493109,"lng":-97.033715},"southwest":{"lat":32.552315,"lng":-97.5449229}},"location":{"lat":32.7554883,"lng":-97.3307658},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":33.0493109,"lng":-97.033715},"southwest":{"lat":32.552315,"lng":-97.5449229}}},"place_id":"ChIJrQfILRJuToYRvaxp3fiLr6Q","types":["locality","political"]}],"status":"OK"},{"results":[],"status":"ZERO_RESULTS"},{"results":[{"address_components":[{"long_name":"Wales","short_name":"Wales","types":["administrative_area_level_1","political"]},{"long_name":"United Kingdom","short_name":"GB","types":["country","political"]}],"formatted_address":"Wales, UK","geometry":{"bounds":{"northeast":{"lat":53.4356935,"lng":-2.6497994},"southwest":{"lat":51.3749686,"lng":-5.6700973}},"location":{"lat":52.1306607,"lng":-3.7837117},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":53.4356935,"lng":-2.6497994},"southwest":{"lat":51.3749686,"lng":-5.6700973}}},"place_id":"ChIJ7Q8cbLY0ZEgRouilirxxux4","types":["administrative_area_level_1","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Tacoma","short_name":"Tacoma","types":["locality","political"]},{"long_name":"Pierce County","short_name":"Pierce County","types":["administrative_area_level_2","political"]},{"long_name":"Washington","short_name":"WA","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Tacoma, WA, USA","geometry":{"bounds":{"northeast":{"lat":47.331984,"lng":-122.3482139},"southwest":{"lat":47.166528,"lng":-122.565437}},"location":{"lat":47.2528768,"lng":-122.4442906},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":47.3190031,"lng":-122.3482139},"southwest":{"lat":47.166528,"lng":-122.5622649}}},"place_id":"ChIJZ5VlK-5UkFQRgp6w6wecIWI","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Chicago","short_name":"Chicago","types":["locality","political"]},{"long_name":"Cook County","short_name":"Cook County","types":["administrative_area_level_2","political"]},{"long_name":"Illinois","short_name":"IL","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Chicago, IL, USA","geometry":{"bounds":{"northeast":{"lat":42.023131,"lng":-87.523661},"southwest":{"lat":41.6443349,"lng":-87.9402669}},"location":{"lat":41.8781136,"lng":-87.6297982},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":42.023131,"lng":-87.524044},"southwest":{"lat":41.6443349,"lng":-87.9402669}}},"place_id":"ChIJ7cv00DwsDogRAMDACa2m4K8","types":["locality","political"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"New York","short_name":"New York","types":["locality","political"]},{"long_name":"New York","short_name":"NY","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"New York, NY, USA","geometry":{"bounds":{"northeast":{"lat":40.9175771,"lng":-73.7002721},"southwest":{"lat":40.4773991,"lng":-74.2590899}},"location":{"lat":40.7127837,"lng":-74.0059413},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":40.9152555,"lng":-73.7002721},"southwest":{"lat":40.4960439,"lng":-74.2557349}}},"place_id":"ChIJOwg_06VPwokRYv534QaPC8g","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Dhaka","short_name":"Dhaka","types":["locality","political"]},{"long_name":"Dhaka District","short_name":"Dhaka District","types":["administrative_area_level_2","political"]},{"long_name":"Dhaka Division","short_name":"Dhaka Division","types":["administrative_area_level_1","political"]},{"long_name":"Bangladesh","short_name":"BD","types":["country","political"]}],"formatted_address":"Dhaka, Bangladesh","geometry":{"bounds":{"northeast":{"lat":23.9000025,"lng":90.5091047},"southwest":{"lat":23.6612704,"lng":90.3295468}},"location":{"lat":23.810332,"lng":90.4125181},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":23.9000025,"lng":90.5091047},"southwest":{"lat":23.6613811,"lng":90.329809}}},"place_id":"ChIJgWsCh7C4VTcRwgRZ3btjpY8","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"St. Louis","short_name":"St. Louis","types":["locality","political"]},{"long_name":"Missouri","short_name":"MO","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"St. Louis, MO, USA","geometry":{"bounds":{"northeast":{"lat":38.774349,"lng":-90.166409},"southwest":{"lat":38.5318519,"lng":-90.320515}},"location":{"lat":38.6270025,"lng":-90.1994042},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":38.774349,"lng":-90.166409},"southwest":{"lat":38.5318519,"lng":-90.320515}}},"place_id":"ChIJ-Y7t-qm02IcRW-C7IsrqOb4","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Columbia","short_name":"Columbia","types":["locality","political"]},{"long_name":"Richland County","short_name":"Richland County","types":["administrative_area_level_2","political"]},{"long_name":"South Carolina","short_name":"SC","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Columbia, SC, USA","geometry":{"bounds":{"northeast":{"lat":34.131598,"lng":-80.7041519},"southwest":{"lat":33.9434199,"lng":-81.170978}},"location":{"lat":34.0007104,"lng":-81.0348144},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":34.131598,"lng":-80.7041519},"southwest":{"lat":33.9434199,"lng":-81.170978}}},"place_id":"ChIJ49ExeWml-IgRlvp5s_QIKPM","types":["locality","political"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"Southern California","short_name":"Southern California","types":["colloquial_area","political"]},{"long_name":"California","short_name":"CA","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Southern California, CA, USA","geometry":{"bounds":{"northeast":{"lat":35.8092361,"lng":-114.131211},"southwest":{"lat":32.528832,"lng":-121.4381759}},"location":{"lat":34.9592083,"lng":-116.419389},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":35.8092361,"lng":-114.131211},"southwest":{"lat":32.528832,"lng":-121.4381759}}},"place_id":"ChIJSabJhaclw4AR2GgM9DPDI3I","types":["colloquial_area","political"]}],"status":"OK"},null,null,{"results":[{"address_components":[{"long_name":"2505","short_name":"2505","types":["street_number"]},{"long_name":"Mill Center Parkway","short_name":"Mill Center Pkwy","types":["route"]},{"long_name":"Buford","short_name":"Buford","types":["locality","political"]},{"long_name":"Gwinnett County","short_name":"Gwinnett County","types":["administrative_area_level_2","political"]},{"long_name":"Georgia","short_name":"GA","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]},{"long_name":"30518","short_name":"30518","types":["postal_code"]},{"long_name":"3700","short_name":"3700","types":["postal_code_suffix"]}],"formatted_address":"2505 Mill Center Pkwy, Buford, GA 30518, USA","geometry":{"location":{"lat":34.1140497,"lng":-83.9811014},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":34.115398680291,"lng":-83.979752419708},"southwest":{"lat":34.112700719708,"lng":-83.982450380292}}},"place_id":"ChIJjx9n1ZmT9YgR33oVYZHH5vI","types":["establishment","point_of_interest","store"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"Wisconsin","short_name":"WI","types":["administrative_area_level_1","establishment","point_of_interest","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Wisconsin, USA","geometry":{"bounds":{"northeast":{"lat":47.3098219,"lng":-86.2495479},"southwest":{"lat":42.4917199,"lng":-92.8894331}},"location":{"lat":43.7844397,"lng":-88.7878678},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":47.0807296,"lng":-86.7639767},"southwest":{"lat":42.491864,"lng":-92.8894331}}},"place_id":"ChIJr-OEkw_0qFIR1kmG-LjV1fI","types":["administrative_area_level_1","establishment","point_of_interest","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Lynwood","short_name":"Lynwood","types":["locality","political"]},{"long_name":"Los Angeles County","short_name":"Los Angeles County","types":["administrative_area_level_2","political"]},{"long_name":"California","short_name":"CA","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Lynwood, CA, USA","geometry":{"bounds":{"northeast":{"lat":33.9454408,"lng":-118.1769111},"southwest":{"lat":33.9049859,"lng":-118.2303241}},"location":{"lat":33.930293,"lng":-118.2114603},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":33.9454408,"lng":-118.1769111},"southwest":{"lat":33.9049859,"lng":-118.2303241}}},"place_id":"ChIJZ6ONppfLwoARqwb6abQj9ug","types":["locality","political"]}],"status":"OK"},{"results":[{"address_components":[{"long_name":"Cleveland","short_name":"Cleveland","types":["locality","political"]},{"long_name":"Cuyahoga County","short_name":"Cuyahoga County","types":["administrative_area_level_2","political"]},{"long_name":"Ohio","short_name":"OH","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Cleveland, OH, USA","geometry":{"bounds":{"northeast":{"lat":41.604436,"lng":-81.5327439},"southwest":{"lat":41.390628,"lng":-81.878976}},"location":{"lat":41.49932,"lng":-81.6943605},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":41.5992571,"lng":-81.5327439},"southwest":{"lat":41.390628,"lng":-81.878976}}},"place_id":"ChIJLWto4y7vMIgRQhhi91XLBO0","types":["locality","political"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"The Village at Vanderbilt","short_name":"The Village at Vanderbilt","types":["premise"]},{"long_name":"1500","short_name":"1500","types":["street_number"]},{"long_name":"21st Avenue South","short_name":"21st Ave S","types":["route"]},{"long_name":"Midtown","short_name":"Midtown","types":["neighborhood","political"]},{"long_name":"Nashville","short_name":"Nashville","types":["locality","political"]},{"long_name":"Davidson County","short_name":"Davidson County","types":["administrative_area_level_2","political"]},{"long_name":"Tennessee","short_name":"TN","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]},{"long_name":"37212","short_name":"37212","types":["postal_code"]}],"formatted_address":"The Village at Vanderbilt, 1500 21st Ave S, Nashville, TN 37212, USA","geometry":{"bounds":{"northeast":{"lat":36.139914,"lng":-86.7998637},"southwest":{"lat":36.1389436,"lng":-86.8004124}},"location":{"lat":36.139456,"lng":-86.8001118},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":36.140777780292,"lng":-86.798789069709},"southwest":{"lat":36.138079819709,"lng":-86.801487030292}}},"partial_match":true,"place_id":"ChIJoSHYzZhmZIgRqrLQ3-z6xV8","types":["premise"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"10625","short_name":"10625","types":["street_number"]},{"long_name":"Northeast Halsey Street","short_name":"NE Halsey St","types":["route"]},{"long_name":"Parkrose Heights","short_name":"Parkrose Heights","types":["neighborhood","political"]},{"long_name":"Portland","short_name":"Portland","types":["locality","political"]},{"long_name":"Multnomah County","short_name":"Multnomah County","types":["administrative_area_level_2","political"]},{"long_name":"Oregon","short_name":"OR","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]},{"long_name":"97220","short_name":"97220","types":["postal_code"]}],"formatted_address":"10625 NE Halsey St, Portland, OR 97220, USA","geometry":{"location":{"lat":45.5337266,"lng":-122.5530806},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":45.535075580292,"lng":-122.55173161971},"southwest":{"lat":45.532377619709,"lng":-122.55442958029}}},"place_id":"ChIJE8EC8HqhlVQRKeQtMJzsUGg","types":["bicycle_store","establishment","point_of_interest","store"]},{"address_components":[{"long_name":"996","short_name":"996","types":["street_number"]},{"long_name":"South Redwood Road","short_name":"S Redwood Rd","types":["route"]},{"long_name":"Salt Lake City","short_name":"Salt Lake City","types":["locality","political"]},{"long_name":"Utah","short_name":"UT","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]},{"long_name":"84104","short_name":"84104","types":["postal_code"]}],"formatted_address":"The Outer Rim, 996 S Redwood Rd, Salt Lake City, UT 84104, United States","geometry":{"location":{"lat":40.7474917,"lng":-111.9397199},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":40.748840680291,"lng":-111.93837091971},"southwest":{"lat":40.746142719709,"lng":-111.94106888029}}},"place_id":"ChIJVW4FR5f0UocR-4V9wgvwR6I","types":["establishment","point_of_interest"]}],"status":"OK"},null,{"results":[{"address_components":[{"long_name":"Maine","short_name":"ME","types":["administrative_area_level_1","establishment","point_of_interest","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]}],"formatted_address":"Maine, USA","geometry":{"bounds":{"northeast":{"lat":47.459686,"lng":-66.8850751},"southwest":{"lat":42.9171259,"lng":-71.0843341}},"location":{"lat":45.253783,"lng":-69.4454689},"location_type":"APPROXIMATE","viewport":{"northeast":{"lat":47.4596674,"lng":-66.9500658},"southwest":{"lat":42.9774572,"lng":-71.083913}}},"place_id":"ChIJ1YpTHd4dsEwR0KggZ2_MedY","types":["administrative_area_level_1","establishment","point_of_interest","political"]}],"status":"OK"}]
+[
+  {
+    "name": "adak",
+    "lat": 51.883,
+    "long": -176.633,
+    "wikipedia": "Adak,_Alaska",
+    "city": "Adak"
+  },
+  {
+    "name": "apia",
+    "lat": -13.833,
+    "long": -171.833,
+    "wikipedia": "Apia",
+    "city": "Apia"
+  },
+  {
+    "name": "pagopago",
+    "lat": -14.267,
+    "long": -170.7,
+    "wikipedia": "Pago_Pago",
+    "city": "Pago Pago"
+  },
+  {
+    "name": "alofi",
+    "lat": -19.05,
+    "long": -169.917,
+    "wikipedia": "Alofi",
+    "city": "Alofi"
+  },
+  {
+    "name": "avarua",
+    "lat": -21.2,
+    "long": -159.767,
+    "wikipedia": "Avarua",
+    "city": "Avarua"
+  },
+  {
+    "name": "honolulu",
+    "lat": 21.3,
+    "long": -157.817,
+    "wikipedia": "Honolulu",
+    "city": "Honolulu"
+  },
+  {
+    "name": "hilo",
+    "lat": 19.7,
+    "long": -155.1,
+    "wikipedia": "Hilo,_Hawaii",
+    "city": "Hilo"
+  },
+  {
+    "name": "anchorage",
+    "lat": 61.217,
+    "long": -149.883,
+    "wikipedia": "Anchorage,_Alaska",
+    "city": "Anchorage"
+  },
+  {
+    "name": "papeete",
+    "lat": -17.533,
+    "long": -149.567,
+    "wikipedia": "Papeete",
+    "city": "Papeete"
+  },
+  {
+    "name": "fairbanks",
+    "lat": 64.833,
+    "long": -147.7,
+    "wikipedia": "Fairbanks,_Alaska",
+    "city": "Fairbanks"
+  },
+  {
+    "name": "sitka",
+    "lat": 57.05,
+    "long": -135.317,
+    "wikipedia": "Sitka,_Alaska",
+    "city": "Sitka"
+  },
+  {
+    "name": "whitehorse",
+    "lat": 60.717,
+    "long": -135.05,
+    "wikipedia": "Whitehorse,_Yukon",
+    "city": "Whitehorse"
+  },
+  {
+    "name": "juneau",
+    "lat": 58.35,
+    "long": -134.5,
+    "wikipedia": "Juneau,_Alaska",
+    "city": "Juneau"
+  },
+  {
+    "name": "adamstown",
+    "lat": -25.067,
+    "long": -130.1,
+    "wikipedia": "Adamstown,_Pitcairn_Islands",
+    "city": "Adamstown"
+  },
+  {
+    "name": "vancouver",
+    "lat": 49.25,
+    "long": -123.1,
+    "wikipedia": "Vancouver",
+    "city": "Vancouver"
+  },
+  {
+    "name": "rabiisland",
+    "lat": 3.133,
+    "long": -12.05,
+    "wikipedia": "Rabi_Island",
+    "city": "Rabi Island"
+  },
+  {
+    "name": "portland",
+    "lat": 45.517,
+    "long": -122.667,
+    "wikipedia": "Portland,_Oregon",
+    "city": "Portland"
+  },
+  {
+    "name": "sanfrancisco",
+    "lat": 37.767,
+    "long": -122.417,
+    "wikipedia": "San_Francisco",
+    "city": "San Francisco"
+  },
+  {
+    "name": "seattle",
+    "lat": 47.6,
+    "long": -122.317,
+    "wikipedia": "Seattle",
+    "city": "Seattle"
+  },
+  {
+    "name": "sacramento",
+    "lat": 38.55,
+    "long": -121.467,
+    "wikipedia": "Sacramento,_California",
+    "city": "Sacramento"
+  },
+  {
+    "name": "losangeles",
+    "lat": 34.05,
+    "long": -118.25,
+    "wikipedia": "Los_Angeles",
+    "city": "Los Angeles"
+  },
+  {
+    "name": "riverside",
+    "lat": 33.933,
+    "long": -117.383,
+    "wikipedia": "Riverside,_California",
+    "city": "Riverside"
+  },
+  {
+    "name": "sandiego",
+    "lat": 32.767,
+    "long": -117.15,
+    "wikipedia": "San_Diego",
+    "city": "San Diego"
+  },
+  {
+    "name": "tijuana",
+    "lat": 32.517,
+    "long": -117.033,
+    "wikipedia": "Tijuana",
+    "city": "Tijuana"
+  },
+  {
+    "name": "mexicali",
+    "lat": 32.667,
+    "long": -115.467,
+    "wikipedia": "Mexicali",
+    "city": "Mexicali"
+  },
+  {
+    "name": "lasvegas",
+    "lat": 36.167,
+    "long": -115.133,
+    "wikipedia": "Las_Vegas,_Nevada",
+    "city": "Las Vegas"
+  },
+  {
+    "name": "yellowknife",
+    "lat": 62.45,
+    "long": -114.4,
+    "wikipedia": "Yellowknife",
+    "city": "Yellowknife"
+  },
+  {
+    "name": "calgary",
+    "lat": 51.033,
+    "long": -114.05,
+    "wikipedia": "Calgary",
+    "city": "Calgary"
+  },
+  {
+    "name": "edmonton",
+    "lat": 53.567,
+    "long": -113.517,
+    "wikipedia": "Edmonton",
+    "city": "Edmonton"
+  },
+  {
+    "name": "phoenix",
+    "lat": 33.433,
+    "long": -112.067,
+    "wikipedia": "Phoenix,_Arizona",
+    "city": "Phoenix"
+  },
+  {
+    "name": "saltlakecity",
+    "lat": 40.75,
+    "long": -111.883,
+    "wikipedia": "Salt_Lake_City",
+    "city": "Salt Lake City"
+  },
+  {
+    "name": "tucson",
+    "lat": 32.2,
+    "long": -110.917,
+    "wikipedia": "Tucson,_Arizona",
+    "city": "Tucson"
+  },
+  {
+    "name": "hangaroa",
+    "lat": 27.15,
+    "long": -109.433,
+    "wikipedia": "Hanga_Roa",
+    "city": "Hanga Roa"
+  },
+  {
+    "name": "saskatoon",
+    "lat": 52.117,
+    "long": -106.65,
+    "wikipedia": "Saskatoon",
+    "city": "Saskatoon"
+  },
+  {
+    "name": "albuquerque",
+    "lat": 35.1,
+    "long": -106.6,
+    "wikipedia": "Albuquerque,_New_Mexico",
+    "city": "Albuquerque"
+  },
+  {
+    "name": "elpaso",
+    "lat": 31.783,
+    "long": -106.417,
+    "wikipedia": "El_Paso,_Texas",
+    "city": "El Paso"
+  },
+  {
+    "name": "chihuahua",
+    "lat": 28.1,
+    "long": -106.0,
+    "wikipedia": "Chihuahua,_Chihuahua",
+    "city": "Chihuahua"
+  },
+  {
+    "name": "denver",
+    "lat": 39.733,
+    "long": -104.983,
+    "wikipedia": "Denver",
+    "city": "Denver"
+  },
+  {
+    "name": "durango",
+    "lat": 24.017,
+    "long": -104.667,
+    "wikipedia": "Durango,_Durango",
+    "city": "Durango"
+  },
+  {
+    "name": "regina",
+    "lat": 50.433,
+    "long": -104.617,
+    "wikipedia": "Regina,_Saskatchewan",
+    "city": "Regina"
+  },
+  {
+    "name": "zapopan",
+    "lat": 20.767,
+    "long": -103.4,
+    "wikipedia": "Zapopan,_Jalisco",
+    "city": "Zapopan"
+  },
+  {
+    "name": "guadalajara",
+    "lat": 20.667,
+    "long": -103.35,
+    "wikipedia": "Guadalajara,_Jalisco",
+    "city": "Guadalajara"
+  },
+  {
+    "name": "monterrey",
+    "lat": 25.667,
+    "long": -100.3,
+    "wikipedia": "Monterrey",
+    "city": "Monterrey"
+  },
+  {
+    "name": "mexicocity",
+    "lat": 19.4,
+    "long": -99.117,
+    "wikipedia": "Mexico_City",
+    "city": "Mexico City"
+  },
+  {
+    "name": "sanantonio",
+    "lat": 29.533,
+    "long": -98.467,
+    "wikipedia": "San_Antonio",
+    "city": "San Antonio"
+  },
+  {
+    "name": "puebla",
+    "lat": 19.05,
+    "long": -98.2,
+    "wikipedia": "Puebla,_Puebla",
+    "city": "Puebla"
+  },
+  {
+    "name": "austin",
+    "lat": 30.267,
+    "long": -97.767,
+    "wikipedia": "Austin,_Texas",
+    "city": "Austin"
+  },
+  {
+    "name": "oklahomacity",
+    "lat": 35.467,
+    "long": -97.533,
+    "wikipedia": "Oklahoma_City",
+    "city": "Oklahoma City"
+  },
+  {
+    "name": "wichita",
+    "lat": 37.683,
+    "long": -97.333,
+    "wikipedia": "Wichita,_Kansas",
+    "city": "Wichita"
+  },
+  {
+    "name": "winnipeg",
+    "lat": 49.9,
+    "long": -97.133,
+    "wikipedia": "Winnipeg",
+    "city": "Winnipeg"
+  },
+  {
+    "name": "dallas",
+    "lat": 32.767,
+    "long": -96.8,
+    "wikipedia": "Dallas",
+    "city": "Dallas"
+  },
+  {
+    "name": "veracruz",
+    "lat": 19.183,
+    "long": -96.133,
+    "wikipedia": "Veracruz,_Veracruz",
+    "city": "Veracruz"
+  },
+  {
+    "name": "houston",
+    "lat": 29.75,
+    "long": -95.367,
+    "wikipedia": "Houston",
+    "city": "Houston"
+  },
+  {
+    "name": "kansascity",
+    "lat": 39.1,
+    "long": -94.567,
+    "wikipedia": "Kansas_City,_Missouri",
+    "city": "Kansas City"
+  },
+  {
+    "name": "minneapolis",
+    "lat": 44.967,
+    "long": -93.25,
+    "wikipedia": "Minneapolis",
+    "city": "Minneapolis"
+  },
+  {
+    "name": "quetzaltenango",
+    "lat": 14.833,
+    "long": -91.517,
+    "wikipedia": "Quetzaltenango",
+    "city": "Quetzaltenango"
+  },
+  {
+    "name": "guatemalacity",
+    "lat": 14.633,
+    "long": -90.55,
+    "wikipedia": "Guatemala_City",
+    "city": "Guatemala City"
+  },
+  {
+    "name": "louis",
+    "lat": 38.617,
+    "long": -90.183,
+    "wikipedia": "St._Louis,_Missouri",
+    "city": "St. Louis"
+  },
+  {
+    "name": "neworleans",
+    "lat": 29.967,
+    "long": -90.067,
+    "wikipedia": "New_Orleans",
+    "city": "New Orleans"
+  },
+  {
+    "name": "memphis",
+    "lat": 35.117,
+    "long": -89.967,
+    "wikipedia": "Memphis,_Tennessee",
+    "city": "Memphis"
+  },
+  {
+    "name": "sansalvador",
+    "lat": 13.683,
+    "long": -89.183,
+    "wikipedia": "San_Salvador",
+    "city": "San Salvador"
+  },
+  {
+    "name": "belmopan",
+    "lat": 17.25,
+    "long": -88.767,
+    "wikipedia": "Belmopan",
+    "city": "Belmopan"
+  },
+  {
+    "name": "belizecity",
+    "lat": 17.483,
+    "long": -88.183,
+    "wikipedia": "Belize_City",
+    "city": "Belize City"
+  },
+  {
+    "name": "milwaukee",
+    "lat": 47.05,
+    "long": -87.95,
+    "wikipedia": "Milwaukee",
+    "city": "Milwaukee"
+  },
+  {
+    "name": "chicago",
+    "lat": 41.867,
+    "long": -87.617,
+    "wikipedia": "Chicago",
+    "city": "Chicago"
+  },
+  {
+    "name": "tegucigalpa",
+    "lat": 14.083,
+    "long": -87.217,
+    "wikipedia": "Tegucigalpa",
+    "city": "Tegucigalpa"
+  },
+  {
+    "name": "nashville",
+    "lat": 36.167,
+    "long": -86.783,
+    "wikipedia": "Nashville,_Tennessee",
+    "city": "Nashville"
+  },
+  {
+    "name": "managua",
+    "lat": 12.133,
+    "long": -86.25,
+    "wikipedia": "Managua",
+    "city": "Managua"
+  },
+  {
+    "name": "indianapolis",
+    "lat": 39.783,
+    "long": -86.15,
+    "wikipedia": "Indianapolis",
+    "city": "Indianapolis"
+  },
+  {
+    "name": "louisville",
+    "lat": 38.25,
+    "long": -85.75,
+    "wikipedia": "Louisville,_Kentucky",
+    "city": "Louisville"
+  },
+  {
+    "name": "cincinnati",
+    "lat": 39.133,
+    "long": -84.5,
+    "wikipedia": "Cincinnati",
+    "city": "Cincinnati"
+  },
+  {
+    "name": "atlanta",
+    "lat": 33.75,
+    "long": -84.383,
+    "wikipedia": "Atlanta",
+    "city": "Atlanta"
+  },
+  {
+    "name": "detroit",
+    "lat": 42.333,
+    "long": -83.05,
+    "wikipedia": "Detroit",
+    "city": "Detroit"
+  },
+  {
+    "name": "columbus",
+    "lat": 39.983,
+    "long": -82.983,
+    "wikipedia": "Columbus,_Ohio",
+    "city": "Columbus"
+  },
+  {
+    "name": "tampa",
+    "lat": 27.967,
+    "long": -82.467,
+    "wikipedia": "Tampa,_Florida",
+    "city": "Tampa"
+  },
+  {
+    "name": "havana",
+    "lat": 23.133,
+    "long": -82.383,
+    "wikipedia": "Havana",
+    "city": "Havana"
+  },
+  {
+    "name": "cleveland",
+    "lat": 41.483,
+    "long": -81.667,
+    "wikipedia": "Cleveland",
+    "city": "Cleveland"
+  },
+  {
+    "name": "jacksonville",
+    "lat": 30.317,
+    "long": -81.65,
+    "wikipedia": "Jacksonville,_Florida",
+    "city": "Jacksonville"
+  },
+  {
+    "name": "georgetown",
+    "lat": 5.417,
+    "long": 100.317,
+    "wikipedia": "George_Town,_Penang",
+    "city": "George Town"
+  },
+  {
+    "name": "charlotte",
+    "lat": 35.2,
+    "long": -80.817,
+    "wikipedia": "Charlotte,_North_Carolina",
+    "city": "Charlotte"
+  },
+  {
+    "name": "miami",
+    "lat": 25.783,
+    "long": -80.217,
+    "wikipedia": "Miami",
+    "city": "Miami"
+  },
+  {
+    "name": "pittsburgh",
+    "lat": 40.433,
+    "long": -79.967,
+    "wikipedia": "Pittsburgh",
+    "city": "Pittsburgh"
+  },
+  {
+    "name": "guayaquil",
+    "lat": 2.183,
+    "long": -79.883,
+    "wikipedia": "Guayaquil",
+    "city": "Guayaquil"
+  },
+  {
+    "name": "panamacity",
+    "lat": 8.983,
+    "long": -79.517,
+    "wikipedia": "Panama_City",
+    "city": "Panama City"
+  },
+  {
+    "name": "toronto",
+    "lat": 43.65,
+    "long": -79.383,
+    "wikipedia": "Toronto",
+    "city": "Toronto"
+  },
+  {
+    "name": "buffalo",
+    "lat": 42.9,
+    "long": -78.85,
+    "wikipedia": "Buffalo,_New_York",
+    "city": "Buffalo"
+  },
+  {
+    "name": "raleigh",
+    "lat": 35.817,
+    "long": -78.633,
+    "wikipedia": "Raleigh,_North_Carolina",
+    "city": "Raleigh"
+  },
+  {
+    "name": "quito",
+    "lat": 0.25,
+    "long": -78.583,
+    "wikipedia": "Quito",
+    "city": "Quito"
+  },
+  {
+    "name": "rochester",
+    "lat": 43.15,
+    "long": -77.6,
+    "wikipedia": "Rochester,_New_York",
+    "city": "Rochester"
+  },
+  {
+    "name": "nassau",
+    "lat": 25.05,
+    "long": -77.333,
+    "wikipedia": "Nassau,_Bahamas",
+    "city": "Nassau"
+  },
+  {
+    "name": "washington",
+    "lat": 38.883,
+    "long": -77.033,
+    "wikipedia": "Washington,_D.C.",
+    "city": "Washington"
+  },
+  {
+    "name": "lima",
+    "lat": -12.033,
+    "long": -77.017,
+    "wikipedia": "Lima",
+    "city": "Lima"
+  },
+  {
+    "name": "kingston",
+    "lat": -29.067,
+    "long": 167.967,
+    "wikipedia": "Kingston,_Norfolk_Island",
+    "city": "Kingston"
+  },
+  {
+    "name": "baltimore",
+    "lat": 39.283,
+    "long": -76.617,
+    "wikipedia": "Baltimore",
+    "city": "Baltimore"
+  },
+  {
+    "name": "cali",
+    "lat": 3.417,
+    "long": -76.517,
+    "wikipedia": "Cali",
+    "city": "Cali"
+  },
+  {
+    "name": "virginiabeach",
+    "lat": 36.85,
+    "long": -75.983,
+    "wikipedia": "Virginia_Beach",
+    "city": "Virginia Beach"
+  },
+  {
+    "name": "santiagodecuba",
+    "lat": 20.017,
+    "long": -75.8,
+    "wikipedia": "Santiago_de_Cuba",
+    "city": "Santiago de Cuba"
+  },
+  {
+    "name": "ottawa",
+    "lat": 45.417,
+    "long": -75.683,
+    "wikipedia": "Ottawa",
+    "city": "Ottawa"
+  },
+  {
+    "name": "cartagena",
+    "lat": 10.4,
+    "long": -75.5,
+    "wikipedia": "Cartagena,_Colombia",
+    "city": "Cartagena"
+  },
+  {
+    "name": "philadelphia",
+    "lat": 39.95,
+    "long": -75.167,
+    "wikipedia": "Philadelphia",
+    "city": "Philadelphia"
+  },
+  {
+    "name": "barranquilla",
+    "lat": 10.95,
+    "long": -74.783,
+    "wikipedia": "Barranquilla",
+    "city": "Barranquilla"
+  },
+  {
+    "name": "forkedriver",
+    "lat": 39.817,
+    "long": -74.183,
+    "wikipedia": "Forked_River",
+    "city": "Forked River"
+  },
+  {
+    "name": "jerseycity",
+    "lat": 41.433,
+    "long": -74.133,
+    "wikipedia": "Jersey_City,_New_Jersey",
+    "city": "Jersey City"
+  },
+  {
+    "name": "newyorkcity",
+    "lat": 40.717,
+    "long": -74.0,
+    "wikipedia": "New_York_City",
+    "city": "New York City"
+  },
+  {
+    "name": "montreal",
+    "lat": 45.5,
+    "long": -73.55,
+    "wikipedia": "Montreal",
+    "city": "Montreal"
+  },
+  {
+    "name": "iquitos",
+    "lat": -3.733,
+    "long": -73.25,
+    "wikipedia": "Iquitos",
+    "city": "Iquitos"
+  },
+  {
+    "name": "valdivia",
+    "lat": -39.817,
+    "long": -73.233,
+    "wikipedia": "Valdivia,_Chile",
+    "city": "Valdivia"
+  },
+  {
+    "name": "portauprince",
+    "lat": 18.533,
+    "long": -72.333,
+    "wikipedia": "Port-au-Prince",
+    "city": "Port-au-Prince"
+  },
+  {
+    "name": "cusco",
+    "lat": -13.5,
+    "long": -71.967,
+    "wikipedia": "Cusco",
+    "city": "Cusco"
+  },
+  {
+    "name": "maracaibo",
+    "lat": -10.65,
+    "long": -71.633,
+    "wikipedia": "Maracaibo",
+    "city": "Maracaibo"
+  },
+  { "name": "%adso",
+    "lat": -33.05,
+    "long": -71.617,
+    "wikipedia": "Valpara%C3%ADso",
+    "city": "Valpara%C3%ADso"
+  },
+  {
+    "name": "arequipa",
+    "lat": -16.4,
+    "long": -71.533,
+    "wikipedia": "Arequipa",
+    "city": "Arequipa"
+  },
+  {
+    "name": "providence",
+    "lat": 41.817,
+    "long": -71.417,
+    "wikipedia": "Providence,_Rhode_Island",
+    "city": "Providence"
+  },
+  {
+    "name": "sancarlosdebariloche",
+    "lat": -41.15,
+    "long": -71.3,
+    "wikipedia": "San_Carlos_de_Bariloche",
+    "city": "San Carlos de Bariloche"
+  },
+  {
+    "name": "laserena",
+    "lat": -29.9,
+    "long": -71.25,
+    "wikipedia": "La_Serena,_Chile",
+    "city": "La Serena"
+  },
+  {
+    "name": "quebeccity",
+    "lat": 46.8,
+    "long": -71.217,
+    "wikipedia": "Quebec_City",
+    "city": "Quebec City"
+  },
+  {
+    "name": "cockburntown",
+    "lat": 21.45,
+    "long": -71.133,
+    "wikipedia": "Cockburn_Town",
+    "city": "Cockburn Town"
+  },
+  {
+    "name": "boston",
+    "lat": 42.35,
+    "long": -71.05,
+    "wikipedia": "Boston",
+    "city": "Boston"
+  },
+  {
+    "name": "puntaarenas",
+    "lat": -53.167,
+    "long": -70.933,
+    "wikipedia": "Punta_Arenas,_Chile",
+    "city": "Punta Arenas"
+  },
+  {
+    "name": "santiago",
+    "lat": -33.45,
+    "long": -70.667,
+    "wikipedia": "Santiago,_Chile",
+    "city": "Santiago"
+  },
+  {
+    "name": "antofagasta",
+    "lat": -23.65,
+    "long": -70.4,
+    "wikipedia": "Antofagasta",
+    "city": "Antofagasta"
+  },
+  {
+    "name": "iquique",
+    "lat": -20.217,
+    "long": -70.15,
+    "wikipedia": "Iquique",
+    "city": "Iquique"
+  },
+  {
+    "name": "oranjestad",
+    "lat": 12.517,
+    "long": -70.033,
+    "wikipedia": "Oranjestad,_Aruba",
+    "city": "Oranjestad"
+  },
+  {
+    "name": "santodomingo",
+    "lat": 18.483,
+    "long": -69.917,
+    "wikipedia": "Santo_Domingo",
+    "city": "Santo Domingo"
+  },
+  {
+    "name": "riobranco",
+    "lat": -10.117,
+    "long": -69.35,
+    "wikipedia": "Rio_Branco",
+    "city": "Rio Branco"
+  },
+  {
+    "name": "willemstad",
+    "lat": 12.117,
+    "long": -68.933,
+    "wikipedia": "Willemstad",
+    "city": "Willemstad"
+  },
+  {
+    "name": "calama",
+    "lat": -22.467,
+    "long": -68.933,
+    "wikipedia": "Calama,_Chile",
+    "city": "Calama"
+  },
+  {
+    "name": "mendoza",
+    "lat": -32.883,
+    "long": -68.817,
+    "wikipedia": "Mendoza,_Argentina",
+    "city": "Mendoza"
+  },
+  {
+    "name": "iqaluit",
+    "lat": 63.75,
+    "long": -68.517,
+    "wikipedia": "Iqaluit",
+    "city": "Iqaluit"
+  },
+  {
+    "name": "ushuaia",
+    "lat": -54.8,
+    "long": -68.3,
+    "wikipedia": "Ushuaia",
+    "city": "Ushuaia"
+  },
+  {
+    "name": "lapaz",
+    "lat": -16.5,
+    "long": -68.15,
+    "wikipedia": "La_Paz",
+    "city": "La Paz"
+  },
+  {
+    "name": "puertowilliams",
+    "lat": 54.933,
+    "long": -67.617,
+    "wikipedia": "Puerto_Williams",
+    "city": "Puerto Williams"
+  },
+  {
+    "name": "caracas",
+    "lat": 10.5,
+    "long": -66.917,
+    "wikipedia": "Caracas",
+    "city": "Caracas"
+  },
+  {
+    "name": "fredericton",
+    "lat": 45.95,
+    "long": -66.667,
+    "wikipedia": "Fredericton",
+    "city": "Fredericton"
+  },
+  {
+    "name": "sanjuan",
+    "lat": 18.45,
+    "long": -66.067,
+    "wikipedia": "San_Juan,_Puerto_Rico",
+    "city": "San Juan"
+  },
+  {
+    "name": "saintjohn",
+    "lat": 45.267,
+    "long": -66.05,
+    "wikipedia": "Saint_John,_New_Brunswick",
+    "city": "Saint John"
+  },
+  {
+    "name": "sucre",
+    "lat": -19.033,
+    "long": -65.25,
+    "wikipedia": "Sucre",
+    "city": "Sucre"
+  },
+  {
+    "name": "charlotteamalie",
+    "lat": -18.35,
+    "long": -64.95,
+    "wikipedia": "Charlotte_Amalie,_United_States_Virgin_Islands",
+    "city": "Charlotte Amalie"
+  },
+  {
+    "name": "hamilton",
+    "lat": -37.783,
+    "long": 175.283,
+    "wikipedia": "Hamilton,_New_Zealand",
+    "city": "Hamilton"
+  },
+  {
+    "name": "roadtown",
+    "lat": 18.433,
+    "long": -64.617,
+    "wikipedia": "Road_Town",
+    "city": "Road Town"
+  },
+  { "name": "%b3rdoba",
+    "lat": -31.4,
+    "long": -64.183,
+    "wikipedia": "C%C3%B3rdoba,_Argentina",
+    "city": "C%C3%B3rdoba"
+  },
+  {
+    "name": "portovelho",
+    "lat": -8.75,
+    "long": -63.9,
+    "wikipedia": "Porto_Velho",
+    "city": "Porto Velho"
+  },
+  {
+    "name": "cityofhalifax",
+    "lat": 44.667,
+    "long": -63.6,
+    "wikipedia": "City_of_Halifax",
+    "city": "City of Halifax"
+  },
+  {
+    "name": "santacruzdelasierra",
+    "lat": -17.8,
+    "long": -63.167,
+    "wikipedia": "Santa_Cruz_de_la_Sierra",
+    "city": "Santa Cruz de la Sierra"
+  },
+  {
+    "name": "charlottetown",
+    "lat": 46.233,
+    "long": -63.133,
+    "wikipedia": "Charlottetown",
+    "city": "Charlottetown"
+  },
+  {
+    "name": "thevalley",
+    "lat": 18.217,
+    "long": -63.05,
+    "wikipedia": "The_Valley,_Anguilla",
+    "city": "The Valley"
+  },
+  {
+    "name": "basseterre",
+    "lat": 15.983,
+    "long": -61.717,
+    "wikipedia": "Basse-Terre",
+    "city": "Basse-Terre"
+  },
+  { "name": "%adablanca",
+    "lat": -38.717,
+    "long": -62.267,
+    "wikipedia": "Bah%C3%ADa_Blanca",
+    "city": "Bah%C3%ADa Blanca"
+  },
+  { "name": "%27s",
+    "lat": 47.55,
+    "long": -52.7,
+    "wikipedia": "St._John%27s,_Newfoundland_and_Labrador",
+    "city": "St. John%27s"
+  },
+  { "name": "%27s",
+    "lat": 12.05,
+    "long": -61.75,
+    "wikipedia": "St._George%27s,_Grenada",
+    "city": "St. George%27s"
+  },
+  {
+    "name": "portofspain",
+    "lat": 10.667,
+    "long": -61.517,
+    "wikipedia": "Port_of_Spain",
+    "city": "Port of Spain"
+  },
+  {
+    "name": "sanfernando",
+    "lat": 10.283,
+    "long": -61.467,
+    "wikipedia": "San_Fernando,_Trinidad_and_Tobago",
+    "city": "San Fernando"
+  },
+  {
+    "name": "roseau",
+    "lat": 15.3,
+    "long": -61.383,
+    "wikipedia": "Roseau",
+    "city": "Roseau"
+  },
+  {
+    "name": "chaguanas",
+    "lat": 10.5,
+    "long": -61.383,
+    "wikipedia": "Chaguanas",
+    "city": "Chaguanas"
+  },
+  {
+    "name": "kingstown",
+    "lat": 13.167,
+    "long": -61.233,
+    "wikipedia": "Kingstown",
+    "city": "Kingstown"
+  },
+  {
+    "name": "fortdefrance",
+    "lat": 14.6,
+    "long": -61.083,
+    "wikipedia": "Fort-de-France",
+    "city": "Fort-de-France"
+  },
+  {
+    "name": "castries",
+    "lat": 14.017,
+    "long": -60.983,
+    "wikipedia": "Castries",
+    "city": "Castries"
+  },
+  {
+    "name": "rosario",
+    "lat": -32.95,
+    "long": -60.667,
+    "wikipedia": "Rosario,_Santa_Fe",
+    "city": "Rosario"
+  },
+  {
+    "name": "boavista",
+    "lat": 2.817,
+    "long": -60.65,
+    "wikipedia": "Boa_Vista,_Roraima",
+    "city": "Boa Vista"
+  },
+  {
+    "name": "manaus",
+    "lat": -3.1,
+    "long": -60.017,
+    "wikipedia": "Manaus",
+    "city": "Manaus"
+  },
+  {
+    "name": "bridgetown",
+    "lat": 13.083,
+    "long": -59.617,
+    "wikipedia": "Bridgetown",
+    "city": "Bridgetown"
+  },
+  {
+    "name": "buenosaires",
+    "lat": -34.6,
+    "long": -58.367,
+    "wikipedia": "Buenos_Aires",
+    "city": "Buenos Aires"
+  },
+  {
+    "name": "stanley",
+    "lat": 51.683,
+    "long": -57.85,
+    "wikipedia": "Stanley,_Falkland_Islands",
+    "city": "Stanley"
+  },
+  { "name": "%b3n",
+    "lat": -25.267,
+    "long": -57.667,
+    "wikipedia": "Asunci%C3%B3n",
+    "city": "Asunci%C3%B3n"
+  },
+  {
+    "name": "saintpierre",
+    "lat": 46.767,
+    "long": -56.167,
+    "wikipedia": "Saint-Pierre,_Saint_Pierre_and_Miquelong",
+    "city": "Saint-Pierre"
+  },
+  {
+    "name": "montevideo",
+    "lat": -34.917,
+    "long": -56.167,
+    "wikipedia": "Montevideo",
+    "city": "Montevideo"
+  },
+  { "name": "%a1",
+    "lat": -15.583,
+    "long": -56.083,
+    "wikipedia": "Cuiab%C3%A1",
+    "city": "Cuiab%C3%A1"
+  },
+  {
+    "name": "paramaribo",
+    "lat": 5.867,
+    "long": -55.167,
+    "wikipedia": "Paramaribo",
+    "city": "Paramaribo"
+  },
+  {
+    "name": "campogrande",
+    "lat": -20.433,
+    "long": -54.633,
+    "wikipedia": "Campo_Grande",
+    "city": "Campo Grande"
+  },
+  {
+    "name": "ciudaddeleste",
+    "lat": -25.417,
+    "long": -54.617,
+    "wikipedia": "Ciudad_del_Este",
+    "city": "Ciudad del Este"
+  },
+  { "name": "%ad",
+    "lat": -33.683,
+    "long": -53.45,
+    "wikipedia": "Chu%C3%AD",
+    "city": "Chu%C3%AD"
+  },
+  {
+    "name": "pelotas",
+    "lat": -31.767,
+    "long": -52.333,
+    "wikipedia": "Pelotas",
+    "city": "Pelotas"
+  },
+  {
+    "name": "cayenne",
+    "lat": 4.917,
+    "long": -52.317,
+    "wikipedia": "Cayenne",
+    "city": "Cayenne"
+  },
+  {
+    "name": "nuuk",
+    "lat": 64.167,
+    "long": -51.75,
+    "wikipedia": "Nuuk",
+    "city": "Nuuk"
+  },
+  {
+    "name": "portoalegre",
+    "lat": 30.033,
+    "long": -51.217,
+    "wikipedia": "Porto_Alegre",
+    "city": "Porto Alegre"
+  },
+  { "name": "%a1",
+    "lat": 0.033,
+    "long": -51.05,
+    "wikipedia": "Macap%C3%A1",
+    "city": "Macap%C3%A1"
+  },
+  {
+    "name": "assis",
+    "lat": -22.65,
+    "long": -50.4,
+    "wikipedia": "Assis",
+    "city": "Assis"
+  },
+  {
+    "name": "curitiba",
+    "lat": -25.417,
+    "long": -49.25,
+    "wikipedia": "Curitiba",
+    "city": "Curitiba"
+  },
+  { "name": "%a9m",
+    "lat": 1.467,
+    "long": -48.483,
+    "wikipedia": "Bel%C3%A9m",
+    "city": "Bel%C3%A9m"
+  },
+  { "name": "%adlia",
+    "lat": -15.8,
+    "long": -47.9,
+    "wikipedia": "Bras%C3%ADlia",
+    "city": "Bras%C3%ADlia"
+  },
+  {
+    "name": "campinas",
+    "lat": -22.9,
+    "long": -47.05,
+    "wikipedia": "Campinas",
+    "city": "Campinas"
+  },
+  { "name": "%a3opaulo",
+    "lat": -23.55,
+    "long": -46.633,
+    "wikipedia": "S%C3%A3o_Paulo",
+    "city": "S%C3%A3o Paulo"
+  },
+  { "name": "%a9doscampos",
+    "lat": -23.183,
+    "long": -45.867,
+    "wikipedia": "S%C3%A3o_Jos%C3%A9_dos_Campos",
+    "city": "S%C3%A3o Jos%C3%A9 dos Campos"
+  },
+  {
+    "name": "riodejaneiro",
+    "lat": -22.9,
+    "long": -43.233,
+    "wikipedia": "Rio_de_Janeiro",
+    "city": "Rio de Janeiro"
+  },
+  { "name": "%b3ria",
+    "lat": -20.317,
+    "long": -40.333,
+    "wikipedia": "Vit%C3%B3ria,_Brazil",
+    "city": "Vit%C3%B3ria"
+  },
+  { "name": "%a9us",
+    "lat": -14.783,
+    "long": -39.05,
+    "wikipedia": "Ilh%C3%A9us",
+    "city": "Ilh%C3%A9us"
+  },
+  {
+    "name": "fortaleza",
+    "lat": -3.767,
+    "long": -38.567,
+    "wikipedia": "Fortaleza",
+    "city": "Fortaleza"
+  },
+  { "name": "%b3",
+    "lat": -9.65,
+    "long": -35.717,
+    "wikipedia": "Macei%C3%B3",
+    "city": "Macei%C3%B3"
+  },
+  {
+    "name": "recife",
+    "lat": -8.067,
+    "long": -34.867,
+    "wikipedia": "Recife",
+    "city": "Recife"
+  },
+  {
+    "name": "horta",
+    "lat": 38.533,
+    "long": -28.633,
+    "wikipedia": "Horta_(Azores)",
+    "city": "Horta (Azores)"
+  },
+  { "name": "%adsmo",
+    "lat": 38.65,
+    "long": -27.217,
+    "wikipedia": "Angra_do_Hero%C3%ADsmo",
+    "city": "Angra do Hero%C3%ADsmo"
+  },
+  {
+    "name": "pontadelgada",
+    "lat": 37.733,
+    "long": -25.667,
+    "wikipedia": "Ponta_Delgada,_S%C3%A3o_Miguel_Island",
+    "city": "Ponta Delgada"
+  },
+  {
+    "name": "praia",
+    "lat": 14.917,
+    "long": -23.517,
+    "wikipedia": "Praia",
+    "city": "Praia"
+  },
+  { "name": "%adk",
+    "lat": 64.133,
+    "long": -21.933,
+    "wikipedia": "Reykjav%C3%ADk",
+    "city": "Reykjav%C3%ADk"
+  },
+  {
+    "name": "dakar",
+    "lat": 14.683,
+    "long": -17.433,
+    "wikipedia": "Dakar",
+    "city": "Dakar"
+  },
+  { "name": "%a8s",
+    "lat": 14.833,
+    "long": -17.1,
+    "wikipedia": "Thi%C3%A8s",
+    "city": "Thi%C3%A8s"
+  },
+  {
+    "name": "serekunda",
+    "lat": 13.433,
+    "long": -16.667,
+    "wikipedia": "Serekunda",
+    "city": "Serekunda"
+  },
+  {
+    "name": "brikama",
+    "lat": 13.267,
+    "long": -16.65,
+    "wikipedia": "Brikama",
+    "city": "Brikama"
+  },
+  {
+    "name": "banjul",
+    "lat": 13.45,
+    "long": -16.567,
+    "wikipedia": "Banjul",
+    "city": "Banjul"
+  },
+  {
+    "name": "santacruzdetenerife",
+    "lat": 28.467,
+    "long": -16.25,
+    "wikipedia": "Santa_Cruz_de_Tenerife",
+    "city": "Santa Cruz de Tenerife"
+  },
+  {
+    "name": "nouakchott",
+    "lat": 18.1,
+    "long": -15.95,
+    "wikipedia": "Nouakchott",
+    "city": "Nouakchott"
+  },
+  {
+    "name": "bissau",
+    "lat": 11.85,
+    "long": -15.583,
+    "wikipedia": "Bissau",
+    "city": "Bissau"
+  },
+  {
+    "name": "laspalmasdegrancanaria",
+    "lat": 28.133,
+    "long": -15.433,
+    "wikipedia": "Las_Palmas_de_Gran_Canaria",
+    "city": "Las Palmas de Gran Canaria"
+  },
+  {
+    "name": "conakry",
+    "lat": 9.517,
+    "long": -13.7,
+    "wikipedia": "Conakry",
+    "city": "Conakry"
+  },
+  {
+    "name": "freetown",
+    "lat": 8.467,
+    "long": -13.267,
+    "wikipedia": "Freetown",
+    "city": "Freetown"
+  },
+  { "name": "%ban",
+    "lat": 27.15,
+    "long": -13.2,
+    "wikipedia": "El_Aai%C3%BAn",
+    "city": "El Aai%C3%BAn"
+  },
+  {
+    "name": "monrovia",
+    "lat": 6.317,
+    "long": -10.767,
+    "wikipedia": "Monrovia",
+    "city": "Monrovia"
+  },
+  {
+    "name": "lisbon",
+    "lat": 38.7,
+    "long": -9.183,
+    "wikipedia": "Lisbon",
+    "city": "Lisbon"
+  },
+  {
+    "name": "porto",
+    "lat": 41.15,
+    "long": -8.633,
+    "wikipedia": "Porto",
+    "city": "Porto"
+  },
+  {
+    "name": "cork",
+    "lat": 51.883,
+    "long": -8.467,
+    "wikipedia": "Cork_(city)",
+    "city": "Cork (city)"
+  },
+  {
+    "name": "marrakech",
+    "lat": 31.633,
+    "long": -8.0,
+    "wikipedia": "Marrakech",
+    "city": "Marrakech"
+  },
+  {
+    "name": "bamako",
+    "lat": 12.65,
+    "long": -8.0,
+    "wikipedia": "Bamako",
+    "city": "Bamako"
+  },
+  {
+    "name": "casablanca",
+    "lat": 33.533,
+    "long": -7.583,
+    "wikipedia": "Casablanca",
+    "city": "Casablanca"
+  },
+  {
+    "name": "koulikoro",
+    "lat": 12.983,
+    "long": -7.567,
+    "wikipedia": "Koulikoro",
+    "city": "Koulikoro"
+  },
+  {
+    "name": "rabat",
+    "lat": 34.033,
+    "long": -6.833,
+    "wikipedia": "Rabat",
+    "city": "Rabat"
+  },
+  { "name": "%b3rshavn",
+    "lat": 62.0,
+    "long": -6.783,
+    "wikipedia": "T%C3%B3rshavn",
+    "city": "T%C3%B3rshavn"
+  },
+  {
+    "name": "dublin",
+    "lat": 53.333,
+    "long": -6.267,
+    "wikipedia": "Dublin",
+    "city": "Dublin"
+  },
+  {
+    "name": "seville",
+    "lat": 37.367,
+    "long": -5.983,
+    "wikipedia": "Seville",
+    "city": "Seville"
+  },
+  {
+    "name": "belfast",
+    "lat": 54.6,
+    "long": -5.917,
+    "wikipedia": "Belfast",
+    "city": "Belfast"
+  },
+  {
+    "name": "jamestown",
+    "lat": -15.917,
+    "long": -5.733,
+    "wikipedia": "Jamestown,_Saint_Helena",
+    "city": "Jamestown"
+  },
+  {
+    "name": "gibraltar",
+    "lat": 36.133,
+    "long": -5.35,
+    "wikipedia": "Gibraltar",
+    "city": "Gibraltar"
+  },
+  {
+    "name": "yamoussoukro",
+    "lat": 6.817,
+    "long": -5.283,
+    "wikipedia": "Yamoussoukro",
+    "city": "Yamoussoukro"
+  },
+  {
+    "name": "douglas",
+    "lat": 54.133,
+    "long": -4.483,
+    "wikipedia": "Douglas,_Isle_of_Man",
+    "city": "Douglas"
+  },
+  { "name": "%a1laga",
+    "lat": 36.717,
+    "long": -4.417,
+    "wikipedia": "M%C3%A1laga",
+    "city": "M%C3%A1laga"
+  },
+  {
+    "name": "glasgow",
+    "lat": 55.85,
+    "long": -4.25,
+    "wikipedia": "Glasgow",
+    "city": "Glasgow"
+  },
+  {
+    "name": "abidjan",
+    "lat": 5.333,
+    "long": -4.017,
+    "wikipedia": "Abidjan",
+    "city": "Abidjan"
+  },
+  {
+    "name": "madrid",
+    "lat": 40.4,
+    "long": -3.683,
+    "wikipedia": "Madrid",
+    "city": "Madrid"
+  },
+  {
+    "name": "cardiff",
+    "lat": 51.483,
+    "long": -3.183,
+    "wikipedia": "Cardiff",
+    "city": "Cardiff"
+  },
+  {
+    "name": "edinburgh",
+    "lat": 55.95,
+    "long": -3.15,
+    "wikipedia": "Edinburgh",
+    "city": "Edinburgh"
+  },
+  {
+    "name": "timbuktu",
+    "lat": 16.767,
+    "long": -3.0,
+    "wikipedia": "Timbuktu",
+    "city": "Timbuktu"
+  },
+  {
+    "name": "liverpool",
+    "lat": 53.4,
+    "long": -2.983,
+    "wikipedia": "Liverpool",
+    "city": "Liverpool"
+  },
+  {
+    "name": "bilbao",
+    "lat": 43.25,
+    "long": -2.917,
+    "wikipedia": "Bilbao",
+    "city": "Bilbao"
+  },
+  {
+    "name": "manchester",
+    "lat": 53.467,
+    "long": -2.233,
+    "wikipedia": "Manchester",
+    "city": "Manchester"
+  },
+  {
+    "name": "aberdeen",
+    "lat": 57.15,
+    "long": -2.1,
+    "wikipedia": "Aberdeen",
+    "city": "Aberdeen"
+  },
+  {
+    "name": "birmingham",
+    "lat": 52.483,
+    "long": -1.883,
+    "wikipedia": "Birmingham",
+    "city": "Birmingham"
+  },
+  {
+    "name": "leeds",
+    "lat": 53.8,
+    "long": -1.55,
+    "wikipedia": "Leeds",
+    "city": "Leeds"
+  },
+  {
+    "name": "nantes",
+    "lat": 47.217,
+    "long": -1.55,
+    "wikipedia": "Nantes",
+    "city": "Nantes"
+  },
+  {
+    "name": "ouagadougou",
+    "lat": 12.35,
+    "long": -1.533,
+    "wikipedia": "Ouagadougou",
+    "city": "Ouagadougou"
+  },
+  {
+    "name": "tamale",
+    "lat": 9.4,
+    "long": -0.85,
+    "wikipedia": "Tamale,_Ghana",
+    "city": "Tamale"
+  },
+  {
+    "name": "valencia",
+    "lat": 39.483,
+    "long": -0.367,
+    "wikipedia": "Valencia,_Spain",
+    "city": "Valencia"
+  },
+  {
+    "name": "accra",
+    "lat": 5.55,
+    "long": -0.2,
+    "wikipedia": "Accra",
+    "city": "Accra"
+  },
+  {
+    "name": "longdon",
+    "lat": 51.5,
+    "long": -0.117,
+    "wikipedia": "Longdon",
+    "city": "Longdon"
+  },
+  {
+    "name": "greenwich",
+    "lat": 51.467,
+    "long": -0.0,
+    "wikipedia": "Greenwich",
+    "city": "Greenwich"
+  },
+  { "name": "%a9",
+    "lat": 6.133,
+    "long": 1.2,
+    "wikipedia": "Lom%C3%A9",
+    "city": "Lom%C3%A9"
+  },
+  {
+    "name": "toulouse",
+    "lat": 43.6,
+    "long": 1.433,
+    "wikipedia": "Toulouse",
+    "city": "Toulouse"
+  },
+  {
+    "name": "andorralavella",
+    "lat": 42.5,
+    "long": 1.5,
+    "wikipedia": "Andorra_la_Vella",
+    "city": "Andorra la Vella"
+  },
+  {
+    "name": "ibiza",
+    "lat": 39.633,
+    "long": 1.717,
+    "wikipedia": "Ibiza",
+    "city": "Ibiza"
+  },
+  {
+    "name": "niamey",
+    "lat": 13.517,
+    "long": 2.1,
+    "wikipedia": "Niamey",
+    "city": "Niamey"
+  },
+  {
+    "name": "barcelonga",
+    "lat": 41.383,
+    "long": 2.183,
+    "wikipedia": "Barcelonga",
+    "city": "Barcelonga"
+  },
+  {
+    "name": "paris",
+    "lat": 48.867,
+    "long": 2.333,
+    "wikipedia": "Paris",
+    "city": "Paris"
+  },
+  {
+    "name": "cotonou",
+    "lat": 6.35,
+    "long": 2.417,
+    "wikipedia": "Cotonou",
+    "city": "Cotonou"
+  },
+  {
+    "name": "portonovo",
+    "lat": 6.5,
+    "long": 2.6,
+    "wikipedia": "Porto-Novo",
+    "city": "Porto-Novo"
+  },
+  {
+    "name": "palma",
+    "lat": 39.567,
+    "long": 2.65,
+    "wikipedia": "Palma,_Majorca",
+    "city": "Palma"
+  },
+  {
+    "name": "algiers",
+    "lat": 36.7,
+    "long": 3.217,
+    "wikipedia": "Algiers",
+    "city": "Algiers"
+  },
+  {
+    "name": "lagos",
+    "lat": 6.45,
+    "long": 3.383,
+    "wikipedia": "Lagos",
+    "city": "Lagos"
+  },
+  {
+    "name": "ibadan",
+    "lat": 7.367,
+    "long": 3.883,
+    "wikipedia": "Ibadan",
+    "city": "Ibadan"
+  },
+  {
+    "name": "thehague",
+    "lat": 52.067,
+    "long": 4.3,
+    "wikipedia": "The_Hague",
+    "city": "The Hague"
+  },
+  {
+    "name": "brussels",
+    "lat": 50.833,
+    "long": 4.35,
+    "wikipedia": "Brussels",
+    "city": "Brussels"
+  },
+  {
+    "name": "antwerp",
+    "lat": 51.217,
+    "long": 4.4,
+    "wikipedia": "Antwerp",
+    "city": "Antwerp"
+  },
+  {
+    "name": "rotterdam",
+    "lat": 51.933,
+    "long": 4.467,
+    "wikipedia": "Rotterdam",
+    "city": "Rotterdam"
+  },
+  {
+    "name": "lyon",
+    "lat": 45.767,
+    "long": 4.833,
+    "wikipedia": "Lyon",
+    "city": "Lyon"
+  },
+  {
+    "name": "amsterdam",
+    "lat": 52.367,
+    "long": 4.883,
+    "wikipedia": "Amsterdam",
+    "city": "Amsterdam"
+  },
+  {
+    "name": "marseille",
+    "lat": 43.3,
+    "long": 5.367,
+    "wikipedia": "Marseille",
+    "city": "Marseille"
+  },
+  {
+    "name": "bergen",
+    "lat": 60.367,
+    "long": 5.4,
+    "wikipedia": "Bergen",
+    "city": "Bergen"
+  },
+  {
+    "name": "luxembourg",
+    "lat": 49.6,
+    "long": 6.117,
+    "wikipedia": "Luxembourg_(city)",
+    "city": "Luxembourg (city)"
+  },
+  {
+    "name": "geneva",
+    "lat": 46.2,
+    "long": 6.15,
+    "wikipedia": "Geneva",
+    "city": "Geneva"
+  },
+  { "name": "%a9",
+    "lat": 0.333,
+    "long": 6.683,
+    "wikipedia": "S%C3%A3o_Tom%C3%A9",
+    "city": "S%C3%A3o Tom%C3%A9"
+  },
+  { "name": "%bcsseldorf",
+    "lat": 51.233,
+    "long": 6.783,
+    "wikipedia": "D%C3%BCsseldorf",
+    "city": "D%C3%BCsseldorf"
+  },
+  {
+    "name": "cologne",
+    "lat": 50.95,
+    "long": 6.967,
+    "wikipedia": "Cologne",
+    "city": "Cologne"
+  },
+  {
+    "name": "cannes",
+    "lat": 43.55,
+    "long": 7.0,
+    "wikipedia": "Cannes",
+    "city": "Cannes"
+  },
+  {
+    "name": "nice",
+    "lat": 43.7,
+    "long": 7.267,
+    "wikipedia": "Nice",
+    "city": "Nice"
+  },
+  {
+    "name": "monaco",
+    "lat": 43.733,
+    "long": 7.4,
+    "wikipedia": "Monaco",
+    "city": "Monaco"
+  },
+  {
+    "name": "bern",
+    "lat": 46.95,
+    "long": 7.45,
+    "wikipedia": "Bern",
+    "city": "Bern"
+  },
+  {
+    "name": "abuja",
+    "lat": 9.067,
+    "long": 7.483,
+    "wikipedia": "Abuja",
+    "city": "Abuja"
+  },
+  {
+    "name": "enugu",
+    "lat": 6.45,
+    "long": 7.5,
+    "wikipedia": "Enugu",
+    "city": "Enugu"
+  },
+  {
+    "name": "turin",
+    "lat": 45.067,
+    "long": 7.7,
+    "wikipedia": "Turin",
+    "city": "Turin"
+  },
+  {
+    "name": "strasbourg",
+    "lat": 48.583,
+    "long": 7.75,
+    "wikipedia": "Strasbourg",
+    "city": "Strasbourg"
+  },
+  {
+    "name": "kano",
+    "lat": 12.0,
+    "long": 8.517,
+    "wikipedia": "Kano",
+    "city": "Kano"
+  },
+  { "name": "%bcrich",
+    "lat": 47.367,
+    "long": 8.55,
+    "wikipedia": "Z%C3%BCrich",
+    "city": "Z%C3%BCrich"
+  },
+  {
+    "name": "frankfurt",
+    "lat": 50.1,
+    "long": 8.683,
+    "wikipedia": "Frankfurt",
+    "city": "Frankfurt"
+  },
+  {
+    "name": "malabo",
+    "lat": 3.75,
+    "long": 8.767,
+    "wikipedia": "Malabo",
+    "city": "Malabo"
+  },
+  {
+    "name": "stuttgart",
+    "lat": 48.767,
+    "long": 9.167,
+    "wikipedia": "Stuttgart",
+    "city": "Stuttgart"
+  },
+  {
+    "name": "milan",
+    "lat": 45.467,
+    "long": 9.183,
+    "wikipedia": "Milan",
+    "city": "Milan"
+  },
+  {
+    "name": "libreville",
+    "lat": 0.383,
+    "long": 9.45,
+    "wikipedia": "Libreville",
+    "city": "Libreville"
+  },
+  {
+    "name": "vaduz",
+    "lat": 47.133,
+    "long": 9.517,
+    "wikipedia": "Vaduz",
+    "city": "Vaduz"
+  },
+  {
+    "name": "douala",
+    "lat": 4.05,
+    "long": 9.7,
+    "wikipedia": "Douala",
+    "city": "Douala"
+  },
+  {
+    "name": "hanover",
+    "lat": 52.367,
+    "long": 9.717,
+    "wikipedia": "Hanover",
+    "city": "Hanover"
+  },
+  {
+    "name": "hamburg",
+    "lat": 53.583,
+    "long": 9.983,
+    "wikipedia": "Hamburg",
+    "city": "Hamburg"
+  },
+  {
+    "name": "tunis",
+    "lat": 36.8,
+    "long": 10.167,
+    "wikipedia": "Tunis",
+    "city": "Tunis"
+  },
+  {
+    "name": "aarhus",
+    "lat": 56.15,
+    "long": 10.2,
+    "wikipedia": "Aarhus",
+    "city": "Aarhus"
+  },
+  {
+    "name": "oslo",
+    "lat": 59.95,
+    "long": 10.75,
+    "wikipedia": "Oslo",
+    "city": "Oslo"
+  },
+  {
+    "name": "innsbruck",
+    "lat": 47.267,
+    "long": 11.383,
+    "wikipedia": "Innsbruck",
+    "city": "Innsbruck"
+  },
+  { "name": "%a9",
+    "lat": 3.867,
+    "long": 11.517,
+    "wikipedia": "Yaound%C3%A9",
+    "city": "Yaound%C3%A9"
+  },
+  {
+    "name": "munich",
+    "lat": 48.133,
+    "long": 11.567,
+    "wikipedia": "Munich",
+    "city": "Munich"
+  },
+  {
+    "name": "gothenburg",
+    "lat": 57.7,
+    "long": 11.967,
+    "wikipedia": "Gothenburg",
+    "city": "Gothenburg"
+  },
+  {
+    "name": "leipzig",
+    "lat": 51.333,
+    "long": 12.383,
+    "wikipedia": "Leipzig",
+    "city": "Leipzig"
+  },
+  {
+    "name": "cityofsanmarino",
+    "lat": 43.933,
+    "long": 12.433,
+    "wikipedia": "City_of_San_Marino",
+    "city": "City of San Marino"
+  },
+  {
+    "name": "vaticancity",
+    "lat": 41.9,
+    "long": 12.45,
+    "wikipedia": "Vatican_City",
+    "city": "Vatican City"
+  },
+  {
+    "name": "rome",
+    "lat": 41.9,
+    "long": 12.5,
+    "wikipedia": "Rome",
+    "city": "Rome"
+  },
+  {
+    "name": "copenhagen",
+    "lat": 55.667,
+    "long": 12.567,
+    "wikipedia": "Copenhagen",
+    "city": "Copenhagen"
+  },
+  { "name": "%b6",
+    "lat": 55.583,
+    "long": 13.033,
+    "wikipedia": "Malm%C3%B6",
+    "city": "Malm%C3%B6"
+  },
+  {
+    "name": "salzburg",
+    "lat": 47.8,
+    "long": 13.033,
+    "wikipedia": "Salzburg",
+    "city": "Salzburg"
+  },
+  {
+    "name": "tripoli",
+    "lat": 32.9,
+    "long": 13.183,
+    "wikipedia": "Tripoli",
+    "city": "Tripoli"
+  },
+  {
+    "name": "luanda",
+    "lat": -8.833,
+    "long": 13.233,
+    "wikipedia": "Luanda",
+    "city": "Luanda"
+  },
+  {
+    "name": "berlin",
+    "lat": 52.517,
+    "long": 13.417,
+    "wikipedia": "Berlin",
+    "city": "Berlin"
+  },
+  {
+    "name": "dresden",
+    "lat": 51.05,
+    "long": 13.733,
+    "wikipedia": "Dresden",
+    "city": "Dresden"
+  },
+  {
+    "name": "naples",
+    "lat": 40.833,
+    "long": 14.25,
+    "wikipedia": "Naples",
+    "city": "Naples"
+  },
+  {
+    "name": "linz",
+    "lat": 48.3,
+    "long": 14.283,
+    "wikipedia": "Linz",
+    "city": "Linz"
+  },
+  {
+    "name": "prague",
+    "lat": 50.083,
+    "long": 14.417,
+    "wikipedia": "Prague",
+    "city": "Prague"
+  },
+  {
+    "name": "sabha",
+    "lat": 27.033,
+    "long": 14.433,
+    "wikipedia": "Sabha,_Libya",
+    "city": "Sabha"
+  },
+  {
+    "name": "birkirkara",
+    "lat": 35.883,
+    "long": 14.45,
+    "wikipedia": "Birkirkara",
+    "city": "Birkirkara"
+  },
+  {
+    "name": "ljubljana",
+    "lat": 46.067,
+    "long": 14.5,
+    "wikipedia": "Ljubljana",
+    "city": "Ljubljana"
+  },
+  {
+    "name": "valletta",
+    "lat": 35.9,
+    "long": 14.5,
+    "wikipedia": "Valletta",
+    "city": "Valletta"
+
+  },
+  {
+    "name": "brazzaville",
+    "lat": -4.267,
+    "long": 15.283,
+    "wikipedia": "Brazzaville",
+    "city": "Brazzaville"
+  },
+  {
+    "name": "kinshasa",
+    "lat": -4.317,
+    "long": 15.317,
+    "wikipedia": "Kinshasa",
+    "city": "Kinshasa"
+  },
+  {
+    "name": "graz",
+    "lat": 47.067,
+    "long": 15.433,
+    "wikipedia": "Graz",
+    "city": "Graz"
+  },
+  {
+    "name": "longgyearbyen",
+    "lat": 78.217,
+    "long": 15.55,
+    "wikipedia": "Longgyearbyen",
+    "city": "Longgyearbyen"
+  },
+  {
+    "name": "zagreb",
+    "lat": 45.817,
+    "long": 15.983,
+    "wikipedia": "Zagreb",
+    "city": "Zagreb"
+  },
+  {
+    "name": "vienna",
+    "lat": 48.2,
+    "long": 16.367,
+    "wikipedia": "Vienna",
+    "city": "Vienna"
+  },
+  {
+    "name": "split",
+    "lat": 43.5,
+    "long": 16.433,
+    "wikipedia": "Split_(city)",
+    "city": "Split (city)"
+  },
+  {
+    "name": "bratislava",
+    "lat": 48.133,
+    "long": 17.1,
+    "wikipedia": "Bratislava",
+    "city": "Bratislava"
+  },
+  {
+    "name": "stockholm",
+    "lat": 59.35,
+    "long": 18.067,
+    "wikipedia": "Stockholm",
+    "city": "Stockholm"
+  },
+  {
+    "name": "sarajevo",
+    "lat": 43.85,
+    "long": 18.35,
+    "wikipedia": "Sarajevo",
+    "city": "Sarajevo"
+  },
+  {
+    "name": "capetown",
+    "lat": -33.917,
+    "long": 18.417,
+    "wikipedia": "Cape_Town",
+    "city": "Cape Town"
+  },
+  {
+    "name": "bangui",
+    "lat": 4.35,
+    "long": 18.583,
+    "wikipedia": "Bangui",
+    "city": "Bangui"
+  },
+  { "name": "%84sk",
+    "lat": 54.35,
+    "long": 18.667,
+    "wikipedia": "Gda%C5%84sk",
+    "city": "Gda%C5%84sk"
+  },
+  {
+    "name": "budapest",
+    "lat": 47.467,
+    "long": 19.05,
+    "wikipedia": "Budapest",
+    "city": "Budapest"
+  },
+  {
+    "name": "podgorica",
+    "lat": 42.467,
+    "long": 19.267,
+    "wikipedia": "Podgorica",
+    "city": "Podgorica"
+  },
+  {
+    "name": "tirana",
+    "lat": 41.317,
+    "long": 19.817,
+    "wikipedia": "Tirana",
+    "city": "Tirana"
+  },
+  { "name": "%b3w",
+    "lat": 50.05,
+    "long": 19.933,
+    "wikipedia": "Krak%C3%B3w",
+    "city": "Krak%C3%B3w"
+  },
+  {
+    "name": "belgrade",
+    "lat": 44.817,
+    "long": 20.45,
+    "wikipedia": "Belgrade",
+    "city": "Belgrade"
+  },
+  {
+    "name": "kaliningrad",
+    "lat": 54.717,
+    "long": 20.517,
+    "wikipedia": "Kaliningrad",
+    "city": "Kaliningrad"
+  },
+  {
+    "name": "warsaw",
+    "lat": 52.233,
+    "long": 21.0,
+    "wikipedia": "Warsaw",
+    "city": "Warsaw"
+  },
+  {
+    "name": "pristina",
+    "lat": 42.667,
+    "long": 21.167,
+    "wikipedia": "Pristina",
+    "city": "Pristina"
+  },
+  {
+    "name": "skopje",
+    "lat": 42.0,
+    "long": 21.433,
+    "wikipedia": "Skopje",
+    "city": "Skopje"
+  },
+  {
+    "name": "thessalongiki",
+    "lat": 40.633,
+    "long": 22.95,
+    "wikipedia": "Thessalongiki",
+    "city": "Thessalongiki"
+  },
+  {
+    "name": "sofia",
+    "lat": 42.7,
+    "long": 23.333,
+    "wikipedia": "Sofia",
+    "city": "Sofia"
+  },
+  {
+    "name": "athens",
+    "lat": 37.967,
+    "long": 23.717,
+    "wikipedia": "Athens",
+    "city": "Athens"
+  },
+  {
+    "name": "tampere",
+    "lat": 61.5,
+    "long": 23.75,
+    "wikipedia": "Tampere",
+    "city": "Tampere"
+  },
+  {
+    "name": "lviv",
+    "lat": 49.85,
+    "long": 24.017,
+    "wikipedia": "Lviv",
+    "city": "Lviv"
+  },
+  {
+    "name": "riga",
+    "lat": 56.967,
+    "long": 24.133,
+    "wikipedia": "Riga",
+    "city": "Riga"
+  },
+  {
+    "name": "espoo",
+    "lat": 60.2,
+    "long": 24.65,
+    "wikipedia": "Espoo",
+    "city": "Espoo"
+  },
+  {
+    "name": "tallinn",
+    "lat": 59.433,
+    "long": 24.75,
+    "wikipedia": "Tallinn",
+    "city": "Tallinn"
+  },
+  {
+    "name": "helsinki",
+    "lat": 60.167,
+    "long": 24.933,
+    "wikipedia": "Helsinki",
+    "city": "Helsinki"
+  },
+  {
+    "name": "vilnius",
+    "lat": 54.683,
+    "long": 25.283,
+    "wikipedia": "Vilnius",
+    "city": "Vilnius"
+  },
+  {
+    "name": "portelizabeth",
+    "lat": -33.95,
+    "long": 25.6,
+    "wikipedia": "Port_Elizabeth",
+    "city": "Port Elizabeth"
+  },
+  {
+    "name": "livingstone",
+    "lat": -17.85,
+    "long": 25.867,
+    "wikipedia": "Livingstone,_Zambia",
+    "city": "Livingstone"
+  },
+  {
+    "name": "gaborone",
+    "lat": -24.65,
+    "long": 25.9,
+    "wikipedia": "Gaborone",
+    "city": "Gaborone"
+  },
+  {
+    "name": "bucharest",
+    "lat": 44.433,
+    "long": 26.1,
+    "wikipedia": "Bucharest",
+    "city": "Bucharest"
+  },
+  {
+    "name": "bloemfontein",
+    "lat": -29.1,
+    "long": 26.217,
+    "wikipedia": "Bloemfontein",
+    "city": "Bloemfontein"
+  },
+  {
+    "name": "tartu",
+    "lat": 58.383,
+    "long": 26.717,
+    "wikipedia": "Tartu",
+    "city": "Tartu"
+  },
+  { "name": "%b0zmir",
+    "lat": 38.433,
+    "long": 27.15,
+    "wikipedia": "%C4%B0zmir",
+    "city": "%C4%B0zmir"
+  },
+  {
+    "name": "lubumbashi",
+    "lat": -11.667,
+    "long": 27.467,
+    "wikipedia": "Lubumbashi",
+    "city": "Lubumbashi"
+  },
+  {
+    "name": "maseru",
+    "lat": -29.3,
+    "long": 27.467,
+    "wikipedia": "Maseru",
+    "city": "Maseru"
+  },
+  {
+    "name": "francistown",
+    "lat": -21.167,
+    "long": 27.5,
+    "wikipedia": "Francistown",
+    "city": "Francistown"
+  },
+  {
+    "name": "minsk",
+    "lat": 53.9,
+    "long": 27.567,
+    "wikipedia": "Minsk",
+    "city": "Minsk"
+  },
+  {
+    "name": "johannesburg",
+    "lat": -26.2,
+    "long": 28.033,
+    "wikipedia": "Johannesburg",
+    "city": "Johannesburg"
+  },
+  {
+    "name": "pretoria",
+    "lat": -25.733,
+    "long": 28.183,
+    "wikipedia": "Pretoria",
+    "city": "Pretoria"
+  },
+  {
+    "name": "lusaka",
+    "lat": -15.417,
+    "long": 28.283,
+    "wikipedia": "Lusaka",
+    "city": "Lusaka"
+  },
+  {
+    "name": "ndola",
+    "lat": -12.967,
+    "long": 28.633,
+    "wikipedia": "Ndola",
+    "city": "Ndola"
+  },
+  {
+    "name": "bulawayo",
+    "lat": -20.167,
+    "long": 28.567,
+    "wikipedia": "Bulawayo",
+    "city": "Bulawayo"
+  },
+  { "name": "%83u",
+    "lat": 47.0,
+    "long": 28.867,
+    "wikipedia": "Chi%C5%9Fin%C4%83u",
+    "city": "Chi%C5%9Fin%C4%83u"
+  },
+  {
+    "name": "istanbul",
+    "lat": 41.0,
+    "long": 28.967,
+    "wikipedia": "Istanbul",
+    "city": "Istanbul"
+  },
+  {
+    "name": "bursa",
+    "lat": 40.183,
+    "long": 29.067,
+    "wikipedia": "Bursa",
+    "city": "Bursa"
+  },
+  {
+    "name": "bujumbura",
+    "lat": -3.383,
+    "long": 29.367,
+    "wikipedia": "Bujumbura",
+    "city": "Bujumbura"
+  },
+  {
+    "name": "tiraspol",
+    "lat": 46.85,
+    "long": 29.633,
+    "wikipedia": "Tiraspol",
+    "city": "Tiraspol"
+  },
+  {
+    "name": "alexandria",
+    "lat": 31.2,
+    "long": 29.917,
+    "wikipedia": "Alexandria",
+    "city": "Alexandria"
+  },
+  {
+    "name": "kigali",
+    "lat": -1.933,
+    "long": 30.05,
+    "wikipedia": "Kigali",
+    "city": "Kigali"
+  },
+  {
+    "name": "saintpetersburg",
+    "lat": 59.933,
+    "long": 30.333,
+    "wikipedia": "Saint_Petersburg",
+    "city": "Saint Petersburg"
+  },
+  {
+    "name": "kiev",
+    "lat": 50.45,
+    "long": 30.517,
+    "wikipedia": "Kiev",
+    "city": "Kiev"
+  },
+  {
+    "name": "odessa",
+    "lat": 46.467,
+    "long": 30.733,
+    "wikipedia": "Odessa",
+    "city": "Odessa"
+  },
+  {
+    "name": "harare",
+    "lat": -17.817,
+    "long": 31.05,
+    "wikipedia": "Harare",
+    "city": "Harare"
+  },
+  {
+    "name": "durban",
+    "lat": -29.883,
+    "long": 31.05,
+    "wikipedia": "Durban",
+    "city": "Durban"
+  },
+  {
+    "name": "mbabane",
+    "lat": -26.317,
+    "long": 31.133,
+    "wikipedia": "Mbabane",
+    "city": "Mbabane"
+  },
+  {
+    "name": "lobamba",
+    "lat": -26.467,
+    "long": 31.2,
+    "wikipedia": "Lobamba",
+    "city": "Lobamba"
+  },
+  {
+    "name": "cairo",
+    "lat": 30.05,
+    "long": 31.217,
+    "wikipedia": "Cairo",
+    "city": "Cairo"
+  },
+  {
+    "name": "manzini",
+    "lat": -26.483,
+    "long": 31.367,
+    "wikipedia": "Manzini,_Swaziland",
+    "city": "Manzini"
+  },
+  {
+    "name": "portsaid",
+    "lat": 31.25,
+    "long": 32.283,
+    "wikipedia": "Port_Said",
+    "city": "Port Said"
+  },
+  {
+    "name": "konya",
+    "lat": 37.867,
+    "long": 32.483,
+    "wikipedia": "Konya",
+    "city": "Konya"
+  },
+  {
+    "name": "omdurman",
+    "lat": 15.65,
+    "long": 32.483,
+    "wikipedia": "Omdurman",
+    "city": "Omdurman"
+  },
+  {
+    "name": "khartoum",
+    "lat": 15.633,
+    "long": 32.533,
+    "wikipedia": "Khartoum",
+    "city": "Khartoum"
+  },
+  {
+    "name": "suez",
+    "lat": 29.967,
+    "long": 32.55,
+    "wikipedia": "Suez",
+    "city": "Suez"
+  },
+  {
+    "name": "maputo",
+    "lat": -25.967,
+    "long": 32.583,
+    "wikipedia": "Maputo",
+    "city": "Maputo"
+  },
+  {
+    "name": "luxor",
+    "lat": 25.683,
+    "long": 32.65,
+    "wikipedia": "Luxor",
+    "city": "Luxor"
+  },
+  {
+    "name": "ankara",
+    "lat": 39.867,
+    "long": 32.833,
+    "wikipedia": "Ankara",
+    "city": "Ankara"
+  },
+  {
+    "name": "mwanza",
+    "lat": -2.517,
+    "long": 32.9,
+    "wikipedia": "Mwanza",
+    "city": "Mwanza"
+  },
+  {
+    "name": "murmansk",
+    "lat": 68.967,
+    "long": 33.083,
+    "wikipedia": "Murmansk",
+    "city": "Murmansk"
+  },
+  {
+    "name": "nicosia",
+    "lat": 35.167,
+    "long": 33.35,
+    "wikipedia": "Nicosia",
+    "city": "Nicosia"
+  },
+  {
+    "name": "lilonggwe",
+    "lat": -13.983,
+    "long": 33.783,
+    "wikipedia": "Lilonggwe",
+    "city": "Lilonggwe"
+  },
+  {
+    "name": "simferopol",
+    "lat": 44.95,
+    "long": 34.1,
+    "wikipedia": "Simferopol",
+    "city": "Simferopol"
+  },
+  {
+    "name": "gaza",
+    "lat": 31.517,
+    "long": 34.45,
+    "wikipedia": "Gaza",
+    "city": "Gaza"
+  },
+  {
+    "name": "mersin",
+    "lat": 36.8,
+    "long": 34.633,
+    "wikipedia": "Mersin",
+    "city": "Mersin"
+  },
+  {
+    "name": "telaviv",
+    "lat": 32.083,
+    "long": 34.8,
+    "wikipedia": "Tel_Aviv",
+    "city": "Tel Aviv"
+  },
+  {
+    "name": "blantyre",
+    "lat": -15.783,
+    "long": 35.0,
+    "wikipedia": "Blantyre,_Malawi",
+    "city": "Blantyre"
+  },
+  {
+    "name": "jerusalem",
+    "lat": 31.783,
+    "long": 35.217,
+    "wikipedia": "Jerusalem",
+    "city": "Jerusalem"
+  },
+  {
+    "name": "adana",
+    "lat": 37.0,
+    "long": 35.317,
+    "wikipedia": "Adana",
+    "city": "Adana"
+  },
+  {
+    "name": "beirut",
+    "lat": 33.883,
+    "long": 35.5,
+    "wikipedia": "Beirut",
+    "city": "Beirut"
+  },
+  {
+    "name": "dodoma",
+    "lat": -6.167,
+    "long": 35.733,
+    "wikipedia": "Dodoma",
+    "city": "Dodoma"
+  },
+  {
+    "name": "amman",
+    "lat": 31.95,
+    "long": 35.933,
+    "wikipedia": "Amman",
+    "city": "Amman"
+  },
+  {
+    "name": "damascus",
+    "lat": 33.5,
+    "long": 36.283,
+    "wikipedia": "Damascus",
+    "city": "Damascus"
+  },
+  {
+    "name": "kharkiv",
+    "lat": 49.917,
+    "long": 36.317,
+    "wikipedia": "Kharkiv",
+    "city": "Kharkiv"
+  },
+  {
+    "name": "nairobi",
+    "lat": -1.283,
+    "long": 36.817,
+    "wikipedia": "Nairobi",
+    "city": "Nairobi"
+  },
+  {
+    "name": "gaziantep",
+    "lat": 37.067,
+    "long": 37.383,
+    "wikipedia": "Gaziantep",
+    "city": "Gaziantep"
+  },
+  {
+    "name": "moscow",
+    "lat": 55.75,
+    "long": 37.6,
+    "wikipedia": "Moscow",
+    "city": "Moscow"
+  },
+  {
+    "name": "addisababa",
+    "lat": 9.017,
+    "long": 38.733,
+    "wikipedia": "Addis_Ababa",
+    "city": "Addis Ababa"
+  },
+  {
+    "name": "asmara",
+    "lat": 15.333,
+    "long": 38.933,
+    "wikipedia": "Asmara",
+    "city": "Asmara"
+  },
+  {
+    "name": "jeddah",
+    "lat": 21.533,
+    "long": 39.167,
+    "wikipedia": "Jeddah",
+    "city": "Jeddah"
+  },
+  {
+    "name": "zanzibarcity",
+    "lat": -6.167,
+    "long": 39.2,
+    "wikipedia": "Zanzibar_City",
+    "city": "Zanzibar City"
+  },
+  {
+    "name": "daressalaam",
+    "lat": -6.817,
+    "long": 39.267,
+    "wikipedia": "Dar_es_Salaam",
+    "city": "Dar es Salaam"
+  },
+  {
+    "name": "medina",
+    "lat": 24.467,
+    "long": 39.6,
+    "wikipedia": "Medina",
+    "city": "Medina"
+  },
+  {
+    "name": "mecca",
+    "lat": 21.417,
+    "long": 39.817,
+    "wikipedia": "Mecca",
+    "city": "Mecca"
+  },
+  {
+    "name": "sukhumi",
+    "lat": 43.0,
+    "long": 41.017,
+    "wikipedia": "Sukhumi",
+    "city": "Sukhumi"
+  },
+  {
+    "name": "djibouti",
+    "lat": 11.583,
+    "long": 43.133,
+    "wikipedia": "Djibouti_(city)",
+    "city": "Djibouti (city)"
+  },
+  {
+    "name": "moroni",
+    "lat": -11.75,
+    "long": 43.2,
+    "wikipedia": "Moroni,_Comoros",
+    "city": "Moroni"
+  },
+  {
+    "name": "tskhinvali",
+    "lat": 42.233,
+    "long": 43.967,
+    "wikipedia": "Tskhinvali",
+    "city": "Tskhinvali"
+  },
+  { "name": "%27a",
+    "lat": 15.35,
+    "long": 44.2,
+    "wikipedia": "Sana%27a",
+    "city": "Sana%27a"
+  },
+  {
+    "name": "baghdad",
+    "lat": 33.317,
+    "long": 44.417,
+    "wikipedia": "Baghdad",
+    "city": "Baghdad"
+  },
+  {
+    "name": "nizhnynovgorod",
+    "lat": 56.333,
+    "long": 44.0,
+    "wikipedia": "Nizhny_Novgorod",
+    "city": "Nizhny Novgorod"
+  },
+  {
+    "name": "hargeisa",
+    "lat": 9.5,
+    "long": 44.0,
+    "wikipedia": "Hargeisa",
+    "city": "Hargeisa"
+  },
+  {
+    "name": "arbil",
+    "lat": 36.333,
+    "long": 44.017,
+    "wikipedia": "Arbil",
+    "city": "Arbil"
+  },
+  {
+    "name": "yerevan",
+    "lat": 40.183,
+    "long": 44.517,
+    "wikipedia": "Yerevan",
+    "city": "Yerevan"
+  },
+  {
+    "name": "tbilisi",
+    "lat": 41.717,
+    "long": 44.783,
+    "wikipedia": "Tbilisi",
+    "city": "Tbilisi"
+  },
+  {
+    "name": "mamoudzou",
+    "lat": -12.783,
+    "long": 45.217,
+    "wikipedia": "Mamoudzou",
+    "city": "Mamoudzou"
+  },
+  {
+    "name": "mogadishu",
+    "lat": 2.033,
+    "long": 45.35,
+    "wikipedia": "Mogadishu",
+    "city": "Mogadishu"
+  },
+  {
+    "name": "tabriz",
+    "lat": 38.083,
+    "long": 46.283,
+    "wikipedia": "Tabriz",
+    "city": "Tabriz"
+  },
+  {
+    "name": "riyadh",
+    "lat": 24.7,
+    "long": 46.717,
+    "wikipedia": "Riyadh",
+    "city": "Riyadh"
+  },
+  {
+    "name": "stepanakert",
+    "lat": 39.817,
+    "long": 46.75,
+    "wikipedia": "Stepanakert",
+    "city": "Stepanakert"
+  },
+  {
+    "name": "antananarivo",
+    "lat": -18.933,
+    "long": 47.517,
+    "wikipedia": "Antananarivo",
+    "city": "Antananarivo"
+  },
+  {
+    "name": "basra",
+    "lat": 30.5,
+    "long": 47.817,
+    "wikipedia": "Basra",
+    "city": "Basra"
+  },
+  {
+    "name": "kuwaitcity",
+    "lat": 29.367,
+    "long": 47.967,
+    "wikipedia": "Kuwait_City",
+    "city": "Kuwait City"
+  },
+  {
+    "name": "baku",
+    "lat": 40.367,
+    "long": 49.883,
+    "wikipedia": "Baku",
+    "city": "Baku"
+  },
+  {
+    "name": "dammam",
+    "lat": 26.433,
+    "long": 50.117,
+    "wikipedia": "Dammam",
+    "city": "Dammam"
+  },
+  {
+    "name": "samara",
+    "lat": 53.233,
+    "long": 50.167,
+    "wikipedia": "Samara,_Russia",
+    "city": "Samara"
+  },
+  {
+    "name": "manama",
+    "lat": 26.217,
+    "long": 50.583,
+    "wikipedia": "Manama",
+    "city": "Manama"
+  },
+  {
+    "name": "tehran",
+    "lat": 35.683,
+    "long": 51.417,
+    "wikipedia": "Tehran",
+    "city": "Tehran"
+  },
+  {
+    "name": "doha",
+    "lat": 25.283,
+    "long": 51.533,
+    "wikipedia": "Doha",
+    "city": "Doha"
+  },
+  {
+    "name": "abudhabi",
+    "lat": 24.467,
+    "long": 54.367,
+    "wikipedia": "Abu_Dhabi",
+    "city": "Abu Dhabi"
+  },
+  {
+    "name": "dubai",
+    "lat": 25.267,
+    "long": 55.3,
+    "wikipedia": "Dubai",
+    "city": "Dubai"
+  },
+  {
+    "name": "victoria",
+    "lat": -4.617,
+    "long": 55.45,
+    "wikipedia": "Victoria,_Seychelles",
+    "city": "Victoria"
+  },
+  {
+    "name": "saintdenis",
+    "lat": -20.867,
+    "long": 55.45,
+    "wikipedia": "Saint-Denis,_R%C3%A9union",
+    "city": "Saint-Denis"
+  },
+  {
+    "name": "perm",
+    "lat": 58.0,
+    "long": 56.317,
+    "wikipedia": "Perm",
+    "city": "Perm"
+  },
+  {
+    "name": "portlouis",
+    "lat": -20.167,
+    "long": 57.5,
+    "wikipedia": "Port_Louis",
+    "city": "Port Louis"
+  },
+  {
+    "name": "ashgabat",
+    "lat": 37.967,
+    "long": 58.333,
+    "wikipedia": "Ashgabat",
+    "city": "Ashgabat"
+  },
+  {
+    "name": "muscat",
+    "lat": 23.6,
+    "long": 58.533,
+    "wikipedia": "Muscat,_Oman",
+    "city": "Muscat"
+  },
+  {
+    "name": "nukus",
+    "lat": 42.467,
+    "long": 59.6,
+    "wikipedia": "Nukus",
+    "city": "Nukus"
+  },
+  {
+    "name": "mashhad",
+    "lat": 36.3,
+    "long": 59.6,
+    "wikipedia": "Mashhad",
+    "city": "Mashhad"
+  },
+  {
+    "name": "yekaterinburg",
+    "lat": 56.833,
+    "long": 60.583,
+    "wikipedia": "Yekaterinburg",
+    "city": "Yekaterinburg"
+  },
+  {
+    "name": "kandahar",
+    "lat": 31.617,
+    "long": 65.717,
+    "wikipedia": "Kandahar",
+    "city": "Kandahar"
+  },
+  {
+    "name": "karachi",
+    "lat": 24.85,
+    "long": 67.0,
+    "wikipedia": "Karachi",
+    "city": "Karachi"
+  },
+  {
+    "name": "hyderabad",
+    "lat": 17.367,
+    "long": 78.467,
+    "wikipedia": "Hyderabad,_Andhra_Pradesh",
+    "city": "Hyderabad"
+  },
+  {
+    "name": "dushanbe",
+    "lat": 38.533,
+    "long": 68.767,
+    "wikipedia": "Dushanbe",
+    "city": "Dushanbe"
+  },
+  {
+    "name": "kabul",
+    "lat": 34.533,
+    "long": 69.167,
+    "wikipedia": "Kabul",
+    "city": "Kabul"
+  },
+  {
+    "name": "tashkent",
+    "lat": 41.267,
+    "long": 69.217,
+    "wikipedia": "Tashkent",
+    "city": "Tashkent"
+  },
+  {
+    "name": "astana",
+    "lat": 51.183,
+    "long": 71.45,
+    "wikipedia": "Astana",
+    "city": "Astana"
+  },
+  {
+    "name": "multan",
+    "lat": 30.2,
+    "long": 71.45,
+    "wikipedia": "Multan",
+    "city": "Multan"
+  },
+  {
+    "name": "peshawar",
+    "lat": 34.0,
+    "long": 71.5,
+    "wikipedia": "Peshawar",
+    "city": "Peshawar"
+  },
+  {
+    "name": "namangan",
+    "lat": 41.633,
+    "long": 71.967,
+    "wikipedia": "Namangan",
+    "city": "Namangan"
+  },
+  {
+    "name": "ahmedabad",
+    "lat": 23.017,
+    "long": 72.567,
+    "wikipedia": "Ahmedabad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "mumbai",
+    "lat": 18.95,
+    "long": 72.817,
+    "wikipedia": "Mumbai",
+    "city": "Mumbai"
+  },
+  {
+    "name": "surat",
+    "lat": 21.167,
+    "long": 72.817,
+    "wikipedia": "Surat,_Gujarat",
+    "city": "Surat"
+  },
+  {
+    "name": "faisalabad",
+    "lat": 31.367,
+    "long": 72.983,
+    "wikipedia": "Faisalabad",
+    "city": "Faisalabad"
+  },
+  {
+    "name": "rawalpindi",
+    "lat": 33.6,
+    "long": 73.033,
+    "wikipedia": "Rawalpindi",
+    "city": "Rawalpindi"
+  },
+  {
+    "name": "islamabad",
+    "lat": 33.717,
+    "long": 73.067,
+    "wikipedia": "Islamabad",
+    "city": "Islamabad"
+  },
+  {
+    "name": "omsk",
+    "lat": 54.983,
+    "long": 73.367,
+    "wikipedia": "Omsk",
+    "city": "Omsk"
+  },
+  { "name": "%a9",
+    "lat": 4.167,
+    "long": 73.5,
+    "wikipedia": "Mal%C3%A9",
+    "city": "Mal%C3%A9"
+  },
+  {
+    "name": "pune",
+    "lat": 18.517,
+    "long": 73.85,
+    "wikipedia": "Pune",
+    "city": "Pune"
+  },
+  {
+    "name": "lahore",
+    "lat": 31.55,
+    "long": 74.333,
+    "wikipedia": "Lahore",
+    "city": "Lahore"
+  },
+  {
+    "name": "bishkek",
+    "lat": 42.867,
+    "long": 74.6,
+    "wikipedia": "Bishkek",
+    "city": "Bishkek"
+  },
+  {
+    "name": "srinagar",
+    "lat": 34.083,
+    "long": 74.783,
+    "wikipedia": "Srinagar",
+    "city": "Srinagar"
+  },
+  {
+    "name": "amritsar",
+    "lat": 31.633,
+    "long": 74.85,
+    "wikipedia": "Amritsar",
+    "city": "Amritsar"
+  },
+  {
+    "name": "jaipur",
+    "lat": 26.917,
+    "long": 75.817,
+    "wikipedia": "Jaipur",
+    "city": "Jaipur"
+  },
+  {
+    "name": "ludhiana",
+    "lat": 30.9,
+    "long": 75.85,
+    "wikipedia": "Ludhiana",
+    "city": "Ludhiana"
+  },
+  {
+    "name": "almaty",
+    "lat": 43.267,
+    "long": 76.883,
+    "wikipedia": "Almaty",
+    "city": "Almaty"
+  },
+  {
+    "name": "newdelhi",
+    "lat": 28.617,
+    "long": 77.2,
+    "wikipedia": "New_Delhi",
+    "city": "New Delhi"
+  },
+  {
+    "name": "bangalore",
+    "lat": 12.967,
+    "long": 77.567,
+    "wikipedia": "Bangalore",
+    "city": "Bangalore"
+  },
+  {
+    "name": "nagpur",
+    "lat": 21.067,
+    "long": 79.017,
+    "wikipedia": "Nagpur",
+    "city": "Nagpur"
+  },
+  {
+    "name": "colombo",
+    "lat": 6.883,
+    "long": 79.867,
+    "wikipedia": "Colombo",
+    "city": "Colombo"
+  },
+  {
+    "name": "srijayawardenapurakotte",
+    "lat": 6.9,
+    "long": 79.883,
+    "wikipedia": "Sri_Jayawardenapura-Kotte",
+    "city": "Sri Jayawardenapura-Kotte"
+  },
+  {
+    "name": "chennai",
+    "lat": 13.083,
+    "long": 80.267,
+    "wikipedia": "Chennai",
+    "city": "Chennai"
+  },
+  {
+    "name": "kanpur",
+    "lat": 26.45,
+    "long": 80.333,
+    "wikipedia": "Kanpur",
+    "city": "Kanpur"
+  },
+  {
+    "name": "kandy",
+    "lat": 7.283,
+    "long": 80.633,
+    "wikipedia": "Kandy",
+    "city": "Kandy"
+  },
+  {
+    "name": "lucknow",
+    "lat": 26.85,
+    "long": 80.917,
+    "wikipedia": "Lucknow",
+    "city": "Lucknow"
+  },
+  {
+    "name": "batticaloa",
+    "lat": 7.717,
+    "long": 81.7,
+    "wikipedia": "Batticaloa",
+    "city": "Batticaloa"
+  },
+  {
+    "name": "novosibirsk",
+    "lat": 55.017,
+    "long": 82.933,
+    "wikipedia": "Novosibirsk",
+    "city": "Novosibirsk"
+  },
+  {
+    "name": "patna",
+    "lat": 25.6,
+    "long": 85.133,
+    "wikipedia": "Patna",
+    "city": "Patna"
+  },
+  {
+    "name": "kathmandu",
+    "lat": 27.7,
+    "long": 85.333,
+    "wikipedia": "Kathmandu",
+    "city": "Kathmandu"
+  },
+  { "name": "%bcmqi",
+    "lat": 43.8,
+    "long": 87.583,
+    "wikipedia": "%C3%9Cr%C3%BCmqi",
+    "city": "%C3%9Cr%C3%BCmqi"
+  },
+  {
+    "name": "norilsk",
+    "lat": 69.35,
+    "long": 88.2,
+    "wikipedia": "Norilsk",
+    "city": "Norilsk"
+  },
+  {
+    "name": "kolkata",
+    "lat": 22.567,
+    "long": 88.367,
+    "wikipedia": "Kolkata",
+    "city": "Kolkata"
+  },
+  {
+    "name": "gangtok",
+    "lat": 27.317,
+    "long": 88.617,
+    "wikipedia": "Gangtok",
+    "city": "Gangtok"
+  },
+  {
+    "name": "shigatse",
+    "lat": 29.267,
+    "long": 88.867,
+    "wikipedia": "Shigatse",
+    "city": "Shigatse"
+  },
+  {
+    "name": "thimphu",
+    "lat": 27.467,
+    "long": 89.633,
+    "wikipedia": "Thimphu",
+    "city": "Thimphu"
+  },
+  {
+    "name": "dhaka",
+    "lat": 23.7,
+    "long": 90.367,
+    "wikipedia": "Dhaka",
+    "city": "Dhaka"
+  },
+  {
+    "name": "lhasa",
+    "lat": 29.65,
+    "long": 91.117,
+    "wikipedia": "Lhasa",
+    "city": "Lhasa"
+  },
+  {
+    "name": "agartala",
+    "lat": 23.5,
+    "long": 91.2,
+    "wikipedia": "Agartala",
+    "city": "Agartala"
+  },
+  {
+    "name": "guwahati",
+    "lat": 26.167,
+    "long": 91.767,
+    "wikipedia": "Guwahati",
+    "city": "Guwahati"
+  },
+  {
+    "name": "chittagong",
+    "lat": 22.367,
+    "long": 91.8,
+    "wikipedia": "Chittagong",
+    "city": "Chittagong"
+  },
+  {
+    "name": "shillongg",
+    "lat": 25.567,
+    "long": 91.883,
+    "wikipedia": "Shillongg",
+    "city": "Shillongg"
+  },
+  {
+    "name": "portblair",
+    "lat": 11.667,
+    "long": 92.75,
+    "wikipedia": "Port_Blair",
+    "city": "Port Blair"
+  },
+  {
+    "name": "dibrugarh",
+    "lat": 27.467,
+    "long": 94.9,
+    "wikipedia": "Dibrugarh",
+    "city": "Dibrugarh"
+  },
+  {
+    "name": "bandaaceh",
+    "lat": 5.55,
+    "long": 95.317,
+    "wikipedia": "Banda_Aceh",
+    "city": "Banda Aceh"
+  },
+  {
+    "name": "naypyidaw",
+    "lat": 19.75,
+    "long": 96.1,
+    "wikipedia": "Naypyidaw",
+    "city": "Naypyidaw"
+  },
+  {
+    "name": "yangon",
+    "lat": 16.8,
+    "long": 96.167,
+    "wikipedia": "Yangon",
+    "city": "Yangon"
+  },
+  {
+    "name": "medan",
+    "lat": 3.583,
+    "long": 98.667,
+    "wikipedia": "Medan",
+    "city": "Medan"
+  },
+  {
+    "name": "phuket",
+    "lat": 7.883,
+    "long": 98.4,
+    "wikipedia": "Phuket_(city)",
+    "city": "Phuket (city)"
+  },
+  {
+    "name": "chiangmai",
+    "lat": 18.783,
+    "long": 98.983,
+    "wikipedia": "Chiang_Mai",
+    "city": "Chiang Mai"
+  },
+  {
+    "name": "suratthani",
+    "lat": 9.133,
+    "long": 99.333,
+    "wikipedia": "Surat_Thani",
+    "city": "Surat Thani"
+  },
+  {
+    "name": "padang",
+    "lat": -0.95,
+    "long": 100.35,
+    "wikipedia": "Padang,_Indonesia",
+    "city": "Padang"
+  },
+  {
+    "name": "alorstar",
+    "lat": 6.117,
+    "long": 100.367,
+    "wikipedia": "Alor_Star",
+    "city": "Alor Star"
+  },
+  {
+    "name": "hatyai",
+    "lat": 7.017,
+    "long": 100.467,
+    "wikipedia": "Hat_Yai",
+    "city": "Hat Yai"
+  },
+  {
+    "name": "bangkok",
+    "lat": 13.75,
+    "long": 100.483,
+    "wikipedia": "Bangkok",
+    "city": "Bangkok"
+  },
+  {
+    "name": "pattaya",
+    "lat": 12.917,
+    "long": 100.867,
+    "wikipedia": "Pattaya",
+    "city": "Pattaya"
+  },
+  {
+    "name": "ipoh",
+    "lat": 4.6,
+    "long": 101.067,
+    "wikipedia": "Ipoh",
+    "city": "Ipoh"
+  },
+  {
+    "name": "pekanbaru",
+    "lat": 0.533,
+    "long": 101.45,
+    "wikipedia": "Pekanbaru",
+    "city": "Pekanbaru"
+  },
+  {
+    "name": "bratsk",
+    "lat": 56.167,
+    "long": 101.617,
+    "wikipedia": "Bratsk",
+    "city": "Bratsk"
+  },
+  {
+    "name": "kualalumpur",
+    "lat": 3.133,
+    "long": 101.683,
+    "wikipedia": "Kuala_Lumpur",
+    "city": "Kuala Lumpur"
+  },
+  {
+    "name": "xining",
+    "lat": 36.633,
+    "long": 101.767,
+    "wikipedia": "Xining",
+    "city": "Xining"
+  },
+  {
+    "name": "nakhonratchasima",
+    "lat": 14.967,
+    "long": 102.1,
+    "wikipedia": "Nakhon_Ratchasima",
+    "city": "Nakhon Ratchasima"
+  },
+  {
+    "name": "kotabharu",
+    "lat": 6.133,
+    "long": 102.25,
+    "wikipedia": "Kota_Bharu",
+    "city": "Kota Bharu"
+  },
+  {
+    "name": "malaccatown",
+    "lat": 2.183,
+    "long": 102.383,
+    "wikipedia": "Malacca_Town",
+    "city": "Malacca Town"
+  },
+  {
+    "name": "vientiane",
+    "lat": 17.95,
+    "long": 102.617,
+    "wikipedia": "Vientiane",
+    "city": "Vientiane"
+  },
+  {
+    "name": "kunming",
+    "lat": 25.067,
+    "long": 102.683,
+    "wikipedia": "Kunming",
+    "city": "Kunming"
+  },
+  {
+    "name": "udonthani",
+    "lat": 17.417,
+    "long": 102.75,
+    "wikipedia": "Udon_Thani",
+    "city": "Udon Thani"
+  },
+  {
+    "name": "johorbahru",
+    "lat": 1.483,
+    "long": 103.733,
+    "wikipedia": "Johor_Bahru",
+    "city": "Johor Bahru"
+  },
+  {
+    "name": "lanzhou",
+    "lat": 36.033,
+    "long": 103.8,
+    "wikipedia": "Lanzhou",
+    "city": "Lanzhou"
+  },
+  {
+    "name": "singapore",
+    "lat": 1.367,
+    "long": 103.8,
+    "wikipedia": "Singapore",
+    "city": "Singapore"
+  },
+  {
+    "name": "siemreap",
+    "lat": 13.35,
+    "long": 103.85,
+    "wikipedia": "Siem_Reap",
+    "city": "Siem Reap"
+  },
+  {
+    "name": "chengdu",
+    "lat": 30.65,
+    "long": 104.067,
+    "wikipedia": "Chengdu",
+    "city": "Chengdu"
+  },
+  {
+    "name": "palembang",
+    "lat": -2.983,
+    "long": 104.75,
+    "wikipedia": "Palembang",
+    "city": "Palembang"
+  },
+  {
+    "name": "phnompenh",
+    "lat": 11.55,
+    "long": 104.917,
+    "wikipedia": "Phnom_Penh",
+    "city": "Phnom Penh"
+  },
+  {
+    "name": "hanoi",
+    "lat": 21.033,
+    "long": 105.85,
+    "wikipedia": "Hanoi",
+    "city": "Hanoi"
+  },
+  {
+    "name": "chongqing",
+    "lat": 29.55,
+    "long": 106.5,
+    "wikipedia": "Chongqing",
+    "city": "Chongqing"
+  },
+  {
+    "name": "haiphong",
+    "lat": 20.85,
+    "long": 106.683,
+    "wikipedia": "Hai_Phong",
+    "city": "Hai Phong"
+  },
+  {
+    "name": "hochiminhcity",
+    "lat": 10.767,
+    "long": 106.683,
+    "wikipedia": "Ho_Chi_Minh_City",
+    "city": "Ho Chi Minh City"
+  },
+  {
+    "name": "jakarta",
+    "lat": -6.133,
+    "long": 106.75,
+    "wikipedia": "Jakarta",
+    "city": "Jakarta"
+  },
+  {
+    "name": "bogor",
+    "lat": -6.6,
+    "long": 106.8,
+    "wikipedia": "Bogor",
+    "city": "Bogor"
+  },
+  {
+    "name": "ulanbator",
+    "lat": 47.917,
+    "long": 106.917,
+    "wikipedia": "Ulan_Bator",
+    "city": "Ulan Bator"
+  },
+  {
+    "name": "bandung",
+    "lat": -6.95,
+    "long": 107.567,
+    "wikipedia": "Bandung",
+    "city": "Bandung"
+  },
+  { "name": "%bf",
+    "lat": 16.467,
+    "long": 107.6,
+    "wikipedia": "Hu%E1%BA%BF",
+    "city": "Hu%E1%BA%BF"
+  },
+  {
+    "name": "danang",
+    "lat": 16.067,
+    "long": 108.233,
+    "wikipedia": "Da_Nang",
+    "city": "Da Nang"
+  },
+  {
+    "name": "nanning",
+    "lat": 22.817,
+    "long": 108.317,
+    "wikipedia": "Nanning",
+    "city": "Nanning"
+  },
+  { "name": "%27an",
+    "lat": 34.267,
+    "long": 108.9,
+    "wikipedia": "Xi%27an",
+    "city": "Xi%27an"
+  },
+  {
+    "name": "pontianak",
+    "lat": 0.0,
+    "long": 109.333,
+    "wikipedia": "Pontianak,_Indonesia",
+    "city": "Pontianak"
+  },
+  {
+    "name": "kuching",
+    "lat": 1.55,
+    "long": 110.35,
+    "wikipedia": "Kuching",
+    "city": "Kuching"
+  },
+  {
+    "name": "yogyakarta",
+    "lat": -7.8,
+    "long": 110.367,
+    "wikipedia": "Yogyakarta_(city)",
+    "city": "Yogyakarta (city)"
+  },
+  {
+    "name": "semarang",
+    "lat": -6.967,
+    "long": 110.417,
+    "wikipedia": "Semarang",
+    "city": "Semarang"
+  },
+  {
+    "name": "taiyuan",
+    "lat": 37.867,
+    "long": 112.55,
+    "wikipedia": "Taiyuan",
+    "city": "Taiyuan"
+  },
+  {
+    "name": "malang",
+    "lat": -7.967,
+    "long": 112.617,
+    "wikipedia": "Malang",
+    "city": "Malang"
+  },
+  {
+    "name": "surabaya",
+    "lat": -7.233,
+    "long": 112.733,
+    "wikipedia": "Surabaya",
+    "city": "Surabaya"
+  },
+  {
+    "name": "guangzhou",
+    "lat": 23.1,
+    "long": 113.267,
+    "wikipedia": "Guangzhou",
+    "city": "Guangzhou"
+  },
+  {
+    "name": "macau",
+    "lat": 22.167,
+    "long": 113.55,
+    "wikipedia": "Macau",
+    "city": "Macau"
+  },
+  {
+    "name": "zhengzhou",
+    "lat": 34.75,
+    "long": 113.633,
+    "wikipedia": "Zhengzhou",
+    "city": "Zhengzhou"
+  },
+  {
+    "name": "dongguan",
+    "lat": 23.033,
+    "long": 113.717,
+    "wikipedia": "Dongguan",
+    "city": "Dongguan"
+  },
+  {
+    "name": "miri",
+    "lat": 4.383,
+    "long": 113.967,
+    "wikipedia": "Miri",
+    "city": "Miri"
+  },
+  {
+    "name": "shenzhen",
+    "lat": 22.55,
+    "long": 114.1,
+    "wikipedia": "Shenzhen",
+    "city": "Shenzhen"
+  },
+  {
+    "name": "hongkong",
+    "lat": 22.3,
+    "long": 114.2,
+    "wikipedia": "Hong Kong",
+    "city": "Hong Kong"
+  },
+  {
+    "name": "wuhan",
+    "lat": 30.567,
+    "long": 114.267,
+    "wikipedia": "Wuhan",
+    "city": "Wuhan"
+  },
+  {
+    "name": "handan",
+    "lat": 36.6,
+    "long": 114.483,
+    "wikipedia": "Handan",
+    "city": "Handan"
+  },
+  {
+    "name": "shijiazhuang",
+    "lat": 38.033,
+    "long": 114.5,
+    "wikipedia": "Shijiazhuang",
+    "city": "Shijiazhuang"
+  },
+  {
+    "name": "bandarseribegawan",
+    "lat": 4.883,
+    "long": 114.933,
+    "wikipedia": "Bandar_Seri_Begawan",
+    "city": "Bandar Seri Begawan"
+  },
+  {
+    "name": "denpasar",
+    "lat": -8.65,
+    "long": 115.217,
+    "wikipedia": "Denpasar",
+    "city": "Denpasar"
+  },
+  {
+    "name": "mandurah",
+    "lat": -32.517,
+    "long": 115.717,
+    "wikipedia": "Mandurah",
+    "city": "Mandurah"
+  },
+  {
+    "name": "perth",
+    "lat": -31.95,
+    "long": 115.85,
+    "wikipedia": "Perth,_Western_Australia",
+    "city": "Perth"
+  },
+  {
+    "name": "kotakinabalu",
+    "lat": 5.967,
+    "long": 116.083,
+    "wikipedia": "Kota_Kinabalu",
+    "city": "Kota Kinabalu"
+  },
+  {
+    "name": "beijing",
+    "lat": 39.9,
+    "long": 116.4,
+    "wikipedia": "Beijing",
+    "city": "Beijing"
+  },
+  {
+    "name": "balikpapan",
+    "lat": -1.25,
+    "long": 116.817,
+    "wikipedia": "Balikpapan",
+    "city": "Balikpapan"
+  },
+  {
+    "name": "jinan",
+    "lat": 36.667,
+    "long": 116.983,
+    "wikipedia": "Jinan",
+    "city": "Jinan"
+  },
+  {
+    "name": "tianjin",
+    "lat": 39.133,
+    "long": 117.183,
+    "wikipedia": "Tianjin",
+    "city": "Tianjin"
+  },
+  {
+    "name": "porthedland",
+    "lat": -20.3,
+    "long": 118.6,
+    "wikipedia": "Port_Hedland,_Western_Australia",
+    "city": "Port Hedland"
+  },
+  {
+    "name": "nanjing",
+    "lat": 32.05,
+    "long": 118.767,
+    "wikipedia": "Nanjing",
+    "city": "Nanjing"
+  },
+  {
+    "name": "makassar",
+    "lat": -5.133,
+    "long": 119.417,
+    "wikipedia": "Makassar",
+    "city": "Makassar"
+  },
+  {
+    "name": "hangzhou",
+    "lat": 30.25,
+    "long": 120.167,
+    "wikipedia": "Hangzhou",
+    "city": "Hangzhou"
+  },
+  {
+    "name": "kaohsiung",
+    "lat": 22.633,
+    "long": 120.267,
+    "wikipedia": "Kaohsiung",
+    "city": "Kaohsiung"
+  },
+  {
+    "name": "qingdao",
+    "lat": 36.083,
+    "long": 120.333,
+    "wikipedia": "Qingdao",
+    "city": "Qingdao"
+  },
+  {
+    "name": "taichung",
+    "lat": 24.15,
+    "long": 120.667,
+    "wikipedia": "Taichung",
+    "city": "Taichung"
+  },
+  {
+    "name": "manila",
+    "lat": 14.583,
+    "long": 120.967,
+    "wikipedia": "Manila",
+    "city": "Manila"
+  },
+  {
+    "name": "quezoncity",
+    "lat": 14.633,
+    "long": 121.033,
+    "wikipedia": "Quezon_City",
+    "city": "Quezon City"
+  },
+  {
+    "name": "makaticity",
+    "lat": 14.55,
+    "long": 121.033,
+    "wikipedia": "Makati_City",
+    "city": "Makati City"
+  },
+  {
+    "name": "shanghai",
+    "lat": 31.2,
+    "long": 121.5,
+    "wikipedia": "Shanghai",
+    "city": "Shanghai"
+  },
+  {
+    "name": "taipei",
+    "lat": 25.033,
+    "long": 121.633,
+    "wikipedia": "Taipei",
+    "city": "Taipei"
+  },
+  {
+    "name": "dalian",
+    "lat": 39.033,
+    "long": 121.767,
+    "wikipedia": "Dalian",
+    "city": "Dalian"
+  },
+  {
+    "name": "iloilocity",
+    "lat": 10.683,
+    "long": 122.55,
+    "wikipedia": "Iloilo_City",
+    "city": "Iloilo City"
+  },
+  {
+    "name": "zamboangacity",
+    "lat": 6.9,
+    "long": 122.067,
+    "wikipedia": "Zamboanga_City",
+    "city": "Zamboanga City"
+  },
+  {
+    "name": "shenyang",
+    "lat": 41.783,
+    "long": 123.45,
+    "wikipedia": "Shenyang",
+    "city": "Shenyang"
+  },
+  {
+    "name": "tagbilaran",
+    "lat": 9.65,
+    "long": 123.85,
+    "wikipedia": "Tagbilaran",
+    "city": "Tagbilaran"
+  },
+  {
+    "name": "cebucity",
+    "lat": 10.283,
+    "long": 123.9,
+    "wikipedia": "Cebu_City",
+    "city": "Cebu City"
+  },
+  {
+    "name": "changchun",
+    "lat": 43.883,
+    "long": 125.317,
+    "wikipedia": "Changchun",
+    "city": "Changchun"
+  },
+  {
+    "name": "dili",
+    "lat": -8.55,
+    "long": 125.583,
+    "wikipedia": "Dili",
+    "city": "Dili"
+  },
+  {
+    "name": "pyongyang",
+    "lat": 39.033,
+    "long": 125.75,
+    "wikipedia": "Pyongyang",
+    "city": "Pyongyang"
+  },
+  {
+    "name": "davaocity",
+    "lat": 7.5,
+    "long": 126.0,
+    "wikipedia": "Davao_City",
+    "city": "Davao City"
+  },
+  {
+    "name": "kaesong",
+    "lat": 37.967,
+    "long": 126.55,
+    "wikipedia": "Kaesong",
+    "city": "Kaesong"
+  },
+  {
+    "name": "harbin",
+    "lat": 45.75,
+    "long": 126.633,
+    "wikipedia": "Harbin",
+    "city": "Harbin"
+  },
+  {
+    "name": "incheon",
+    "lat": 37.483,
+    "long": 126.633,
+    "wikipedia": "Incheon",
+    "city": "Incheon"
+  },
+  {
+    "name": "seoul",
+    "lat": 37.55,
+    "long": 126.983,
+    "wikipedia": "Seoul",
+    "city": "Seoul"
+  },
+  {
+    "name": "wonsan",
+    "lat": 39.15,
+    "long": 127.433,
+    "wikipedia": "Wonsan",
+    "city": "Wonsan"
+  },
+  {
+    "name": "okinawa",
+    "lat": 26.333,
+    "long": 127.8,
+    "wikipedia": "Okinawa,_Okinawa",
+    "city": "Okinawa"
+  },
+  {
+    "name": "ambon",
+    "lat": -3.7,
+    "long": 128.167,
+    "wikipedia": "Ambon,_Maluku",
+    "city": "Ambon"
+  },
+  {
+    "name": "daegu",
+    "lat": 35.867,
+    "long": 128.6,
+    "wikipedia": "Daegu",
+    "city": "Daegu"
+  },
+  {
+    "name": "busan",
+    "lat": 35.1,
+    "long": 129.033,
+    "wikipedia": "Busan",
+    "city": "Busan"
+  },
+  {
+    "name": "yakutsk",
+    "lat": 62.033,
+    "long": 129.733,
+    "wikipedia": "Yakutsk",
+    "city": "Yakutsk"
+  },
+  {
+    "name": "chongjin",
+    "lat": 41.8,
+    "long": 129.783,
+    "wikipedia": "Chongjin",
+    "city": "Chongjin"
+  },
+  {
+    "name": "fukuoka",
+    "lat": 33.583,
+    "long": 130.4,
+    "wikipedia": "Fukuoka",
+    "city": "Fukuoka"
+  },
+  {
+    "name": "darwin",
+    "lat": -12.45,
+    "long": 130.833,
+    "wikipedia": "Darwin,_Northern_Territory",
+    "city": "Darwin"
+  },
+  {
+    "name": "vladivostok",
+    "lat": 43.133,
+    "long": 131.9,
+    "wikipedia": "Vladivostok",
+    "city": "Vladivostok"
+  },
+  {
+    "name": "hiroshima",
+    "lat": 34.383,
+    "long": 132.45,
+    "wikipedia": "Hiroshima",
+    "city": "Hiroshima"
+  },
+  {
+    "name": "koror",
+    "lat": 7.35,
+    "long": 134.467,
+    "wikipedia": "Koror",
+    "city": "Koror"
+  },
+  {
+    "name": "melekeok",
+    "lat": 7.5,
+    "long": 134.617,
+    "wikipedia": "Melekeok",
+    "city": "Melekeok"
+  },
+  {
+    "name": "kobe",
+    "lat": 34.683,
+    "long": 135.2,
+    "wikipedia": "Kobe",
+    "city": "Kobe"
+  },
+  {
+    "name": "osaka",
+    "lat": 34.683,
+    "long": 135.5,
+    "wikipedia": "Osaka",
+    "city": "Osaka"
+  },
+  {
+    "name": "kyoto",
+    "lat": 35.017,
+    "long": 135.767,
+    "wikipedia": "Kyoto",
+    "city": "Kyoto"
+  },
+  {
+    "name": "nagoya",
+    "lat": 35.183,
+    "long": 136.9,
+    "wikipedia": "Nagoya",
+    "city": "Nagoya"
+  },
+  {
+    "name": "adelaide",
+    "lat": -34.917,
+    "long": 138.6,
+    "wikipedia": "Adelaide",
+    "city": "Adelaide"
+  },
+  {
+    "name": "yokohama",
+    "lat": 35.45,
+    "long": 139.633,
+    "wikipedia": "Yokohama",
+    "city": "Yokohama"
+  },
+  {
+    "name": "kawasaki",
+    "lat": 35.517,
+    "long": 139.7,
+    "wikipedia": "Kawasaki,_Kanagawa",
+    "city": "Kawasaki"
+  },
+  {
+    "name": "tokyo",
+    "lat": 35.683,
+    "long": 139.767,
+    "wikipedia": "Tokyo",
+    "city": "Tokyo"
+  },
+  {
+    "name": "jayapura",
+    "lat": -2.533,
+    "long": 140.717,
+    "wikipedia": "Jayapura",
+    "city": "Jayapura"
+  },
+  {
+    "name": "sapporo",
+    "lat": 43.067,
+    "long": 141.35,
+    "wikipedia": "Sapporo",
+    "city": "Sapporo"
+  },
+  {
+    "name": "geelongg",
+    "lat": -38.15,
+    "long": 144.35,
+    "wikipedia": "Geelongg",
+    "city": "Geelongg"
+  },
+  { "name": "%b1a",
+    "lat": 13.483,
+    "long": 144.75,
+    "wikipedia": "Hag%C3%A5t%C3%B1a,_Guam",
+    "city": "Hag%C3%A5t%C3%B1a"
+  },
+  {
+    "name": "dededo",
+    "lat": 13.517,
+    "long": 144.833,
+    "wikipedia": "Dededo,_Guam",
+    "city": "Dededo"
+  },
+  {
+    "name": "melbourne",
+    "lat": -37.8,
+    "long": 144.95,
+    "wikipedia": "Melbourne",
+    "city": "Melbourne"
+  },
+  {
+    "name": "saipan",
+    "lat": 15.183,
+    "long": 145.75,
+    "wikipedia": "Saipan",
+    "city": "Saipan"
+  },
+  {
+    "name": "cairns",
+    "lat": -16.917,
+    "long": 145.767,
+    "wikipedia": "Cairns",
+    "city": "Cairns"
+  },
+  {
+    "name": "townsville",
+    "lat": -19.25,
+    "long": 146.817,
+    "wikipedia": "Townsville",
+    "city": "Townsville"
+  },
+  {
+    "name": "portmoresby",
+    "lat": -9.467,
+    "long": 147.167,
+    "wikipedia": "Port_Moresby",
+    "city": "Port Moresby"
+  },
+  {
+    "name": "hobart",
+    "lat": -42.883,
+    "long": 147.317,
+    "wikipedia": "Hobart",
+    "city": "Hobart"
+  },
+  {
+    "name": "canberra",
+    "lat": -35.3,
+    "long": 149.117,
+    "wikipedia": "Canberra",
+    "city": "Canberra"
+  },
+  {
+    "name": "rockhampton",
+    "lat": -23.367,
+    "long": 150.5,
+    "wikipedia": "Rockhampton",
+    "city": "Rockhampton"
+  },
+  {
+    "name": "magadan",
+    "lat": 59.567,
+    "long": 150.8,
+    "wikipedia": "Magadan",
+    "city": "Magadan"
+  },
+  {
+    "name": "wollonggong",
+    "lat": -34.433,
+    "long": 150.883,
+    "wikipedia": "Wollonggong",
+    "city": "Wollonggong"
+  },
+  {
+    "name": "sydney",
+    "lat": -33.85,
+    "long": 151.2,
+    "wikipedia": "Sydney",
+    "city": "Sydney"
+  },
+  {
+    "name": "newcastle",
+    "lat": -32.917,
+    "long": 151.75,
+    "wikipedia": "Newcastle,_New_South_Wales",
+    "city": "Newcastle"
+  },
+  {
+    "name": "weno",
+    "lat": 7.45,
+    "long": 151.85,
+    "wikipedia": "Weno",
+    "city": "Weno"
+  },
+  {
+    "name": "brisbane",
+    "lat": -27.467,
+    "long": 153.017,
+    "wikipedia": "Brisbane",
+    "city": "Brisbane"
+  },
+  {
+    "name": "goldcoast",
+    "lat": -28.167,
+    "long": 153.55,
+    "wikipedia": "Gold_Coast,_Queensland",
+    "city": "Gold Coast"
+  },
+  {
+    "name": "palikir",
+    "lat": 6.917,
+    "long": 158.183,
+    "wikipedia": "Palikir",
+    "city": "Palikir"
+  },
+  {
+    "name": "petropavlovskkamchatsky",
+    "lat": 53.017,
+    "long": 158.65,
+    "wikipedia": "Petropavlovsk-Kamchatsky",
+    "city": "Petropavlovsk-Kamchatsky"
+  },
+  {
+    "name": "honiara",
+    "lat": -9.433,
+    "long": 159.95,
+    "wikipedia": "Honiara",
+    "city": "Honiara"
+  },
+  { "name": "%a9a",
+    "lat": -22.267,
+    "long": 166.45,
+    "wikipedia": "Noum%C3%A9a",
+    "city": "Noum%C3%A9a"
+  },
+  {
+    "name": "yarendistrict",
+    "lat": -0.55,
+    "long": 166.917,
+    "wikipedia": "Yaren_District",
+    "city": "Yaren District"
+  },
+  {
+    "name": "portvila",
+    "lat": -17.75,
+    "long": 168.3,
+    "wikipedia": "Port_Vila",
+    "city": "Port Vila"
+  },
+  {
+    "name": "invercargill",
+    "lat": -46.417,
+    "long": 168.3,
+    "wikipedia": "Invercargill",
+    "city": "Invercargill"
+  },
+  {
+    "name": "dunedin",
+    "lat": -45.867,
+    "long": 170.5,
+    "wikipedia": "Dunedin",
+    "city": "Dunedin"
+  },
+  {
+    "name": "majuro",
+    "lat": 7.067,
+    "long": 171.267,
+    "wikipedia": "Majuro",
+    "city": "Majuro"
+  },
+  {
+    "name": "christchurch",
+    "lat": -43.533,
+    "long": 172.617,
+    "wikipedia": "Christchurch",
+    "city": "Christchurch"
+  },
+  {
+    "name": "southtarawa",
+    "lat": 1.317,
+    "long": 172.983,
+    "wikipedia": "South_Tarawa",
+    "city": "South Tarawa"
+  },
+  {
+    "name": "wellington",
+    "lat": -41.283,
+    "long": 174.767,
+    "wikipedia": "Wellington",
+    "city": "Wellington"
+  },
+  {
+    "name": "auckland",
+    "lat": -36.85,
+    "long": 174.783,
+    "wikipedia": "Auckland",
+    "city": "Auckland"
+  },
+  {
+    "name": "matautu",
+    "lat": -13.283,
+    "long": 176.183,
+    "wikipedia": "Mata-Utu",
+    "city": "Mata-Utu"
+  },
+  {
+    "name": "anadyr",
+    "lat": 64.733,
+    "long": 177.5,
+    "wikipedia": "Anadyr_(town)",
+    "city": "Anadyr (town)"
+  },
+  {
+    "name": "suva",
+    "lat": -18.133,
+    "long": 178.433,
+    "wikipedia": "Suva",
+    "city": "Suva"
+  },
+  {
+    "name": "funafuti",
+    "lat": -8.517,
+    "long": 179.217,
+    "wikipedia": "Funafuti",
+    "city": "Funafuti"
+  },
+  {
+    "name": "labasa",
+    "lat": -16.433,
+    "long": 179.367,
+    "wikipedia": "Labasa",
+    "city": "Labasa"
+  },
+  {
+    "name": "nukulaelae",
+    "lat": -9.383,
+    "long": 179.85,
+    "wikipedia": "Nukulaelae",
+    "city": "Nukulaelae"
+  }
+]

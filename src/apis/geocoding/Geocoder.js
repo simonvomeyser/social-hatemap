@@ -17,6 +17,7 @@ const Geocoder = {
           return {...e, location:geoCodedLocations[i]};
         })
 
+        console.log(geoCodedSHMEntities);
         resolve(geoCodedSHMEntities);
       })
     })
