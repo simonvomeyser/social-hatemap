@@ -14,6 +14,7 @@ import './index.css';
 
 ReactDOM.render((
   <div className="Index">
+    <h1>Social Hate Map</h1>
     <MainNav/>
     <Router history={hashHistory}>
       <Route path="/">

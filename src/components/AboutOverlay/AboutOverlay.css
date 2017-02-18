@@ -10,8 +10,8 @@
 }
 .AboutOverlay__close {
   position: absolute;
-  right: 1.5em;
-  top: .5em;
+  right: 40px;
+  top: 30px;
   color: black;
   font-size: 40px;
   cursor: pointer;
