@@ -1,4 +1,6 @@
 import React from 'react';
+import Chernoffling from '../Chernoffling/Chernoffling';
+import ChernofflingProps from '../../classes/ChernofflingProps';
 
 import './Tweet.css';
 
@@ -7,9 +9,18 @@ import './Tweet.css';
  */
 class Tweet extends React.Component {
   render() {
+    const props = new ChernofflingProps([this.props.entity], [this.props.entity])
+
     return (
       <div className="Tweet">
         <img src={this.props.entity.user.image} alt=""/>
+
+        <div className="Tweet__Chernoffling">
+          <Chernoffling 
+          id={"tweetChernoffling-"+Math.random()}
+          {...props}
+          />
+        </div>
         <div className="Tweet__content">
           <a href="http://twitter.de">{this.props.entity.user.name}</a>
           <p>

@@ -7,30 +7,6 @@
 }
 .Map svg {
   z-index: -1;
-  /* transform: translateY(-10%); */
   width: 100%;
   height: auto;
-}
-.Map svg .ocean {
-  fill: black !important;
-}
-.Map svg .lake {
-  fill: black !important;
-}
-.Map svg .land {
-
-   fill: #2C2C2C !important;
-   fill-opacity: 1;
-   stroke: #3C3C3C !important;
-}
-.circle
-{
-   opacity:0;
-   fill:#b9b9b9;
-   fill-opacity:1;
-   stroke:black;
-   stroke-width:0.99986893;
-   stroke-miterlimit:3.97446823;
-   stroke-dasharray:none;
-   stroke-opacity:1;
 }
