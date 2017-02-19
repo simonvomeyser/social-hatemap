@@ -1,0 +1,8 @@
+.AboutOverlay h2 {
+	text-align: left !important;
+}
+.MapGridElement__overlayChernoffling ul {
+	padding: 0;
+	margin-bottom: 0;
+	list-style: none;
+}

@@ -16,12 +16,13 @@ class Tweet extends React.Component {
     return (
       <div className="Tweet">
         <img src={entity.user.image} alt=""/>
-
-        <div className="Tweet__Chernoffling">
-          <Chernoffling 
-          id={"tweetChernoffling-"+Math.round(Math.random()*1000)}
-          {...props}
-          />
+        <div className="Tweet__ChernofflingContainer">
+          <div className="Tweet__Chernoffling">
+            <Chernoffling 
+            id={"tweetChernoffling-"+Math.round(Math.random()*1000)}
+            {...props}
+            />
+          </div>
         </div>
         <div className="Tweet__content">
           <a href={"https://twitter.com/"+entity.user.screenName} target="_blank">{entity.user.name}</a>
