@@ -1,5 +1,6 @@
 import React from 'react';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
+import ErrorComponent from '../ErrorComponent/ErrorComponent';
 import Tweetlist from '../Tweetlist/Tweetlist';
 import Nav from '../Nav/Nav';
 import Map from '../Map/Map';
@@ -32,6 +33,10 @@ class App extends React.Component {
       loading: true
     };
 
+    if (IS_DEV_MODE) {
+      props.params.id = 'trump';
+    }
+
     this.changeGridConfig = this.changeGridConfig.bind(this);
     this.filterByDate     = this.filterByDate.bind(this);
   }
@@ -62,11 +67,19 @@ class App extends React.Component {
     })
     .then((processedSHMEntites) => {
 
-      // Save all of them in state, "processedSHMEntites" triggers map rendering
-      this.setState({
-        processedSHMEntites,
-        filteredSHMEntities : processedSHMEntites,
-        loading: false });
+      if (processedSHMEntites.length > 0) {
+        // Save all of them in state, "processedSHMEntites" triggers map rendering
+        this.setState({
+          processedSHMEntites,
+          filteredSHMEntities : processedSHMEntites,
+          loading: false });
+      } else {
+        this.setState({
+          loading: false, 
+          error: true 
+        });
+      }
+
 
     });
 
@@ -92,6 +105,7 @@ class App extends React.Component {
         : null  
         }
         {this.state.loading ? <LoadingSpinner/> : null}
+        {this.state.error ? <ErrorComponent/> : null}
       </div>
     );
   }

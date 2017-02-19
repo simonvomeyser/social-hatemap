@@ -200,4 +200,38 @@ input[type=range]:focus::-ms-fill-upper {
 
 #dateSlider {
   min-width: 200px;
+  margin-top: 12px;
+}
+.noUi-base {
+  /* margin-top: 50%; */
+}
+.noUi-horizontal .noUi-handle {
+  height: 16px;
+  width: 16px;
+  left: -8px;
+  top: -8px;
+}
+.noUi-connect {
+  /* background: red */
+}
+.noUi-horizontal {
+  height: 2px
+}
+.noUi-target {
+  border: 0px;
+  background: #666;
+  border: 0px;
+  box-shadow: none;
+}
+.noUi-handle {
+
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
+  background: #4c4c4c;
+  cursor: default;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.3); /* Add cool effects to your sliders! */
+}
+.noUi-handle:after, .noUi-handle:before {
+  display: none!important;
 }
