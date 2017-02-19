@@ -24,7 +24,11 @@ const Twitter = {
 
     return fetch(apiUrl + '?hashtag=' + $hashtag)
     .then((response) => { 
-      return response.json().statuses.map((e) => new TwitterSHMEntity(e)); 
+      return response.json();
+    }).then((json) => {
+      return new Promise((resolve) =>{
+        resolve(json.tweets.map((e, i) => new TwitterSHMEntity(e, i)));
+      }); 
     });
   },
 
@@ -37,7 +41,7 @@ const Twitter = {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(sampleData.tweets.map((e, i) => {
-          return new TwitterSHMEntity(e, i)
+          return new TwitterSHMEntity(e, i);
         }));
       }, 500);
     });    

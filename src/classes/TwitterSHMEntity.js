@@ -6,7 +6,11 @@ class TwittterSHMEntity extends SHMEntity {
     this.key = key;
 
     // Remove special chars, 
-    const cleanName = twitterPost.user.name.replace(/[^\w\s]/gi, '');
+    const cleanName = twitterPost.user.name.replace(/[^\w\s]/gi, '').trim();
+    const locationName = twitterPost.place ? 
+        twitterPost.place.full_name + " " + twitterPost.place.country :
+        twitterPost.user.location; 
+    const cleanLocationName = locationName.replace(/[^\w\s]/gi, '').trim();
 
     this.user = {
       name       : twitterPost.user.name,
@@ -25,9 +29,8 @@ class TwittterSHMEntity extends SHMEntity {
     };
     this.location = {
       // Set the name to something that can be parsed later (can be empty)
-      name       : twitterPost.place ? 
-        twitterPost.place.full_name + " " + twitterPost.place.country :
-        twitterPost.user.location
+      name            : locationName,
+      cleanName       : cleanLocationName,
     };
 
     this.setNotReady();

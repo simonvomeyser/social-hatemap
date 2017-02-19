@@ -19,7 +19,7 @@ import './App.css';
 import './bootstrap.css';
 
 // true means there is no real data fetched from the apis
-const IS_DEV_MODE = true;
+const IS_LIVE_MODE = true;
 
 /**
  * Main Application wrapper, shows map and renders everything
@@ -30,12 +30,9 @@ class App extends React.Component {
 
     this.state = {
       gridConfig: {opacity: 0.30, size: 7, display: true},
-      loading: true
+      loading: true,
+      liveMode : props.location.query.liveMode ? true:false
     };
-
-    if (IS_DEV_MODE) {
-      props.params.id = 'trump';
-    }
 
     this.changeGridConfig = this.changeGridConfig.bind(this);
     this.filterByDate     = this.filterByDate.bind(this);
@@ -44,13 +41,14 @@ class App extends React.Component {
 
     // Start the App "lifecycle"
     const hashtag = this.props.params.id;
+    const IS_DEV_MODE = !this.state.liveMode
 
     Twitter.getPosts(hashtag, IS_DEV_MODE)
     .then((twitterSHMEntities) => {
 
       // Remove loca
       const geocodableSHMEntities = LocationHelper.filterSHMEntities(twitterSHMEntities);
-
+      
       // Get geolocated Entities (promise)
       return Geocoder.addGeoLocation(geocodableSHMEntities, IS_DEV_MODE)
     })

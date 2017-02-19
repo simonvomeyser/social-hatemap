@@ -6,7 +6,7 @@ const Geocoder = {
 
   addGeoLocation(geocodableSHMEntities, IS_DEV_MODE) {
 
-    const locations = geocodableSHMEntities.map((post) => post.location.name);
+    const locations = geocodableSHMEntities.map((post) => post.location.cleanName);
 
     return new Promise((resolve) => {
 
@@ -38,7 +38,6 @@ const Geocoder = {
     if (IS_DEV_MODE) {
       return this.batchGeocodeStatic(locationNames);
     }
-
     var locationPromises = locationNames.map((locationName) => {
       return this.fetchJSONFromAPI(locationName);
     });
@@ -54,6 +53,7 @@ const Geocoder = {
   fetchJSONFromAPI(locationName) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
+
         fetch('http://maps.google.com/maps/api/geocode/json?address=' + locationName)
         .then((response) => {
           return response.json();

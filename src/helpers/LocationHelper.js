@@ -21,7 +21,7 @@ const LocationHelper = {
    */
   filterSHMEntities(SHMEntities) {
     return SHMEntities.filter(function(element) {
-      if (element.location.name) {
+      if (element.location.cleanName) {
         return true;
       }
       return false;
