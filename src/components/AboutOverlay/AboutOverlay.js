@@ -1,6 +1,8 @@
 import React from 'react';
 
 import './AboutOverlay.css';
+import monsterImg from '../../img/monster-overview.svg';
+import SVGInline from "react-svg-inline";
 
 import $ from 'jquery';
 
@@ -67,13 +69,48 @@ export default class AboutOverlay extends React.Component {
             <div className="row topSpacing2">
               <div className="col-sm-5">
                 <h3>Monster properties</h3>
+                <p>
+                  The visual appearance of the monsters reflects the properties of the incoporated Tweet(s) and its author(s). 
+                </p>
+                <ul>
+                  <li>
+                    <b>Sentiment</b><br/>
+                    Sentiment is shown mainly in the color of the monster, ranging from red (negative) over orange, yellow, green (mixed) and cyan to blue (positive). It also affects eyes and mouth of the monster. Depending on the sentiment value, a certain set of eyes and mouth is loaded.
+                  </li> 
+                  <li>
+                    <b>Amplitude</b><br/>
+                    The Amplitude (meaning: intensity) of a Tweet is displayed in the mouth variation. A more open version of the respective mouth is loaded, if the Tweet has a high amplitude, also depending on sentiment. 
+                  </li>
+                  <li>
+                    <b>Favourites</b><br/>
+                    If the Tweet excels a certain number of favourites (or likes), the monster is marked with a badge.   
+                  </li>
+                  <li>
+                    <b>Gender</b><br/>
+                    The gender of an author (or the average gender value of a group of authors) is visualized with the monster's body shape. Male authors are shown in a more rectangular body, while female authors have a rounder shape. Since it's 2017, of course there are more than two possible genders.     
+                  </li>
+                  <li>
+                    <b>Account age</b><br/>
+                    Depending of the age of the author's account, a certain set of horns is attached to the monster. The older the account, the longer the horns. An account younger than two years shows no horns, while an account older than 8 years shows two pairs.    
+                  </li>
+                </ul>
+              </div>
+              <div className="col-sm-1">
+                
+              </div>
+              <div className="col-sm-5">
+                <div className="imageContainer">
+                  <SVGInline svg={monsterImg} className="monsterImg" />
+                </div>
               </div>
             </div>
-            <div className="row topSpacing2">
+            <div className="row topSpacing2 bottomSpacing1">
+              <div className="col-sm-2">
+              </div>
               <div className="col-sm-5">
                 <h3>Map &amp; Interface</h3>
                 <p>
-                  The map is modeled according to the mercator transformation, therefore the specific shape of continents. The map's area is devided by a grid. Tweets within one sector are summed up and their properties are merged. Therefore a monster within a grid area represents a number of Tweets and not individual ones.
+                  The map is modeled according to the mercator transformation, resulting in the specific shape of the continents. The map's area is devided by a grid. Tweets within one sector are summed up and their properties are merged. Therefore a monster within a grid area represents a number of Tweets and not individual ones.
                 </p>
                 <p>
                   If the user clicks on a grid sector, an overlay opens and exact property values are explained. An additional list visualizes the single tweets that are incorporated in this grid sector. 
@@ -90,7 +127,7 @@ export default class AboutOverlay extends React.Component {
               </div>
               <div className="col-sm-1">
               </div>
-              <div className="col-sm-5">
+              <div className="col-sm-4">
                 <h3>Team</h3>
                 <p>
                   <a href="http://simonvomeyser.de/" title="Simon vom Eyser">Simon vom Eyser</a>, 582460<br/>

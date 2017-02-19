@@ -11,6 +11,7 @@
 .AboutOverlay__close { 
   display: inline-block;
   color: black;
+  position: fixed;
   font-size: 40px;
   cursor: pointer;
   z-index: 3;
@@ -27,12 +28,16 @@
   padding-top: 120px;
 }
 .topSpacing2 {
-  padding-top: 60px;
+  padding-top: 80px;
+}
+.bottomSpacing1 {
+  padding-bottom: 120px;
 }
 .pageTitle, .AboutOverlay__close {
   font-family: 'Roboto', sans-serif !important;
   color: #404040 !important;
   font-size: 24px;
+  margin: 0;
   line-height: 28px;
 }
 .textRight {
