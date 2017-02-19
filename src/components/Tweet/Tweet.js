@@ -17,7 +17,7 @@ class Tweet extends React.Component {
 
         <div className="Tweet__Chernoffling">
           <Chernoffling 
-          id={"tweetChernoffling-"+Math.random()}
+          id={"tweetChernoffling-"+Math.round(Math.random()*1000)}
           {...props}
           />
         </div>

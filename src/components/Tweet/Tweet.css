@@ -22,10 +22,13 @@
   max-width: 400px;
 }
 .Tweet__Chernoffling {
-  border: 1px red dotted;
+  background: white;
   position: absolute;
   left: 0;           
   top: 80px;           
   width: 80px;
   height: 80px; 
+}
+.Tweet__Chernoffling .Chernoffling svg{
+  z-index: 1;
 }
