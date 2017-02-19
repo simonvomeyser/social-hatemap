@@ -63,7 +63,9 @@ const Genderizer = {
    */
   onFetchingComplete(resolve) {
     const mergedArray = [].concat.apply([],this.genderResults);
-    
+
+    // console.log (this.genderResults); // Comment in and save in sampleData
+
     if (mergedArray.length < this.genderizableSHMEntities.length) {
       console.warn('Genderizer failed and returned random results.')
       resolve( this.fakeRandomResponse(this.genderizableSHMEntities));
