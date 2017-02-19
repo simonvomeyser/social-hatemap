@@ -87,9 +87,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h2 className="App__hashtag">#{this.props.params.id}</h2>
         {this.state.filteredSHMEntities ?
-        <h3 className="App__showing">Showing {this.state.filteredSHMEntities.length} Tweets</h3>
+          <div>
+            <h2 className="App__hashtag">#{this.props.params.id}</h2>
+            <h3 className="App__showing">Showing {this.state.filteredSHMEntities.length} Tweets</h3>
+          </div>
         : null
         }
         <Map
