@@ -33,6 +33,7 @@ class App extends React.Component {
     };
 
     this.changeGridConfig = this.changeGridConfig.bind(this);
+    this.filterByDate     = this.filterByDate.bind(this);
   }
   componentWillMount() {
 
@@ -62,23 +63,29 @@ class App extends React.Component {
     .then((processedSHMEntites) => {
 
       // Save all of them in state, "processedSHMEntites" triggers map rendering
-      this.setState({processedSHMEntites, loading: false });
+      this.setState({
+        processedSHMEntites,
+        filteredSHMEntities : processedSHMEntites,
+        loading: false });
 
     });
 
   }
-
-
   render() {
     return (
       <div className="App">
-        <h1 className="App__hashtag">#{this.props.params.id}</h1>
+        <h2 className="App__hashtag">#{this.props.params.id}</h2>
+        {this.state.filteredSHMEntities ?
+        <h3 className="App__showing">Showing {this.state.filteredSHMEntities.length} Tweets</h3>
+        : null
+        }
         <Map
-          entitiesToDraw={this.state.processedSHMEntites}
+          entitiesToDraw={this.state.filteredSHMEntities}
           gridConfig={this.state.gridConfig}/>
         {this.state.processedSHMEntites ? 
         <Nav
           processedSHMEntites={this.state.processedSHMEntites}
+          filterByDate={this.filterByDate}
           processPosts={this.processPosts}
           changeGridConfig={this.changeGridConfig}
           gridConfig={this.state.gridConfig}/>
@@ -90,6 +97,17 @@ class App extends React.Component {
   }
   changeGridConfig(config) {
     this.setState({gridConfig: config});
+  }
+  filterByDate(from, to) {
+    const filteredSHMEntities = this.state.processedSHMEntites.filter((e)=> {
+      const createdAtMs = e.post.createdAt.getTime();
+      if (createdAtMs >= from && createdAtMs <= to) {
+        return true;
+      }
+      return false;
+    });
+    this.setState({filteredSHMEntities: filteredSHMEntities});
+
   }
 }
 

@@ -177,8 +177,27 @@ input[type=range]:focus::-ms-fill-upper {
   background: #4c4c4c;
 }
 /*
-  Slider 
+  Date slider
 */
+.gridControlles__date {
+  position: relative;
+}
+.gridControlles__date:hover .gridControlles__dateDisplay{
+
+  opacity: 1;
+}
+
+.gridControlles__dateDisplay {
+  position: absolute;
+  right: 0;
+  top: -100%;
+  opacity: 0;
+  transition: .3s opacity ease-in-out;
+}
+.gridControlles__dateDisplay--shown {
+  visibility: visible;
+}
+
 #dateSlider {
   min-width: 200px;
 }
