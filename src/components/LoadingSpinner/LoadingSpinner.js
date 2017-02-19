@@ -14,8 +14,7 @@ export default class LoadingSpinner extends React.Component {
   render() {
     return (
       <div className="LoadingSpinner h3">
-        <div className="LoadingSpinner__spinner">
-        </div>
+        Loading...
       </div>
     );
   }
