@@ -1,0 +1,25 @@
+.ErrorComponent {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.ErrorComponent_btn {
+  background: transparent;
+  border: 1px solid #4c4c4c;
+  padding: 6px 10px !important;
+  height: 24px;
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 13px;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: inline-block;
+}
+.ErrorComponent_btn:hover {
+  background: #4c4c4c;
+  color: white;
+  text-decoration: none;
+}
