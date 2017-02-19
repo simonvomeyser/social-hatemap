@@ -7,6 +7,25 @@
   font-size: 12px;
   line-height: 18px;
   color: #4c4c4c;
+  animation: Nav-fadeIn 6s ease-in-out;
+}
+
+@keyframes Nav-fadeIn {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    80% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    90%   { 
+      opacity: 1;
+    }
+    100%   { 
+      transform: translateY(0%);
+      opacity: 1;
+    }
 }
 .Nav__showGrid  a {
 }
@@ -156,4 +175,10 @@ input[type=range]::-ms-fill-upper {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: #4c4c4c;
+}
+/*
+  Slider 
+*/
+#dateSlider {
+  min-width: 200px;
 }

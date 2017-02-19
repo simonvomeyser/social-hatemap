@@ -29,18 +29,15 @@ class App extends React.Component {
 
     this.state = {
       gridConfig: {opacity: 0.30, size: 7, display: true},
-      doneRenderingMap: false
+      loading: true
     };
 
-    this.setLoading       = this.setLoading.bind(this);
     this.changeGridConfig = this.changeGridConfig.bind(this);
   }
   componentWillMount() {
 
     // Start the App "lifecycle"
     const hashtag = this.props.params.id;
-
-    this.setLoading('Getting Data from Twitter...');
 
     Twitter.getPosts(hashtag, IS_DEV_MODE)
     .then((twitterSHMEntities) => {
@@ -65,33 +62,29 @@ class App extends React.Component {
     .then((processedSHMEntites) => {
 
       // Save all of them in state, "processedSHMEntites" triggers map rendering
-      this.setState({
-        loading   : null,
-        processedSHMEntites });
+      this.setState({processedSHMEntites, loading: false });
+
     });
 
-  }
-
-  setLoading(text) {
-    this.setState({loading: (<LoadingSpinner/>)});
   }
 
 
   render() {
     return (
       <div className="App">
+        <h1 className="App__hashtag">#{this.props.params.id}</h1>
         <Map
-          doneRenderingMap={this.doneRenderingMap}
           entitiesToDraw={this.state.processedSHMEntites}
           gridConfig={this.state.gridConfig}/>
+        {this.state.processedSHMEntites ? 
         <Nav
-          posts={this.state.posts}
+          processedSHMEntites={this.state.processedSHMEntites}
           processPosts={this.processPosts}
           changeGridConfig={this.changeGridConfig}
           gridConfig={this.state.gridConfig}/>
-        <div className="App__content">
-          {this.state.loading}
-        </div>
+        : null  
+        }
+        {this.state.loading ? <LoadingSpinner/> : null}
       </div>
     );
   }
