@@ -2,18 +2,39 @@
   position: fixed;
   width: 100vw;
   min-height: 100vh;
-  overflow-y: scroll;
-  background-color: rgba(255, 255, 255, 1);
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, .9);
   left: 0;
   top: 0;
-  z-index: 201
+  z-index: 80;
 }
 .AboutOverlay__close {
-  position: absolute;
-  right: 40px;
-  top: 30px;
+  display: inline-block;
   color: black;
   font-size: 40px;
   cursor: pointer;
-  z-index: 3
+  z-index: 3;
+  color: #666;
+}
+.AboutOverlay__close:hover {
+  color: #000;
+}
+.container-fluid {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+.topSpacing1 {
+  padding-top: 120px;
+}
+.topSpacing2 {
+  padding-top: 60px;
+}
+.pageTitle, .AboutOverlay__close {
+  font-family: 'Roboto', sans-serif !important;
+  color: #404040 !important;
+  font-size: 24px;
+  line-height: 28px;
+}
+.textRight {
+  text-align: right;
 }

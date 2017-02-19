@@ -1,6 +1,6 @@
 /* Marc's formidable CSS */
 .MainNav {
-  z-index:10;
+  z-index:100;
   position: fixed !important;
   top: 30px !important;
   right: 40px !important;
@@ -20,6 +20,6 @@
 }
 .MainNav a:hover {
   background-color: #4c4c4c;
-  color: #e0e0e0;
+  color: #fff;
   text-decoration: none;
 }
