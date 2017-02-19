@@ -29,7 +29,7 @@ class ChernofflingProps {
     return this.SHMEntities.reduce((prev, cur) => {
       return prev + cur.post.sentiment[attribute];
     }, 
-    0) / this.numberOfSHMEntities;
+    0);
   }
 
   calculatePostAverage(attribute) {
