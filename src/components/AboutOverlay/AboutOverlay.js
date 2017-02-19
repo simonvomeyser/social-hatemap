@@ -132,7 +132,7 @@ export default class AboutOverlay extends React.Component {
                 <p>
                   <a href="http://simonvomeyser.de/" title="Simon vom Eyser">Simon vom Eyser</a>, 582460<br/>
                   Felix Jordan, XXXXXX<br/>
-                  Stefan "Boerdi" Weber, XXXXXX<br/>
+                  Stefan "Boerdi" Weber, 600228<br/>
                   <a href="http://marckloubert.com" title="Marc Kloubert">Marc Kloubert</a>, 567230
                 </p>
               </div>
