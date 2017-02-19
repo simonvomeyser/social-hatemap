@@ -68,12 +68,8 @@ class App extends React.Component {
         filteredSHMEntities : processedSHMEntites,
         loading: false });
 
-      console.log (processedSHMEntites);
     });
 
-  }
-  filterByDate({startDate, endDate}) {
-    console.log (`filter by date ${startDate} and ${endDate}`);
   }
   render() {
     return (
@@ -107,10 +103,7 @@ class App extends React.Component {
       return false;
     });
     this.setState({filteredSHMEntities: filteredSHMEntities});
-    console.log ("Filtering by date");
-    console.log ({from, to});
 
-    console.log (filteredSHMEntities);
   }
 }
 
