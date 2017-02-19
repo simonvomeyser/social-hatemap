@@ -175,7 +175,7 @@ export default class Chernoffling extends React.Component {
 
     // Size controlled by percentage of followers
     var followers_factor = params.followers/100,
-        scale_factor = 0.3 + 0.5*followers_factor;
+        scale_factor = 0.5 + 1*followers_factor;
 
 
     $monster.css({
