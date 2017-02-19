@@ -54,14 +54,15 @@ class Nav extends React.Component {
     }
   }
   createNoUiSlider() {
-    var dateSlider = document.getElementById('dateSlider');
-    var {dateMin, dateMax} = this.getSHMEntityDateRange(this.props.processedSHMEntites);
-    console.log ({dateMin, dateMax});
+    const dateSlider = document.getElementById('dateSlider');
+    const dateDisplay = document.getElementById('gridControlles__dateDisplay');
+
+    const {dateMin, dateMax} = this.getSHMEntityDateRange(this.props.processedSHMEntites);
     const start = 0;
     const end = dateMax-dateMin;
 
     updateDateDisplay(dateMin, dateMax);
-    
+
     noUiSlider.create(dateSlider, {
       start: [ 0, end ],
       behaviour: 'drag',
