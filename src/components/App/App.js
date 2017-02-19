@@ -72,6 +72,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <h1 className="App__hashtag">#{this.props.params.id}</h1>
         <Map
           entitiesToDraw={this.state.processedSHMEntites}
           gridConfig={this.state.gridConfig}/>
