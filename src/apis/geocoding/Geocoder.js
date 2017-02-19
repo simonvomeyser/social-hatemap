@@ -53,13 +53,15 @@ const Geocoder = {
    */
   fetchJSONFromAPI(locationName) {
     return new Promise((resolve, reject) => {
-      fetch('http://maps.google.com/maps/api/geocode/json?address=' + locationName)
-      .then((response) => {
-        return response.json();
-      })
-      .then((geocodeJSON) => {
-        return resolve(this.formatJSON(geocodeJSON));
-      });
+      setTimeout(() => {
+        fetch('http://maps.google.com/maps/api/geocode/json?address=' + locationName)
+        .then((response) => {
+          return response.json();
+        })
+        .then((geocodeJSON) => {
+          return resolve(this.formatJSON(geocodeJSON));
+        });
+      }, 20);
     });
   },
 
