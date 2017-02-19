@@ -1,33 +1,41 @@
 .Tweet {
-  background-color: black;
-  color: white;
+  background-color: #e0e0e0;
+  color: #4e4e4e;
   position: relative;
   padding: 0;
+  margin-right: 20px;
+  border: 1px solid #ccc;
 }
 .Tweet + .Tweet  {
-  margin-top: 1em;
+  margin-top: 10px;
 }
 .Tweet > img {
   position: absolute;
   left: 0;           
-  width: 80px;
-  height: 80px;
+  width: 200px;
+  height: 200px;
 }
 .Tweet__content {
   margin: 0;
   text-align: left;
   padding: .5em;
-  padding-left: 100px;
+  margin-left: 120px;
   min-height: 80px;
-  max-width: 400px;
+  max-width: 520px;
+}
+.Tweet__content a {
+  text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #4e4e4e;
 }
 .Tweet__Chernoffling {
-  background: white;
+  background: transparent;
   position: absolute;
   left: 0;           
-  top: 80px;           
-  width: 80px;
-  height: 80px; 
+  top: 10px;           
+  width: 100px;
+  height: 100px; 
 }
 .Tweet__Chernoffling .Chernoffling svg{
   z-index: 1;
