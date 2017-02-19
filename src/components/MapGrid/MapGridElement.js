@@ -1,6 +1,6 @@
 import React from 'react';
-import Overlay from '../Overlay/Overlay';
-import Tweetlist from '../Tweetlist/Tweetlist';
+
+import MapGridOverlay from '../MapGridOverlay/MapGridOverlay';
 import Chernoffling from '../Chernoffling/Chernoffling';
 import ChernofflingProps from '../../classes/ChernofflingProps';
 
@@ -55,27 +55,14 @@ class MapGridElement extends React.Component {
   }
   renderOverlay() {
     if (this.state.showOverlay) {
-      const props = new ChernofflingProps(this.state.containedSHMEntities, this.props.SHMEntities);
+      const chernofflingProps = new ChernofflingProps(this.state.containedSHMEntities, this.props.SHMEntities);
       return (
-        
-        <Overlay close={this.toggleOverlay}>
-          <div className="MapGridElement__overlayChernoffling">
-            <Chernoffling 
-              id={"overlaychernoffling-"+this.props.id}
-              {...props}/>
-              <ul>
-                <li>Average sentiment: {props.sentiment}</li>
-                <li>Average gender: {props.gender}</li>
-                <li>Average account age: {props.age}</li>
-                <li>Percent favs of all tweets on map: {props.favourites} %</li>
-                <li>Percent followers of all tweets on map: {props.followers} %</li>
-                
-              </ul>
-          </div>
-          <div className="MapGridElement__overlayTweetList">
-            <Tweetlist tweets={this.state.containedSHMEntities}/>
-          </div>
-        </Overlay>
+        <MapGridOverlay
+          close={this.toggleOverlay}
+          id={this.props.id}
+          chernofflingProps={chernofflingProps}
+          containedSHMEntities= {this.state.containedSHMEntities}
+        />
       );
     }
 

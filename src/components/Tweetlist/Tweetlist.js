@@ -18,7 +18,6 @@ export default class Tweetlist extends React.Component {
   render() {
     return (
       <div className="Tweetlist">
-        <div>Found {this.props.tweets.length} Tweets</div>
         {this.props.tweets.map((e, i) => <Tweet key={'tweet'+i} entity={e}/> )}
       </div>
     );
