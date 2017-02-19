@@ -63,7 +63,10 @@ class App extends React.Component {
     .then((processedSHMEntites) => {
 
       // Save all of them in state, "processedSHMEntites" triggers map rendering
-      this.setState({processedSHMEntites, loading: false });
+      this.setState({
+        processedSHMEntites,
+        filteredSHMEntities : processedSHMEntites,
+        loading: false });
 
       console.log (processedSHMEntites);
     });
@@ -77,7 +80,7 @@ class App extends React.Component {
       <div className="App">
         <h1 className="App__hashtag">#{this.props.params.id}</h1>
         <Map
-          entitiesToDraw={this.state.processedSHMEntites}
+          entitiesToDraw={this.state.filteredSHMEntities}
           gridConfig={this.state.gridConfig}/>
         {this.state.processedSHMEntites ? 
         <Nav
@@ -96,7 +99,18 @@ class App extends React.Component {
     this.setState({gridConfig: config});
   }
   filterByDate(from, to) {
-    console.log (`filter by date ${from} and ${to}`);
+    const filteredSHMEntities = this.state.processedSHMEntites.filter((e)=> {
+      const createdAtMs = e.post.createdAt.getTime();
+      if (createdAtMs >= from && createdAtMs <= to) {
+        return true;
+      }
+      return false;
+    });
+    this.setState({filteredSHMEntities: filteredSHMEntities});
+    console.log ("Filtering by date");
+    console.log ({from, to});
+
+    console.log (filteredSHMEntities);
   }
 }
 

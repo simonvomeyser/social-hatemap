@@ -1,8 +1,9 @@
 import SHMEntity from './SHMEntity';
 
 class TwittterSHMEntity extends SHMEntity {
-  constructor(twitterPost) {
+  constructor(twitterPost, key) {
     super();
+    this.key = key;
 
     // Remove special chars, 
     const cleanName = twitterPost.user.name.replace(/[^\w\s]/gi, '');

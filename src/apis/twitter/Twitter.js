@@ -36,8 +36,8 @@ const Twitter = {
   getStaticPosts($hashtag) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve(sampleData.tweets.map((e) => {
-          return new TwitterSHMEntity(e)
+        resolve(sampleData.tweets.map((e, i) => {
+          return new TwitterSHMEntity(e, i)
         }));
       }, 500);
     });    

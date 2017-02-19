@@ -84,7 +84,6 @@ class Nav extends React.Component {
       this.props.filterByDate(from, to);
     });
     function updateDateDisplay(from, to) {
-      console.log ({from, to});
       document.getElementById('gridControlles__dateFrom').innerHTML = 
       dateFormat(from, "mm.d.yy h:MM:ss");
       document.getElementById('gridControlles__dateTo').innerHTML = 

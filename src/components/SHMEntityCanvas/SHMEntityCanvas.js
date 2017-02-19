@@ -18,6 +18,16 @@ class SHMEntityCanvas extends React.Component {
   componentWillMount() {
     this.renderEntities();
   }
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.SHMEntities.length != this.props.SHMEntities.length) {
+      this.setState({
+        SHMEntities: nextProps.SHMEntities.map((e, i) => (
+          <SHMEntity key={`SHMEntity-${e.key}-`} entity={e}/>
+        ))
+
+      });
+    }
+  } 
 
   render() {
     return (
@@ -37,7 +47,7 @@ class SHMEntityCanvas extends React.Component {
     return entities.map((e, i) => {
       const newEntities = this.state.SHMEntities;
       setTimeout(() => {
-        newEntities.push(<SHMEntity key={`SHMEntity-${i}`} entity={e} animationDuration={animationDuration}/>);
+        newEntities.push(<SHMEntity key={`SHMEntity-${e.key}`} entity={e} animationDuration={animationDuration}/>);
         this.setState({SHMEntities: newEntities});
         entities.length === i+1 ? this.finishedRenderingEntities():null;
       }, delayBetweenRenderings*i);
