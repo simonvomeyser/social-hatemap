@@ -20,6 +20,6 @@
 }
 .MainNav a:hover {
   background-color: #4c4c4c;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
 }

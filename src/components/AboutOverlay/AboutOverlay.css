@@ -2,13 +2,13 @@
   position: fixed;
   width: 100vw;
   min-height: 100vh;
-  overflow-y: auto;
+  overflow: hidden;
   background-color: rgba(255, 255, 255, .9);
   left: 0;
   top: 0;
   z-index: 80;
 }
-.AboutOverlay__close {
+.AboutOverlay__close { 
   display: inline-block;
   color: black;
   font-size: 40px;
@@ -37,4 +37,46 @@
 }
 .textRight {
   text-align: right;
+}
+.outerContainer {
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrapper {
+  position: absolute;
+  right: -25px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+p + p, p + ul, ul + p, ul + ul {
+  margin-top: 16px !important;
+  margin-bottom: 0px !important;
+}
+p, h3, ul {
+  font-family: 'Roboto', sans-serif !important;
+  color: #404040 !important;
+  font-size: 14px !important;
+  line-height: 21px !important;
+  font-weight: 400;
+}
+p a {
+  color: #404040 !important;
+  text-decoration: underline;
+}
+p a:hover {
+  color: #999 !important;
+}
+ul {
+  padding-left: 18px;
+}
+ul li + li {
+  margin-top: 8px;
+}
+h3 {
+  font-weight: bold !important;
 }
