@@ -16,7 +16,7 @@ class TwittterSHMEntity extends SHMEntity {
       name       : twitterPost.user.name,
       cleanName  : cleanName,
       firstName  : cleanName.split(" ")[0],
-      screenName : twitterPost.user.screenName,
+      screenName : twitterPost.user.screen_name,
       follower   : twitterPost.user.followers_count,
       accountAge : new Date().getFullYear() - new Date(twitterPost.user.created_at).getFullYear(), // @todo to age
       image      : twitterPost.user.profile_image_url_https,
@@ -25,7 +25,7 @@ class TwittterSHMEntity extends SHMEntity {
     this.post = {
       text       : twitterPost.text,
       favourites : twitterPost.favorite_count,
-      createdAt  : new Date(twitterPost.created_at),
+      createdAt  : new Date(twitterPost.created_at)
     };
     this.location = {
       // Set the name to something that can be parsed later (can be empty)
