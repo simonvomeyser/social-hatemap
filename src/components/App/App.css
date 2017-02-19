@@ -6,8 +6,15 @@
   overflow-x: hidden;
 }
 .App__hashtag {
-  padding-top: 2em;
+  position: absolute;
+  left: 40px;
+  bottom: 20%;
   font-size: 1.5em;
+}
+.App__showing {
+  position: absolute;
+  left: 40px;
+  bottom: 15%;
 }
 .App__loading {
   padding-top: 10%;
