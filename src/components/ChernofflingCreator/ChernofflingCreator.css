@@ -15,8 +15,22 @@
 .ChernofflingCreator h1, .ChernofflingCreator h2  {
   font-weight: 400;
 }
+.CreatorTitle {
+  position: absolute;
+  top: 70px;
+  left: 40px;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+}
+.SettingsTitle {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+}
 .ChernofflingCreator {
-  margin: 0 auto;
+  margin: 100px auto;
   width: 50%;
 }
 .ChernofflingCreator__content {

@@ -2,6 +2,7 @@ import React from 'react';
 
 import './AboutOverlay.css';
 import monsterImg from '../../img/monster-overview.svg';
+import flowchart from '../../img/hatemap-flowchart-cropped.svg';
 import SVGInline from "react-svg-inline";
 
 import $ from 'jquery';
@@ -25,7 +26,7 @@ export default class AboutOverlay extends React.Component {
               </div>
             </div>
             <div className="row topSpacing2">
-              <div className="col-sm-7">
+              <div className="col-sm-6">
                 <h3>Concept</h3>
                 <p>
                   The Social Hate Map visualizes properties of social media messages and users. The data is pulled over APIs, evaluated and then mapped on a global map.
@@ -37,9 +38,13 @@ export default class AboutOverlay extends React.Component {
             </div>
             <div className="row topSpacing2">
               <div className="col-sm-6">
-
+                <div className="imageContainer">
+                  <SVGInline svg={flowchart} className="flowchartImg" />
+                </div>
               </div>
-              <div className="col-sm-5 col-sm-offset-1">
+              <div className="col-sm-1">
+              </div>
+              <div className="col-sm-5">
                 <h3>Process</h3>
                 <p>
                   The user enters a keyword, for example 'Trump'. A request is sent to the Twitter API, fetching Tweets that are hashtagged with this keyword. The returning sample is filtered for location data. Only those who can be located to a specific city or area are processed further. 
@@ -67,7 +72,7 @@ export default class AboutOverlay extends React.Component {
               </div>
             </div>
             <div className="row topSpacing2">
-              <div className="col-sm-5">
+              <div className="col-sm-6">
                 <h3>Monster properties</h3>
                 <p>
                   The visual appearance of the monsters reflects the properties of the incoporated Tweet(s) and its author(s). 
@@ -96,7 +101,6 @@ export default class AboutOverlay extends React.Component {
                 </ul>
               </div>
               <div className="col-sm-1">
-                
               </div>
               <div className="col-sm-5">
                 <div className="imageContainer">
@@ -105,9 +109,7 @@ export default class AboutOverlay extends React.Component {
               </div>
             </div>
             <div className="row topSpacing2 bottomSpacing1">
-              <div className="col-sm-2">
-              </div>
-              <div className="col-sm-5">
+              <div className="col-sm-6">
                 <h3>Map &amp; Interface</h3>
                 <p>
                   The map is modeled according to the mercator transformation, resulting in the specific shape of the continents. The map's area is devided by a grid. Tweets within one sector are summed up and their properties are merged. Therefore a monster within a grid area represents a number of Tweets and not individual ones.
@@ -127,13 +129,13 @@ export default class AboutOverlay extends React.Component {
               </div>
               <div className="col-sm-1">
               </div>
-              <div className="col-sm-4">
+              <div className="col-sm-5">
                 <h3>Team</h3>
                 <p>
-                  <a href="http://simonvomeyser.de/" title="Simon vom Eyser">Simon vom Eyser</a>, 582460<br/>
-                  Felix Jordan, XXXXXX<br/>
-                  Stefan "Boerdi" Weber, 600228<br/>
-                  <a href="http://marckloubert.com" title="Marc Kloubert">Marc Kloubert</a>, 567230
+                  <a href="http://simonvomeyser.de/" title="Simon vom Eyser" target="_blank">Simon vom Eyser</a>, 582460, Medieninformatik<br/>
+                  Felix Jordan, 595960, Medieninformatik<br/>
+                  Stephan "Boerdi" Weber, 600228, Medieninformatik<br/>
+                  <a href="http://marckloubert.com" title="Marc Kloubert" target="_blank">Marc Kloubert</a>, 567230, Kommunikationsdesign
                 </p>
               </div>
             </div>

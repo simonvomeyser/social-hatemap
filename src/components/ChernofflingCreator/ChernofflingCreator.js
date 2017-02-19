@@ -27,10 +27,10 @@ export default class ChernofflingCreator extends React.Component {
   render() {
     return (
       <div className="ChernofflingCreator">
-        <h1>chernoffling creator</h1>
+        <h2 className="CreatorTitle">Monster Creator</h2>
         <div className="ChernofflingCreator__content">
           <div className="ChernofflingCreator__settings">
-            <h2>Settings</h2>
+            <h2 className="SettingsTitle">Settings</h2>
             <div>
               <input type="range" min="-1" max="1" step=".01" onChange={this.handleInputChange} defaultValue={this.state.sentiment} id="sentiment"/> <span className="sentiment">{this.state.sentiment}</span> sentiment 
             </div>

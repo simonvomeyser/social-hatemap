@@ -3,7 +3,7 @@
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, .95);
   left: 0;
   top: 0;
   z-index: 80;
@@ -57,6 +57,13 @@
   bottom: 0;
   left: 0;
   overflow-y: scroll;
+}
+.imageContainer {
+  position: relative;
+  margin-right: 10px;
+}
+.imageContainer .monsterImg svg {
+  width: 100%;
 }
 p + p, p + ul, ul + p, ul + ul {
   margin-top: 16px !important;
