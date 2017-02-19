@@ -33,6 +33,7 @@ class App extends React.Component {
     };
 
     this.changeGridConfig = this.changeGridConfig.bind(this);
+    this.filterByDate     = this.filterByDate.bind(this);
   }
   componentWillMount() {
 
@@ -64,11 +65,13 @@ class App extends React.Component {
       // Save all of them in state, "processedSHMEntites" triggers map rendering
       this.setState({processedSHMEntites, loading: false });
 
+      console.log (processedSHMEntites);
     });
 
   }
-
-
+  filterByDate({startDate, endDate}) {
+    console.log (`filter by date ${startDate} and ${endDate}`);
+  }
   render() {
     return (
       <div className="App">
@@ -79,6 +82,7 @@ class App extends React.Component {
         {this.state.processedSHMEntites ? 
         <Nav
           processedSHMEntites={this.state.processedSHMEntites}
+          filterByDate={this.filterByDate}
           processPosts={this.processPosts}
           changeGridConfig={this.changeGridConfig}
           gridConfig={this.state.gridConfig}/>
@@ -90,6 +94,9 @@ class App extends React.Component {
   }
   changeGridConfig(config) {
     this.setState({gridConfig: config});
+  }
+  filterByDate(from, to) {
+    console.log (`filter by date ${from} and ${to}`);
   }
 }
 
