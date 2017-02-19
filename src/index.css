@@ -27,7 +27,10 @@ a {
   padding-top: 0!important;
   font-size: inherit!important;
 }
+.__react_component_tooltip.type-dark {
+  background-color: transparent !important;
+}
 
 .__react_component_tooltip.type-dark.place-top:after { 
-  border-top-color: black!important;
+  border-top-color: #4c4c4c !important;
 }

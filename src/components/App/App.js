@@ -88,7 +88,7 @@ class App extends React.Component {
         {this.state.filteredSHMEntities ?
           <div>
             <h2 className="App__hashtag">#{this.props.params.id}</h2>
-            <h3 className="App__showing">Showing {this.state.filteredSHMEntities.length} Tweets</h3>
+            <p className="App__showing">Showing {this.state.filteredSHMEntities.length} Tweets</p>
           </div>
         : null
         }
