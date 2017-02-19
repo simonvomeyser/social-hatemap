@@ -51,7 +51,9 @@ class MapGridElement extends React.Component {
     );
   }
   toggleOverlay() {
-    this.setState({showOverlay:!this.state.showOverlay});
+    if (this.state.containedSHMEntities.length > 0) {
+      this.setState({showOverlay:!this.state.showOverlay});
+    }
   }
   renderOverlay() {
     if (this.state.showOverlay) {
