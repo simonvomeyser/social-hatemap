@@ -17,8 +17,9 @@ class Nav extends React.Component {
     this.saveGridChange        = this.saveGridChange.bind(this);
   }
   componentDidMount() {
-    var handlesSlider = document.getElementById('dateSlider');
-    noUiSlider.create(handlesSlider, {
+    console.log (this.props);
+    var dateSlider = document.getElementById('dateSlider');
+    noUiSlider.create(dateSlider, {
       start: [ 20, 40 ],
       behaviour: 'drag',
       connect: true,
@@ -26,6 +27,10 @@ class Nav extends React.Component {
         'min':  20,
         'max':  80
       }
+    });
+
+    dateSlider.noUiSlider.on('change', () =>{
+      console.log (this.props);
     });
   }
 

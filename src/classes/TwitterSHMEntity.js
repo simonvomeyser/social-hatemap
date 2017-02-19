@@ -19,7 +19,8 @@ class TwittterSHMEntity extends SHMEntity {
     };
     this.post = {
       text       : twitterPost.text,
-      favourites : twitterPost.favorite_count
+      favourites : twitterPost.favorite_count,
+      createdAt  : twitterPost.created_at,
     };
     this.location = {
       // Set the name to something that can be parsed later (can be empty)

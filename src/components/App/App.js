@@ -76,11 +76,14 @@ class App extends React.Component {
         <Map
           entitiesToDraw={this.state.processedSHMEntites}
           gridConfig={this.state.gridConfig}/>
+        {this.state.processedSHMEntites ? 
         <Nav
-          posts={this.state.posts}
+          processedSHMEntites={this.state.processedSHMEntites}
           processPosts={this.processPosts}
           changeGridConfig={this.changeGridConfig}
           gridConfig={this.state.gridConfig}/>
+        : null  
+        }
         {this.state.loading ? <LoadingSpinner/> : null}
       </div>
     );
