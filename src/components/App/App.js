@@ -32,6 +32,10 @@ class App extends React.Component {
       loading: true
     };
 
+    if (IS_DEV_MODE) {
+      props.params.id = 'trump';
+    }
+
     this.changeGridConfig = this.changeGridConfig.bind(this);
     this.filterByDate     = this.filterByDate.bind(this);
   }
