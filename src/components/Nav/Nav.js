@@ -16,6 +16,18 @@ class Nav extends React.Component {
     this.handleGridYesNoChange = this.handleGridYesNoChange.bind(this);
     this.saveGridChange        = this.saveGridChange.bind(this);
   }
+  componentDidMount() {
+    var handlesSlider = document.getElementById('dateSlider');
+    noUiSlider.create(handlesSlider, {
+      start: [ 20, 40 ],
+      behaviour: 'drag',
+      connect: true,
+      range: {
+        'min':  20,
+        'max':  80
+      }
+    });
+  }
 
   handleShowOnMapClick(e) {
     e.preventDefault();
@@ -32,7 +44,6 @@ class Nav extends React.Component {
     this.setState({
       gridConfig : newGridConfig
     });
-
   }
   saveGridChange() {
     this.props.changeGridConfig(this.state.gridConfig);
@@ -87,10 +98,15 @@ class Nav extends React.Component {
             />
           </div>
             
-          <div className="gridControlles__showGrid">
+           <div className="gridControlles__showGrid">
             <label>Show&nbsp;Grid&nbsp;&amp;&nbsp;Monsters</label>
             <a href="#" onClick={this.handleGridYesNoChange} className={this.state.gridConfig.display ? "active" : ""} data-value="true">Yes</a>
             <a href="#" onClick={this.handleGridYesNoChange} className={this.state.gridConfig.display ? "" : "active"} data-value="false">No</a>
+          </div>
+          <div className="gridControlles__date">
+
+            <label>Date</label>
+            <span id="dateSlider"></span>
           </div>
         </div>
       </div>

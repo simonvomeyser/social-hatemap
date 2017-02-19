@@ -157,3 +157,9 @@ input[type=range]::-ms-fill-upper {
 input[type=range]:focus::-ms-fill-upper {
   background: #4c4c4c;
 }
+/*
+  Slider 
+*/
+#dateSlider {
+  min-width: 200px;
+}
