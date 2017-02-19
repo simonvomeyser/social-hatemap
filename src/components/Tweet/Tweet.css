@@ -3,9 +3,9 @@
   color: #4e4e4e;
   position: relative;
   padding: 0;
-  margin-right: 20px;
+  margin-right: 10px;
   border: 1px solid #ccc;
-  min-height: 182px;
+  min-height: 190px;
 }
 .Tweet + .Tweet  {
   margin-top: 10px;

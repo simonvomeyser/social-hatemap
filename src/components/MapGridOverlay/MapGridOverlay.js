@@ -28,7 +28,7 @@ export default class MapGridOverlay extends React.Component {
             </div>
             <div className="row topSpacing2 bottomSpacing1">
               <div className="col-sm-6">
-                <h3>Map &amp; Interface</h3>
+                <h3>Combined Monster</h3>
                 <div className="MapGridElement__overlayChernoffling">
                   <Chernoffling 
                     id={"overlaychernoffling-"+this.props.id}
