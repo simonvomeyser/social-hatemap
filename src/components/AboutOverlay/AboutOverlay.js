@@ -60,7 +60,7 @@ export default class AboutOverlay extends React.Component {
                     1. The Tweet's respective sentiment is evaluated by a sentiment analysis algorithm. 
                   </li>
                   <li>
-                    2. The gender of the author is calculated based on their username with aid of an external API, in case this information is not included in the Tweet#s info.
+                    2. The gender of the author is calculated based on their username with aid of an external API, in case this information is not included in the Tweet's info.
                   </li>
                   <li>
                     3. Further information such as the author's account's age, the number of favourites (=likes) and the share percentage of followers towards the complete amount of all followers is calculated. 
