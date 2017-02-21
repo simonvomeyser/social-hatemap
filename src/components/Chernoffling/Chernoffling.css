@@ -1,12 +1,16 @@
 .Chernoffling {
   position: relative;
   width: 100%;
+  animation: Chernoffling-fadeIn;
 }
 /* Hack to make Chernofflings Canvas 1:1; */
 .Chernoffling:before {
   content: "";
   display: block;
   padding-top: 100%;  
+}
+#monster {
+  background: transparent;
 }
 .Chernoffling__svg {
   left: 0;
@@ -30,4 +34,15 @@
 }
 .Chernoffling__svg svg path {
   transition: .3s;
+}
+@keyframes Chernoffling-fadeIn {
+    0% {
+      width: 0%;
+    }
+    75% {
+      width: 0%;
+    }
+    100%   { 
+      width: 100%;
+    }
 }

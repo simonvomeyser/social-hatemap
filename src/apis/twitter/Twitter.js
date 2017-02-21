@@ -1,5 +1,5 @@
 import sampleData from './sampleData.json';
-import SHMEntity from '../../classes/SHMEntity';
+import TwitterSHMEntity from '../../classes/TwitterSHMEntity';
 
 const apiUrl = 'http://api.socialhatemap.com/twitter.php';
 
@@ -8,7 +8,7 @@ const apiUrl = 'http://api.socialhatemap.com/twitter.php';
  * @type {Object}
  */
 const Twitter = {
-
+  
   /**
    * Only real "public" method returning a promise that contains Object 
    *
@@ -23,7 +23,13 @@ const Twitter = {
     }
 
     return fetch(apiUrl + '?hashtag=' + $hashtag)
-    .then((response) => { return response.json().statuses.map(this.apiAnswerToSHMEntity); });
+    .then((response) => { 
+      return response.json();
+    }).then((json) => {
+      return new Promise((resolve) =>{
+        resolve(json.tweets.map((e, i) => new TwitterSHMEntity(e, i)));
+      }); 
+    });
   },
 
   /**
@@ -34,30 +40,12 @@ const Twitter = {
   getStaticPosts($hashtag) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve(sampleData.map(this.apiAnswerToSHMEntity));
-      }, 500);
+        resolve(sampleData.tweets.map((e, i) => {
+          return new TwitterSHMEntity(e, i);
+        }));
+      }, 1500);
     });    
   },
-
-  apiAnswerToSHMEntity(twitterPost) {
-
-    const user = {
-      name       : twitterPost.user.name,
-      screenName : twitterPost.user.screenName,
-      follower   : twitterPost.user.followers_count,
-      accountAge : twitterPost.user.created_at, // @todo to age
-      image      : twitterPost.user.profile_image_url_https
-    };
-    const post = {
-      text       : twitterPost.text,
-      createdAt  : twitterPost.created_at,
-      fav        : twitterPost.favourites_count
-    };
-    const location = {
-      name       : twitterPost.user.location
-    };
-    return new SHMEntity(user, post, location);
-  }
 };
 
 export default Twitter;

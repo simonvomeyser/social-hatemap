@@ -1,8 +1,22 @@
-//import compendium from './compendium.minimal.js';
-// import compendium from 'compendium';
-
 const Sentiment = {
 
+	/**
+	 * Adds Sentiment to all given SHMEntities
+	 * @param {Array} SHMEntities 
+	 * @return {Array} SHMEntities with sentiment in post
+	 */
+	addSentiment(SHMEntities) {
+		return SHMEntities.map((SHMEntity) => {
+			SHMEntity.post.sentiment = this.getSentiment(SHMEntity.post.text);
+			return SHMEntity;
+		});
+	},
+
+	/**
+	 * Calculates sentiment to given text
+	 * @param  {String} text 
+	 * @return {object} Sentiment values
+	 */
 	getSentiment(text) {
 		// text = "This is shit :D . Test it.. Do it"
 		if(!text) return false;

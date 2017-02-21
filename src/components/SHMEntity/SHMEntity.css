@@ -6,6 +6,7 @@
   animation:  fadeIn cubic-bezier(0.16, 0.63, 0.9, 1.00);
   border-radius: 50px;
   background: red;
+  transition: .2s all ease-in-out;
   transform: translate(-50%,-50%);
 }
 .SHMEntity > div{
@@ -19,8 +20,9 @@
   display: none;
 }
 .SHMEntity:hover{
-  width: 50px;
-  height: 50px;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
 }
 .SHMEntity:hover span{
   display: inline-block;

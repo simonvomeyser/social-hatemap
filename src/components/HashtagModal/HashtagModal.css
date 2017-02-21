@@ -18,11 +18,58 @@
   font-size: 1.5em;
   transform: translate(-50%, -50%)
 }
+.HashtagModal__content h2 {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 36px;
+  margin: 0px 0px 10px;
+  color: #4c4c4c;
+}
+
 
 .HashtagModal__content input {
-  margin-top: 1em;
-  font-size: 1.2em;
+  font-size: 20px;
+  line-height: 22px;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif !important;
 }
 .HashtagModal__content input[type="submit"] {
   display: none;
+}
+.HashtagModal__liveModeButton {
+  font-size: 12px;
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+
+}
+
+.HashtagModal__liveModeButton a {
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid #4c4c4c;
+  padding: 6px 10px !important;
+  height: 24px;
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 13px;
+  color: #4c4c4c;
+  display: inline-block;
+
+}
+.HashtagModal__liveModeButton a:first-child {
+  margin-left: 5px;
+}
+.HashtagModal__liveModeButton a:nth-child(2) {
+  margin-right: 5px;
+}
+.HashtagModal__liveModeButton a.active {
+  cursor: default;
+  background-color: #4c4c4c;
+  color: #e0e0e0;
+}
+.HashtagModal__liveModeButton a:hover {
+  background-color: #4c4c4c;
+  color: #e0e0e0;
+  text-decoration: none;
 }

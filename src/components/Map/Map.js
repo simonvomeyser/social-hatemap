@@ -1,6 +1,6 @@
 import React from 'react';
 
-import map from '../../img/svgMapFull.svg';
+import map from '../../img/worldMap.svg';
 
 import LocationHelper from '../../helpers/LocationHelper';
 
@@ -17,7 +17,7 @@ import './Map.css';
 class Map extends React.Component {
   constructor(props) {
     super(props);
-  
+
     this.state = {
       doneRenderingEntities:false,
       doneRenderingGrid:false
@@ -33,7 +33,7 @@ class Map extends React.Component {
         </div>
         <div className="Map__shmentitiycanvas-wrapper">
           {this.renderSHMEntityCanvas()}
-        </div>                
+        </div>
         <div className="Map__grid-wrapper">
           {this.renderGrid()}
         </div>
@@ -47,18 +47,20 @@ class Map extends React.Component {
    */
   doneRenderingEntities() {
     this.setState({doneRenderingEntities: true});
-    // @todo Pass to APP    
+    // @todo Pass to APP
   }
   doneRenderingGrid() {
     this.setState({doneRenderingGrid: true});
     // @todo implement
   }
   renderGrid() {
-    if (this.state.doneRenderingEntities && this.props.gridConfig && this.props.gridConfig.display) {
+    if (this.state.doneRenderingEntities &&
+     this.props.gridConfig &&
+     this.props.gridConfig.display) {
       return <MapGrid
                 doneRenderingGrid={this.doneRenderingGrid}
                 config={this.props.gridConfig}
-                SHMEntities={this.props.entitiesToDraw}/>; 
+                SHMEntities={this.props.entitiesToDraw}/>;
     }
     return null;
   }
@@ -74,4 +76,3 @@ class Map extends React.Component {
 }
 
 export default Map;
-

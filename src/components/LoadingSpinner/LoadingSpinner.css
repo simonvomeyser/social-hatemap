@@ -1,0 +1,19 @@
+.LoadingSpinner {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  opacity:1;  
+  animation: flickerAnimation 3s infinite;
+  
+}
+.LoadingSpinner div>div{
+  margin-bottom: 1em;
+}
+
+@keyframes flickerAnimation { /* flame pulses */
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}

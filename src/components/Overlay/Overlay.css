@@ -1,0 +1,19 @@
+.Overlay {
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: scroll;
+  background-color: rgba(255, 255, 255, .85);
+  left: 0;
+  top: 0;
+  z-index: 3
+}
+.Overlay__close {
+  position: absolute;
+  right: 1.5em;
+  top: .5em;
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 3
+}

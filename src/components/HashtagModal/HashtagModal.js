@@ -11,18 +11,29 @@ class HashtagModal extends Component {
 
   constructor(props) {
     super(props);
-
-    this.inputField   = null;
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.state                     = {liveMode: false}
+    this.inputField                = null;
+    this.handleSubmit              = this.handleSubmit.bind(this);
+    this.handleLiveModeYesNoChange = this.handleLiveModeYesNoChange.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    let hashtag = this.inputField.value;
+    const hashtag = sanitizeHtml(this.inputField.value).replace('#', '');
+    const query = this.state.liveMode ? {liveMode:true} : {};
+    const pathname = this.state.liveMode ? hashtag : 'trump';
 
     if (hashtag) {
-      hashtag = sanitizeHtml(hashtag).replace('#', '');
-      this.props.router.push('/show/'+hashtag); //Debug      
+      this.props.router.push({
+        pathname: '/show/'+ pathname,
+        query: query
+      }); 
+    }
+  }
+  handleLiveModeYesNoChange(e) {
+    e.preventDefault();
+    if (!e.target.classList.contains('active')) {
+      this.setState({liveMode: !this.state.liveMode});
     }
   }
   render() {
@@ -32,10 +43,20 @@ class HashtagModal extends Component {
         <div className="HashtagModal__overlay"></div>
         <div className="HashtagModal__content">
           <form onSubmit={this.handleSubmit}>
-            <div>Please enter your Hashtag</div>
+            <h2>Please enter your Hashtag</h2>
             <input type="text" ref={(input) => {this.inputField = input; }}/>
             <input type="submit"/>
           </form>   
+        </div>
+        <div className="HashtagModal__liveModeButton">
+          Live Mode: 
+          <a href="#" onClick={this.handleLiveModeYesNoChange} className={this.state.liveMode ? "active" : ""} data-value="true">Yes</a>
+          <a href="#" onClick={this.handleLiveModeYesNoChange} className={this.state.liveMode ? "" : "active"} data-value="false">No</a>
+          {this.state.liveMode ? (
+          <span>
+            Errors may occur using Live Mode due to reached API-Limits. Please note that this App is a protoype. 
+          </span>
+          ): null }
         </div>
       </div>
     );

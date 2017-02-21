@@ -1,12 +1,16 @@
 import React from 'react';
+
+import MapGridOverlay from '../MapGridOverlay/MapGridOverlay';
 import Chernoffling from '../Chernoffling/Chernoffling';
+import ChernofflingProps from '../../classes/ChernofflingProps';
 
 import './MapGridElement.css';
 
-
+// Time it takes to fade grid element in (seconds)
+const animationDuration = 1.5
 
 /**
- * A single "Tile" of a grid, contains chernoffling
+ * A single "Tile" of a grid, contains chernoffling, renders overlay
  */
 class MapGridElement extends React.Component {
   constructor(props) {
@@ -16,48 +20,55 @@ class MapGridElement extends React.Component {
       left                 : props.tileWidth * props.col,
       top                  : props.tileWidth * props.row,
       opacity              : props.opacity,
-      containedSHMEntities : []
+      containedSHMEntities : [],
+      chernofflingProps    : {},
+      showOverlay          : false
     } 
-    this.handleClick = this.handleClick.bind(this);
+    this.toggleOverlay = this.toggleOverlay.bind(this);
+    this.renderOverlay = this.renderOverlay.bind(this);
   }
   /**
    * Add Elements only after mounting because own size must be clalculated
    */
   componentDidMount() {
-    this.setState({
-      containedSHMEntities : this.getContainedSHMEntities()
-    });
-  }
-  componentWillReceiveProps(nextProps) {
-    console.log (nextProps.opacity);
-    this.setState({opacity: nextProps.opacity})
-  }
-  componentWillUpdate(nextProps, nextState) {
-    // console.log (`MapGridElement will update`);
-  }
+    const containedSHMEntities = this.getContainedSHMEntities();
 
+    this.setState({containedSHMEntities});
+  }
   render() {
-    const chernofflingData = {
-      // Tweet properties
-      'sentiment' : Math.random() * 2 - 1 , // -1 = negative, 0 = neutral, +1 = positive
-      'amplitude' : 0, // intensity: 0 = low, 1 = high
-      'favourites' : 0, // 0 = low, ∞ = high
-      // User properties
-      'gender': .0,  // 0 = male, 1 = female
-      'age' : 0,
-      'followers' : 0,
-    }
-    console.log (chernofflingData);
     return (
-      <div onClick={this.handleClick} className="MapGridElement" ref={(htmlElement) => { this.htmlElement = htmlElement; }} style={this.getStyleObject()}>
-        {this.state.containedSHMEntities.length > 0 ? <Chernoffling {...chernofflingData}/>: null}        
+      <div>
+        {this.renderOverlay()}
+        <div onClick={this.toggleOverlay} className="MapGridElement" ref={(htmlElement) => { this.htmlElement = htmlElement; }} style={this.getStyleObject()}>
+          {this.state.containedSHMEntities.length > 0 ? 
+            <Chernoffling
+              id={"chernoffling-"+this.props.id}
+              parentAnimationDuration={animationDuration}
+              {...new ChernofflingProps(this.state.containedSHMEntities, this.props.SHMEntities)}/>
+          : null}        
+        </div>
       </div>
     );
   }
-  handleClick() {
-    // @todo debug, remove
-    console.log (this.state);
-    console.log (this.getActualWindowPosition());
+  toggleOverlay() {
+    if (this.state.containedSHMEntities.length > 0) {
+      this.setState({showOverlay:!this.state.showOverlay});
+    }
+  }
+  renderOverlay() {
+    if (this.state.showOverlay) {
+      const chernofflingProps = new ChernofflingProps(this.state.containedSHMEntities, this.props.SHMEntities);
+      return (
+        <MapGridOverlay
+          close={this.toggleOverlay}
+          id={this.props.id}
+          chernofflingProps={chernofflingProps}
+          containedSHMEntities= {this.state.containedSHMEntities}
+        />
+      );
+    }
+
+    return null;
   }
 
   /**
@@ -70,7 +81,8 @@ class MapGridElement extends React.Component {
       'left'            : this.state.left+'%',
       'marginTop'       : this.state.top+'%',       // simulates top/width ratio 1    : 1
       'paddingTop'      : this.state.tileWidth+'%', // simulates height/width ratio 1 : 1
-      'borderColor' : `rgba(255,255,255,${this.state.opacity}`
+      'borderColor' : `rgba(255,255,255,${this.state.opacity}`,
+      'animationDuration' : animationDuration+"s"
     };
   }
 
@@ -79,6 +91,7 @@ class MapGridElement extends React.Component {
    * @return {Array} All SHMEntities inside of this MapGridElement
    */
   getContainedSHMEntities() {
+
     return this.props.SHMEntities.filter((element) => {
       const entityLeft = element.location.x.replace('%', '');
       const entityTop = element.location.y.replace('%', '');

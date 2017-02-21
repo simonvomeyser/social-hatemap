@@ -1,0 +1,25 @@
+/* Marc's formidable CSS */
+.MainNav {
+  z-index:100;
+  position: fixed !important;
+  top: 30px !important;
+  right: 40px !important;
+  left: auto !important;
+}
+.MainNav a {
+  background: transparent;
+  border: 1px solid #4c4c4c;
+  padding: 6px 10px !important;
+  height: 24px;
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 13px;
+  color: #4c4c4c;
+  cursor: pointer;
+  display: inline-block;
+}
+.MainNav a:hover {
+  background-color: #4c4c4c;
+  color: #fff !important;
+  text-decoration: none;
+}

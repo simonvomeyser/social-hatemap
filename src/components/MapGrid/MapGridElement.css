@@ -2,7 +2,7 @@
   position : absolute;
   border : 1px dotted;
   transition: background-color .5s ease-in-out;
-  animation: fadein 1s;
+  animation: MapGridElement-fadeIn;
 }
 .MapGridElement:hover {
   background-color: rgba(255, 255, 255, .3);
@@ -15,7 +15,18 @@
   width: 100%;
   transform: translate(-50%,-50%);
 }
-@keyframes fadein {
+.MapGridElement__overlayChernoffling {
+  color: #000;
+  text-align: left;
+}
+.MapGridElement__overlayChernoffling .Chernoffling{
+  margin-top: -20%;
+  margin-bottom: -25%;
+}
+.MapGridElement__overlayTweetList {
+}
+
+@keyframes MapGridElement-fadeIn {
     from {
       opacity: 0;
       transform: scale(2, 2);

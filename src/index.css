@@ -16,7 +16,43 @@ body {
   color: white;
   background-color: rgb(34,34,34);
 }
-
+@media (max-width: 1024px), (max-height: 768px) {
+  body:before {
+    display: block;
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100000;
+    background: rgba(255, 255, 255, .9);
+  }
+  body:after {
+    text-align: center;
+    display: block;
+    content: "This prototype is not optimized for small screens :(";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100001;
+  }
+}
 a {
   color: white;
+}
+
+.__react_component_tooltip {
+  pointer-events: all!important;
+  padding: 0!important;
+  padding-top: 0!important;
+  font-size: inherit!important;
+}
+.__react_component_tooltip.type-dark {
+  background-color: transparent !important;
+}
+
+.__react_component_tooltip.type-dark.place-top:after { 
+  border-top-color: #4c4c4c !important;
 }

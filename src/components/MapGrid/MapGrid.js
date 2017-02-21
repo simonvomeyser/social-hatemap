@@ -31,13 +31,6 @@ class MapGrid extends React.Component {
   componentDidMount() {
     this.fillGridElements(this.state.config);
   }
-  shouldComponentUpdate(nextProps, nextState) {
-    if (nextProps.doneRenderingGrid === this.props.doneRenderingGrid) {
-      return true;
-    }
-    return false;
-  }  
-
   componentWillReceiveProps(nextProps) {
 
     this.setState({
@@ -60,6 +53,7 @@ class MapGrid extends React.Component {
       return (
         <MapGridElement 
           key={`MapGridElement-${e.row}-${e.col}`} 
+          id={`${e.row}-${e.col}`} 
           row={e.row}
           col={e.col}
           tileWidth={tileWidth}

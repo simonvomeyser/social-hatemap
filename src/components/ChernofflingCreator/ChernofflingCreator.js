@@ -15,11 +15,11 @@ export default class ChernofflingCreator extends React.Component {
       // Tweet properties
       'sentiment' : -1, // -1 = negative, 0 = neutral, +1 = positive
       'amplitude' : 0, // intensity: 0 = low, 1 = high
-      'favourites' : 0, // 0 = low, ∞ = high
+      'favourites' : 0, // percentage
       // User properties
-      'gender': .0,  // 0 = male, 1 = female
-      'age' : 0,
-      'followers' : 0,
+      'gender': 0,  // 0 = male, 1 = female
+      'age' : 0, // int, 1-10
+      'followers' : 100, // float, percentage (1-100)
     });
     this.handleInputChange = this.handleInputChange.bind(this);
   }
@@ -27,18 +27,18 @@ export default class ChernofflingCreator extends React.Component {
   render() {
     return (
       <div className="ChernofflingCreator">
-        <h1>chernoffling creator</h1>
+        <h2 className="CreatorTitle">Monster Creator</h2>
         <div className="ChernofflingCreator__content">
           <div className="ChernofflingCreator__settings">
-            <h2>Settings</h2>
+            <h2 className="SettingsTitle">Settings</h2>
             <div>
-              <input type="range" min="-1" max="1" step=".1" onChange={this.handleInputChange} defaultValue={this.state.sentiment} id="sentiment"/> <span className="sentiment">{this.state.sentiment}</span> sentiment 
+              <input type="range" min="-1" max="1" step=".01" onChange={this.handleInputChange} defaultValue={this.state.sentiment} id="sentiment"/> <span className="sentiment">{this.state.sentiment}</span> sentiment 
             </div>
             <div>
               <input type="range" min="0" max="1" step=".1" onChange={this.handleInputChange} defaultValue={this.state.amplitude} id="amplitude"/> <span className="amplitude">{this.state.amplitude}</span> amplitude 
             </div>
             <div>
-              <input type="number" min="0" onChange={this.handleInputChange} defaultValue={this.state.favourites} id="favourites"/> <span className="favourites">{this.state.favourites}</span> favourites 
+              <input type="range" min="0" max="100" onChange={this.handleInputChange} defaultValue={this.state.favourites} id="favourites"/> <span className="favourites">{this.state.favourites}</span> favourites 
             </div>
             <br/>
             <div>
@@ -52,7 +52,7 @@ export default class ChernofflingCreator extends React.Component {
             </div>
           </div>
           <div className="ChernofflingCreator__chernoffling">
-            <Chernoffling {...this.state}/>
+            <Chernoffling key="asdsad" id="asdsad"{...this.state}/>
           </div>
         </div>
       </div>
