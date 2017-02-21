@@ -22,7 +22,7 @@ In order to visualize the properties, the Tweets are then processed in several w
 
 Once the set of property information is complete, the monsters are rendered.
 
-![Flowchart](src/img/hatemap-flowchart-cropped.svg)
+![Flowchart](flowchart.png)
 
 ## Monster properties
 
@@ -44,7 +44,7 @@ The gender of an author (or the average gender value of a group of authors) is v
 ### Account age
 Depending of the age of the author's account, a certain set of horns is attached to the monster. The older the account, the longer the horns. An account younger than two years shows no horns, while an account older than 8 years shows two pairs.    
 
-![Monster Overview](src/img/monster-overview.svg)
+![Monster Overview](monsters.png)
 
 ## Map & Interface
 
