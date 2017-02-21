@@ -43,7 +43,7 @@ const Twitter = {
         resolve(sampleData.tweets.map((e, i) => {
           return new TwitterSHMEntity(e, i);
         }));
-      }, 500);
+      }, 1500);
     });    
   },
 };

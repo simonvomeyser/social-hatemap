@@ -14,7 +14,7 @@ export default class LoadingSpinner extends React.Component {
   render() {
     return (
       <div className="LoadingSpinner h3">
-        Loading...
+        {this.props.liveMode ? "Loading..." : <div><div>Showing only static results with #trump.</div><div>You can switch to live mode on startpage!</div></div>}
       </div>
     );
   }

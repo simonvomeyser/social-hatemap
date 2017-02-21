@@ -18,8 +18,6 @@ import SentimentHelper from '../../helpers/SentimentHelper';
 import './App.css';
 import './bootstrap.css';
 
-// true means there is no real data fetched from the apis
-const IS_LIVE_MODE = true;
 
 /**
  * Main Application wrapper, shows map and renders everything
@@ -104,7 +102,7 @@ class App extends React.Component {
           gridConfig={this.state.gridConfig}/>
         : null  
         }
-        {this.state.loading ? <LoadingSpinner/> : null}
+        {this.state.loading ? <LoadingSpinner liveMode={this.state.liveMode}/> : null}
         {this.state.error ? <ErrorComponent/> : null}
       </div>
     );

@@ -8,6 +8,9 @@
   animation: flickerAnimation 3s infinite;
   
 }
+.LoadingSpinner div>div{
+  margin-bottom: 1em;
+}
 
 @keyframes flickerAnimation { /* flame pulses */
   0%   { opacity:1; }
