@@ -8,7 +8,7 @@ import MapTester from './components/MapTester/MapTester';
 import SentimentTester from './components/SentimentTester/SentimentTester';
 import MainNav from './components/MainNav/MainNav';
 
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, IndexRedirect, hashHistory } from 'react-router';
 
 import './index.css';
 /* test */
@@ -18,11 +18,12 @@ ReactDOM.render((
     <MainNav/>
     <Router history={hashHistory}>
       <Route path="/">
-        <IndexRoute component={HashtagModal} />
+        <Route path="new-hashtag" component={HashtagModal} />
         <Route path="show/:id" component={App} />
         <Route path="creator" component={ChernofflingCreator} />
         <Route path="maptester" component={MapTester} />
         <Route path="sentiment" component={SentimentTester} />
+        <IndexRedirect to="show/demo" />
       </Route>
     </Router>
   </div>

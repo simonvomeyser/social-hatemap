@@ -54,7 +54,7 @@ class Nav extends React.Component {
       <div className="Nav">
         <div className="gridControls"> 
           <div className="gridControls__newHash">
-            <Link to="/" className="btn gridControls__newHashBtn">Enter new hashtag</Link>
+            <Link to="/new-hashtag" className="btn gridControls__newHashBtn">Enter new hashtag</Link>
           </div>
           <div className="gridControls__gridSize">
             <label>Grid&nbsp;Size</label>
