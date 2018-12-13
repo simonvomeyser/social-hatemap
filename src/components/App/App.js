@@ -14,10 +14,8 @@ import Genderizer from '../../apis/genderizing/Genderizer.js';
 import LocationHelper from '../../helpers/LocationHelper';
 import SentimentHelper from '../../helpers/SentimentHelper';
 
-
 import './App.css';
 import './bootstrap.css';
-
 
 /**
  * Main Application wrapper, shows map and renders everything
@@ -27,19 +25,17 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      gridConfig: {opacity: 0.30, size: 7, display: true},
+      gridConfig: {size: 7, display: true},
       loading: true,
       hashtag: this.props.params.id || 'demo',
       liveMode : props.location.query.liveMode ? true:false
     };
 
     this.changeGridConfig = this.changeGridConfig.bind(this);
-    this.filterByDate     = this.filterByDate.bind(this);
   }
   componentWillMount() {
 
     // Start the App "lifecycle"
-    const hashtag = this.props.params.id;
     const IS_DEV_MODE = !this.state.liveMode
 
     Twitter.getPosts(this.hashtag, IS_DEV_MODE)
@@ -77,7 +73,6 @@ class App extends React.Component {
         });
       }
 
-
     });
 
   }
@@ -103,24 +98,13 @@ class App extends React.Component {
           gridConfig={this.state.gridConfig}/>
         : null  
         }
-        {this.state.loading ? <LoadingSpinner liveMode={this.state.liveMode}/> : null}
+        {this.state.loading ? <LoadingSpinner /> : null}
         {this.state.error ? <ErrorComponent/> : null}
       </div>
     );
   }
   changeGridConfig(config) {
     this.setState({gridConfig: config});
-  }
-  filterByDate(from, to) {
-    const filteredSHMEntities = this.state.processedSHMEntites.filter((e)=> {
-      const createdAtMs = e.post.createdAt.getTime();
-      if (createdAtMs >= from && createdAtMs <= to) {
-        return true;
-      }
-      return false;
-    });
-    this.setState({filteredSHMEntities: filteredSHMEntities});
-
   }
 }
 
