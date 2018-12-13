@@ -6,13 +6,15 @@
   overflow-x: hidden;
 }
 .App__hashtag {
-  position: absolute;
+  position: fixed;
+  z-index: 10000000;
   left: 40px;
   bottom: 20%;
   font-size: 1.5em;
 }
 .App__showing {
   position: absolute;
+  z-index: 10000000;
   left: 40px;
   bottom: 15%;
 }

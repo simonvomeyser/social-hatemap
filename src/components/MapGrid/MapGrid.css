@@ -1,11 +1,34 @@
 .MapGrid {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 10%;
   width: 100%;
-  height: 100%;
+  height: 60%;
+  overflow: hidden;
   transition: .3s all ease-in-out;
 }
+.MapGrid::before {
+  z-index: 10000;
+  position: absolute;
+  display: block;
+  content : " ";
+  background: linear-gradient(0deg,hsla(0,0%,100%,0) 0,#eee 70%);;
+  top: 0;
+  left: 0;
+  height: 15%;
+  width: 100%;
+}
+.MapGrid::after {
+  position: absolute;
+  display: block;
+  content : " ";
+  background: linear-gradient(180deg,hsla(0,0%,100%,0) 0,#eee 70%);;
+  bottom: 0;
+  left: 0;
+  height: 10%;
+  width: 100%;
+}
+
  .MapGridElement:hover {
    background-color: rgba(255, 255, 255, .3);
    cursor: pointer;

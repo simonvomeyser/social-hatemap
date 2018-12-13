@@ -4,10 +4,18 @@
   top: 0;
   width: 100vw;
   height: auto;
-  /* Marc's formidable CSS */
-  margin-top: -30vh;
-  margin-bottom: -60vh;
+  transform: translate(0,-12%);
   overflow: hidden;
+}
+.Map::before {
+  position: absolute;
+  display: block;
+  content : " ";
+  background: linear-gradient(0deg,hsla(0,0%,100%,0) 0,#eee 70%);;
+  top: 12%;
+  left: 0;
+  height: 15%;
+  width: 100%;
 }
 .Map svg {
   z-index: -1;
