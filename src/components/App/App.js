@@ -29,6 +29,7 @@ class App extends React.Component {
     this.state = {
       gridConfig: {opacity: 0.30, size: 7, display: true},
       loading: true,
+      hashtag: this.props.params.id || 'demo',
       liveMode : props.location.query.liveMode ? true:false
     };
 
@@ -41,7 +42,7 @@ class App extends React.Component {
     const hashtag = this.props.params.id;
     const IS_DEV_MODE = !this.state.liveMode
 
-    Twitter.getPosts(hashtag, IS_DEV_MODE)
+    Twitter.getPosts(this.hashtag, IS_DEV_MODE)
     .then((twitterSHMEntities) => {
 
       // Remove loca
@@ -85,7 +86,7 @@ class App extends React.Component {
       <div className="App">
         {this.state.filteredSHMEntities ?
           <div>
-            <h2 className="App__hashtag">#{this.props.params.id}</h2>
+            <h2 className="App__hashtag">#{this.state.hashtag}</h2>
             <p className="App__showing">Showing {this.state.filteredSHMEntities.length} Tweets</p>
           </div>
         : null
