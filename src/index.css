@@ -16,29 +16,6 @@ body {
   color: white;
   background-color: rgb(34,34,34);
 }
-@media (max-width: 992px), (max-height: 550px) {
-  body:before {
-    display: block;
-    content: " ";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100000;
-    background: rgba(255, 255, 255, .9);
-  }
-  body:after {
-    text-align: center;
-    display: block;
-    content: "This prototype is not optimized for small screens :(";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 100001;
-  }
-}
 a {
   color: white;
 }
