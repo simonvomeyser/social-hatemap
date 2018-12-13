@@ -1,4 +1,4 @@
-import sampleData from './sampleData.json';
+import sampleData from './sampleData_small.json';
 import TwitterSHMEntity from '../../classes/TwitterSHMEntity';
 
 const apiUrl = 'http://api.socialhatemap.com/twitter.php';
@@ -39,14 +39,11 @@ const Twitter = {
    */
   getStaticPosts($hashtag) {
     return new Promise((resolve, reject) => {
-      setTimeout(() => {
       resolve(sampleData.tweets.map((e, i) => {
         return new TwitterSHMEntity(e, i);
       }));
-      }, 1500);
     });    
   },
 };
 
 export default Twitter;
-
