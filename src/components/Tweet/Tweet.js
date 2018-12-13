@@ -12,7 +12,6 @@ class Tweet extends React.Component {
   render() {
     const props = new ChernofflingProps([this.props.entity], [this.props.entity])
     const entity = this.props.entity;
-    console.log (entity.user);
     return (
       <div className="Tweet">
         <img src={entity.user.image} alt=""/>
