@@ -28,12 +28,14 @@
 }
 @media (max-width: 780px) {
   .App__title {
-    top: 30px;
+    top: unset;
+    bottom: 220px;
     text-align: left;
-    left: 40px;
-    font-size: 1rem;
+    left: 15px;
+    font-size: 1.8rem;
   }
   .App__hashtag {
+    font-size: 1.2rem;
     left: 15px;
     bottom: 190px;
   }
