@@ -8,6 +8,11 @@
   top: 0;
   z-index: 80;
 }
+.AboutOverlay svg {
+    width: 100%;
+    height: auto;
+}
+
 .AboutOverlay__close { 
   display: inline-block;
   color: black;
