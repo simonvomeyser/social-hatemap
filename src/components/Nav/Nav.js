@@ -81,9 +81,7 @@ class Nav extends React.Component {
       </div>
     );
 
-    /* Size: {this.state.gridConfig.size} Grid Elements per row */
   }
-            /*  Opacitiy: {this.state.gridConfig.opacity}%*/
 
 }
 export default Nav;
