@@ -10,6 +10,22 @@
   text-align: left;
   left: 40px;
 }
+.App__about {
+  position: fixed;
+  z-index: 10000000;
+  top: 30px;
+  right: 40px;
+  border: 1px solid red;
+  border:  1px solid #333333;
+  padding: 3px;
+  color: #333333
+}
+.App__about:hover {
+  text-decoration: none;
+  color: #333333;
+  opacity: .8;
+}
+
 .App__hashtag {
   position: fixed;
   z-index: 10000000;
@@ -31,9 +47,16 @@
     top: unset;
     bottom: 220px;
     text-align: left;
-    left: 15px;
     font-size: 1.8rem;
+    left: 15px;
   }
+  .App__about {
+    top: unset;
+    right: 15px;
+    bottom: 230px;
+
+  }
+
   .App__hashtag {
     font-size: 1.2rem;
     left: 15px;

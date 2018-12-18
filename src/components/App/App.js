@@ -2,6 +2,7 @@ import React from 'react';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import ErrorComponent from '../ErrorComponent/ErrorComponent';
 import Tweetlist from '../Tweetlist/Tweetlist';
+import { Link } from 'react-router';
 import Nav from '../Nav/Nav';
 import Map from '../Map/Map';
 
@@ -82,6 +83,9 @@ class App extends React.Component {
         <h1 className="App__title">
           Social Hate Map
         </h1>
+        <Link to="/about" className="App__about">
+          About
+        </Link>
         {this.state.filteredSHMEntities ?
           <div>
             <h2 className="App__hashtag">#{this.state.hashtag}</h2>

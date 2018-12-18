@@ -11,6 +11,7 @@ import MainNav from './components/MainNav/MainNav';
 import { Router, Route, IndexRoute, IndexRedirect, hashHistory } from 'react-router';
 
 import './index.css';
+import AboutOverlay from './components/AboutOverlay/AboutOverlay';
 /* test */
 ReactDOM.render((
   <div className="Index">
@@ -21,6 +22,7 @@ ReactDOM.render((
         <Route path="creator" component={ChernofflingCreator} />
         <Route path="maptester" component={MapTester} />
         <Route path="sentiment" component={SentimentTester} />
+        <Route path="about" component={AboutOverlay} />
         <IndexRedirect to="show/demo" />
       </Route>
     </Router>
