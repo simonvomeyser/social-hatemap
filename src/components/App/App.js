@@ -79,6 +79,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <h1 className="App__title">
+          Social Hate Map
+        </h1>
         {this.state.filteredSHMEntities ?
           <div>
             <h2 className="App__hashtag">#{this.state.hashtag}</h2>

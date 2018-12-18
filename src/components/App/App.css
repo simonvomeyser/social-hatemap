@@ -1,19 +1,24 @@
 .App {
   text-align: center;
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
+}
+.App__title {
+  position: fixed;
+  z-index: 10000000;
+  width: 100%;
+  top: 30px;
+  text-align: left;
+  left: 40px;
 }
 .App__hashtag {
   position: fixed;
   z-index: 10000000;
   left: 40px;
   bottom: 20%;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 .App__showing {
-  position: absolute;
+  position: fixed;
   z-index: 10000000;
   left: 40px;
   bottom: 15%;
@@ -21,3 +26,20 @@
 .App__loading {
   padding-top: 10%;
 }
+@media (max-width: 780px) {
+  .App__title {
+    top: 30px;
+    text-align: left;
+    left: 40px;
+    font-size: 1rem;
+  }
+  .App__hashtag {
+    left: 15px;
+    bottom: 190px;
+  }
+  .App__showing {
+    left: 15px;
+    bottom: 150px;
+  }
+  
+} 

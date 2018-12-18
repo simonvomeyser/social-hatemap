@@ -27,8 +27,6 @@
       opacity: 1;
     }
 }
-.Nav__showGrid  a {
-}
 .Nav__showGrid  a.active {
   cursor: default;
   background-color: rgba(255, 255, 255, .2)
@@ -72,7 +70,6 @@
 .gridControlles__showGrid a:first-child {
   margin-right: 4px !important;
 }
-/* Input Styling */
 
 input[type=range] {
   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
@@ -97,10 +94,6 @@ input[type=range]::-ms-track {
   border-color: transparent;
   color: transparent;
 }
-
-
-/* -- thumb -- */
-
 
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -235,3 +228,17 @@ input[type=range]:focus::-ms-fill-upper {
 .noUi-handle:after, .noUi-handle:before {
   display: none!important;
 }
+
+@media (max-width: 780px) {
+  .Nav {
+    left: 15px;
+    bottom: 15px;
+
+  }
+  .gridControls > * {
+    float: none; 
+    margin-right: 0;
+    margin-bottom: 15px;
+    display: flex;
+  }
+} 

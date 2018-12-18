@@ -14,8 +14,6 @@ import './index.css';
 /* test */
 ReactDOM.render((
   <div className="Index">
-    <h1>Social Hate Map</h1>
-    <MainNav/>
     <Router history={hashHistory}>
       <Route path="/">
         <Route path="new-hashtag" component={HashtagModal} />

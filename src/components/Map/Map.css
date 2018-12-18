@@ -23,14 +23,7 @@
   height: auto;
 }
 /* Marc's formidable CSS */
-body {
-  font-family: 'Roboto', sans-serif !important;
-  color: #404040 !important;
-  font-size: 14px;
-  line-height: 19px;
-  background-color: #eee !important;
-}
-h1 {
+.Map h1 {
   position: absolute;
   z-index: 70;
   font-size: 24px !important;
@@ -39,5 +32,4 @@ h1 {
   left: 40px;
   margin: 0;
   font-weight: 300;
-  color: ;
 }
