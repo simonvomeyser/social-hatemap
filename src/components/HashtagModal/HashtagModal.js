@@ -48,16 +48,6 @@ class HashtagModal extends Component {
             <input type="submit"/>
           </form>   
         </div>
-        <div className="HashtagModal__liveModeButton">
-          Live Mode: 
-          <a href="#" onClick={this.handleLiveModeYesNoChange} className={this.state.liveMode ? "active" : ""} data-value="true">Yes</a>
-          <a href="#" onClick={this.handleLiveModeYesNoChange} className={this.state.liveMode ? "" : "active"} data-value="false">No</a>
-          {this.state.liveMode ? (
-          <span>
-            Errors may occur using Live Mode due to reached API-Limits. Please note that this App is a protoype. 
-          </span>
-          ): null }
-        </div>
       </div>
     );
   }
