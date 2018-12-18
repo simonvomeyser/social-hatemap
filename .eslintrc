@@ -23,6 +23,7 @@
     "rules" : {
         "no-console" : "warn",
         "semi" : [0, "always"],
+        "no-unused-vars" : 0,
         "comma-dangle" : 0
     },
 
