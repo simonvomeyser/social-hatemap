@@ -1,8 +1,47 @@
-.AboutOverlay h2 {
-	text-align: left !important;
+.MapGridOverlay {
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, .95);
+	left: 0;
+	top: 0;
+	z-index: 10000000;
+	transform: translateY(21%);
 }
+.MapGridElement__overlayChernoffling .Chernoffling__svg {
+	max-height: 200px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+  .MapGridOverlay__close { 
+	display: inline-block;
+	color: black;
+	position: fixed;
+	font-size: 40px;
+	cursor: pointer;
+	z-index: 3;
+	color: #666;
+  }
+  .MapGridOverlay__close:hover {
+	color: #000;
+  }
+  .MapGridOverlay__close {
+	font-family: 'Roboto', sans-serif !important;
+	color: #404040 !important;
+	font-size: 24px;
+	margin: 0;
+	line-height: 28px;
+  }
 .MapGridElement__overlayChernoffling ul {
 	padding: 0;
 	margin-bottom: 0;
 	list-style: none;
 }
+
+@media (max-width: 1100px) {
+	.MapGridOverlay {
+		display: none;
+	} 
+} 

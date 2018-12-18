@@ -15,7 +15,7 @@ export default class MapGridOverlay extends React.Component {
   render() {
     const chernofflingProps = this.props.chernofflingProps;
     return (
-      <div className="AboutOverlay GridOverlay">
+      <div className="MapGridOverlay">
         <div className="wrapper">
           <div className="container-fluid">
             <div className="row topSpacing1 first">
@@ -23,7 +23,7 @@ export default class MapGridOverlay extends React.Component {
                 <h2 className="pageTitle">About this grid element</h2>
               </div>
               <div className="col-sm-1 textRight">
-                {this.props.close ? <div onClick={this.props.close} className="AboutOverlay__close">&times;</div> : null }
+                {this.props.close ? <div onClick={this.props.close} className="verlay__close">&times;</div> : null }
               </div>
             </div>
             <div className="row topSpacing2 bottomSpacing1">
